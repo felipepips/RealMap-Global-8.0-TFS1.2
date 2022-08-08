@@ -614,9 +614,12 @@
 	<action actionid="3101" script="switch/rook/academy switch.lua"/>
 	<action actionid="3102" script="switch/rook/train monster1.lua" />
 	<action actionid="3103" script="switch/rook/train monster2.lua" />
-	<action uniqueid="5252" script="switch/transdec.lua" />
-	<action uniqueid="5253" script="switch/trandec.lua" />
-	<action actionid="3104" script="switch/rook/train monster3.lua" />
+	
+  <!-- Shady links removed: https://otland.net/threads/8-0-tfs-1-2-server-global-full-real-map.280265/post-2701198 -->
+  <!-- <action uniqueid="5252" script="switch/transdec.lua" /> -->
+  <!-- <action uniqueid="5253" script="switch/trandec.lua" /> -->
+	
+  <action actionid="3104" script="switch/rook/train monster3.lua" />
 	<action actionid="3105" script="switch/rook/train monster4.lua" />
 	<action actionid="3106" script="switch/rook/bear room stone.lua" />
 	<action actionid="3107" script="switch/rook/katana door.lua" />
