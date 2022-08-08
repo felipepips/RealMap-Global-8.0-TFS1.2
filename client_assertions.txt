@@ -1,0 +1,118 @@
+----- 21/12/2020 19:26:13 - Lobus (127.0.0.1) -----
+Debug Assertion 8.0 Container.h 226
+Mon Dec 21 19:24:56 2020
+Windows Version: 6.2 build 9200 on 2
+Graphic Engine: DirectX9 (2)
+Last Packet Types: 100 010 100 020 000 000 000 000 000 000
+Last Packet: 129 004 010 001 000 000 016 050 000 001 100 129 125 057 125 007
+Player Position: [0,0,0]
+Player Name: GOD
+Player.cpp 358: exception occurred, reason:
+Network.cpp 980: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1309: exception occurred (Type = 100), reason:
+Communication.cpp 1532: exception occurred (PlayerX = 32129) (PlayerY = 32057), reason:
+Communication.cpp 1509: exception occurred (xmin = 0) (ymin = 0), reason:
+Communication.cpp 1488: exception occurred (Type = 97) (OldType = 4611), reason:
+Communication.cpp 1441: exception occurred (Type = 97) (CreatureID = 268435457), reason:
+Objects.cpp 604: exception occurred (Number = 267), reason:
+Container.h 226: index out of range (original i: 267, i: 266, min: 1, d: 266)
+
+----- 21/12/2020 19:28:35 - GOD (127.0.0.1) -----
+Debug Assertion 8.0 Container.h 226
+Mon Dec 21 19:26:16 2020
+Windows Version: 6.2 build 9200 on 2
+Graphic Engine: DirectX9 (2)
+Last Packet Types: 100 010 109 160 109 131 131 109 108 109
+Last Packet: 129 004 010 001 000 000 016 050 000 001 100 129 125 057 125 007
+Player Position: [0,0,0]
+Player Name: GOD
+Player.cpp 358: exception occurred, reason:
+Network.cpp 980: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1309: exception occurred (Type = 100), reason:
+Communication.cpp 1532: exception occurred (PlayerX = 32129) (PlayerY = 32057), reason:
+Communication.cpp 1509: exception occurred (xmin = 0) (ymin = 0), reason:
+Communication.cpp 1488: exception occurred (Type = 97) (OldType = 4611), reason:
+Communication.cpp 1441: exception occurred (Type = 97) (CreatureID = 268435457), reason:
+Objects.cpp 604: exception occurred (Number = 267), reason:
+Container.h 226: index out of range (original i: 267, i: 266, min: 1, d: 266)
+Comment: 
+----- 31/12/2020 01:20:08 - GOD (127.0.0.1) -----
+Debug Assertion 8.0 Container.h 226
+Thu Dec 31 01:16:51 2020
+Windows Version: 6.2 build 9200 on 2
+Graphic Engine: DirectX9 (2)
+Last Packet Types: 133 180 132 131 106 108 140 160 160 134
+Last Packet: 053 001 134 153 034 000 064 000 160 255 255 255 255 007 121 032
+Player Position: [32129,32948,10]
+Player Name: GOD
+Player.cpp 358: exception occurred, reason:
+MainFrm.cpp 507: exception occurred (nIDEvent = 1), reason:
+Control.cpp 1408: exception occurred, reason:
+Map.cpp 912: exception occurred (i = 3), reason:
+Objects.cpp 724: exception occurred (Number = 39), reason:
+Container.h 226: index out of range (original i: 39, i: 38, min: 1, d: 35)
+Comment: 
+----- 31/12/2020 20:26:22 - Lobus (127.0.0.1) -----
+Debug Assertion 8.0 Container.h 226
+Thu Dec 31 20:25:12 2020
+Windows Version: 6.2 build 9200 on 2
+Graphic Engine: DirectX9 (2)
+Last Packet Types: 162 142 104 109 104 109 104 109 104 109
+Last Packet: 084 000 109 017 126 154 126 007 001 016 126 154 126 007 104 252
+Player Position: [32272,32410,7]
+Player Name: GOD
+Player.cpp 358: exception occurred, reason:
+Player.cpp 460: exception occurred, reason:
+Control.cpp 1633: exception occurred (MessageType: 0 MaW: 2528050 MoW: 0), reason:
+Control.cpp 1628: exception occurred, reason:
+Control.cpp 379: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 133: exception occurred (Surface = 1), reason:
+GUI.cpp 1452: exception occurred (Surface = 1), reason:
+MapWindow.cpp 861: exception occurred (Surface = 1), reason:
+MapWindow.cpp 548: exception occurred (Obj = 4599), reason:
+MapWindow.cpp 1113: exception occurred (posx = 160) (posy = 128), reason:
+MapWindow.cpp 961: exception occurred, reason:
+MapWindow.cpp 945: exception occurred (Creature->OutfitType = 267) (Creature->CreatureID = 268435456), reason:
+Objects.cpp 494: exception occurred (Number = 267) (Flag = 25), reason:
+Container.h 226: index out of range (original i: 267, i: 266, min: 1, d: 266)
+
+----- 02/01/2021 14:21:22 - GOD (127.0.0.1) -----
+Debug Assertion 8.0 NWin32Exception.cpp 50
+Sat Jan 02 14:20:44 2021
+Windows Version: 6.2 build 9200 on 2
+Graphic Engine: DirectX9 (2)
+Last Packet Types: 181 181 180 172 172 162 210 210 141 130
+Last Packet: 033 000 180 023 025 000 084 104 101 114 101 032 105 115 032 110
+Player Position: [32677,31656,7]
+Player Name: GOD
+Player.cpp 358: exception occurred, reason:
+Player.cpp 460: exception occurred, reason:
+Control.cpp 1633: exception occurred (MessageType: 50 MaW: 2497D18 MoW: 0), reason:
+Control.cpp 1598: exception occurred (Type = 50), reason:
+ConsoleWindow.cpp 2056: exception occurred (RecvMode = 5) (SendMode = 5), reason:
+ConsoleWindow.cpp 2102: exception occurred (DebugProgressVariable = 0), reason:
+NWin32Exception.cpp 50: win32 exception occurred, reason:
+access violation (read attempt at 0000002C)
+Comment: 
+----- 23/03/2022 19:08:57 - Lobus (127.0.0.1) -----
+Debug Assertion 8.0 Container.h 226
+Wed Mar 23 19:08:33 2022
+Windows Version: 6.1 build 7601 on 2 with Service Pack 1
+Graphic Engine: DirectX9 (2)
+Last Packet Types: 172 172 180 180 131 180 162 162 141 130
+Last Packet: 182 012 010 002 000 000 016 050 000 001 100 104 126 038 124 007
+Player Position: [32360,31782,7]
+Player Name: GOD
+Player.cpp 358: exception occurred, reason:
+Player.cpp 460: exception occurred, reason:
+Control.cpp 1469: exception occurred (MaW: 3542EA0 MoW: 0 ), reason:
+Control.cpp 379: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 133: exception occurred (Surface = 1), reason:
+GUI.cpp 1452: exception occurred (Surface = 1), reason:
+MapWindow.cpp 861: exception occurred (Surface = 1), reason:
+MapWindow.cpp 548: exception occurred (Obj = 870), reason:
+MapWindow.cpp 1113: exception occurred (posx = 224) (posy = 160), reason:
+MapWindow.cpp 1105: exception occurred (EffectNumber = 1) (Type = 40), reason:
+Objects.cpp 691: exception occurred (Number = 40), reason:
+Container.h 226: index out of range (original i: 40, i: 39, min: 1, d: 35)
+Comment: 
