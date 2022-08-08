@@ -189,7 +189,7 @@
 	<house name="Upper Swamp Lane 2" houseid="189" entryx="32348" entryy="32252" entryz="7" rent="4740" townid="2" size="56" />
 	<house name="Upper Swamp Lane 4" houseid="190" entryx="32360" entryy="32252" entryz="7" rent="4740" townid="2" size="56" />
 	<house name="Upper Swamp Lane 8" houseid="191" entryx="32398" entryy="32256" entryz="7" rent="8120" townid="2" size="120" />
-	<house name="Warriors Guildhall" houseid="192" entryx="32348" entryy="32213" entryz="7" rent="14725" townid="2" size="258" />
+	<house name="Warriors Guildhall" houseid="192" entryx="32348" entryy="32213" entryz="7" rent="14725" townid="2" size="257" />
 	<house name="The City Wall 5a" houseid="194" entryx="32416" entryy="32220" entryz="7" rent="585" townid="2" size="10" />
 	<house name="The City Wall 5c" houseid="195" entryx="32416" entryy="32223" entryz="7" rent="585" townid="2" size="10" />
 	<house name="The City Wall 5e" houseid="196" entryx="32416" entryy="32226" entryz="7" rent="585" townid="2" size="10" />

@@ -22,7 +22,6 @@ addTravelKeyword('venore', 180, Position(32954, 32022, 6))
 addTravelKeyword('port hope', 50, Position(32527, 32784, 6))
 addTravelKeyword('liberty bay', 140, Position(32285, 32892, 6))
 addTravelKeyword('ankrahmun', 150, Position(33092, 32883, 6))
-addTravelKeyword('yalahar', 210, Position(32816, 31272, 6), function(player) return player:getStorageValue(Storage.SearoutesAroundYalahar.Darashia) ~= 1 and player:getStorageValue(Storage.SearoutesAroundYalahar.TownsCounter) < 5 end)
 addTravelKeyword('edron', 160, Position(33175, 31764, 6))
 
 
@@ -30,9 +29,9 @@ addTravelKeyword('edron', 160, Position(33175, 31764, 6))
 --keywordHandler:addKeyword({'kick'}, StdModule.kick, {npcHandler = npcHandler, destination = {Position(33288, 32474, 6), Position(33291, 32474, 6), Position(33293, 32471, 6)}})
 
 -- Basic
-keywordHandler:addKeyword({'sail'}, StdModule.say, {npcHandler = npcHandler, text = "Where do you want to go - {Venore}, {Port Hope}, {Liberty Bay}, {Ankrahmun} or {Yalahar}?"})
+keywordHandler:addKeyword({'sail'}, StdModule.say, {npcHandler = npcHandler, text = "Where do you want to go - {Venore}, {Port Hope}, {Liberty Bay} or {Ankrahmun}?"})
 keywordHandler:addKeyword({'job'}, StdModule.say, {npcHandler = npcHandler, text = 'I am the captain of this ship.'})
-keywordHandler:addKeyword({'passage'}, StdModule.say, {npcHandler = npcHandler, text = "Where do you want to go - {Venore}, {Port Hope}, {Liberty Bay}, {Ankrahmun} or {Yalahar}?"})
+keywordHandler:addKeyword({'passage'}, StdModule.say, {npcHandler = npcHandler, text = "Where do you want to go - {Venore}, {Port Hope}, {Liberty Bay} and {Ankrahmun}?"})
 keywordHandler:addKeyword({'darashia'}, StdModule.say, {npcHandler = npcHandler, text = "That's where we are."})
 keywordHandler:addKeyword({'name'}, StdModule.say, {npcHandler = npcHandler, text = 'It\'s Petros.'})
 

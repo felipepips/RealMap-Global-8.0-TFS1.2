@@ -4945,6 +4945,9 @@
 	<spawn centerx="33287" centery="31956" centerz="6" radius="2">
 		<npc name="Pemaret" x="-1" y="-1" z="6" spawntime="60" />
 	</spawn>
+	<spawn centerx="32189" centery="31957" centerz="6" radius="1">
+		<npc name="Captain Jack" x="0" y="0" z="6" spawntime="60" />
+	</spawn>
 	<spawn centerx="32561" centery="31959" centerz="6" radius="1">
 		<monster name="spider" x="1" y="-1" z="6" spawntime="60" />
 	</spawn>
@@ -23488,7 +23491,7 @@
 		<monster name="dwarf" x="-1" y="1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32550" centery="31988" centerz="8" radius="1">
-		<monster name="dwarf" x="-1" y="-1" z="8" spawntime="60" />
+		<monster name="dwarf" x="-1" y="0" z="8" spawntime="60" />
 		<monster name="dwarf" x="1" y="1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32523" centery="31990" centerz="8" radius="1">
@@ -30835,7 +30838,9 @@
 		<monster name="troll" x="-1" y="0" z="9" spawntime="60" />
 		<monster name="troll" x="2" y="2" z="9" spawntime="60" />
 	</spawn>
-	<spawn centerx="32605" centery="31754" centerz="9" radius="1" />
+	<spawn centerx="32605" centery="31754" centerz="9" radius="1">
+		<monster name="Goblin Leader" x="-1" y="-1" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="33116" centery="31754" centerz="9" radius="2">
 		<monster name="troll" x="-2" y="-1" z="9" spawntime="60" />
 		<monster name="troll" x="1" y="1" z="9" spawntime="60" />
@@ -31357,6 +31362,8 @@
 		<monster name="dwarf" x="2" y="2" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32546" centery="31884" centerz="9" radius="1">
+		<monster name="dwarf" x="-1" y="-1" z="9" spawntime="60" />
+		<monster name="dwarf" x="1" y="-1" z="9" spawntime="60" />
 		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32495" centery="31886" centerz="9" radius="3">
@@ -31391,6 +31398,7 @@
 	</spawn>
 	<spawn centerx="32520" centery="31890" centerz="9" radius="2">
 		<monster name="dwarf" x="-1" y="-1" z="9" spawntime="60" />
+		<monster name="dwarf" x="-1" y="1" z="9" spawntime="60" />
 		<monster name="dwarf" x="1" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33132" centery="31890" centerz="9" radius="3">
@@ -31676,6 +31684,11 @@
 	<spawn centerx="32532" centery="31924" centerz="9" radius="1">
 		<monster name="rotworm" x="1" y="1" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32550" centery="31924" centerz="9" radius="1">
+		<monster name="dwarf" x="-1" y="-1" z="9" spawntime="60" />
+		<monster name="dwarf" x="-1" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="33250" centery="31924" centerz="9" radius="1">
 		<monster name="rotworm" x="-1" y="0" z="9" spawntime="60" />
 		<monster name="rotworm" x="1" y="1" z="9" spawntime="60" />
@@ -31736,6 +31749,10 @@
 	<spawn centerx="33254" centery="31930" centerz="9" radius="1">
 		<monster name="rotworm" x="1" y="0" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32505" centery="31931" centerz="9" radius="1">
+		<monster name="dwarf" x="-1" y="-1" z="9" spawntime="60" />
+		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="32529" centery="31931" centerz="9" radius="1">
 		<monster name="rotworm" x="0" y="-1" z="9" spawntime="60" />
 	</spawn>
@@ -31787,6 +31804,8 @@
 		<monster name="minotaur" x="-1" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32535" centery="31944" centerz="9" radius="1">
+		<monster name="dwarf" x="-1" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="-1" y="1" z="9" spawntime="60" />
 		<monster name="rotworm" x="0" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32426" centery="31945" centerz="9" radius="1">
@@ -31810,6 +31829,18 @@
 	<spawn centerx="32510" centery="31948" centerz="9" radius="1">
 		<monster name="dwarf" x="-1" y="-1" z="9" spawntime="60" />
 		<monster name="dwarf" x="1" y="-1" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32525" centery="31949" centerz="9" radius="1">
+		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="1" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="-1" y="1" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32554" centery="31949" centerz="9" radius="1">
+		<monster name="dwarf" x="0" y="-1" z="9" spawntime="60" />
+		<monster name="rotworm" x="1" y="-1" z="9" spawntime="60" />
+		<monster name="dwarf" x="-1" y="0" z="9" spawntime="60" />
+		<monster name="rotworm" x="0" y="0" z="9" spawntime="60" />
+		<monster name="rotworm" x="0" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32380" centery="31950" centerz="9" radius="3">
 		<monster name="ghoul" x="-1" y="-2" z="9" spawntime="60" />
@@ -31838,6 +31869,15 @@
 		<monster name="dwarf" x="-1" y="-1" z="9" spawntime="60" />
 		<monster name="dwarf" x="1" y="1" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32547" centery="31952" centerz="9" radius="1">
+		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="1" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="0" y="1" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32484" centery="31953" centerz="9" radius="1">
+		<monster name="rotworm" x="0" y="0" z="9" spawntime="60" />
+		<monster name="rotworm" x="-1" y="1" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="32515" centery="31953" centerz="9" radius="1">
 		<monster name="dwarf" x="1" y="0" z="9" spawntime="60" />
 		<monster name="rotworm" x="0" y="1" z="9" spawntime="60" />
@@ -31854,6 +31894,11 @@
 	<spawn centerx="32456" centery="31956" centerz="9" radius="1">
 		<monster name="minotaur archer" x="0" y="-1" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32542" centery="31957" centerz="9" radius="1">
+		<monster name="rotworm" x="-1" y="-1" z="9" spawntime="60" />
+		<monster name="rotworm" x="0" y="-1" z="9" spawntime="60" />
+		<monster name="rotworm" x="0" y="0" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="32713" centery="31957" centerz="9" radius="2">
 		<monster name="snake" x="2" y="-1" z="9" spawntime="60" />
 		<monster name="snake" x="0" y="1" z="9" spawntime="60" />
@@ -31869,11 +31914,27 @@
 	<spawn centerx="32405" centery="31959" centerz="9" radius="2">
 		<monster name="skeleton" x="1" y="0" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32535" centery="31960" centerz="9" radius="1">
+		<monster name="rotworm" x="0" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="1" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="0" y="1" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="32380" centery="31961" centerz="9" radius="2">
 		<monster name="skeleton" x="0" y="-1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32374" centery="31963" centerz="9" radius="2">
 		<monster name="skeleton" x="0" y="1" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32473" centery="31964" centerz="9" radius="1">
+		<monster name="rotworm" x="0" y="0" z="9" spawntime="60" />
+		<monster name="rotworm" x="1" y="1" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32486" centery="31964" centerz="9" radius="1">
+		<monster name="rotworm" x="0" y="0" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32529" centery="31965" centerz="9" radius="1">
+		<monster name="dwarf" x="0" y="-1" z="9" spawntime="60" />
+		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32366" centery="31967" centerz="9" radius="3">
 		<monster name="poison spider" x="3" y="-1" z="9" spawntime="60" />
@@ -31883,6 +31944,14 @@
 	<spawn centerx="32715" centery="31967" centerz="9" radius="2">
 		<monster name="snake" x="2" y="-1" z="9" spawntime="60" />
 		<monster name="snake" x="1" y="1" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32519" centery="31968" centerz="9" radius="1">
+		<monster name="dwarf" x="-1" y="-1" z="9" spawntime="60" />
+		<monster name="rotworm" x="1" y="-1" z="9" spawntime="60" />
+		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
+		<monster name="rotworm" x="-1" y="1" z="9" spawntime="60" />
+		<monster name="rotworm" x="0" y="1" z="9" spawntime="60" />
+		<monster name="dwarf" x="1" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32437" centery="31969" centerz="9" radius="2">
 		<monster name="minotaur" x="0" y="-1" z="9" spawntime="60" />
@@ -31907,8 +31976,17 @@
 	<spawn centerx="32447" centery="31972" centerz="9" radius="1">
 		<monster name="minotaur" x="0" y="1" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32490" centery="31972" centerz="9" radius="1">
+		<monster name="dwarf" x="-1" y="-1" z="9" spawntime="60" />
+		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="32432" centery="31973" centerz="9" radius="1">
 		<monster name="minotaur" x="1" y="0" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32509" centery="31973" centerz="9" radius="1">
+		<monster name="dwarf" x="-1" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="0" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32646" centery="31973" centerz="9" radius="4">
 		<monster name="troll" x="-2" y="-2" z="9" spawntime="60" />
@@ -31924,11 +32002,19 @@
 	<spawn centerx="32459" centery="31974" centerz="9" radius="1">
 		<monster name="minotaur archer" x="0" y="-1" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32501" centery="31974" centerz="9" radius="1">
+		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="1" y="0" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="32366" centery="31975" centerz="9" radius="2">
 		<monster name="skeleton" x="1" y="-1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32452" centery="31975" centerz="9" radius="1">
 		<monster name="minotaur" x="-1" y="-1" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32494" centery="31975" centerz="9" radius="1">
+		<monster name="dwarf" x="-1" y="-1" z="9" spawntime="60" />
+		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32528" centery="31976" centerz="9" radius="1">
 		<monster name="rotworm" x="1" y="1" z="9" spawntime="60" />
@@ -31938,6 +32024,10 @@
 	</spawn>
 	<spawn centerx="32556" centery="31977" centerz="9" radius="1">
 		<monster name="rotworm" x="1" y="0" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32498" centery="31978" centerz="9" radius="1">
+		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="-1" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32532" centery="31978" centerz="9" radius="1">
 		<monster name="rotworm" x="0" y="1" z="9" spawntime="60" />
@@ -31954,6 +32044,10 @@
 	</spawn>
 	<spawn centerx="32369" centery="31981" centerz="9" radius="2">
 		<monster name="skeleton" x="0" y="-1" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32496" centery="31981" centerz="9" radius="1">
+		<monster name="dwarf" x="0" y="0" z="9" spawntime="60" />
+		<monster name="dwarf" x="-1" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32390" centery="31982" centerz="9" radius="5">
 		<monster name="skeleton" x="-1" y="-4" z="9" spawntime="60" />
@@ -31980,6 +32074,7 @@
 	</spawn>
 	<spawn centerx="32489" centery="31986" centerz="9" radius="2">
 		<monster name="rotworm" x="0" y="1" z="9" spawntime="60" />
+		<monster name="dwarf" x="2" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32660" centery="31987" centerz="9" radius="4">
 		<monster name="troll" x="0" y="-4" z="9" spawntime="60" />
@@ -32034,6 +32129,10 @@
 	<spawn centerx="32408" centery="31995" centerz="9" radius="2">
 		<monster name="skeleton" x="-2" y="-2" z="9" spawntime="60" />
 		<monster name="skeleton" x="1" y="1" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32473" centery="31995" centerz="9" radius="1">
+		<monster name="rotworm" x="1" y="-1" z="9" spawntime="60" />
+		<monster name="rotworm" x="-1" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32566" centery="31995" centerz="9" radius="1">
 		<monster name="rotworm" x="-1" y="0" z="9" spawntime="60" />
@@ -40500,6 +40599,10 @@
 		<monster name="poison spider" x="2" y="-2" z="10" spawntime="60" />
 		<monster name="poison spider" x="-1" y="0" z="10" spawntime="60" />
 	</spawn>
+	<spawn centerx="32526" centery="31910" centerz="10" radius="1">
+		<monster name="dwarf soldier" x="0" y="0" z="10" spawntime="60" />
+		<monster name="dwarf soldier" x="-1" y="1" z="10" spawntime="60" />
+	</spawn>
 	<spawn centerx="32565" centery="31911" centerz="10" radius="1">
 		<monster name="bat" x="1" y="0" z="10" spawntime="60" />
 	</spawn>
@@ -40574,6 +40677,10 @@
 		<monster name="dwarf" x="0" y="1" z="10" spawntime="60" />
 		<monster name="rotworm" x="2" y="1" z="10" spawntime="60" />
 	</spawn>
+	<spawn centerx="32515" centery="31920" centerz="10" radius="1">
+		<monster name="dwarf soldier" x="-1" y="0" z="10" spawntime="60" />
+		<monster name="dwarf soldier" x="0" y="0" z="10" spawntime="60" />
+	</spawn>
 	<spawn centerx="32663" centery="31921" centerz="10" radius="1">
 		<monster name="spider" x="0" y="-1" z="10" spawntime="60" />
 		<monster name="poison spider" x="-1" y="0" z="10" spawntime="60" />
@@ -40618,6 +40725,10 @@
 	</spawn>
 	<spawn centerx="33190" centery="31927" centerz="10" radius="2">
 		<monster name="orc spearman" x="1" y="-1" z="10" spawntime="60" />
+	</spawn>
+	<spawn centerx="32506" centery="31929" centerz="10" radius="1">
+		<monster name="dwarf soldier" x="1" y="-1" z="10" spawntime="60" />
+		<monster name="dwarf soldier" x="0" y="0" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33155" centery="31929" centerz="10" radius="4">
 		<monster name="poison spider" x="1" y="-3" z="10" spawntime="60" />
@@ -46872,6 +46983,9 @@
 		<monster name="dwarf soldier" x="0" y="-3" z="11" spawntime="60" />
 		<monster name="dwarf soldier" x="-2" y="2" z="11" spawntime="60" />
 	</spawn>
+	<spawn centerx="32540" centery="31885" centerz="11" radius="1">
+		<monster name="dwarf soldier" x="0" y="0" z="11" spawntime="60" />
+	</spawn>
 	<spawn centerx="32451" centery="31888" centerz="11" radius="2">
 		<monster name="dwarf soldier" x="-2" y="-2" z="11" spawntime="60" />
 		<monster name="dwarf soldier" x="1" y="1" z="11" spawntime="60" />
@@ -46882,6 +46996,10 @@
 	</spawn>
 	<spawn centerx="33158" centery="31888" centerz="11" radius="2">
 		<monster name="poison spider" x="1" y="0" z="11" spawntime="60" />
+	</spawn>
+	<spawn centerx="32516" centery="31891" centerz="11" radius="1">
+		<monster name="dwarf soldier" x="1" y="-1" z="11" spawntime="60" />
+		<monster name="dwarf soldier" x="0" y="0" z="11" spawntime="60" />
 	</spawn>
 	<spawn centerx="32210" centery="31892" centerz="11" radius="5">
 		<monster name="demon skeleton" x="-1" y="-4" z="11" spawntime="60" />
@@ -47027,6 +47145,10 @@
 		<monster name="dwarf soldier" x="0" y="2" z="11" spawntime="60" />
 		<monster name="dwarf soldier" x="-3" y="3" z="11" spawntime="60" />
 	</spawn>
+	<spawn centerx="32522" centery="31924" centerz="11" radius="1">
+		<monster name="dwarf guard" x="-1" y="-1" z="11" spawntime="60" />
+		<monster name="dwarf soldier" x="0" y="0" z="11" spawntime="60" />
+	</spawn>
 	<spawn centerx="33163" centery="31924" centerz="11" radius="2">
 		<monster name="orc berserker" x="1" y="0" z="11" spawntime="60" />
 	</spawn>
@@ -47087,6 +47209,9 @@
 	</spawn>
 	<spawn centerx="32422" centery="31938" centerz="11" radius="2">
 		<monster name="dwarf soldier" x="1" y="1" z="11" spawntime="60" />
+	</spawn>
+	<spawn centerx="32518" centery="31939" centerz="11" radius="1">
+		<monster name="dwarf soldier" x="0" y="0" z="11" spawntime="60" />
 	</spawn>
 	<spawn centerx="32667" centery="31939" centerz="11" radius="3">
 		<monster name="dwarf" x="-1" y="-2" z="11" spawntime="60" />
@@ -50929,6 +51054,9 @@
 		<monster name="cave rat" x="0" y="-1" z="12" spawntime="60" />
 		<monster name="cave rat" x="0" y="1" z="12" spawntime="60" />
 	</spawn>
+	<spawn centerx="32495" centery="31879" centerz="12" radius="1">
+		<monster name="dwarf guard" x="0" y="0" z="12" spawntime="60" />
+	</spawn>
 	<spawn centerx="32453" centery="31880" centerz="12" radius="3">
 		<monster name="dwarf guard" x="-2" y="0" z="12" spawntime="60" />
 		<monster name="dwarf guard" x="2" y="0" z="12" spawntime="60" />
@@ -50948,6 +51076,7 @@
 		<monster name="dwarf guard" x="6" y="0" z="12" spawntime="60" />
 		<monster name="dwarf guard" x="-3" y="1" z="12" spawntime="60" />
 		<monster name="dwarf guard" x="3" y="1" z="12" spawntime="60" />
+		<monster name="dwarf guard" x="-4" y="6" z="12" spawntime="60" />
 		<monster name="dwarf guard" x="3" y="7" z="12" spawntime="60" />
 	</spawn>
 	<spawn centerx="32507" centery="31886" centerz="12" radius="2">
@@ -50971,6 +51100,9 @@
 	</spawn>
 	<spawn centerx="32506" centery="31891" centerz="12" radius="1">
 		<monster name="dwarf guard" x="1" y="0" z="12" spawntime="60" />
+	</spawn>
+	<spawn centerx="32494" centery="31893" centerz="12" radius="1">
+		<monster name="dwarf guard" x="0" y="0" z="12" spawntime="60" />
 	</spawn>
 	<spawn centerx="32483" centery="31894" centerz="12" radius="4">
 		<monster name="dwarf guard" x="-4" y="-3" z="12" spawntime="60" />
@@ -51015,6 +51147,12 @@
 	</spawn>
 	<spawn centerx="32523" centery="31903" centerz="12" radius="1">
 		<monster name="dwarf guard" x="1" y="1" z="12" spawntime="60" />
+	</spawn>
+	<spawn centerx="32483" centery="31904" centerz="12" radius="1">
+		<monster name="dwarf guard" x="0" y="0" z="12" spawntime="60" />
+	</spawn>
+	<spawn centerx="32478" centery="31905" centerz="12" radius="1">
+		<monster name="dwarf guard" x="0" y="0" z="12" spawntime="60" />
 	</spawn>
 	<spawn centerx="32513" centery="31905" centerz="12" radius="1">
 		<monster name="dwarf guard" x="1" y="0" z="12" spawntime="60" />
@@ -53560,6 +53698,9 @@
 		<monster name="dwarf guard" x="-3" y="0" z="13" spawntime="60" />
 		<monster name="dwarf guard" x="1" y="3" z="13" spawntime="60" />
 	</spawn>
+	<spawn centerx="32493" centery="31891" centerz="13" radius="1">
+		<monster name="dwarf guard" x="0" y="0" z="13" spawntime="60" />
+	</spawn>
 	<spawn centerx="32570" centery="31891" centerz="13" radius="1">
 		<monster name="dwarf soldier" x="1" y="-1" z="13" spawntime="60" />
 		<monster name="dwarf" x="-1" y="0" z="13" spawntime="60" />
@@ -53666,6 +53807,9 @@
 	</spawn>
 	<spawn centerx="32483" centery="31916" centerz="13" radius="1">
 		<monster name="dwarf guard" x="-1" y="1" z="13" spawntime="60" />
+	</spawn>
+	<spawn centerx="32541" centery="31916" centerz="13" radius="1">
+		<monster name="dwarf soldier" x="0" y="0" z="13" spawntime="60" />
 	</spawn>
 	<spawn centerx="32558" centery="31916" centerz="13" radius="1">
 		<monster name="rotworm" x="-1" y="1" z="13" spawntime="60" />
@@ -57106,6 +57250,7 @@
 	</spawn>
 	<spawn centerx="32552" centery="31927" centerz="14" radius="1">
 		<monster name="dwarf guard" x="1" y="-1" z="14" spawntime="60" />
+		<monster name="dwarf guard" x="-1" y="1" z="14" spawntime="60" />
 	</spawn>
 	<spawn centerx="32136" centery="31928" centerz="14" radius="3">
 		<monster name="ghoul" x="2" y="0" z="14" spawntime="60" />
@@ -60040,6 +60185,13 @@
 		<monster name="mummy" x="0" y="2" z="15" spawntime="60" />
 		<monster name="banshee" x="4" y="2" z="15" spawntime="60" />
 		<monster name="ghost" x="-3" y="4" z="15" spawntime="60" />
+	</spawn>
+	<spawn centerx="32642" centery="31942" centerz="15" radius="2">
+		<npc name="Basilisk" x="-2" y="1" z="15" spawntime="60" />
+	</spawn>
+	<spawn centerx="32557" centery="31943" centerz="15" radius="1">
+		<monster name="dwarf guard" x="0" y="0" z="15" spawntime="60" />
+		<monster name="dwarf soldier" x="-1" y="1" z="15" spawntime="60" />
 	</spawn>
 	<spawn centerx="32618" centery="31943" centerz="15" radius="4">
 		<monster name="minotaur guard" x="1" y="-3" z="15" spawntime="60" />

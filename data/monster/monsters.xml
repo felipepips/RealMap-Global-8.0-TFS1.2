@@ -217,6 +217,7 @@
 
 	<!-- Goblins -->
 	<monster name="Goblin" file="goblins/goblin.xml"/>
+	<monster name="goblin leader" file="goblins/goblin leader.xml"/>
 	<monster name="Demon (Goblin)" file="goblins/demon (goblin).xml"/>
 
 	<!-- Hydro-Elementals -->

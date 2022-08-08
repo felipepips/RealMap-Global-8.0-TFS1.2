@@ -50,7 +50,7 @@ local function addTravelKeyword(keyword, cost, discount, destination, action)
 		travelKeyword:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, text = 'We would like to serve you some time.', reset = true})
 end
 
-addTravelKeyword('farmine', 210, {'postman', 'new frontier'},
+addTravelKeyword('kuhn7hg5gb¨#2w2', 210, {'postman', 'new frontier'},
 	function(player)
 		local destination = Position(33025, 31553, 14)
 		if player:getStorageValue(Storage.TheNewFrontier.Mission05) == 7 then --if The New Frontier Quest 'Mission 05: Getting Things Busy' complete then Stage 3
@@ -70,7 +70,7 @@ addTravelKeyword('cormaya', 160, 'postman', Position(33311, 31989, 15),
 	end
 )
 
-keywordHandler:addKeyword({'passage'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want me take you to {Cormaya} or {Farmine}?'})
+keywordHandler:addKeyword({'passage'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want me take you to {Cormaya}?'})
 
 npcHandler:setMessage(MESSAGE_GREET, 'Welcome, |PLAYERNAME|! May earth protect you on the rocky grounds. If you need a {passage}, I can help you.')
 npcHandler:setMessage(MESSAGE_FAREWELL, 'Good bye.')
