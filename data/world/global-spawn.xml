@@ -378,7 +378,7 @@
 		<monster name="mammoth" x="2" y="1" z="2" spawntime="240" />
 	</spawn>
 	<spawn centerx="32184" centery="31112" centerz="2" radius="3">
-		<monster name="winter wolf" x="-2" y="2" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="2" z="2" spawntime="240" />
 		<monster name="mammoth" x="2" y="2" z="2" spawntime="240" />
 	</spawn>
 	<spawn centerx="32075" centery="31114" centerz="2" radius="4">
@@ -397,11 +397,11 @@
 	<spawn centerx="32119" centery="31118" centerz="2" radius="3" />
 	<spawn centerx="32144" centery="31119" centerz="2" radius="3">
 		<monster name="polar bear" x="1" y="-2" z="2" spawntime="240" />
-		<monster name="winter wolf" x="-3" y="-1" z="2" spawntime="240" />
-		<monster name="winter wolf" x="1" y="2" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="-3" y="-1" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="2" z="2" spawntime="240" />
 	</spawn>
 	<spawn centerx="32167" centery="31125" centerz="2" radius="3">
-		<monster name="winter wolf" x="2" y="-2" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-2" z="2" spawntime="240" />
 		<monster name="Penguin" x="0" y="-1" z="2" spawntime="240" />
 		<monster name="mammoth" x="2" y="2" z="2" spawntime="240" />
 	</spawn>
@@ -411,7 +411,7 @@
 	</spawn>
 	<spawn centerx="32174" centery="31133" centerz="2" radius="3">
 		<monster name="Penguin" x="2" y="-1" z="2" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="0" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="0" z="2" spawntime="240" />
 	</spawn>
 	<spawn centerx="32061" centery="31134" centerz="2" radius="2">
 		<monster name="mammoth" x="1" y="0" z="2" spawntime="240" />
@@ -446,7 +446,7 @@
 	</spawn>
 	<spawn centerx="32157" centery="31151" centerz="2" radius="3">
 		<monster name="mammoth" x="-1" y="-1" z="2" spawntime="240" />
-		<monster name="winter wolf" x="1" y="1" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="2" spawntime="240" />
 	</spawn>
 	<spawn centerx="32051" centery="31154" centerz="2" radius="2">
 		<monster name="Penguin" x="-2" y="-1" z="2" spawntime="240" />
@@ -465,7 +465,7 @@
 	</spawn>
 	<spawn centerx="32157" centery="31163" centerz="2" radius="3">
 		<monster name="mammoth" x="1" y="0" z="2" spawntime="240" />
-		<monster name="winter wolf" x="0" y="2" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="2" z="2" spawntime="240" />
 	</spawn>
 	<spawn centerx="32055" centery="31165" centerz="2" radius="2">
 		<monster name="polar bear" x="1" y="0" z="2" spawntime="240" />
@@ -474,7 +474,7 @@
 		<monster name="polar bear" x="1" y="0" z="2" spawntime="240" />
 	</spawn>
 	<spawn centerx="32137" centery="31170" centerz="2" radius="3">
-		<monster name="winter wolf" x="2" y="-2" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-2" z="2" spawntime="240" />
 		<monster name="mammoth" x="-2" y="0" z="2" spawntime="240" />
 	</spawn>
 	<spawn centerx="32148" centery="31172" centerz="2" radius="3">
@@ -485,7 +485,7 @@
 		<monster name="polar bear" x="0" y="2" z="2" spawntime="240" />
 	</spawn>
 	<spawn centerx="32142" centery="31179" centerz="2" radius="3">
-		<monster name="winter wolf" x="-2" y="-3" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-3" z="2" spawntime="240" />
 		<monster name="Penguin" x="-1" y="0" z="2" spawntime="240" />
 		<monster name="Penguin" x="2" y="0" z="2" spawntime="240" />
 		<monster name="wyvern" x="-2" y="3" z="2" spawntime="240" />
@@ -517,13 +517,13 @@
 	</spawn>
 	<spawn centerx="32135" centery="31195" centerz="2" radius="3">
 		<monster name="Penguin" x="1" y="0" z="2" spawntime="240" />
-		<monster name="winter wolf" x="1" y="2" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="2" z="2" spawntime="240" />
 		<monster name="mammoth" x="-3" y="3" z="2" spawntime="240" />
 	</spawn>
 	<spawn centerx="32096" centery="31197" centerz="2" radius="3">
-		<monster name="winter wolf" x="3" y="-2" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="3" y="-2" z="2" spawntime="240" />
 		<monster name="mammoth" x="-2" y="-1" z="2" spawntime="240" />
-		<monster name="winter wolf" x="3" y="3" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="3" y="3" z="2" spawntime="240" />
 	</spawn>
 	<spawn centerx="32056" centery="31198" centerz="2" radius="2">
 		<monster name="polar bear" x="0" y="1" z="2" spawntime="240" />
@@ -541,7 +541,7 @@
 		<monster name="Silver Rabbit" x="1" y="-2" z="2" spawntime="240" />
 	</spawn>
 	<spawn centerx="32121" centery="31204" centerz="2" radius="3">
-		<monster name="winter wolf" x="-1" y="-2" z="2" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-2" z="2" spawntime="240" />
 		<monster name="Penguin" x="-1" y="1" z="2" spawntime="240" />
 		<monster name="Penguin" x="0" y="2" z="2" spawntime="240" />
 	</spawn>
@@ -889,9 +889,9 @@
 	<spawn centerx="32971" centery="31724" centerz="3" radius="9">
 		<monster name="orc warlord" x="2" y="-2" z="3" spawntime="60" />
 		<monster name="orc leader" x="1" y="-1" z="3" spawntime="60" />
-		<monster name="war wolf" x="-3" y="0" z="3" spawntime="60" />
+		<monster name="War Wolf" x="-3" y="0" z="3" spawntime="60" />
 		<monster name="orc leader" x="-1" y="0" z="3" spawntime="60" />
-		<monster name="war wolf" x="-7" y="3" z="3" spawntime="60" />
+		<monster name="War Wolf" x="-7" y="3" z="3" spawntime="60" />
 		<monster name="orc rider" x="1" y="3" z="3" spawntime="60" />
 		<monster name="orc rider" x="-4" y="4" z="3" spawntime="60" />
 	</spawn>
@@ -1234,29 +1234,29 @@
 		<monster name="hellfire fighter" x="0" y="0" z="4" spawntime="60" />
 	</spawn>
 	<spawn centerx="32146" centery="31094" centerz="4" radius="2">
-		<monster name="winter wolf" x="1" y="1" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32252" centery="31097" centerz="4" radius="1">
 		<npc name="Iyad" x="-1" y="0" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32145" centery="31101" centerz="4" radius="2">
 		<monster name="frost troll" x="-1" y="-2" z="4" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="1" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="1" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32139" centery="31106" centerz="4" radius="2">
 		<monster name="frost troll" x="1" y="0" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32133" centery="31109" centerz="4" radius="2">
-		<monster name="winter wolf" x="-1" y="0" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="0" z="4" spawntime="240" />
 		<monster name="frost troll" x="2" y="1" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32151" centery="31112" centerz="4" radius="2">
 		<monster name="frost troll" x="1" y="0" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32122" centery="31114" centerz="4" radius="2">
-		<monster name="winter wolf" x="2" y="-1" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-1" z="4" spawntime="240" />
 		<monster name="polar bear" x="0" y="0" z="4" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="2" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="2" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32094" centery="31117" centerz="4" radius="3">
 		<monster name="frost troll" x="-2" y="-1" z="4" spawntime="240" />
@@ -1291,8 +1291,8 @@
 		<monster name="frost troll" x="0" y="1" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32172" centery="31137" centerz="4" radius="2">
-		<monster name="winter wolf" x="-1" y="0" z="4" spawntime="240" />
-		<monster name="winter wolf" x="2" y="0" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="0" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="0" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32139" centery="31138" centerz="4" radius="2">
 		<monster name="frost troll" x="1" y="0" z="4" spawntime="240" />
@@ -1351,11 +1351,11 @@
 	<spawn centerx="32059" centery="31180" centerz="4" radius="3">
 		<monster name="frost troll" x="1" y="-2" z="4" spawntime="240" />
 		<monster name="frost troll" x="-2" y="0" z="4" spawntime="240" />
-		<monster name="winter wolf" x="1" y="1" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="4" spawntime="240" />
 		<monster name="frost troll" x="2" y="3" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32073" centery="31189" centerz="4" radius="2">
-		<monster name="winter wolf" x="-1" y="-1" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-1" z="4" spawntime="240" />
 		<monster name="polar bear" x="1" y="1" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32093" centery="31190" centerz="4" radius="4">
@@ -1370,30 +1370,30 @@
 		<monster name="polar bear" x="-2" y="3" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32148" centery="31195" centerz="4" radius="3">
-		<monster name="winter wolf" x="-3" y="-3" z="4" spawntime="240" />
-		<monster name="winter wolf" x="0" y="-2" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="-3" y="-3" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="-2" z="4" spawntime="240" />
 		<monster name="frost troll" x="3" y="-2" z="4" spawntime="240" />
-		<monster name="winter wolf" x="1" y="0" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="0" z="4" spawntime="240" />
 		<monster name="frost troll" x="0" y="3" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32075" centery="31197" centerz="4" radius="3">
 		<monster name="mammoth" x="-1" y="-1" z="4" spawntime="240" />
-		<monster name="winter wolf" x="2" y="1" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="1" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32040" centery="31198" centerz="4" radius="3">
-		<monster name="winter wolf" x="2" y="-1" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-1" z="4" spawntime="240" />
 		<monster name="polar bear" x="3" y="-1" z="4" spawntime="240" />
-		<monster name="winter wolf" x="-3" y="1" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="-3" y="1" z="4" spawntime="240" />
 		<monster name="polar bear" x="-2" y="2" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32073" centery="31205" centerz="4" radius="3">
 		<monster name="frost troll" x="0" y="-3" z="4" spawntime="240" />
-		<monster name="winter wolf" x="2" y="-3" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-3" z="4" spawntime="240" />
 		<monster name="frost troll" x="3" y="-3" z="4" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="0" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="0" z="4" spawntime="240" />
 		<monster name="mammoth" x="2" y="0" z="4" spawntime="240" />
-		<monster name="winter wolf" x="3" y="0" z="4" spawntime="240" />
-		<monster name="winter wolf" x="-3" y="1" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="3" y="0" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="-3" y="1" z="4" spawntime="240" />
 		<monster name="frost troll" x="-2" y="2" z="4" spawntime="240" />
 		<monster name="frost troll" x="0" y="3" z="4" spawntime="240" />
 	</spawn>
@@ -1410,7 +1410,7 @@
 		<monster name="mammoth" x="0" y="1" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32008" centery="31224" centerz="4" radius="2">
-		<monster name="winter wolf" x="0" y="-1" z="4" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="-1" z="4" spawntime="240" />
 	</spawn>
 	<spawn centerx="32410" centery="31234" centerz="4" radius="5">
 		<monster name="Frost Giantess" x="-2" y="-3" z="4" spawntime="240" />
@@ -2350,21 +2350,21 @@
 	</spawn>
 	<spawn centerx="32180" centery="31048" centerz="5" radius="3">
 		<monster name="mammoth" x="0" y="0" z="5" spawntime="240" />
-		<monster name="winter wolf" x="2" y="2" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="2" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32141" centery="31049" centerz="5" radius="4">
-		<monster name="winter wolf" x="-2" y="-4" z="5" spawntime="240" />
-		<monster name="winter wolf" x="3" y="-1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-4" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="3" y="-1" z="5" spawntime="240" />
 		<monster name="mammoth" x="-3" y="0" z="5" spawntime="240" />
-		<monster name="winter wolf" x="0" y="3" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="3" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32214" centery="31049" centerz="5" radius="2" />
 	<spawn centerx="32158" centery="31050" centerz="5" radius="2">
-		<monster name="winter wolf" x="0" y="1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="1" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32236" centery="31054" centerz="5" radius="2">
 		<monster name="deer" x="2" y="0" z="5" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="1" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32265" centery="31054" centerz="5" radius="2">
 		<monster name="polar bear" x="-1" y="1" z="5" spawntime="240" />
@@ -2373,11 +2373,11 @@
 		<monster name="deer" x="1" y="0" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32193" centery="31056" centerz="5" radius="2">
-		<monster name="winter wolf" x="-1" y="1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="1" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32242" centery="31056" centerz="5" radius="2">
-		<monster name="winter wolf" x="-1" y="-1" z="5" spawntime="240" />
-		<monster name="winter wolf" x="1" y="2" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="2" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32212" centery="31057" centerz="5" radius="2">
 		<npc name="Romir" x="-1" y="1" z="5" spawntime="240" />
@@ -2386,10 +2386,10 @@
 		<monster name="mammoth" x="2" y="0" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32252" centery="31058" centerz="5" radius="3">
-		<monster name="winter wolf" x="-2" y="-2" z="5" spawntime="240" />
-		<monster name="winter wolf" x="3" y="-2" z="5" spawntime="240" />
-		<monster name="winter wolf" x="-3" y="1" z="5" spawntime="240" />
-		<monster name="winter wolf" x="1" y="3" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-2" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="3" y="-2" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="-3" y="1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="3" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32123" centery="31059" centerz="5" radius="3">
 		<monster name="mammoth" x="-1" y="0" z="5" spawntime="240" />
@@ -2408,21 +2408,21 @@
 		<monster name="mammoth" x="0" y="0" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32182" centery="31066" centerz="5" radius="2">
-		<monster name="winter wolf" x="1" y="1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32208" centery="31066" centerz="5" radius="2">
 		<monster name="deer" x="-2" y="0" z="5" spawntime="240" />
 		<monster name="Silver Rabbit" x="1" y="0" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32169" centery="31067" centerz="5" radius="2">
-		<monster name="winter wolf" x="-1" y="-1" z="5" spawntime="240" />
-		<monster name="winter wolf" x="2" y="2" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="2" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32248" centery="31067" centerz="5" radius="3">
 		<monster name="polar bear" x="-1" y="2" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32132" centery="31068" centerz="5" radius="2">
-		<monster name="winter wolf" x="2" y="-1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-1" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32221" centery="31070" centerz="5" radius="2">
 		<monster name="Silver Rabbit" x="-2" y="-1" z="5" spawntime="240" />
@@ -2436,15 +2436,15 @@
 		<monster name="polar bear" x="0" y="0" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32201" centery="31073" centerz="5" radius="3">
-		<monster name="winter wolf" x="0" y="-3" z="5" spawntime="240" />
-		<monster name="winter wolf" x="1" y="2" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="-3" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="2" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32129" centery="31074" centerz="5" radius="2">
-		<monster name="winter wolf" x="0" y="-1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="-1" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32136" centery="31074" centerz="5" radius="2">
-		<monster name="winter wolf" x="2" y="1" z="5" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="2" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="2" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32211" centery="31075" centerz="5" radius="2">
 		<monster name="Silver Rabbit" x="-1" y="0" z="5" spawntime="240" />
@@ -2457,14 +2457,14 @@
 		<monster name="mammoth" x="1" y="2" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32229" centery="31080" centerz="5" radius="2">
-		<monster name="winter wolf" x="-2" y="-2" z="5" spawntime="240" />
-		<monster name="winter wolf" x="1" y="2" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-2" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="2" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32162" centery="31082" centerz="5" radius="2">
-		<monster name="winter wolf" x="1" y="0" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="0" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32168" centery="31086" centerz="5" radius="2">
-		<monster name="winter wolf" x="1" y="1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32190" centery="31091" centerz="5" radius="2">
 		<monster name="Silver Rabbit" x="1" y="0" z="5" spawntime="240" />
@@ -2474,7 +2474,7 @@
 		<monster name="frost troll" x="-1" y="0" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32162" centery="31092" centerz="5" radius="2">
-		<monster name="winter wolf" x="1" y="1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32120" centery="31093" centerz="5" radius="2">
 		<npc name="A Starving Dog" x="2" y="-2" z="5" spawntime="240" />
@@ -2484,8 +2484,8 @@
 		<monster name="Silver Rabbit" x="0" y="2" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32182" centery="31102" centerz="5" radius="2">
-		<monster name="winter wolf" x="-2" y="-2" z="5" spawntime="240" />
-		<monster name="winter wolf" x="2" y="2" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-2" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="2" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32194" centery="31102" centerz="5" radius="2">
 		<monster name="deer" x="-1" y="-1" z="5" spawntime="240" />
@@ -2514,7 +2514,7 @@
 		<monster name="mammoth" x="-2" y="0" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32167" centery="31126" centerz="5" radius="2">
-		<monster name="winter wolf" x="-1" y="-1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-1" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32105" centery="31129" centerz="5" radius="4">
 		<monster name="Frost Giant" x="-2" y="-3" z="5" spawntime="240" />
@@ -2586,8 +2586,8 @@
 		<monster name="frost troll" x="1" y="0" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32146" centery="31173" centerz="5" radius="2">
-		<monster name="winter wolf" x="-2" y="-1" z="5" spawntime="240" />
-		<monster name="winter wolf" x="1" y="-1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="-1" z="5" spawntime="240" />
 		<monster name="frost troll" x="1" y="2" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32042" centery="31178" centerz="5" radius="2">
@@ -2723,13 +2723,13 @@
 		<monster name="Frost Dragon" x="1" y="-1" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32016" centery="31558" centerz="5" radius="2">
-		<monster name="winter wolf" x="0" y="-1" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="-1" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32798" centery="31558" centerz="5" radius="3">
 		<monster name="dragon" x="1" y="1" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="32000" centery="31562" centerz="5" radius="2">
-		<monster name="winter wolf" x="1" y="-2" z="5" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="-2" z="5" spawntime="240" />
 	</spawn>
 	<spawn centerx="32582" centery="31639" centerz="5" radius="1">
 		<monster name="orc warrior" x="1" y="0" z="5" spawntime="60" />
@@ -2768,20 +2768,20 @@
 		<monster name="orc leader" x="1" y="-3" z="5" spawntime="60" />
 		<monster name="orc rider" x="2" y="-1" z="5" spawntime="60" />
 		<monster name="orc rider" x="-3" y="0" z="5" spawntime="60" />
-		<monster name="war wolf" x="-1" y="0" z="5" spawntime="60" />
+		<monster name="War Wolf" x="-1" y="0" z="5" spawntime="60" />
 		<monster name="orc berserker" x="-2" y="2" z="5" spawntime="60" />
-		<monster name="war wolf" x="0" y="3" z="5" spawntime="60" />
+		<monster name="War Wolf" x="0" y="3" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="32976" centery="31724" centerz="5" radius="3">
 		<monster name="orc leader" x="0" y="-3" z="5" spawntime="60" />
-		<monster name="war wolf" x="-1" y="-2" z="5" spawntime="60" />
+		<monster name="War Wolf" x="-1" y="-2" z="5" spawntime="60" />
 		<monster name="orc shaman" x="-3" y="-1" z="5" spawntime="60" />
 		<monster name="orc leader" x="1" y="0" z="5" spawntime="60" />
 		<monster name="orc shaman" x="-1" y="1" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="32964" centery="31725" centerz="5" radius="4">
 		<monster name="orc berserker" x="-3" y="0" z="5" spawntime="60" />
-		<monster name="war wolf" x="3" y="2" z="5" spawntime="60" />
+		<monster name="War Wolf" x="3" y="2" z="5" spawntime="60" />
 		<monster name="orc rider" x="0" y="3" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="32976" centery="31731" centerz="5" radius="2">
@@ -3926,10 +3926,10 @@
 	</spawn>
 	<spawn centerx="32038" centery="31112" centerz="6" radius="3">
 		<monster name="frost troll" x="3" y="-3" z="6" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="-2" z="6" spawntime="240" />
-		<monster name="winter wolf" x="2" y="-1" z="6" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="2" z="6" spawntime="240" />
-		<monster name="winter wolf" x="3" y="3" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="3" y="3" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32054" centery="31114" centerz="6" radius="2">
 		<monster name="mammoth" x="0" y="0" z="6" spawntime="240" />
@@ -3993,7 +3993,7 @@
 		<monster name="frost troll" x="3" y="3" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32025" centery="31148" centerz="6" radius="3">
-		<monster name="winter wolf" x="-2" y="-2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-2" z="6" spawntime="240" />
 		<monster name="mammoth" x="0" y="3" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32097" centery="31152" centerz="6" radius="3">
@@ -4009,9 +4009,9 @@
 		<monster name="frost troll" x="2" y="3" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32027" centery="31156" centerz="6" radius="3">
-		<monster name="winter wolf" x="-3" y="1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-3" y="1" z="6" spawntime="240" />
 		<monster name="mammoth" x="1" y="1" z="6" spawntime="240" />
-		<monster name="winter wolf" x="3" y="1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="3" y="1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32026" centery="31164" centerz="6" radius="3">
 		<monster name="frost troll" x="-2" y="-2" z="6" spawntime="240" />
@@ -4093,8 +4093,8 @@
 		<monster name="frost troll" x="-1" y="1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="31983" centery="31215" centerz="6" radius="2">
-		<monster name="winter wolf" x="1" y="-1" z="6" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="-1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32165" centery="31215" centerz="6" radius="3">
 		<monster name="mammoth" x="-2" y="-2" z="6" spawntime="240" />
@@ -4106,10 +4106,10 @@
 	</spawn>
 	<spawn centerx="32037" centery="31220" centerz="6" radius="2">
 		<monster name="Silver Rabbit" x="-2" y="0" z="6" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="2" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32030" centery="31222" centerz="6" radius="2">
-		<monster name="winter wolf" x="0" y="1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32092" centery="31222" centerz="6" radius="3">
 		<monster name="frost troll" x="0" y="-1" z="6" spawntime="240" />
@@ -4120,10 +4120,10 @@
 		<monster name="Silver Rabbit" x="1" y="2" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32036" centery="31226" centerz="6" radius="2">
-		<monster name="winter wolf" x="0" y="0" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="0" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32046" centery="31227" centerz="6" radius="2">
-		<monster name="winter wolf" x="0" y="0" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="0" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32100" centery="31227" centerz="6" radius="3">
 		<monster name="frost troll" x="2" y="-1" z="6" spawntime="240" />
@@ -4152,11 +4152,11 @@
 	</spawn>
 	<spawn centerx="32028" centery="31236" centerz="6" radius="2">
 		<monster name="mammoth" x="-2" y="-1" z="6" spawntime="240" />
-		<monster name="winter wolf" x="1" y="1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32035" centery="31236" centerz="6" radius="2">
 		<monster name="mammoth" x="-2" y="0" z="6" spawntime="240" />
-		<monster name="winter wolf" x="2" y="1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32111" centery="31239" centerz="6" radius="3">
 		<monster name="frost troll" x="0" y="-2" z="6" spawntime="240" />
@@ -4175,18 +4175,18 @@
 	</spawn>
 	<spawn centerx="32133" centery="31242" centerz="6" radius="3">
 		<monster name="mammoth" x="-2" y="0" z="6" spawntime="240" />
-		<monster name="winter wolf" x="2" y="1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32148" centery="31243" centerz="6" radius="3">
-		<monster name="winter wolf" x="0" y="-2" z="6" spawntime="240" />
-		<monster name="winter wolf" x="2" y="2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="-2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="2" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32009" centery="31248" centerz="6" radius="3">
 		<monster name="mammoth" x="-2" y="0" z="6" spawntime="240" />
 		<monster name="mammoth" x="3" y="2" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="31978" centery="31251" centerz="6" radius="2">
-		<monster name="winter wolf" x="1" y="0" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="0" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32000" centery="31251" centerz="6" radius="2">
 		<monster name="Silver Rabbit" x="0" y="-1" z="6" spawntime="240" />
@@ -4196,16 +4196,16 @@
 		<monster name="Frost Giant" x="-1" y="1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32103" centery="31254" centerz="6" radius="3">
-		<monster name="winter wolf" x="0" y="-2" z="6" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="-2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32171" centery="31254" centerz="6" radius="3">
 		<monster name="mammoth" x="-1" y="-2" z="6" spawntime="240" />
 		<monster name="mammoth" x="2" y="3" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32119" centery="31255" centerz="6" radius="3">
-		<monster name="winter wolf" x="3" y="-2" z="6" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="3" y="-2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="2" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32373" centery="31255" centerz="6" radius="5">
 		<monster name="Frost Giant" x="4" y="-5" z="6" spawntime="240" />
@@ -4215,7 +4215,7 @@
 	</spawn>
 	<spawn centerx="32134" centery="31256" centerz="6" radius="3">
 		<monster name="Silver Rabbit" x="1" y="-2" z="6" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32152" centery="31265" centerz="6" radius="3">
 		<monster name="Silver Rabbit" x="-2" y="-2" z="6" spawntime="240" />
@@ -4253,8 +4253,8 @@
 		<monster name="mammoth" x="2" y="3" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32152" centery="31281" centerz="6" radius="3">
-		<monster name="winter wolf" x="0" y="-2" z="6" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="-2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="2" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32169" centery="31282" centerz="6" radius="3">
 		<monster name="Silver Rabbit" x="-1" y="-2" z="6" spawntime="240" />
@@ -4266,8 +4266,8 @@
 	</spawn>
 	<spawn centerx="32139" centery="31288" centerz="6" radius="3">
 		<monster name="mammoth" x="-2" y="-2" z="6" spawntime="240" />
-		<monster name="winter wolf" x="2" y="-1" z="6" spawntime="240" />
-		<monster name="winter wolf" x="0" y="3" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="3" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32386" centery="31288" centerz="6" radius="4">
 		<monster name="Frost Giantess" x="2" y="-1" z="6" spawntime="240" />
@@ -4275,11 +4275,11 @@
 	</spawn>
 	<spawn centerx="32160" centery="31294" centerz="6" radius="3">
 		<monster name="mammoth" x="-2" y="-1" z="6" spawntime="240" />
-		<monster name="winter wolf" x="0" y="1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32177" centery="31296" centerz="6" radius="3">
 		<monster name="mammoth" x="3" y="-2" z="6" spawntime="240" />
-		<monster name="winter wolf" x="0" y="2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="2" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32192" centery="31301" centerz="6" radius="3" />
 	<spawn centerx="32182" centery="31306" centerz="6" radius="3">
@@ -4315,7 +4315,7 @@
 		<monster name="mammoth" x="-1" y="2" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32170" centery="31323" centerz="6" radius="3">
-		<monster name="winter wolf" x="2" y="-2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-2" z="6" spawntime="240" />
 		<monster name="mammoth" x="2" y="1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32344" centery="31323" centerz="6" radius="2">
@@ -4330,8 +4330,8 @@
 		<npc name="Zora" x="1" y="-1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32193" centery="31326" centerz="6" radius="3">
-		<monster name="winter wolf" x="-2" y="-2" z="6" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="2" z="6" spawntime="240" />
 		<monster name="mammoth" x="-2" y="3" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32171" centery="31338" centerz="6" radius="3">
@@ -4353,8 +4353,8 @@
 		<monster name="Barbarian Skullhunter" x="-2" y="4" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32168" centery="31348" centerz="6" radius="3">
-		<monster name="winter wolf" x="3" y="-2" z="6" spawntime="240" />
-		<monster name="winter wolf" x="-3" y="-1" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="3" y="-2" z="6" spawntime="240" />
+		<monster name="Winter Wolf" x="-3" y="-1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32123" centery="31356" centerz="6" radius="4">
 		<monster name="Barbarian Bloodwalker" x="-2" y="-1" z="6" spawntime="240" />
@@ -4534,22 +4534,22 @@
 	<spawn centerx="32977" centery="31716" centerz="6" radius="3">
 		<monster name="orc shaman" x="-1" y="-2" z="6" spawntime="60" />
 		<monster name="orc leader" x="-2" y="1" z="6" spawntime="60" />
-		<monster name="war wolf" x="3" y="1" z="6" spawntime="60" />
+		<monster name="War Wolf" x="3" y="1" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="32970" centery="31725" centerz="6" radius="4">
 		<monster name="orc berserker" x="-4" y="-4" z="6" spawntime="60" />
-		<monster name="war wolf" x="2" y="-3" z="6" spawntime="60" />
-		<monster name="war wolf" x="0" y="-1" z="6" spawntime="60" />
+		<monster name="War Wolf" x="2" y="-3" z="6" spawntime="60" />
+		<monster name="War Wolf" x="0" y="-1" z="6" spawntime="60" />
 		<monster name="orc berserker" x="-2" y="2" z="6" spawntime="60" />
-		<monster name="war wolf" x="0" y="2" z="6" spawntime="60" />
+		<monster name="War Wolf" x="0" y="2" z="6" spawntime="60" />
 		<monster name="orc berserker" x="2" y="3" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="32979" centery="31725" centerz="6" radius="3">
-		<monster name="war wolf" x="-1" y="-2" z="6" spawntime="60" />
+		<monster name="War Wolf" x="-1" y="-2" z="6" spawntime="60" />
 		<monster name="orc leader" x="-3" y="-1" z="6" spawntime="60" />
-		<monster name="war wolf" x="-2" y="-1" z="6" spawntime="60" />
-		<monster name="war wolf" x="-3" y="2" z="6" spawntime="60" />
-		<monster name="war wolf" x="0" y="3" z="6" spawntime="60" />
+		<monster name="War Wolf" x="-2" y="-1" z="6" spawntime="60" />
+		<monster name="War Wolf" x="-3" y="2" z="6" spawntime="60" />
+		<monster name="War Wolf" x="0" y="3" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="32960" centery="31727" centerz="6" radius="2">
 		<monster name="orc shaman" x="0" y="0" z="6" spawntime="60" />
@@ -4869,7 +4869,7 @@
 		<monster name="wolf" x="0" y="2" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="32924" centery="31847" centerz="6" radius="3">
-		<monster name="war wolf" x="2" y="0" z="6" spawntime="60" />
+		<monster name="War Wolf" x="2" y="0" z="6" spawntime="60" />
 		<monster name="wolf" x="-3" y="2" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="32530" centery="31851" centerz="6" radius="1">
@@ -5205,10 +5205,10 @@
 	</spawn>
 	<spawn centerx="32254" centery="32142" centerz="6" radius="5">
 		<monster name="snake" x="-2" y="-3" z="6" spawntime="60" />
-		<monster name="war wolf" x="-1" y="-2" z="6" spawntime="60" />
+		<monster name="War Wolf" x="-1" y="-2" z="6" spawntime="60" />
 		<monster name="snake" x="-1" y="0" z="6" spawntime="60" />
 		<monster name="snake" x="3" y="1" z="6" spawntime="60" />
-		<monster name="war wolf" x="3" y="3" z="6" spawntime="60" />
+		<monster name="War Wolf" x="3" y="3" z="6" spawntime="60" />
 		<monster name="snake" x="4" y="5" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="32791" centery="32142" centerz="6" radius="2">
@@ -6583,7 +6583,7 @@
 		<monster name="Penguin" x="3" y="2" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32392" centery="31041" centerz="7" radius="3">
-		<monster name="winter wolf" x="-1" y="3" z="7" spawntime="90" />
+		<monster name="Winter Wolf" x="-1" y="3" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32265" centery="31045" centerz="7" radius="2">
 		<monster name="Penguin" x="2" y="-1" z="7" spawntime="240" />
@@ -6613,8 +6613,8 @@
 		<monster name="Penguin" x="1" y="-2" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32385" centery="31048" centerz="7" radius="3">
-		<monster name="winter wolf" x="2" y="-3" z="7" spawntime="90" />
-		<monster name="winter wolf" x="0" y="0" z="7" spawntime="90" />
+		<monster name="Winter Wolf" x="2" y="-3" z="7" spawntime="90" />
+		<monster name="Winter Wolf" x="0" y="0" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32399" centery="31048" centerz="7" radius="3">
 		<monster name="Penguin" x="-3" y="-1" z="7" spawntime="90" />
@@ -6629,7 +6629,7 @@
 		<monster name="Silver Rabbit" x="2" y="1" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32378" centery="31055" centerz="7" radius="3">
-		<monster name="winter wolf" x="2" y="0" z="7" spawntime="90" />
+		<monster name="Winter Wolf" x="2" y="0" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32403" centery="31055" centerz="7" radius="2">
 		<monster name="rat" x="-1" y="-1" z="7" spawntime="90" />
@@ -6639,16 +6639,16 @@
 		<monster name="rat" x="-1" y="1" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32273" centery="31057" centerz="7" radius="2">
-		<monster name="winter wolf" x="-2" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32280" centery="31057" centerz="7" radius="2">
-		<monster name="winter wolf" x="-1" y="1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32418" centery="31058" centerz="7" radius="2">
 		<monster name="Penguin" x="-1" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="0" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32405" centery="31060" centerz="7" radius="1">
 		<monster name="rat" x="-1" y="-1" z="7" spawntime="90" />
@@ -6658,8 +6658,8 @@
 	</spawn>
 	<spawn centerx="32293" centery="31061" centerz="7" radius="4">
 		<monster name="polar bear" x="4" y="-3" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="1" z="7" spawntime="240" />
 		<monster name="polar bear" x="0" y="4" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32322" centery="31062" centerz="7" radius="3">
@@ -6667,7 +6667,7 @@
 		<monster name="Penguin" x="-1" y="1" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32329" centery="31062" centerz="7" radius="3">
-		<monster name="winter wolf" x="-3" y="1" z="7" spawntime="90" />
+		<monster name="Winter Wolf" x="-3" y="1" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32411" centery="31062" centerz="7" radius="1">
 		<monster name="Penguin" x="0" y="-1" z="7" spawntime="90" />
@@ -6679,15 +6679,15 @@
 		<monster name="rat" x="-1" y="1" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32423" centery="31064" centerz="7" radius="2">
-		<monster name="winter wolf" x="-2" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="1" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32430" centery="31065" centerz="7" radius="2">
 		<monster name="Chakoya Tribewarden" x="-1" y="-1" z="7" spawntime="240" />
 		<monster name="Chakoya Tribewarden" x="0" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32302" centery="31068" centerz="7" radius="2">
-		<monster name="winter wolf" x="0" y="0" z="7" spawntime="90" />
+		<monster name="Winter Wolf" x="0" y="0" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32322" centery="31069" centerz="7" radius="3">
 		<monster name="Penguin" x="0" y="-3" z="7" spawntime="90" />
@@ -6697,7 +6697,7 @@
 	</spawn>
 	<spawn centerx="32378" centery="31069" centerz="7" radius="3">
 		<monster name="Chakoya Tribewarden" x="-1" y="2" z="7" spawntime="90" />
-		<monster name="winter wolf" x="0" y="2" z="7" spawntime="90" />
+		<monster name="Winter Wolf" x="0" y="2" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32385" centery="31069" centerz="7" radius="3">
 		<monster name="Penguin" x="-2" y="2" z="7" spawntime="90" />
@@ -6708,7 +6708,7 @@
 		<monster name="Chakoya Toolshaper" x="2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32293" centery="31071" centerz="7" radius="2">
-		<monster name="winter wolf" x="1" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32416" centery="31071" centerz="7" radius="1">
 		<monster name="polar bear" x="1" y="0" z="7" spawntime="240" />
@@ -6729,8 +6729,8 @@
 		<monster name="polar bear" x="-1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32287" centery="31074" centerz="7" radius="2">
-		<monster name="winter wolf" x="-1" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32412" centery="31074" centerz="7" radius="1">
 		<monster name="polar bear" x="0" y="1" z="7" spawntime="90" />
@@ -6743,9 +6743,9 @@
 		<monster name="Penguin" x="-3" y="1" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32336" centery="31076" centerz="7" radius="3">
-		<monster name="winter wolf" x="1" y="-2" z="7" spawntime="90" />
+		<monster name="Winter Wolf" x="1" y="-2" z="7" spawntime="90" />
 		<monster name="polar bear" x="-2" y="-1" z="7" spawntime="90" />
-		<monster name="winter wolf" x="0" y="0" z="7" spawntime="90" />
+		<monster name="Winter Wolf" x="0" y="0" z="7" spawntime="90" />
 		<monster name="polar bear" x="-3" y="1" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32350" centery="31076" centerz="7" radius="3">
@@ -6757,7 +6757,7 @@
 	</spawn>
 	<spawn centerx="32378" centery="31076" centerz="7" radius="3">
 		<monster name="Penguin" x="-3" y="-1" z="7" spawntime="90" />
-		<monster name="winter wolf" x="-1" y="0" z="7" spawntime="90" />
+		<monster name="Winter Wolf" x="-1" y="0" z="7" spawntime="90" />
 		<monster name="Penguin" x="-2" y="1" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32385" centery="31076" centerz="7" radius="3">
@@ -6813,7 +6813,7 @@
 	<spawn centerx="32302" centery="31082" centerz="7" radius="2" />
 	<spawn centerx="32456" centery="31082" centerz="7" radius="1">
 		<monster name="Chakoya Tribewarden" x="0" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32470" centery="31082" centerz="7" radius="1">
 		<monster name="Chakoya Tribewarden" x="0" y="1" z="7" spawntime="240" />
@@ -6829,7 +6829,7 @@
 		<monster name="Penguin" x="2" y="0" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32350" centery="31083" centerz="7" radius="3">
-		<monster name="winter wolf" x="3" y="-1" z="7" spawntime="90" />
+		<monster name="Winter Wolf" x="3" y="-1" z="7" spawntime="90" />
 	</spawn>
 	<spawn centerx="32357" centery="31083" centerz="7" radius="3">
 		<monster name="Penguin" x="-3" y="0" z="7" spawntime="90" />
@@ -6842,8 +6842,8 @@
 		<monster name="Chakoya Toolshaper" x="0" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32277" centery="31084" centerz="7" radius="2">
-		<monster name="winter wolf" x="-1" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32066" centery="31085" centerz="7" radius="2">
 		<monster name="Penguin" x="0" y="1" z="7" spawntime="240" />
@@ -6865,7 +6865,7 @@
 		<monster name="Chakoya Toolshaper" x="-1" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32475" centery="31088" centerz="7" radius="1">
-		<monster name="winter wolf" x="0" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32461" centery="31089" centerz="7" radius="1">
 		<monster name="Chakoya Toolshaper" x="0" y="-1" z="7" spawntime="240" />
@@ -6907,7 +6907,7 @@
 		<monster name="Chakoya Toolshaper" x="0" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32468" centery="31098" centerz="7" radius="1">
-		<monster name="winter wolf" x="-1" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="0" z="7" spawntime="240" />
 		<monster name="Chakoya Tribewarden" x="1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32481" centery="31098" centerz="7" radius="2">
@@ -6947,8 +6947,8 @@
 		<monster name="polar bear" x="-1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32492" centery="31110" centerz="7" radius="1">
-		<monster name="winter wolf" x="-1" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="1" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32471" centery="31111" centerz="7" radius="1">
 		<monster name="Chakoya Tribewarden" x="-1" y="1" z="7" spawntime="240" />
@@ -6972,7 +6972,7 @@
 	</spawn>
 	<spawn centerx="32471" centery="31116" centerz="7" radius="1">
 		<monster name="polar bear" x="-1" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="1" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32478" centery="31117" centerz="7" radius="2">
 		<monster name="Chakoya Toolshaper" x="1" y="-1" z="7" spawntime="240" />
@@ -6998,7 +6998,7 @@
 		<monster name="Chakoya Tribewarden" x="2" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32476" centery="31123" centerz="7" radius="2">
-		<monster name="winter wolf" x="1" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="-2" z="7" spawntime="240" />
 		<monster name="Chakoya Toolshaper" x="0" y="-1" z="7" spawntime="240" />
 		<monster name="Chakoya Toolshaper" x="2" y="0" z="7" spawntime="240" />
 	</spawn>
@@ -7106,9 +7106,9 @@
 		<monster name="Ice Witch" x="-1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32358" centery="31160" centerz="7" radius="4">
-		<monster name="winter wolf" x="-2" y="-3" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32201" centery="31161" centerz="7" radius="1">
 		<npc name="Dankwart" x="1" y="0" z="7" spawntime="240" />
@@ -7131,8 +7131,8 @@
 		<monster name="Penguin" x="2" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32366" centery="31171" centerz="7" radius="4">
-		<monster name="winter wolf" x="1" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32490" centery="31171" centerz="7" radius="3">
 		<monster name="skeleton" x="-1" y="-2" z="7" spawntime="240" />
@@ -7246,8 +7246,8 @@
 		<monster name="polar bear" x="2" y="-1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32421" centery="31227" centerz="7" radius="4">
-		<monster name="winter wolf" x="-1" y="-2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32333" centery="31228" centerz="7" radius="2">
 		<npc name="Buddel Tyrsung" x="-1" y="-1" z="7" spawntime="240" />
@@ -7289,7 +7289,7 @@
 		<monster name="Barbarian Headsplitter" x="-1" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32080" centery="31233" centerz="7" radius="2">
-		<monster name="winter wolf" x="1" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31994" centery="31234" centerz="7" radius="4">
 		<monster name="Barbarian Headsplitter" x="-4" y="-3" z="7" spawntime="90" />
@@ -7307,10 +7307,10 @@
 		<monster name="Frost Giant" x="-1" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32080" centery="31241" centerz="7" radius="3">
-		<monster name="winter wolf" x="-2" y="-3" z="7" spawntime="240" />
-		<monster name="winter wolf" x="1" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="-2" z="7" spawntime="240" />
 		<monster name="badger" x="2" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="0" y="3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31990" centery="31242" centerz="7" radius="2">
 		<monster name="Barbarian Headsplitter" x="-2" y="-2" z="7" spawntime="240" />
@@ -7334,7 +7334,7 @@
 		<monster name="Frost Giantess" x="-1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32094" centery="31244" centerz="7" radius="4">
-		<monster name="winter wolf" x="-1" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-2" z="7" spawntime="240" />
 		<monster name="polar bear" x="4" y="-2" z="7" spawntime="240" />
 		<monster name="badger" x="1" y="2" z="7" spawntime="240" />
 		<monster name="polar bear" x="-2" y="4" z="7" spawntime="240" />
@@ -7363,7 +7363,7 @@
 		<monster name="Barbarian Skullhunter" x="1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32026" centery="31252" centerz="7" radius="2">
-		<monster name="winter wolf" x="-1" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32448" centery="31254" centerz="7" radius="4">
 		<monster name="Penguin" x="-2" y="-2" z="7" spawntime="240" />
@@ -7393,7 +7393,7 @@
 		<monster name="Barbarian Headsplitter" x="-1" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32027" centery="31258" centerz="7" radius="2">
-		<monster name="winter wolf" x="-1" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32004" centery="31259" centerz="7" radius="2">
 		<monster name="Barbarian Headsplitter" x="-1" y="-1" z="7" spawntime="240" />
@@ -7403,17 +7403,17 @@
 		<monster name="frost troll" x="2" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32043" centery="31260" centerz="7" radius="3">
-		<monster name="winter wolf" x="-3" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-3" y="-2" z="7" spawntime="240" />
 		<monster name="polar bear" x="-1" y="-1" z="7" spawntime="240" />
 		<monster name="badger" x="2" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="1" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="7" spawntime="240" />
 		<monster name="badger" x="0" y="2" z="7" spawntime="240" />
 		<monster name="polar bear" x="1" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31995" centery="31261" centerz="7" radius="3">
 		<monster name="Barbarian Skullhunter" x="-2" y="0" z="7" spawntime="240" />
 		<monster name="Barbarian Skullhunter" x="1" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="0" y="3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32033" centery="31261" centerz="7" radius="2">
 		<monster name="Silver Rabbit" x="2" y="-1" z="7" spawntime="240" />
@@ -7421,7 +7421,7 @@
 	</spawn>
 	<spawn centerx="32012" centery="31262" centerz="7" radius="2">
 		<monster name="Barbarian Skullhunter" x="1" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32340" centery="31262" centerz="7" radius="4">
 		<monster name="Silver Rabbit" x="2" y="-2" z="7" spawntime="240" />
@@ -7438,7 +7438,7 @@
 	</spawn>
 	<spawn centerx="32097" centery="31266" centerz="7" radius="3">
 		<monster name="mammoth" x="-1" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="0" z="7" spawntime="240" />
 		<monster name="frost troll" x="1" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32321" centery="31266" centerz="7" radius="4">
@@ -7458,10 +7458,10 @@
 	</spawn>
 	<spawn centerx="31954" centery="31271" centerz="7" radius="2">
 		<monster name="mammoth" x="-2" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31994" centery="31271" centerz="7" radius="2">
-		<monster name="winter wolf" x="0" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32015" centery="31271" centerz="7" radius="2">
 		<monster name="badger" x="0" y="-2" z="7" spawntime="240" />
@@ -7500,18 +7500,18 @@
 	</spawn>
 	<spawn centerx="32059" centery="31277" centerz="7" radius="8">
 		<monster name="frost troll" x="0" y="-6" z="7" spawntime="240" />
-		<monster name="winter wolf" x="4" y="-5" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="4" y="-5" z="7" spawntime="240" />
 		<monster name="frost troll" x="3" y="-4" z="7" spawntime="240" />
 		<monster name="frost troll" x="-4" y="-3" z="7" spawntime="240" />
-		<monster name="winter wolf" x="0" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="-2" z="7" spawntime="240" />
 		<monster name="frost troll" x="5" y="-2" z="7" spawntime="240" />
 		<monster name="badger" x="3" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="5" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="5" y="1" z="7" spawntime="240" />
 		<monster name="frost troll" x="6" y="2" z="7" spawntime="240" />
 		<monster name="frost troll" x="-2" y="3" z="7" spawntime="240" />
 		<monster name="frost troll" x="1" y="5" z="7" spawntime="240" />
-		<monster name="winter wolf" x="4" y="5" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="4" y="5" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32432" centery="31277" centerz="7" radius="4">
 		<monster name="polar bear" x="2" y="1" z="7" spawntime="240" />
@@ -7523,22 +7523,22 @@
 		<monster name="frost troll" x="0" y="-1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31948" centery="31280" centerz="7" radius="3">
-		<monster name="winter wolf" x="-1" y="-2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="3" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="3" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31991" centery="31280" centerz="7" radius="2">
-		<monster name="winter wolf" x="-1" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32444" centery="31280" centerz="7" radius="4">
 		<monster name="polar bear" x="0" y="-2" z="7" spawntime="240" />
 		<monster name="polar bear" x="-2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32114" centery="31281" centerz="7" radius="4">
-		<monster name="winter wolf" x="-1" y="-2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-2" z="7" spawntime="240" />
 		<monster name="badger" x="1" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-3" y="3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-3" y="3" z="7" spawntime="240" />
 		<monster name="Barbarian Headsplitter" x="2" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32073" centery="31282" centerz="7" radius="2">
@@ -7546,8 +7546,8 @@
 		<monster name="badger" x="-2" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31985" centery="31285" centerz="7" radius="2">
-		<monster name="winter wolf" x="-2" y="-2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31920" centery="31287" centerz="7" radius="4">
 		<monster name="Silver Rabbit" x="2" y="-3" z="7" spawntime="240" />
@@ -7555,7 +7555,7 @@
 		<monster name="Silver Rabbit" x="1" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31949" centery="31287" centerz="7" radius="2">
-		<monster name="winter wolf" x="1" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31968" centery="31287" centerz="7" radius="2">
 		<monster name="mammoth" x="1" y="0" z="7" spawntime="240" />
@@ -7580,7 +7580,7 @@
 		<monster name="Frost Giant" x="2" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31927" centery="31295" centerz="7" radius="2">
-		<monster name="winter wolf" x="1" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32341" centery="31298" centerz="7" radius="2">
 		<monster name="Penguin" x="-1" y="-1" z="7" spawntime="240" />
@@ -7594,14 +7594,14 @@
 		<monster name="frost troll" x="0" y="-4" z="7" spawntime="240" />
 		<monster name="frost troll" x="2" y="-2" z="7" spawntime="240" />
 		<monster name="frost troll" x="4" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="0" z="7" spawntime="240" />
 		<monster name="frost troll" x="-1" y="1" z="7" spawntime="240" />
 		<monster name="frost troll" x="-4" y="2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="0" y="3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31920" centery="31300" centerz="7" radius="3">
 		<monster name="frost troll" x="0" y="2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32048" centery="31300" centerz="7" radius="6">
 		<monster name="frost troll" x="4" y="-6" z="7" spawntime="240" />
@@ -7615,8 +7615,8 @@
 		<monster name="polar bear" x="2" y="6" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31969" centery="31301" centerz="7" radius="3">
-		<monster name="winter wolf" x="2" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31981" centery="31301" centerz="7" radius="3">
 		<monster name="polar bear" x="1" y="-2" z="7" spawntime="240" />
@@ -7647,7 +7647,7 @@
 		<monster name="deer" x="0" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31920" centery="31308" centerz="7" radius="3">
-		<monster name="winter wolf" x="2" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-1" z="7" spawntime="240" />
 		<monster name="frost troll" x="2" y="1" z="7" spawntime="240" />
 		<monster name="frost troll" x="-3" y="2" z="7" spawntime="240" />
 	</spawn>
@@ -7656,7 +7656,7 @@
 		<monster name="bandit" x="3" y="-2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32043" centery="31310" centerz="7" radius="2">
-		<monster name="winter wolf" x="1" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="-1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31934" centery="31311" centerz="7" radius="3">
 		<monster name="Silver Rabbit" x="-3" y="-3" z="7" spawntime="240" />
@@ -7671,7 +7671,7 @@
 	</spawn>
 	<spawn centerx="32033" centery="31314" centerz="7" radius="4">
 		<monster name="polar bear" x="4" y="-4" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-4" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-4" y="-2" z="7" spawntime="240" />
 		<monster name="Barbarian Headsplitter" x="1" y="-2" z="7" spawntime="240" />
 		<monster name="badger" x="3" y="0" z="7" spawntime="240" />
 		<monster name="Barbarian Brutetamer" x="3" y="1" z="7" spawntime="240" />
@@ -7689,14 +7689,14 @@
 		<monster name="Barbarian Brutetamer" x="1" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31934" centery="31322" centerz="7" radius="2">
-		<monster name="winter wolf" x="-1" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32344" centery="31323" centerz="7" radius="3">
 		<monster name="smuggler" x="2" y="-1" z="7" spawntime="240" />
 		<monster name="smuggler" x="-1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31940" centery="31325" centerz="7" radius="2">
-		<monster name="winter wolf" x="-1" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-1" z="7" spawntime="240" />
 		<monster name="mammoth" x="1" y="-1" z="7" spawntime="240" />
 		<monster name="badger" x="2" y="0" z="7" spawntime="240" />
 	</spawn>
@@ -7709,10 +7709,10 @@
 		<monster name="hunter" x="-1" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31950" centery="31327" centerz="7" radius="4">
-		<monster name="winter wolf" x="-1" y="-3" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-3" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="3" y="1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-3" y="3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-3" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="3" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-3" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31933" centery="31328" centerz="7" radius="2">
 		<monster name="mammoth" x="0" y="0" z="7" spawntime="240" />
@@ -7725,7 +7725,7 @@
 		<monster name="Barbarian Skullhunter" x="1" y="4" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32038" centery="31329" centerz="7" radius="4">
-		<monster name="winter wolf" x="0" y="-4" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="-4" z="7" spawntime="240" />
 		<monster name="badger" x="-4" y="-3" z="7" spawntime="240" />
 		<monster name="polar bear" x="4" y="-3" z="7" spawntime="240" />
 		<monster name="Barbarian Headsplitter" x="-2" y="1" z="7" spawntime="240" />
@@ -7738,7 +7738,7 @@
 	</spawn>
 	<spawn centerx="32026" centery="31330" centerz="7" radius="2">
 		<monster name="badger" x="-2" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="1" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32392" centery="31332" centerz="7" radius="4">
 		<monster name="bandit" x="-1" y="-3" z="7" spawntime="240" />
@@ -7774,28 +7774,28 @@
 	</spawn>
 	<spawn centerx="32031" centery="31337" centerz="7" radius="2">
 		<monster name="Barbarian Headsplitter" x="1" y="-2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32023" centery="31338" centerz="7" radius="2">
 		<monster name="badger" x="1" y="-1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32051" centery="31338" centerz="7" radius="4">
 		<monster name="Barbarian Headsplitter" x="-4" y="-4" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-1" z="7" spawntime="240" />
 		<monster name="Barbarian Brutetamer" x="2" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-4" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-4" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31910" centery="31340" centerz="7" radius="2">
-		<monster name="winter wolf" x="0" y="-2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31918" centery="31340" centerz="7" radius="2">
 		<monster name="mammoth" x="1" y="0" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32039" centery="31340" centerz="7" radius="4">
 		<monster name="mammoth" x="-1" y="-3" z="7" spawntime="240" />
-		<monster name="winter wolf" x="1" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="-1" z="7" spawntime="240" />
 		<monster name="badger" x="1" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32122" centery="31340" centerz="7" radius="4">
@@ -7834,9 +7834,9 @@
 		<monster name="smuggler" x="2" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31909" centery="31347" centerz="7" radius="2">
-		<monster name="winter wolf" x="2" y="-2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="0" y="2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31917" centery="31347" centerz="7" radius="2">
 		<monster name="badger" x="0" y="-1" z="7" spawntime="240" />
@@ -7850,15 +7850,15 @@
 		<monster name="pirate marauder" x="2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31925" centery="31348" centerz="7" radius="2">
-		<monster name="winter wolf" x="2" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-2" z="7" spawntime="240" />
 		<monster name="mammoth" x="0" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31933" centery="31348" centerz="7" radius="2">
-		<monster name="winter wolf" x="-1" y="-2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="1" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="-1" z="7" spawntime="240" />
 		<monster name="mammoth" x="-1" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32006" centery="31348" centerz="7" radius="2">
 		<monster name="mammoth" x="1" y="0" z="7" spawntime="240" />
@@ -8179,20 +8179,20 @@
 		<monster name="Frost Dragon" x="0" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32076" centery="31535" centerz="7" radius="2">
-		<monster name="winter wolf" x="2" y="-2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="2" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32027" centery="31540" centerz="7" radius="4">
 		<monster name="rabbit" x="-4" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="4" y="-1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="1" y="3" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="4" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="3" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32014" centery="31541" centerz="7" radius="2">
-		<monster name="winter wolf" x="0" y="-1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="-1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32073" centery="31545" centerz="7" radius="3">
-		<monster name="winter wolf" x="2" y="-2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-1" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="31986" centery="31560" centerz="7" radius="2">
 		<monster name="frost troll" x="-1" y="0" z="7" spawntime="240" />
@@ -8686,9 +8686,9 @@
 	<spawn centerx="33131" centery="31676" centerz="7" radius="1" />
 	<spawn centerx="33139" centery="31676" centerz="7" radius="1" />
 	<spawn centerx="31980" centery="31677" centerz="7" radius="3">
-		<monster name="winter wolf" x="1" y="-2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-2" y="1" z="7" spawntime="240" />
-		<monster name="winter wolf" x="1" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-2" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="33178" centery="31677" centerz="7" radius="1">
 		<monster name="wolf" x="-1" y="0" z="7" spawntime="60" />
@@ -8705,7 +8705,7 @@
 	</spawn>
 	<spawn centerx="33170" centery="31680" centerz="7" radius="2">
 		<monster name="wolf" x="-1" y="0" z="7" spawntime="60" />
-		<monster name="war wolf" x="2" y="2" z="7" spawntime="60" />
+		<monster name="War Wolf" x="2" y="2" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32551" centery="31681" centerz="7" radius="2">
 		<monster name="skeleton" x="0" y="-1" z="7" spawntime="60" />
@@ -8727,7 +8727,7 @@
 		<monster name="rabbit" x="1" y="1" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="33161" centery="31683" centerz="7" radius="2">
-		<monster name="war wolf" x="-2" y="1" z="7" spawntime="60" />
+		<monster name="War Wolf" x="-2" y="1" z="7" spawntime="60" />
 		<monster name="wolf" x="1" y="1" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="33218" centery="31683" centerz="7" radius="2">
@@ -8742,8 +8742,8 @@
 		<monster name="deer" x="0" y="-2" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="31984" centery="31685" centerz="7" radius="3">
-		<monster name="winter wolf" x="-1" y="-2" z="7" spawntime="240" />
-		<monster name="winter wolf" x="2" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-1" y="-2" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="2" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32376" centery="31686" centerz="7" radius="3">
 		<monster name="deer" x="-2" y="-2" z="7" spawntime="60" />
@@ -8805,7 +8805,7 @@
 		<monster name="orc spearman" x="0" y="2" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="31988" centery="31693" centerz="7" radius="2">
-		<monster name="winter wolf" x="0" y="1" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="1" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="33111" centery="31693" centerz="7" radius="1">
 		<monster name="wyvern" x="0" y="0" z="7" spawntime="60" />
@@ -9026,9 +9026,9 @@
 		<monster name="bear" x="1" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="31994" centery="31712" centerz="7" radius="5">
-		<monster name="winter wolf" x="1" y="-4" z="7" spawntime="240" />
-		<monster name="winter wolf" x="-4" y="0" z="7" spawntime="240" />
-		<monster name="winter wolf" x="0" y="4" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="1" y="-4" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="-4" y="0" z="7" spawntime="240" />
+		<monster name="Winter Wolf" x="0" y="4" z="7" spawntime="240" />
 	</spawn>
 	<spawn centerx="32938" centery="31712" centerz="7" radius="2">
 		<monster name="pig" x="0" y="-1" z="7" spawntime="60" />
@@ -9486,9 +9486,9 @@
 		<monster name="Seagull" x="-1" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32783" centery="31744" centerz="7" radius="4">
-		<monster name="war wolf" x="0" y="-3" z="7" spawntime="60" />
-		<monster name="war wolf" x="1" y="0" z="7" spawntime="60" />
-		<monster name="war wolf" x="-2" y="3" z="7" spawntime="60" />
+		<monster name="War Wolf" x="0" y="-3" z="7" spawntime="60" />
+		<monster name="War Wolf" x="1" y="0" z="7" spawntime="60" />
+		<monster name="War Wolf" x="-2" y="3" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32838" centery="31744" centerz="7" radius="2">
 		<monster name="orc spearman" x="2" y="-2" z="7" spawntime="60" />
@@ -11665,30 +11665,30 @@
 	<spawn centerx="32334" centery="32037" centerz="7" radius="4">
 		<monster name="orc warrior" x="-1" y="-4" z="7" spawntime="60" />
 		<monster name="orc berserker" x="-1" y="0" z="7" spawntime="60" />
-		<monster name="war wolf" x="1" y="0" z="7" spawntime="60" />
+		<monster name="War Wolf" x="1" y="0" z="7" spawntime="60" />
 		<monster name="orc spearman" x="-1" y="4" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32804" centery="32037" centerz="7" radius="1">
 		<monster name="rat" x="1" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32323" centery="32038" centerz="7" radius="5">
-		<monster name="war wolf" x="-3" y="-4" z="7" spawntime="60" />
-		<monster name="war wolf" x="2" y="-2" z="7" spawntime="60" />
-		<monster name="war wolf" x="-3" y="-1" z="7" spawntime="60" />
+		<monster name="War Wolf" x="-3" y="-4" z="7" spawntime="60" />
+		<monster name="War Wolf" x="2" y="-2" z="7" spawntime="60" />
+		<monster name="War Wolf" x="-3" y="-1" z="7" spawntime="60" />
 		<monster name="orc warrior" x="4" y="-1" z="7" spawntime="60" />
 		<monster name="orc rider" x="-4" y="0" z="7" spawntime="60" />
-		<monster name="war wolf" x="2" y="0" z="7" spawntime="60" />
+		<monster name="War Wolf" x="2" y="0" z="7" spawntime="60" />
 		<monster name="orc spearman" x="-2" y="1" z="7" spawntime="60" />
 		<monster name="orc warrior" x="2" y="2" z="7" spawntime="60" />
 		<monster name="orc rider" x="1" y="4" z="7" spawntime="60" />
-		<monster name="war wolf" x="-2" y="5" z="7" spawntime="60" />
+		<monster name="War Wolf" x="-2" y="5" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32488" centery="32038" centerz="7" radius="2">
 		<monster name="wolf" x="2" y="-2" z="7" spawntime="60" />
 		<monster name="wolf" x="-2" y="1" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32508" centery="32038" centerz="7" radius="2">
-		<monster name="war wolf" x="0" y="-2" z="7" spawntime="60" />
+		<monster name="War Wolf" x="0" y="-2" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="33037" centery="32038" centerz="7" radius="1">
 		<monster name="snake" x="0" y="1" z="7" spawntime="60" />
@@ -11698,7 +11698,7 @@
 		<monster name="deer" x="2" y="-1" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32501" centery="32041" centerz="7" radius="2">
-		<monster name="war wolf" x="1" y="2" z="7" spawntime="60" />
+		<monster name="War Wolf" x="1" y="2" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="33265" centery="32041" centerz="7" radius="2">
 		<monster name="Blue Butterfly" x="0" y="2" z="7" spawntime="60" />
@@ -15043,10 +15043,10 @@
 		<monster name="orc rider" x="4" y="-6" z="7" spawntime="60" />
 		<monster name="orc rider" x="0" y="-3" z="7" spawntime="60" />
 		<monster name="orc rider" x="-5" y="-2" z="7" spawntime="60" />
-		<monster name="war wolf" x="-4" y="1" z="7" spawntime="60" />
-		<monster name="war wolf" x="0" y="2" z="7" spawntime="60" />
+		<monster name="War Wolf" x="-4" y="1" z="7" spawntime="60" />
+		<monster name="War Wolf" x="0" y="2" z="7" spawntime="60" />
 		<monster name="orc rider" x="3" y="2" z="7" spawntime="60" />
-		<monster name="war wolf" x="-1" y="7" z="7" spawntime="60" />
+		<monster name="War Wolf" x="-1" y="7" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32723" centery="32372" centerz="7" radius="2">
 		<monster name="skeleton" x="-1" y="-1" z="7" spawntime="60" />
@@ -21217,7 +21217,7 @@
 		<monster name="rat" x="3" y="3" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="32147" centery="31587" centerz="8" radius="3">
-		<monster name="winter wolf" x="-3" y="2" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="-3" y="2" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="32719" centery="31589" centerz="8" radius="2">
 		<monster name="snake" x="-1" y="-1" z="8" spawntime="60" />
@@ -21260,10 +21260,10 @@
 		<monster name="spider" x="-2" y="-3" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="32105" centery="31594" centerz="8" radius="3">
-		<monster name="winter wolf" x="3" y="-3" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="3" y="-3" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="32133" centery="31594" centerz="8" radius="3">
-		<monster name="winter wolf" x="3" y="3" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="3" y="3" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="32645" centery="31595" centerz="8" radius="2">
 		<monster name="bat" x="-1" y="-1" z="8" spawntime="60" />
@@ -21283,9 +21283,9 @@
 		<monster name="skeleton" x="1" y="1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="31958" centery="31601" centerz="8" radius="3">
-		<monster name="winter wolf" x="-1" y="3" z="8" spawntime="90" />
-		<monster name="winter wolf" x="0" y="3" z="8" spawntime="90" />
-		<monster name="winter wolf" x="1" y="3" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="-1" y="3" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="0" y="3" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="1" y="3" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="32000" centery="31601" centerz="8" radius="3">
 		<monster name="rotworm" x="-1" y="0" z="8" spawntime="90" />
@@ -21359,7 +21359,7 @@
 		<monster name="rotworm" x="-2" y="0" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="32056" centery="31615" centerz="8" radius="3">
-		<monster name="winter wolf" x="0" y="0" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="0" y="0" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="32077" centery="31615" centerz="8" radius="3">
 		<monster name="bat" x="3" y="-2" z="8" spawntime="90" />
@@ -21400,10 +21400,10 @@
 		<monster name="frost troll" x="-2" y="2" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="32049" centery="31622" centerz="8" radius="3">
-		<monster name="winter wolf" x="3" y="1" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="3" y="1" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="32056" centery="31622" centerz="8" radius="3">
-		<monster name="winter wolf" x="-3" y="0" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="-3" y="0" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="32098" centery="31622" centerz="8" radius="3">
 		<monster name="troll" x="-2" y="-3" z="8" spawntime="90" />
@@ -21616,15 +21616,15 @@
 		<monster name="dragon" x="1" y="1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="31937" centery="31650" centerz="8" radius="3">
-		<monster name="winter wolf" x="3" y="0" z="8" spawntime="90" />
-		<monster name="winter wolf" x="3" y="1" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="3" y="0" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="3" y="1" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="31958" centery="31650" centerz="8" radius="3">
-		<monster name="winter wolf" x="2" y="3" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="2" y="3" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="31965" centery="31650" centerz="8" radius="3">
-		<monster name="winter wolf" x="3" y="0" z="8" spawntime="90" />
-		<monster name="winter wolf" x="0" y="3" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="3" y="0" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="0" y="3" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="31986" centery="31650" centerz="8" radius="3">
 		<monster name="frost troll" x="2" y="-3" z="8" spawntime="90" />
@@ -21704,7 +21704,7 @@
 		<monster name="orc leader" x="0" y="1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="31944" centery="31657" centerz="8" radius="3">
-		<monster name="winter wolf" x="-3" y="0" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="-3" y="0" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="31951" centery="31657" centerz="8" radius="3">
 		<monster name="frost troll" x="1" y="3" z="8" spawntime="90" />
@@ -21940,8 +21940,8 @@
 		<monster name="frost troll" x="2" y="3" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="31986" centery="31685" centerz="8" radius="3">
-		<monster name="winter wolf" x="0" y="1" z="8" spawntime="90" />
-		<monster name="winter wolf" x="2" y="2" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="0" y="1" z="8" spawntime="90" />
+		<monster name="Winter Wolf" x="2" y="2" z="8" spawntime="90" />
 	</spawn>
 	<spawn centerx="32000" centery="31685" centerz="8" radius="3">
 		<monster name="rotworm" x="0" y="-1" z="8" spawntime="90" />
@@ -22276,10 +22276,10 @@
 		<monster name="bug" x="1" y="2" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32947" centery="31754" centerz="8" radius="3">
-		<monster name="war wolf" x="2" y="-2" z="8" spawntime="60" />
+		<monster name="War Wolf" x="2" y="-2" z="8" spawntime="60" />
 		<monster name="orc shaman" x="-3" y="-1" z="8" spawntime="60" />
 		<monster name="orc rider" x="-1" y="0" z="8" spawntime="60" />
-		<monster name="war wolf" x="2" y="2" z="8" spawntime="60" />
+		<monster name="War Wolf" x="2" y="2" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="33162" centery="31754" centerz="8" radius="1" />
 	<spawn centerx="32353" centery="31755" centerz="8" radius="2">
@@ -22299,7 +22299,7 @@
 		<monster name="bug" x="-1" y="1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32956" centery="31758" centerz="8" radius="2">
-		<monster name="war wolf" x="-1" y="0" z="8" spawntime="60" />
+		<monster name="War Wolf" x="-1" y="0" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="33123" centery="31759" centerz="8" radius="1">
 		<monster name="troll" x="1" y="0" z="8" spawntime="60" />
@@ -25308,7 +25308,7 @@
 		<monster name="rotworm" x="-1" y="2" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32331" centery="32317" centerz="8" radius="1">
-		<monster name="war wolf" x="-1" y="0" z="8" spawntime="60" />
+		<monster name="War Wolf" x="-1" y="0" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32446" centery="32318" centerz="8" radius="1">
 		<monster name="wasp" x="1" y="-1" z="8" spawntime="60" />

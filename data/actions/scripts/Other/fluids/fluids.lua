@@ -10,6 +10,7 @@ poison:setParameter(CONDITION_PARAM_TICKINTERVAL, 4000)
 poison:setParameter(CONDITION_PARAM_FORCEUPDATE, true)
 
 local fluidMessage = {
+	[2] = 'Aaaah...',
 	[3] = 'Aah...',
 	[4] = 'Urgh!',
 	[5] = 'Mmmh.',

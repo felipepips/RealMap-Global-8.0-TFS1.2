@@ -40,9 +40,9 @@
 	</group>
 	<group id="3" name="god" access="1" maxdepotitems="0" maxvipentries="200" >
 		<flags>
-			<flag cannotusecombat="1" />
+			<flag cannotusecombat="0" />
 			<flag cannotattackplayer="1" />
-			<flag cannotattackmonster="1" />
+			<flag cannotattackmonster="0" />
 			<flag cannotbeattacked="1" />
 			<flag canconvinceall="1" />
 			<flag cansummonall="1" />
