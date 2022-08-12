@@ -73,7 +73,6 @@ local function creatureSayCallback(cid, type, msg)
 					"I will mail him about you immediately. Just tell him, his old buddy Sam is sending you."
 				}, cid)
 				player:setStorageValue(Storage.SamsOldBackpack, 1)
-				player:addAchievement('Backpack Tourist')
 			else
 				npcHandler:say("You don't have it...", cid)
 			end
