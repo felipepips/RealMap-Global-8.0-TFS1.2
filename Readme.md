@@ -4,6 +4,7 @@
 > **Info:**  
 > **Client sprites:** 8.0 [(Tibia Client)](https://downloads.ots.me/data/tibia-clients/windows/zip/Tibia800.zip) [(OTClient)](https://github.com/edubart/otclient) [(OTClient Mehah)](https://github.com/mehah/otclient) [(OTClient v8)](https://github.com/OTCv8/otclientv8)  
 > **Server version:** the forgotten server 1.2 [(clean server link)](https://github.com/otland/forgottenserver/releases/tag/v1.2)
+>**Source version:** (8.0) the forgotten server 1.2 [(By Celohere)](https://github.com/celohere/forgottenserver)
 >  
 
 Package posted by [Shiris undrin](https://otland.net/members/shiris-undrin.89141/) on [OTLand (Link)](https://otland.net/threads/8-0-tfs-1-2-server-global-full-real-map.280265/)
@@ -12,8 +13,8 @@ Package posted by [Shiris undrin](https://otland.net/members/shiris-undrin.89141
 ## More information
 Compilation and other: [The Forgotten Server WIKI](https://github.com/otland/forgottenserver/wiki)
 
-_As Post creator says in the comments there are some visual bugs on the map, Quests should work in 100% (for me its more like 99%)  
-Map was not cleaned from Rubbish laying around as some users report._
+_Visual bugs on the map are fixed daily as soon as they are found, Quests should work in 99%   
+Map was not cleaned from Rubbish, it is up to you to clean the map if you think better.._
 
 ## Features:
 - All 8.0 Quests/missions/tasks/questlong/access.  
@@ -28,7 +29,7 @@ Map was not cleaned from Rubbish laying around as some users report._
 - Npc Casino in Thais depot.
 - Npc's Dijinn's in Thais.
 - Runes for sale on npc's
-- Raid player summon "Lord'Paulistinha" mage. xD
+- Raid player summon (player system with skull and player loot).
 
 
 
