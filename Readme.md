@@ -3,8 +3,8 @@
 >  
 > **Info:**  
 > **Client sprites:** 8.0 [(Tibia Client)](https://downloads.ots.me/data/tibia-clients/windows/zip/Tibia800.zip) [(OTClient)](https://github.com/edubart/otclient) [(OTClient Mehah)](https://github.com/mehah/otclient) [(OTClient v8)](https://github.com/OTCv8/otclientv8)  
-> **Server version:** the forgotten server 1.2 [(clean server link)](https://github.com/otland/forgottenserver/releases/tag/v1.2)
->**Source version:** (8.0) the forgotten server 1.2 [(By Celohere)](https://github.com/celohere/forgottenserver)
+> **Server version:** the forgotten server 1.2 [(clean server link)](https://github.com/otland/forgottenserver/releases/tag/v1.2)  
+>**Source version:** (8.0) the forgotten server 1.2 [(By Celohere)](https://github.com/celohere/forgottenserver)  
 >  
 
 Package posted by [Shiris undrin](https://otland.net/members/shiris-undrin.89141/) on [OTLand (Link)](https://otland.net/threads/8-0-tfs-1-2-server-global-full-real-map.280265/)
