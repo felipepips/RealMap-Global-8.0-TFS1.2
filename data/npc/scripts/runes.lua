@@ -22,11 +22,11 @@ keywordHandler:addKeyword({'rods'}, StdModule.say, {npcHandler = npcHandler, onl
 shopModule:addBuyableItem({'spellbook'}, 2175, 150, 'spellbook')
 shopModule:addBuyableItem({'magic lightwand'}, 2163, 400, 'magic lightwand')
 
-shopModule:addBuyableItem({'mana fluid', 'manafluid'}, 2006, 40, 7, 'mana fluid')
+shopModule:addBuyableItem({'mana fluid', 'manafluid'}, 2006, 50, 7, 'mana fluid')
 shopModule:addBuyableItem({'life fluid', 'lifefluid'}, 2006, 50, 2, 'life fluid')
 
-shopModule:addBuyableItemContainer({'bp mf'}, 1998, 2006, 800, 7, 'backpack of life fluids')
-shopModule:addBuyableItemContainer({'bp lf'}, 1998, 2006, 1000, 2, 'backpack of mana fluids')
+shopModule:addBuyableItemContainer({'bp mf'}, 2001, 2006, 1000, 7, 'backpack of life fluids')
+shopModule:addBuyableItemContainer({'bp lf'}, 2000, 2006, 1000, 2, 'backpack of mana fluids')
 
 shopModule:addBuyableItem({'animate dead'}, 2316, 375, 1, 'animate dead rune')
 shopModule:addBuyableItem({'blank rune'}, 2260, 10, 1, 'blank rune')
@@ -87,39 +87,6 @@ shopModule:addSellableItem({'moonlight rod', 'moonlight'}, 2186, 200, 'moonlight
 shopModule:addSellableItem({'volcanic rod', 'volcanic'}, 2185, 1000, 'volcanic rod')
 shopModule:addSellableItem({'quagmire rod', 'quagmire'}, 2181, 2000, 'quagmire rod')
 shopModule:addSellableItem({'tempest rod', 'tempest'}, 2183, 3000, 'tempest rod')
-
-local items = {[1] = 2190, [2] = 2182, [5] = 2190, [6] = 2182}
-function creatureSayCallback(cid, type, msg)
-	if(not npcHandler:isFocused(cid)) then
-		return false
-	end
-
-	local talkUser = NPCHANDLER_CONVBEHAVIOR == CONVERSATION_DEFAULT and 0 or cid
-	if(msgcontains(msg, 'first rod') or msgcontains(msg, 'first wand')) then
-		if(isSorcerer(cid) or isDruid(cid)) then
-			if(getPlayerStorageValue(cid, 50111) <= 0) then
-				selfSay('So you ask me for a ' .. getItemNameById(items[getPlayerVocation(cid)]) .. ' to begin your advanture?', cid)
-				talkState[talkUser] = 1
-			else
-				selfSay('What? I have already gave you one ' .. getItemNameById(items[getPlayerVocation(cid)]) .. '!', cid)
-			end
-		else
-			selfSay('Sorry, you aren\'t a druid either a sorcerer.', cid)
-		end
-	elseif(msgcontains(msg, 'yes')) then
-		if(talkState[talkUser] == 1) then
-			doPlayerAddItem(cid, items[getPlayerVocation(cid)], 1)
-			selfSay('Here you are young adept, take care yourself.', cid)
-			setPlayerStorageValue(cid, 50111, 1)
-		end
-		talkState[talkUser] = 0
-	elseif(msgcontains(msg, 'no') and isInArray({1}, talkState[talkUser])) then
-		selfSay('Ok then.', cid)
-		talkState[talkUser] = 0
-	end
-
-	return true
-end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new())
