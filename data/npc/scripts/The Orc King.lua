@@ -78,7 +78,6 @@ local function creatureSayCallback(cid, type, msg)
 
 			player:setStorageValue(Storage.WhatAFoolishQuest.CookieDelivery.OrcKing, 1)
 			if player:getCookiesDelivered() == 10 then
-				player:addAchievement('Allow Cookies?')
 			end
 
 			Npc():getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)

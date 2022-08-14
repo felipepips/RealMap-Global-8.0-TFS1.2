@@ -97,7 +97,7 @@ addTaskKeyword({
 )
 
 -- Hand in task items
-local function addItemKeyword(keyword, aliasKeyword, text, value, item, addonId, missionStorage, achievement)
+local function addItemKeyword(keyword, aliasKeyword, text, value, item, addonId, missionStorage)
 	local itemKeyword = keywordHandler:addKeyword({keyword}, StdModule.say, {npcHandler = npcHandler, text = text[1]}, function(player) return player:getStorageValue(Storage.OutfitQuest.Shaman.AddonStaffMask) == value end)
 		itemKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = text[2], reset = true}, function(player) return player:getItemCount(item[1].itemId) < item[1].count or player:getItemCount(item[2].itemId) < item[2].count end)
 
@@ -111,7 +111,6 @@ local function addItemKeyword(keyword, aliasKeyword, text, value, item, addonId,
 				player:setStorageValue(Storage.OutfitQuest.Shaman.AddonStaffMask, player:getStorageValue(Storage.OutfitQuest.Shaman.AddonStaffMask) + 1)
 				player:setStorageValue(Storage.OutfitQuest.Ref, math.min(0, player:getStorageValue(Storage.OutfitQuest.Ref) - 1))
 				player:setStorageValue(missionStorage, 0)
-				if achievement then				end
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 			end
 		)

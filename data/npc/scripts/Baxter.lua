@@ -32,18 +32,6 @@ local function creatureSayCallback(cid, type, msg)
 		end
 	end
 	
-	if msgcontains(msg, 'achievement') then	
-		if player:getStorageValue(45210) == 2 then
-			npcHandler:say({
-				'Not bad, you will come a long way if you keep up the good work!',
-				'or',
-				'Salutations henchman/mercenary/orc butcher/war hero player!! Keep up the good work! Here you go.',
-				'or, when advancing in ranks',
-				'Good news everyone!! player will be promoted to the highest rank, a war hero! Congratulations!'
-			}, cid)
-			player:setStorageValue(45210, 3)
-		end
-	end
 	
 	if player:getStorageValue(45210) == 3 then
 			npcHandler:say({

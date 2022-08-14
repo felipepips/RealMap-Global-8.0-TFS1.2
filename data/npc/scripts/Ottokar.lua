@@ -23,7 +23,6 @@ local function creatureSayCallback(cid, type, msg)
 	elseif msgcontains(msg, 'yes') and npcHandler.topic[cid] == 1 then
 		if player:removeItem(13506, 1) then
 			player:addItem(13670, 1)
-			player:addAchievementProgress('Doctor! Doctor!', 100)
 			npcHandler:say('Here you are', cid)
 		else
 			npcHandler:say('You do not have the required items.', cid)

@@ -44,7 +44,6 @@ local function creatureSayCallback(cid, type, msg)
 			player:setStorageValue(Storage.BigfootBurden.QuestLine, 25)
 			player:setStorageValue(Storage.BigfootBurden.QuestLineComplete, 2)
 			player:setStorageValue(Storage.BigfootBurden.Rank)
-			player:addAchievement('Becoming a Bigfoot')
 
 		elseif player:getStorageValue(Storage.BigfootBurden.QuestLine) == 25 then
 			npcHandler:say("Congratulations on finding your soul melody.", cid)

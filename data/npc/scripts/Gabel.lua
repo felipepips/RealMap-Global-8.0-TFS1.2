@@ -67,7 +67,6 @@ local function creatureSayCallback(cid, type, msg)
 			}, cid)
 			player:setStorageValue(Storage.DjinnWar.MaridFaction.Mission03, 3)
 			player:setStorageValue(Storage.DjinnWar.MaridFaction.DoorToEfreetTerritory, 1)
-			player:addAchievement('Marid Ally')
 
 		elseif msgcontains(msg, 'no') then
 			npcHandler:say('Don\'t give up! May Daraman watch over you!', cid)

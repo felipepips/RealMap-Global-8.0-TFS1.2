@@ -536,8 +536,6 @@ local function creatureSayCallback(cid, type, msg)
 				npcHandler:say('By Kurik, I knew you have it in you. You are a fool after my fancy. Take this jester hat, you deserve it. It will go nicely with your jester costume.', cid)
 				player:addOutfitAddon(270, 2)
 				player:addOutfitAddon(273, 2)
-				player:addAchievement('Perfect Fool')
-				player:addAchievement('Fool at Heart')
 				npcHandler.topic[cid] = 0
 			end-- Fin del chat #3
 			

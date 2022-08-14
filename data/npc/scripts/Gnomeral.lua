@@ -50,7 +50,6 @@ local function creatureSayCallback(cid, type, msg)
 					player:setStorageValue(Storage.BigfootBurden.MatchmakerStatus, -1)
 					player:setStorageValue(Storage.BigfootBurden.MatchmakerIdNeeded, -1)
 					player:setStorageValue(Storage.BigfootBurden.MatchmakerTimeout, os.time() + 72000)
-					player:addAchievement('Crystals in Love')
 					player:checkGnomeRank()
 					npcHandler:say("Gnomo arigato |PLAYERNAME|! You did well. That will help us a lot. Take your tokens and this gnomish supply package as a reward. ", cid)
 					npcHandler.topic[cid] = 0

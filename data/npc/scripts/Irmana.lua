@@ -38,7 +38,6 @@ function creatureSayCallback(cid, type, msg)
 				player:addOutfitAddon(132, 2)
 				setPlayerStorageValue(cid, 1007, 1)
 				if player:getStorageValue(1007) == 1 and player:getStorageValue(1008) == 1 then
-					player:addAchievement(226) -- Achievement Aristocrat
 				end
 			end
 		elseif npcHandler.topic[cid] == 4 then

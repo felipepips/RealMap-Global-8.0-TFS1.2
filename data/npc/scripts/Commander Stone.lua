@@ -43,7 +43,6 @@ local function creatureSayCallback(cid, type, msg)
 					player:setStorageValue(Storage.BigfootBurden.MissionCrystalKeeper, 0)
 					player:setStorageValue(Storage.BigfootBurden.CrystalKeeperTimout, os.time() + 20 * 60 * 60)
 					player:setStorageValue(Storage.BigfootBurden.RepairedCrystalCount, -1)
-					player:addAchievement('Crystal Keeper')
 					player:checkGnomeRank()
 					npcHandler:say("You did well. That will help us a lot. Take your {token} and this gnomish supply package as a reward. ", cid)
 					npcHandler.topic[cid] = 0

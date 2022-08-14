@@ -257,8 +257,6 @@ local function creatureSayCallback(cid, type, msg)
 							player:addMoney(reward.value[1])
 						elseif isInArray({REWARD_EXP, 'exp', 'experience'}, reward.type:lower()) and not deny then
 							player:addExperience(reward.value[1], true)
-						elseif isInArray({REWARD_ACHIEVEMENT, 'achievement', 'ach'}, reward.type:lower()) and not deny then
-							player:addAchievement(reward.value[1])
 						elseif isInArray({REWARD_STORAGE, 'storage', 'stor'}, reward.type:lower()) and not deny then
 							player:setStorageValue(reward.value[1], reward.value[2])
 						elseif isInArray({REWARD_POINT, 'points', 'point'}, reward.type:lower()) and not deny then
