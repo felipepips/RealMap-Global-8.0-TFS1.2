@@ -44,6 +44,7 @@
 	<event type="kill" name="WotEZalamon" script="quests/wrath of the emperor/zalamon.lua" />
 
 	<!-- Others -->
+	<event type="login" name="PremCheck" script="premcheck.lua" />
 	<event type="login" name="PlayerLogin" script="others/login.lua" />
 	<event type="login" name="loginEvents" script="others/loginEvents.lua" />
 	<event type="login" name="FirstItems" script="others/firstitems.lua" />
