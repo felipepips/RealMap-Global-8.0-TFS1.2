@@ -56,7 +56,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		end
 
 		for i = 1, #config.demonPositions do
-			Game.createMonster("Angry Demon", config.demonPositions[i])
+			Game.createMonster("Demon", config.demonPositions[i])
 		end
 
 		local players
@@ -64,7 +64,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			players = storePlayers[i]
 			config.playerPositions[i]:sendMagicEffect(CONST_ME_POFF)
 			players:teleportTo(config.newPositions[i])
-			config.newPositions[i]:sendMagicEffect(CONST_ME_ENERGYAREA)
+			config.newPositions[i]:sendMagicEffect(CONST_ME_TELEPORT)
 			players:setDirection(DIRECTION_EAST)
 		end
 	elseif item.itemid == 1945 then

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Lord'Paulistinha" nameDescription="Lord'Paulistinha (Level 150). He is a master sorcerer. He is the Leader of the Pk Team" race="blood" experience="1" speed="370" manacost="390">
-  <health now="1900" max="1900"/>
-  <look type="130" head="95" body="0" legs="113" feet="115" addons="2" corpse="6080"/>
+<monster name="Lord'Paulistinha" nameDescription="Lord'Paulistinha (Level 250). He is a master sorcerer. He is the Leader of the Pk Team" race="blood" experience="0" speed="450" manacost="390" skull="red">
+  <health now="3500" max="3500"/>
+  <look type="130" head="39" body="122" legs="125" feet="57" addons="2" corpse="6080"/>
   <targetchange interval="5000" chance="8"/>
   <strategy attack="100" defense="0"/>
 	<flags>
@@ -18,20 +18,23 @@
 		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-75"/>
-		<attack name="physical" interval="2000" chance="100" range="7" min="-150" max="-250">
+		<attack name="melee" interval="2000" min="0" max="-5"/>
+		<attack name="physical" interval="2000" chance="100" range="7" min="-410" max="-515">
 			<attribute key="shootEffect" value="death"/>
-			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="areaEffect" value="MORTAREA"/>
 		</attack>
-		<attack name="energy" interval="2000" chance="20" target="0" length="8" spread="0" min="-100" max="-200">
-			<attribute key="areaEffect" value="energy"/>
+		<attack name="fire" interval="2000" chance="25"  range="7" radius="7" target="0" min="-515" max="-725">
+		<attribute key="areaEffect" value="firearea"/>
 		</attack>
-		<attack name="poisoncondition" interval="2000" chance="15" range="7" min="-10" max="-10">
+		<attack name="energy" interval="2000" chance="35" target="0" length="5" spread="3" min="-310" max="-415">
+			<attribute key="areaEffect" value="TELEPORT"/>
+		</attack>
+		<attack name="poisoncondition" interval="2000" chance="15" range="7" min="-5" max="-10">
 			<attribute key="shootEffect" value="poison"/>
 		</attack>
 	</attacks>
 	<defenses armor="15" defense="15">
-		<defense name="healing" interval="2000" chance="50" min="150" max="280">
+		<defense name="healing" interval="1500" chance="50" min="400" max="900">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 	</defenses>
@@ -40,32 +43,34 @@
 		<immunity invisible="1"/>
 	</immunities>
 	<summons maxSummons="2">
-		<summon name="Fire Elemental" interval="2000" chance="30"/>
+		<summon name="fire elemental" interval="2000" chance="30"/>
 	</summons>
 	<voices interval="5000" chance="10">
-		<voice sentence="Deu mó trabalho pra criar esse servidor 8.0 HAHAHAHA."/>
-		<voice sentence="Servidor criado por BrunoWots/	Shiris undrin, hahahaha!"/>
-		<voice sentence="Não se esqueça dos creditos o comedia HAHAHAHAHA!"/>
+		<voice sentence="Vai morrer lixo HAHAHAHA."/>
+		<voice sentence="TÃ¡ hunted no meu servidor hahahaha!"/>
+		<voice sentence="Pay boh e morra o seu comedia HAHAHAHAHA!"/>
 	</voices>
 	<loot>
-		<item id="2802" chance="13200"/>				<!-- sling herb -->
-		<item id="2760" chance="11720"/>				<!-- goat grass -->
-		<item id="11220" chance="10000"/>				<!-- dark rosary -->
-		<item id="2674" countmax="2" chance="7500"/>	<!-- red apple -->
-		<item id="2803" chance="6500"/>					<!-- powder herb -->
-		<item id="10562" chance="5000"/>				<!-- black hood -->
-		<item id="2791" chance="3200"/>					<!-- wood mushroom -->
-		<item id="10556" chance="1800"/>				<!-- cultish robe -->
-		<item id="2423" chance="1500"/>					<!-- clerical mace -->
-		<item id="2374" chance="1450"/>					<!-- wooden flute -->
-		<item id="2192" chance="1100"/>					<!-- crystal ball -->
-		<item id="2183" chance="1000"/>					<!-- hailstorm rod -->
-		<item id="1962" chance="940"/>					<!-- book -->
-		<item id="7620" chance="900"/>					<!-- mana potion -->
-		<item id="2151" chance="730"/>					<!-- talon -->
-		<item id="2125" chance="660"/>					<!-- crystal necklace -->
-		<item id="2529" chance="200"/>					<!-- black shield -->
-		<item id="2114" chance="80"/>					<!-- piggy bank -->
-	</loot>
+		<item id="2493" chance="132000"/>				<!-- demon helmet -->
+		<item id="2656" chance="132000"/>				<!-- blue robe -->
+		<item id="7730" chance="132000"/>				<!-- blue legs -->
+		<item id="2195" chance="132000"/>					<!-- boots of haste -->
+		<item id="2520" chance="132000"/>				<!-- demon shield -->
+		<item id="2173" chance="132000"/>					<!-- amulet of loss -->
+		<item id="2361" chance="132000"/>				<!-- frozen starlight -->
+    <item id="2000" chance="132000"><!-- red backpack -->
+        <inside>
+            <item id="2554" chance="132000" /><!-- shovel -->
+            <item id="2120" chance="132000" /><!-- rope -->
+            <item id="2268" countmax="100" chance="132000" /><!-- sudden death runes-->
+			<item id="2268" countmax="100" chance="132000" /><!-- sudden death runes-->
+			<item id="2268" countmax="100" chance="132000" /><!-- sudden death runes-->
+			<item id="2273" countmax="100" chance="132000" /><!-- ultimate healing runes-->
+			<item id="2273" countmax="100" chance="132000" /><!-- ultimate healing runes-->
+			<item id="2789" countmax="100" chance="132000" /><!-- brown mushrooms -->
+			<item id="2160" countmax="15" chance="132000" /><!-- crystal coins -->
+        </inside>
+    </item>
+</loot>
 </monster>
 
