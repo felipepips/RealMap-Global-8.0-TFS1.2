@@ -13,7 +13,7 @@ Package posted by [Shiris undrin](https://otland.net/members/shiris-undrin.89141
 ## More information
 Compilation and other: [The Forgotten Server WIKI](https://github.com/otland/forgottenserver/wiki)
 
-_Visual bugs on the map are fixed daily as soon as they are found, Quests should work in 99%   
+_Visual bugs on the map are fixed daily as soon as they are found, Quests should work in 100%   
 Map was not cleaned from Rubbish, it is up to you to clean the map if you think better.._
 
 ## Features:
