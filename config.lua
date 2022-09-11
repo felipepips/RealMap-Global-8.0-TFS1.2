@@ -54,6 +54,8 @@ deathLosePercent = -1
 -- NOTE: set housePriceEachSQM to -1 to disable the ingame buy house functionality
 housePriceEachSQM = 1000
 houseRentPeriod = "never"
+houseAntiTrash = false
+onlyInvitedCanMoveHouseItems = true
 
 -- Item Usage
 timeBetweenActions = 150
@@ -68,7 +70,7 @@ mapAuthor = "Bruno"
 mysqlHost = "localhost"
 mysqlUser = "root"
 mysqlPass = ""
-mysqlDatabase = "global"
+mysqlDatabase = "infinity14"
 mysqlPort = 3306
 mysqlSock = ""
 passwordType = "sha1"

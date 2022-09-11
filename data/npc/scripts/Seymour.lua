@@ -19,8 +19,6 @@ npcHandler:addModule(VoiceModule:new(voices))
 -- Greeting and Farewell
 local hiKeyword = keywordHandler:addGreetKeyword({'hi'}, {npcHandler = npcHandler, text = 'Hello, |PLAYERNAME|. Welcome to the Academy of Rookgaard. May I sign you up as a {student}?'})
 	hiKeyword:addChildKeyword({'student'}, StdModule.say, {npcHandler = npcHandler, text = 'Brilliant! We need fine adventurers like you! If you are ready to learn, just ask me for a lesson. You can always ask for the differently coloured words - such as this one - to continue the lesson.', reset = true})
-	hiKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Brilliant! We need fine adventurers like you! If you are ready to learn, just ask me for a lesson. You can always ask for the differently coloured words - such as this one - to continue the lesson.', reset = true})
-	hiKeyword:addChildKeyword({''}, StdModule.say, {npcHandler = npcHandler, text = 'Only nonsense on your mind, eh?', reset = true})
 keywordHandler:addAliasKeyword({'hello'})
 
 keywordHandler:addFarewellKeyword({'bye'}, {npcHandler = npcHandler, text = 'Good bye, |PLAYERNAME|! And remember: No running up and down in the academy!'})
@@ -177,6 +175,40 @@ keywordHandler:addKeyword({'tom'}, StdModule.say, {npcHandler = npcHandler, text
 keywordHandler:addKeyword({'dallheim'}, StdModule.say, {npcHandler = npcHandler, text = 'He\'s the guard on the north {bridge} and a great fighter. He can show you {monster} locations. Just ask him about monsters!'})
 keywordHandler:addKeyword({'zerbrus'}, StdModule.say, {npcHandler = npcHandler, text = 'He\'s the guard on the west {bridge} and a great fighter. He can show you {monster} locations. Just ask him about monsters!'})
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, 'Good bye! And remember: No running up and down in the academy!')
+local function creatureSayCallback(cid, type, msg)
+	if not npcHandler:isFocused(cid) then
+		return false
+	end
 
-npcHandler:addModule(FocusModule:new())
+	if msgcontains(msg, 'key') then
+		npcHandler:say('If you are that curious, do you want to buy a key for 5 gold?', cid)
+		npcHandler.topic[cid] = 1
+	elseif msgcontains(msg, 'yes') then
+		if npcHandler.topic[cid] == 1 then
+			local player = Player(cid)
+			if player:removeMoney(5) then
+				npcHandler:say('Here it is.', cid)
+				local key = player:addItem(2088, 1)
+				if key then
+					key:setActionId(4600)
+				end
+			else
+				npcHandler:say('Come back when you have enough money.', cid)
+			end
+			npcHandler.topic[cid] = 0
+		end
+	elseif msgcontains(msg, 'no') then
+		if npcHandler.topic[cid] == 1 then
+			npcHandler:say('Believe me, it\'s better for you that way.', cid)
+			npcHandler.topic[cid] = 0
+		end
+	end
+	return true
+end
+
+npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
+
+local focusModule = FocusModule:new()
+focusModule:addGreetMessage({'hi', 'hello'})
+focusModule:addFarewellMessage({'bye', 'farewell'})
+npcHandler:addModule(focusModule)

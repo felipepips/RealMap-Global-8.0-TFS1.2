@@ -34,6 +34,9 @@
 	<talkaction words="/ghost" script="ghost.lua" />
 	<talkaction words="/clean" script="clean.lua" />
 	<talkaction words="/hide" script="hide.lua" />
+	<talkaction words="/clean" script="clean.lua" />
+	<talkaction words="/save" script="serversave.lua" />
+	<talkaction words="/cast" script="cast.lua" />
 
 	<!-- player talkactions -->
 	<talkaction words="!outfit" script="guild_outfit.lua"/>

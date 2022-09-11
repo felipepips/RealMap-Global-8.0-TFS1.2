@@ -116,3 +116,49 @@ MapWindow.cpp 1105: exception occurred (EffectNumber = 1) (Type = 40), reason:
 Objects.cpp 691: exception occurred (Number = 40), reason:
 Container.h 226: index out of range (original i: 40, i: 39, min: 1, d: 35)
 Comment: 
+----- 10/09/2022 22:48:17 - GOD (127.0.0.1) -----
+Debug Assertion 8.0 Container.h 226
+Sat Sep 10 22:45:26 2022
+Windows Version: 6.1 build 7601 on 2 with Service Pack 1
+Graphic Engine: DirectX9 (2)
+Last Packet Types: 131 131 132 131 140 131 132 131 140 131
+Last Packet: 215 000 140 168 119 000 064 100 108 111 126 217 125 007 001 106
+Player Position: [32370,32216,7]
+Player Name: GOD
+Player.cpp 358: exception occurred, reason:
+Player.cpp 460: exception occurred, reason:
+Control.cpp 1633: exception occurred (MessageType: 0 MaW: 3EADD8 MoW: 0), reason:
+Control.cpp 1628: exception occurred, reason:
+Control.cpp 379: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 133: exception occurred (Surface = 1), reason:
+GUI.cpp 1452: exception occurred (Surface = 1), reason:
+MapWindow.cpp 861: exception occurred (Surface = 1), reason:
+MapWindow.cpp 548: exception occurred (Obj = 408), reason:
+MapWindow.cpp 1113: exception occurred (posx = 128) (posy = 192), reason:
+MapWindow.cpp 1105: exception occurred (EffectNumber = 14) (Type = 44), reason:
+Objects.cpp 691: exception occurred (Number = 44), reason:
+Container.h 226: index out of range (original i: 44, i: 43, min: 1, d: 35)
+Comment: 
+----- 11/09/2022 00:21:35 - GOD (127.0.0.1) -----
+Debug Assertion 8.0 Container.h 226
+Sun Sep 11 00:19:37 2022
+Windows Version: 6.1 build 7601 on 2 with Service Pack 1
+Graphic Engine: DirectX9 (2)
+Last Packet Types: 131 131 131 131 131 131 131 131 131 131
+Last Packet: 101 000 140 255 119 000 064 072 131 114 126 215 125 007 010 132
+Player Position: [32369,32216,7]
+Player Name: GOD
+Player.cpp 358: exception occurred, reason:
+Player.cpp 460: exception occurred, reason:
+Control.cpp 1633: exception occurred (MessageType: 0 MaW: 3EADD8 MoW: 0), reason:
+Control.cpp 1628: exception occurred, reason:
+Control.cpp 379: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 133: exception occurred (Surface = 1), reason:
+GUI.cpp 1452: exception occurred (Surface = 1), reason:
+MapWindow.cpp 861: exception occurred (Surface = 1), reason:
+MapWindow.cpp 548: exception occurred (Obj = 408), reason:
+MapWindow.cpp 1113: exception occurred (posx = 224) (posy = 128), reason:
+MapWindow.cpp 1105: exception occurred (EffectNumber = 15) (Type = 48), reason:
+Objects.cpp 691: exception occurred (Number = 48), reason:
+Container.h 226: index out of range (original i: 48, i: 47, min: 1, d: 35)
+Comment: 

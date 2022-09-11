@@ -51,9 +51,7 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="70" chance="64550"/>	<!-- gold coin -->
-		<item id="10555" chance="10250"/>				<!-- cultish mask -->
 		<item id="1962" chance="910"/>					<!-- orange book -->
-		<item id="12411" chance="890"/>					<!-- cultish symbol -->
 		<item id="2200" chance="790"/>					<!-- protection amulet -->
 		<item id="7589" chance="740"/>					<!-- strong mana potion -->
 		<item id="2146" chance="550"/>					<!-- small sapphire -->
@@ -66,7 +64,6 @@
 		<item id="5670" chance="130"/>					<!-- mysterious voodoo skull -->
 		<item id="2114" chance="130"/>					<!-- piggy bank -->
 		<item id="7426" chance="100"/>					<!-- amber staff -->
-		<item id="12608" chance="100"/>					<!-- broken key ring -->
 		<item id="5801" chance="100"/>					<!-- jewelled backpack -->
 		<item id="2656" chance="40"/>					<!-- blue robe -->
 	</loot>

@@ -8,7 +8,7 @@ local config = {
 		Position(32412, 32231, 10)
 	},
 	removeCreaturePosition = Position(32409, 32231, 10),
-	bridgeID = 5770,
+	bridgeID = 5769,
 	waterID = 4615
 }
 

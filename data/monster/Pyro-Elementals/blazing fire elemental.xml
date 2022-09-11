@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Blazing Fire Elemental" nameDescription="a blazing fire elemental" race="fire" experience="450" speed="220" manacost="0">
 	<health now="650" max="650"/>
-	<look type="49" corpse="8964"/>
+	<look type="49" corpse="1487"/>
 	<targetchange interval="5000" chance="8"/>
 	<flags>
 		<flag summonable="0"/>
@@ -34,10 +34,10 @@
 	</immunities>
 	
 	<loot>
-		<item id="2148" countmax="125" chance="77000"/>	<!-- gold coin -->
-		<item id="10553" chance="5200"/>				<!-- fiery heart -->
-		<item id="8299" chance="4500"/>					<!-- glimmering soil -->
-		<item id="7840" countmax="3" chance="3700"/>	<!-- flaming arrow -->
-		<item id="13757" chance="830"/>					<!-- coal -->
+		<item id="2148" countmax="212" chance="99970"/>	<!-- gold coin -->
+		<item id="2152" chance="14000"/>				<!-- platinum coin -->
+		<item id="2147" countmax="2" chance="6100"/>	<!-- small ruby -->
+		<item id="2187" chance="2300"/>					<!-- wand of inferno -->
+		<item id="2392" chance="530"/>					<!-- fire sword -->
 	</loot>
 </monster>

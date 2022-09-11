@@ -294,8 +294,8 @@
 	<!-- Kazordoon -->
 	<action fromaid="50136" toaid="50159" script="Map/kazordoon/oreWagons.lua" />
 	<action fromaid="50230" toaid="50233" script="Map/kazordoon/oreWagons.lua" />
-	<action fromaid="50011" toaid="50012" script="Map/kazordoon/elevatorLever.lua" />
 	<action actionid="50237" script="Map/kazordoon/stone.lua" />
+	<action actionid="50011" script="Map/kazordoon/elevatorLever.lua" />
 	<action actionid="50238" script="Map/kazordoon/trapDoor.lua" />	
 	
 	
@@ -614,12 +614,7 @@
 	<action actionid="3101" script="switch/rook/academy switch.lua"/>
 	<action actionid="3102" script="switch/rook/train monster1.lua" />
 	<action actionid="3103" script="switch/rook/train monster2.lua" />
-	
-  <!-- Shady links removed: https://otland.net/threads/8-0-tfs-1-2-server-global-full-real-map.280265/post-2701198 -->
-  <!-- <action uniqueid="5252" script="switch/transdec.lua" /> -->
-  <!-- <action uniqueid="5253" script="switch/trandec.lua" /> -->
-	
-  <action actionid="3104" script="switch/rook/train monster3.lua" />
+    <action actionid="3104" script="switch/rook/train monster3.lua" />
 	<action actionid="3105" script="switch/rook/train monster4.lua" />
 	<action actionid="3106" script="switch/rook/bear room stone.lua" />
 	<action actionid="3107" script="switch/rook/katana door.lua" />
@@ -628,8 +623,8 @@
 	<action actionid="3112" script="switch/rook/spike sword door.lua" />
 	<action uniqueid="15068" script="switch/rook-stone-switch.lua" />
 
-	--Quest Rook, 7000--
+	<!-- Spike Sword Quest Rook, 7000 -->
 	<action actionid="7000" script="rook/quest.lua" /> <!-- Action id of quests, id is Uid and start from 1001 -->
-7000 - 7999 Reserved for Quest storages in Rook (All new ids must be registered in the quest file!)
+    7000 - 7999 Reserved for Quest storages in Rook (All new ids must be registered in the quest file!)
 
 </actions>
