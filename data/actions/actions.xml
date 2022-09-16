@@ -2,6 +2,17 @@
 <actions>
 	<!-----------------------------------------------------------------------------------------------------------------------------OTHER--->
 	
+	<!-- Donations -->
+	<action itemid="7476" script="donations/greendjin.lua"/>
+	<action itemid="7477" script="donations/bluedjin.lua"/>
+	<action itemid="7478" script="donations/postman.lua"/>
+	<action itemid="7479" script="donations/rashid.lua"/>
+	<action itemid="7480" script="donations/sex_change_scroll.lua"/>
+	<action itemid="7481" script="donations/namelock_ticket.lua"/>	
+	<action itemid="7485" script="donations/7premdays.lua"/>
+	<action itemid="7486" script="donations/14premdays.lua"/>
+	<action itemid="7487" script="donations/30premdays.lua"/>
+	
 	<!-- Item Rarity system -->	
 	<action fromid="12663" toid="12665" script="Other/other/slot.lua"/>
 	
@@ -347,7 +358,7 @@
 	<!-- Alawar's Vault Quest -->
 	<action actionid="4210" script="Quest/Carlin/Alawar's Vault/senjaCastleLever.lua" />
 	<!-- The Exterminator Quest -->
-	<action itemid="8205" script="Quest/Carlin/The Exterminator/exterminatorFlask.lua" />
+	<action itemid="7488" script="Quest/Carlin/The Exterminator/exterminatorFlask.lua" />
 	<!-- The Queen of the Banshees Quest -->
 	<action fromuid="49998" touid="50002" script="Quest/Carlin/the queen of the banshees/theFirstSeal.lua" />
 	<action fromuid="50005" touid="50010" script="Quest/Carlin/the queen of the banshees/theSixthSeal.lua" />
@@ -573,15 +584,6 @@
 	<!-- The Lightbearer-->	
 	<action itemid="9956" script="Quest/Tibia/TheLightbearer/magical_torch.lua"/>
 	<action itemid="10531" script="Quest/Tibia/TheLightbearer/midnight_shard.lua"/>
-	<!-- What a foolish Quest -->
-	<action itemid="7478" script="Quest/Tibia/what a foolish/flask.lua" />
-	<action itemid="7482" script="Quest/Tibia/what a foolish/crate.lua" />
-	<action itemid="7485" script="Quest/Tibia/what a foolish/cushion.lua" />
-	<action itemid="7486" script="Quest/Tibia/what a foolish/catbasket.lua" />
-	<action itemid="7490" script="Quest/Tibia/what a foolish/contract.lua" />
-	<action itemid="7500" script="Quest/Tibia/what a foolish/worncloth.lua" />
-	<action itemid="7502" script="Quest/Tibia/what a foolish/disguise.lua" />
-	<action itemid="8187" script="Quest/Tibia/what a foolish/watch.lua" />
 	
 	<!-- ToolQuest --> 
 	<!----Posible mover de carpeta a MAP o a TOOLS--> 

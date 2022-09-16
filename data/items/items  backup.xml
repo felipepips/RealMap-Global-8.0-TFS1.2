@@ -9555,7 +9555,7 @@
 	<item id="5951" article="a" name="fish tail">
 		<attribute key="weight" value="250" />
 	</item>
-	<item id="5952" article="a" name="scroll">
+	<item id="5952" article="a" name="love poem">
 		<attribute key="weight" value="120" />
 	</item>
 	<item id="5953" article="a" name="raven herb">
@@ -13014,7 +13014,7 @@
 	<item id="7476" name="green djinn scroll"/>
 	<item id="7477" name="blue djinn scroll"/>
 	<item id="7478" name="postman scroll"/>
-	<item id="7479" name="avar tar scroll"/>
+	<item id="7479" name="rashid scroll"/>
 	<item id="7480" name="change sex scroll"/>
 	<item id="7481" name="change name scroll"/>
 	<item id="7482" name="scroll of magic"/>
@@ -13028,6 +13028,10 @@
 	</item>
 	<item id="7487" article="a" name="premium scroll">
 		<attribute key="description" value="30 premium days"/>
+	</item>
+		<item id="7488" article="a" name="special flask">
+		<attribute key="description" value="It contains highly intensified poison against vermin." />
+		<attribute key="weight" value="180" />
 	</item>
 	<item id="30001" name="water" />
 	<item id="30002" name="lifefluid" />
