@@ -13,6 +13,7 @@ stairJumpExhaustion = 800
 experienceByKillingPlayers = true
 expFromPlayersLevelRange = 75
 allowFightBack = "false"
+stopAttackingAtExit = "false"
 
 accountManager = true
 namelockManager = false
@@ -37,11 +38,12 @@ maxPlayers = 100
 motd = "Welcome to Tibia2."
 onePlayerOnlinePerAccount = true
 allowClones = false
+teleportSummons = true
 serverName = "Tibia2"
 statusTimeout = 50000
 replaceKickOnLogin = true
 maxPacketsPerSecond = 100
-enableLiveCasting = false
+enableLiveCasting = true
 liveCastPort = 7173
 
 -- Deaths
@@ -89,6 +91,7 @@ classicEquipmentSlots = true
 classicAttackSpeed = true
 autoStackItems = true
 displayLootMessage = true
+summonsDropCorpse = true
 
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages in data/XML/stages.xml
