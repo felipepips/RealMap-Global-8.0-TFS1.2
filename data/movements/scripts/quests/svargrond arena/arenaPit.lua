@@ -53,13 +53,15 @@ function onStepIn(creature, item, position, fromPosition)
 		return true
 	end
 
-	SvargrondArena.cancelEvents(playerId)
-	SvargrondArena.resetPit(pitId)
-	SvargrondArena.scheduleKickPlayer(playerId, pitId)
-	Game.createMonster(ARENA[arenaId].creatures[pitId], PITS[pitId].summon, false, true)
+	if PITS[pitId] and ARENA[arenaId] then
+			SvargrondArena.cancelEvents(playerId)
+			SvargrondArena.resetPit(pitId)
+			SvargrondArena.scheduleKickPlayer(playerId, pitId)
+			Game.createMonster(ARENA[arenaId].creatures[pitId], PITS[pitId].summon, false, true)
 
-	player:teleportTo(PITS[pitId].center)
-	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
-	player:say('Fight!', TALKTYPE_MONSTER_SAY)
-	return true
+		player:teleportTo(PITS[pitId].center)
+		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
+		player:say('Fight!', TALKTYPE_MONSTER_SAY) 
+		return true
+	end
 end
