@@ -271,74 +271,73 @@
 		<monster name="tarantula" x="0" y="-1" z="1" spawntime="60" />
 	</spawn>
 	<spawn centerx="31967" centery="32855" centerz="1" radius="5">
-		<monster name="pirate marauder" x="2" y="0" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="1" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="2" y="1" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="3" y="1" z="1" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="2" z="1" spawntime="5" />
-		<monster name="pirate Corsair" x="2" y="2" z="1" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="-3" z="1" spawntime="5" />
+		<monster name="pirate cutthroat" x="3" y="-3" z="1" spawntime="5" />
+		<monster name="pirate cutthroat" x="-5" y="-2" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="-1" y="-1" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="2" y="-1" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="4" y="-1" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="0" z="1" spawntime="5" />
+		<monster name="pirate Corsair" x="-2" y="0" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="0" y="1" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="1" z="1" spawntime="5" />
 		<monster name="pirate marauder" x="3" y="2" z="1" spawntime="5" />
-		<monster name="pirate cutthroat" x="1" y="3" z="1" spawntime="5" />
-		<monster name="pirate cutthroat" x="2" y="3" z="1" spawntime="5" />
-		<monster name="pirate cutthroat" x="3" y="3" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="3" z="1" spawntime="5" />
+		<monster name="pirate Corsair" x="0" y="5" z="1" spawntime="5" />
+		<monster name="pirate cutthroat" x="2" y="5" z="1" spawntime="5" />
 	</spawn>
 	<spawn centerx="31951" centery="32857" centerz="1" radius="10">
-		<monster name="pirate marauder" x="8" y="-7" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="7" y="-6" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="8" y="-6" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="8" y="-8" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="6" y="-7" z="1" spawntime="5" />
+		<monster name="pirate Corsair" x="5" y="-6" z="1" spawntime="5" />
 		<monster name="pirate Buccaneer" x="9" y="-6" z="1" spawntime="5" />
-		<monster name="pirate marauder" x="7" y="-5" z="1" spawntime="5" />
-		<monster name="pirate Corsair" x="8" y="-5" z="1" spawntime="5" />
-		<monster name="pirate marauder" x="9" y="-5" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="-5" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="8" y="-5" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="6" y="-4" z="1" spawntime="5" />
 		<monster name="pirate cutthroat" x="7" y="-4" z="1" spawntime="5" />
-		<monster name="pirate cutthroat" x="8" y="-4" z="1" spawntime="5" />
-		<monster name="pirate cutthroat" x="9" y="-4" z="1" spawntime="5" />
-		<monster name="pirate marauder" x="4" y="-2" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="-3" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="3" y="-3" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="5" y="-3" z="1" spawntime="5" />
+		<monster name="pirate cutthroat" x="9" y="-3" z="1" spawntime="5" />
 		<monster name="pirate marauder" x="7" y="-2" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="3" y="-1" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="-1" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="2" y="-1" z="1" spawntime="5" />
 		<monster name="pirate Buccaneer" x="5" y="-1" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="6" y="-1" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="7" y="-1" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="8" y="-1" z="1" spawntime="5" />
+		<monster name="pirate Corsair" x="9" y="-1" z="1" spawntime="5" />
 		<monster name="pirate marauder" x="3" y="0" z="1" spawntime="5" />
-		<monster name="pirate Corsair" x="4" y="0" z="1" spawntime="5" />
 		<monster name="pirate marauder" x="5" y="0" z="1" spawntime="5" />
-		<monster name="pirate marauder" x="6" y="0" z="1" spawntime="5" />
-		<monster name="pirate Corsair" x="7" y="0" z="1" spawntime="5" />
-		<monster name="pirate marauder" x="8" y="0" z="1" spawntime="5" />
+		<monster name="pirate cutthroat" x="7" y="0" z="1" spawntime="5" />
+		<monster name="pirate cutthroat" x="8" y="0" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="0" y="1" z="1" spawntime="5" />
 		<monster name="pirate cutthroat" x="3" y="1" z="1" spawntime="5" />
 		<monster name="pirate cutthroat" x="4" y="1" z="1" spawntime="5" />
-		<monster name="pirate cutthroat" x="5" y="1" z="1" spawntime="5" />
 		<monster name="pirate cutthroat" x="6" y="1" z="1" spawntime="5" />
-		<monster name="pirate cutthroat" x="7" y="1" z="1" spawntime="5" />
-		<monster name="pirate cutthroat" x="8" y="1" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="10" y="1" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="2" z="1" spawntime="5" />
+		<monster name="pirate cutthroat" x="8" y="2" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="3" z="1" spawntime="5" />
 		<monster name="pirate marauder" x="2" y="3" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="4" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="2" y="4" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="3" y="4" z="1" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="5" z="1" spawntime="5" />
-		<monster name="pirate Corsair" x="2" y="5" z="1" spawntime="5" />
-		<monster name="pirate marauder" x="3" y="5" z="1" spawntime="5" />
-		<monster name="pirate cutthroat" x="1" y="6" z="1" spawntime="5" />
+		<monster name="pirate Corsair" x="4" y="3" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="9" y="3" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="0" y="4" z="1" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="6" z="1" spawntime="5" />
 		<monster name="pirate cutthroat" x="2" y="6" z="1" spawntime="5" />
-		<monster name="pirate cutthroat" x="3" y="6" z="1" spawntime="5" />
-		<monster name="pirate marauder" x="3" y="9" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="7" z="1" spawntime="5" />
+		<monster name="pirate cutthroat" x="10" y="7" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="2" y="8" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="7" y="8" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="5" y="9" z="1" spawntime="5" />
 		<monster name="pirate Buccaneer" x="2" y="10" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="3" y="10" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="10" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="4" y="10" z="1" spawntime="5" />
 	</spawn>
 	<spawn centerx="31951" centery="32871" centerz="1" radius="5">
-		<monster name="pirate marauder" x="3" y="-2" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="2" y="-1" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="-3" z="1" spawntime="5" />
+		<monster name="pirate Buccaneer" x="5" y="-3" z="1" spawntime="5" />
+		<monster name="pirate Corsair" x="-1" y="-2" z="1" spawntime="5" />
+		<monster name="pirate cutthroat" x="0" y="-2" z="1" spawntime="5" />
+		<monster name="pirate cutthroat" x="-2" y="-1" z="1" spawntime="5" />
 		<monster name="pirate Buccaneer" x="3" y="-1" z="1" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="-1" z="1" spawntime="5" />
-		<monster name="pirate marauder" x="2" y="0" z="1" spawntime="5" />
-		<monster name="pirate Corsair" x="3" y="0" z="1" spawntime="5" />
-		<monster name="pirate marauder" x="4" y="0" z="1" spawntime="5" />
-		<monster name="pirate cutthroat" x="2" y="1" z="1" spawntime="5" />
+		<monster name="pirate marauder" x="5" y="-1" z="1" spawntime="5" />
 		<monster name="pirate cutthroat" x="3" y="1" z="1" spawntime="5" />
-		<monster name="pirate cutthroat" x="4" y="1" z="1" spawntime="5" />
 	</spawn>
 	<spawn centerx="32140" centery="31092" centerz="2" radius="2">
 		<monster name="Penguin" x="-2" y="1" z="2" spawntime="240" />
@@ -682,143 +681,167 @@
 		<monster name="centipede" x="0" y="1" z="2" spawntime="60" />
 	</spawn>
 	<spawn centerx="31990" centery="32828" centerz="2" radius="16">
+		<monster name="pirate Corsair" x="-8" y="-3" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-13" y="-2" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-9" y="-2" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-6" y="-2" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="-2" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-11" y="-1" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-8" y="0" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-16" y="1" z="2" spawntime="5" />
+		<monster name="pirate Corsair" x="1" y="1" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-13" y="2" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="-10" y="2" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-4" y="2" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-11" y="3" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-10" y="3" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-9" y="3" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="3" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-4" y="3" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-3" y="3" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-11" y="4" z="2" spawntime="5" />
-		<monster name="pirate Corsair" x="-10" y="4" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-7" y="2" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="2" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="2" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-14" y="3" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-12" y="3" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="-9" y="4" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="-5" y="4" z="2" spawntime="5" />
-		<monster name="pirate Corsair" x="-4" y="4" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-3" y="4" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="2" y="4" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="-11" y="5" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-10" y="5" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-9" y="5" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-5" y="5" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-4" y="5" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-7" y="5" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="-3" y="5" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="5" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="2" y="5" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="3" y="5" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="6" z="2" spawntime="5" />
-		<monster name="pirate Corsair" x="2" y="6" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="3" y="6" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="5" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-16" y="6" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-12" y="7" z="2" spawntime="5" />
+		<monster name="pirate Corsair" x="-9" y="7" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="1" y="7" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="2" y="7" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="3" y="7" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-14" y="8" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-10" y="8" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-4" y="8" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="0" y="8" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="3" y="8" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="5" y="8" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="9" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-2" y="9" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-15" y="10" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="-12" y="10" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-4" y="10" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="3" y="10" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-13" y="11" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-12" y="11" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-11" y="11" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="11" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-4" y="11" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-3" y="11" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="2" y="11" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="3" y="11" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="11" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-10" y="10" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="10" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="10" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="10" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="-13" y="12" z="2" spawntime="5" />
-		<monster name="pirate Corsair" x="-12" y="12" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-11" y="12" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-5" y="12" z="2" spawntime="5" />
-		<monster name="pirate Corsair" x="-4" y="12" z="2" spawntime="5" />
+		<monster name="pirate Corsair" x="-9" y="12" z="2" spawntime="5" />
+		<monster name="pirate Corsair" x="-7" y="12" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="-3" y="12" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="2" y="12" z="2" spawntime="5" />
-		<monster name="pirate Corsair" x="3" y="12" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="12" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="4" y="12" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-13" y="13" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="-12" y="13" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="-11" y="13" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="-5" y="13" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-4" y="13" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-3" y="13" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="2" y="13" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="3" y="13" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="4" y="13" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-15" y="14" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-13" y="14" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-6" y="14" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="14" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="15" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-3" y="15" z="2" spawntime="5" />
+		<monster name="pirate Corsair" x="3" y="15" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="5" y="15" z="2" spawntime="5" />
 	</spawn>
 	<spawn centerx="32391" centery="32828" centerz="2" radius="5">
 		<npc name="Tristan" x="-1" y="1" z="2" spawntime="60" />
 	</spawn>
 	<spawn centerx="31948" centery="32866" centerz="2" radius="5">
-		<monster name="pirate Corsair" x="4" y="-5" z="2" spawntime="5" />
+		<monster name="pirate Corsair" x="-4" y="-5" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="-5" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="2" y="-5" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="5" y="-5" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="-2" y="-4" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="4" y="-4" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="5" y="-4" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-3" y="-3" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-2" y="-3" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="-3" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-3" y="-2" z="2" spawntime="5" />
-		<monster name="pirate Corsair" x="-2" y="-2" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="-2" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-4" y="-3" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="0" y="-3" z="2" spawntime="5" />
+		<monster name="pirate Corsair" x="5" y="-2" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="-3" y="-1" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-2" y="-1" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="-1" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="0" y="2" z="2" spawntime="5" />
+		<monster name="pirate Corsair" x="-5" y="0" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="5" y="0" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="1" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="2" y="1" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="4" y="1" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="2" z="2" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-1" y="3" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="3" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="3" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="3" y="3" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-3" y="4" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="-1" y="4" z="2" spawntime="5" />
-		<monster name="pirate Corsair" x="0" y="4" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="4" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="5" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="5" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="1" y="5" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="2" y="4" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="4" y="5" z="2" spawntime="5" />
 	</spawn>
 	<spawn centerx="31982" centery="32868" centerz="2" radius="30">
-		<monster name="pirate marauder" x="-4" y="-21" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="-20" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-4" y="-20" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-6" y="-23" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="-23" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-5" y="-22" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-1" y="-22" z="2" spawntime="5" />
+		<monster name="pirate Corsair" x="1" y="-21" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-11" y="-20" z="2" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-3" y="-20" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="-20" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="-5" y="-19" z="2" spawntime="5" />
-		<monster name="pirate Corsair" x="-4" y="-19" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-3" y="-19" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-5" y="-18" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="2" y="-19" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="5" y="-19" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="6" y="-19" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-17" y="-18" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-12" y="-18" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="-4" y="-18" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-3" y="-18" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="-18" z="2" spawntime="5" />
+		<monster name="pirate Corsair" x="8" y="-18" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-16" y="-17" z="2" spawntime="5" />
+		<monster name="pirate Corsair" x="-13" y="-17" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="-17" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="4" y="-17" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="9" y="-17" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="-18" y="-16" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-15" y="-16" z="2" spawntime="5" />
 		<monster name="pirate Buccaneer" x="3" y="-16" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="-16" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="5" y="-16" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="7" y="-16" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-21" y="-15" z="2" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-19" y="-15" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-18" y="-15" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-17" y="-15" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="3" y="-15" z="2" spawntime="5" />
-		<monster name="pirate Corsair" x="4" y="-15" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="5" y="-15" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-17" y="-15" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="-15" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="-22" y="-14" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-19" y="-14" z="2" spawntime="5" />
-		<monster name="pirate Corsair" x="-18" y="-14" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-17" y="-14" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="3" y="-14" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="4" y="-14" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="5" y="-14" z="2" spawntime="5" />
+		<monster name="pirate Corsair" x="-19" y="-14" z="2" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-23" y="-13" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-22" y="-13" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-21" y="-13" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="-19" y="-13" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="-18" y="-13" z="2" spawntime="5" />
 		<monster name="pirate cutthroat" x="-17" y="-13" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-23" y="-12" z="2" spawntime="5" />
-		<monster name="pirate Corsair" x="-22" y="-12" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-24" y="-12" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-22" y="-12" z="2" spawntime="5" />
 		<monster name="pirate marauder" x="-21" y="-12" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-23" y="-11" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-22" y="-11" z="2" spawntime="5" />
-		<monster name="pirate cutthroat" x="-21" y="-11" z="2" spawntime="5" />
-		<monster name="pirate marauder" x="-30" y="-9" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-30" y="-8" z="2" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-29" y="-8" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-27" y="-10" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-24" y="-10" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-28" y="-9" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-26" y="-9" z="2" spawntime="5" />
+		<monster name="pirate cutthroat" x="-27" y="-6" z="2" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-27" y="-4" z="2" spawntime="5" />
+		<monster name="pirate marauder" x="-27" y="0" z="2" spawntime="5" />
 	</spawn>
-	<spawn centerx="31949" centery="32922" centerz="2" radius="17" />
-	<spawn centerx="31943" centery="32941" centerz="2" radius="14" />
+	<spawn centerx="31949" centery="32922" centerz="2" radius="17">
+		<monster name="pirate marauder" x="-7" y="-6" z="2" spawntime="60" />
+		<monster name="pirate marauder" x="-16" y="-3" z="2" spawntime="60" />
+		<monster name="pirate cutthroat" x="-13" y="0" z="2" spawntime="60" />
+		<monster name="pirate Corsair" x="-7" y="1" z="2" spawntime="60" />
+		<monster name="pirate cutthroat" x="3" y="2" z="2" spawntime="60" />
+		<monster name="pirate marauder" x="-2" y="3" z="2" spawntime="60" />
+		<monster name="pirate marauder" x="4" y="4" z="2" spawntime="60" />
+		<monster name="pirate cutthroat" x="11" y="7" z="2" spawntime="60" />
+		<monster name="pirate Corsair" x="-10" y="8" z="2" spawntime="60" />
+		<monster name="pirate Corsair" x="1" y="10" z="2" spawntime="60" />
+		<monster name="pirate cutthroat" x="-15" y="13" z="2" spawntime="60" />
+		<monster name="pirate marauder" x="-10" y="13" z="2" spawntime="60" />
+		<monster name="pirate Corsair" x="-4" y="13" z="2" spawntime="60" />
+		<monster name="pirate marauder" x="8" y="13" z="2" spawntime="60" />
+		<monster name="pirate cutthroat" x="-8" y="15" z="2" spawntime="60" />
+		<monster name="pirate cutthroat" x="3" y="15" z="2" spawntime="60" />
+		<monster name="pirate marauder" x="-5" y="17" z="2" spawntime="60" />
+	</spawn>
+	<spawn centerx="31943" centery="32941" centerz="2" radius="14">
+		<monster name="pirate marauder" x="-12" y="-10" z="2" spawntime="60" />
+		<monster name="pirate cutthroat" x="-5" y="-1" z="2" spawntime="60" />
+		<monster name="pirate cutthroat" x="5" y="1" z="2" spawntime="60" />
+		<monster name="pirate marauder" x="-7" y="3" z="2" spawntime="60" />
+		<monster name="pirate cutthroat" x="-3" y="5" z="2" spawntime="60" />
+	</spawn>
 	<spawn centerx="32070" centery="31144" centerz="3" radius="2">
 		<monster name="Ice Golem" x="2" y="2" z="3" spawntime="240" />
 	</spawn>
@@ -1064,6 +1087,7 @@
 	</spawn>
 	<spawn centerx="32395" centery="32821" centerz="3" radius="2" />
 	<spawn centerx="31979" centery="32822" centerz="3" radius="1">
+		<monster name="pirate cutthroat" x="1" y="-1" z="3" spawntime="60" />
 		<monster name="pirate cutthroat" x="0" y="0" z="3" spawntime="60" />
 	</spawn>
 	<spawn centerx="31982" centery="32822" centerz="3" radius="1">
@@ -1088,141 +1112,159 @@
 	<spawn centerx="31989" centery="32826" centerz="3" radius="1">
 		<monster name="pirate cutthroat" x="0" y="0" z="3" spawntime="236674048" />
 	</spawn>
+	<spawn centerx="31983" centery="32827" centerz="3" radius="1">
+		<monster name="pirate marauder" x="0" y="0" z="3" spawntime="60" />
+	</spawn>
 	<spawn centerx="32042" centery="32830" centerz="3" radius="3">
 		<monster name="pirate cutthroat" x="1" y="-1" z="3" spawntime="60" />
 		<monster name="pirate marauder" x="-2" y="2" z="3" spawntime="60" />
 	</spawn>
 	<spawn centerx="31989" centery="32858" centerz="3" radius="30">
-		<monster name="pirate marauder" x="-4" y="-30" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="-29" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-4" y="-29" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-15" y="-30" z="3" spawntime="60" />
+		<monster name="pirate cutthroat" x="-1" y="-30" z="3" spawntime="60" />
+		<monster name="pirate Buccaneer" x="3" y="-30" z="3" spawntime="60" />
+		<monster name="pirate cutthroat" x="-11" y="-29" z="3" spawntime="60" />
+		<monster name="pirate Corsair" x="-8" y="-29" z="3" spawntime="60" />
 		<monster name="pirate Buccaneer" x="-3" y="-29" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-5" y="-28" z="3" spawntime="5" />
-		<monster name="pirate Corsair" x="-4" y="-28" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-3" y="-28" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="-28" z="3" spawntime="236674304" />
-		<monster name="pirate cutthroat" x="-5" y="-27" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-4" y="-27" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-3" y="-27" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="-27" z="3" spawntime="236674304" />
-		<monster name="pirate marauder" x="0" y="-27" z="3" spawntime="236674304" />
+		<monster name="pirate marauder" x="-5" y="-28" z="3" spawntime="60" />
+		<monster name="pirate marauder" x="-1" y="-28" z="3" spawntime="60" />
+		<monster name="pirate marauder" x="-6" y="-27" z="3" spawntime="60" />
 		<monster name="pirate marauder" x="-15" y="-26" z="3" spawntime="60" />
 		<monster name="pirate cutthroat" x="-8" y="-26" z="3" spawntime="236674048" />
-		<monster name="pirate marauder" x="0" y="-26" z="3" spawntime="236674304" />
-		<monster name="pirate cutthroat" x="-8" y="-25" z="3" spawntime="236674048" />
+		<monster name="pirate cutthroat" x="-6" y="-26" z="3" spawntime="60" />
+		<monster name="pirate cutthroat" x="-3" y="-26" z="3" spawntime="60" />
+		<monster name="pirate marauder" x="1" y="-26" z="3" spawntime="60" />
+		<monster name="pirate Buccaneer" x="4" y="-26" z="3" spawntime="60" />
+		<monster name="pirate Corsair" x="8" y="-26" z="3" spawntime="60" />
+		<monster name="pirate cutthroat" x="-16" y="-25" z="3" spawntime="60" />
+		<monster name="pirate marauder" x="6" y="-25" z="3" spawntime="60" />
+		<monster name="pirate Buccaneer" x="-14" y="-24" z="3" spawntime="60" />
+		<monster name="pirate Corsair" x="-11" y="-24" z="3" spawntime="60" />
 		<monster name="pirate cutthroat" x="-10" y="-24" z="3" spawntime="60" />
-		<monster name="pirate cutthroat" x="-9" y="-24" z="3" spawntime="236674048" />
+		<monster name="pirate cutthroat" x="-3" y="-24" z="3" spawntime="60" />
 		<monster name="pirate marauder" x="1" y="-24" z="3" spawntime="60" />
 		<monster name="pirate marauder" x="8" y="-24" z="3" spawntime="5" />
 		<monster name="pirate marauder" x="-15" y="-23" z="3" spawntime="236674304" />
-		<monster name="pirate Buccaneer" x="7" y="-23" z="3" spawntime="5" />
 		<monster name="pirate Buccaneer" x="8" y="-23" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="9" y="-23" z="3" spawntime="5" />
 		<monster name="pirate marauder" x="-15" y="-22" z="3" spawntime="236674304" />
-		<monster name="pirate marauder" x="7" y="-22" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-11" y="-22" z="3" spawntime="60" />
+		<monster name="pirate cutthroat" x="-6" y="-22" z="3" spawntime="60" />
 		<monster name="pirate Corsair" x="8" y="-22" z="3" spawntime="5" />
 		<monster name="pirate marauder" x="9" y="-22" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-13" y="-21" z="3" spawntime="60" />
 		<monster name="pirate marauder" x="-10" y="-21" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="7" y="-21" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="8" y="-21" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="9" y="-21" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-11" y="-20" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-10" y="-20" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-9" y="-20" z="3" spawntime="5" />
+		<monster name="pirate Corsair" x="-3" y="-21" z="3" spawntime="60" />
+		<monster name="pirate marauder" x="5" y="-21" z="3" spawntime="60" />
+		<monster name="pirate Buccaneer" x="-8" y="-20" z="3" spawntime="60" />
 		<monster name="pirate marauder" x="-11" y="-19" z="3" spawntime="5" />
-		<monster name="pirate Corsair" x="-10" y="-19" z="3" spawntime="5" />
 		<monster name="pirate marauder" x="-9" y="-19" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-11" y="-18" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-10" y="-18" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-9" y="-18" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="11" y="-19" z="3" spawntime="60" />
+		<monster name="pirate Buccaneer" x="-14" y="-18" z="3" spawntime="60" />
+		<monster name="pirate cutthroat" x="-8" y="-17" z="3" spawntime="60" />
 		<monster name="pirate cutthroat" x="-17" y="-16" z="3" spawntime="60" />
+		<monster name="pirate marauder" x="12" y="-16" z="3" spawntime="60" />
 		<monster name="pirate cutthroat" x="-18" y="-15" z="3" spawntime="236674048" />
 		<monster name="pirate cutthroat" x="-19" y="-14" z="3" spawntime="236674048" />
 		<monster name="pirate cutthroat" x="-18" y="-14" z="3" spawntime="236674048" />
+		<monster name="pirate Buccaneer" x="-23" y="-11" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="13" y="-11" z="3" spawntime="60" />
 		<monster name="pirate marauder" x="-24" y="-9" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-25" y="-8" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-24" y="-8" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-23" y="-8" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-25" y="-7" z="3" spawntime="5" />
-		<monster name="pirate Corsair" x="-24" y="-7" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-23" y="-7" z="3" spawntime="5" />
+		<monster name="pirate Corsair" x="-22" y="-9" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-27" y="-8" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-4" y="-8" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="-7" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-27" y="-6" z="3" spawntime="5" />
 		<monster name="pirate cutthroat" x="-25" y="-6" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-24" y="-6" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-23" y="-6" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-6" y="-4" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-7" y="-3" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-6" y="-3" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="-3" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-7" y="-2" z="3" spawntime="5" />
-		<monster name="pirate Corsair" x="-6" y="-2" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-5" y="-2" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-22" y="-6" z="3" spawntime="5" />
+		<monster name="pirate Corsair" x="-6" y="-6" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="11" y="-6" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-28" y="-4" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-6" y="-4" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="-4" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-9" y="-3" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="11" y="-3" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="10" y="-2" z="3" spawntime="5" />
 		<monster name="pirate cutthroat" x="-7" y="-1" z="3" spawntime="5" />
 		<monster name="pirate cutthroat" x="-6" y="-1" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-5" y="-1" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="11" y="-1" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="10" y="0" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="11" y="0" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="-1" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="0" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="8" y="0" z="3" spawntime="5" />
 		<monster name="pirate Buccaneer" x="12" y="0" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="10" y="1" z="3" spawntime="5" />
-		<monster name="pirate Corsair" x="11" y="1" z="3" spawntime="5" />
 		<monster name="pirate marauder" x="12" y="1" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="10" y="2" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="11" y="2" z="3" spawntime="5" />
 		<monster name="pirate cutthroat" x="12" y="2" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="11" y="3" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="10" y="4" z="3" spawntime="5" />
+		<monster name="pirate Corsair" x="11" y="7" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="8" y="12" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="11" y="15" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="9" y="16" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="15" y="18" z="3" spawntime="5" />
 		<monster name="pirate marauder" x="9" y="19" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="8" y="20" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="9" y="20" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="10" y="20" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="8" y="21" z="3" spawntime="5" />
-		<monster name="pirate Corsair" x="9" y="21" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="10" y="21" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="15" y="20" z="3" spawntime="5" />
 		<monster name="pirate cutthroat" x="8" y="22" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="9" y="22" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="10" y="22" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="11" y="22" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="13" y="22" z="3" spawntime="5" />
+		<monster name="pirate Corsair" x="9" y="25" z="3" spawntime="5" />
 	</spawn>
 	<spawn centerx="31963" centery="32878" centerz="3" radius="23">
-		<monster name="pirate marauder" x="-10" y="-20" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-11" y="-19" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-12" y="-22" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="-22" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-16" y="-21" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-7" y="-21" z="3" spawntime="5" />
+		<monster name="pirate Corsair" x="-13" y="-20" z="3" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-10" y="-19" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-9" y="-19" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-11" y="-18" z="3" spawntime="5" />
-		<monster name="pirate Corsair" x="-10" y="-18" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-9" y="-18" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-11" y="-17" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-10" y="-17" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-9" y="-17" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-20" y="-13" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-9" y="-13" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-21" y="-12" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-7" y="-19" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-20" y="-18" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-12" y="-18" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-11" y="-17" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-9" y="-17" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-22" y="-16" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-17" y="-16" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-7" y="-16" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-14" y="-15" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-22" y="-14" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-20" y="-14" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-16" y="-14" z="3" spawntime="5" />
+		<monster name="pirate Corsair" x="-12" y="-14" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-10" y="-14" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-7" y="-14" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-18" y="-13" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-7" y="-13" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-23" y="-12" z="3" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-20" y="-12" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-19" y="-12" z="3" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-10" y="-12" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-9" y="-12" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-8" y="-12" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-21" y="-11" z="3" spawntime="5" />
-		<monster name="pirate Corsair" x="-20" y="-11" z="3" spawntime="5" />
 		<monster name="pirate marauder" x="-19" y="-11" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-10" y="-11" z="3" spawntime="5" />
-		<monster name="pirate Corsair" x="-9" y="-11" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-8" y="-11" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-21" y="-10" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-20" y="-10" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-19" y="-10" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-10" y="-10" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-9" y="-10" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-8" y="-10" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-15" y="-8" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-16" y="-7" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-7" y="-11" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-14" y="-10" z="3" spawntime="5" />
+		<monster name="pirate Corsair" x="-17" y="-9" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-11" y="-9" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-21" y="-8" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-9" y="-8" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-20" y="-7" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-18" y="-7" z="3" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-15" y="-7" z="3" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-14" y="-7" z="3" spawntime="5" />
+		<monster name="pirate marauder" x="-11" y="-7" z="3" spawntime="5" />
 		<monster name="pirate marauder" x="-16" y="-6" z="3" spawntime="5" />
-		<monster name="pirate Corsair" x="-15" y="-6" z="3" spawntime="5" />
-		<monster name="pirate marauder" x="-14" y="-6" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-16" y="-5" z="3" spawntime="5" />
-		<monster name="pirate cutthroat" x="-15" y="-5" z="3" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-12" y="-6" z="3" spawntime="5" />
 		<monster name="pirate cutthroat" x="-14" y="-5" z="3" spawntime="5" />
+		<monster name="pirate Corsair" x="-19" y="-4" z="3" spawntime="5" />
+		<monster name="pirate cutthroat" x="-17" y="-4" z="3" spawntime="5" />
 	</spawn>
-	<spawn centerx="31947" centery="32924" centerz="3" radius="12" />
+	<spawn centerx="31947" centery="32924" centerz="3" radius="12">
+		<monster name="pirate Corsair" x="-4" y="-1" z="3" spawntime="60" />
+		<monster name="pirate marauder" x="-1" y="-1" z="3" spawntime="60" />
+		<monster name="pirate Buccaneer" x="-7" y="1" z="3" spawntime="60" />
+		<monster name="pirate marauder" x="-3" y="1" z="3" spawntime="60" />
+		<monster name="pirate cutthroat" x="1" y="1" z="3" spawntime="60" />
+		<monster name="pirate cutthroat" x="-10" y="2" z="3" spawntime="60" />
+		<monster name="pirate Buccaneer" x="-8" y="4" z="3" spawntime="60" />
+		<monster name="pirate Corsair" x="-1" y="5" z="3" spawntime="60" />
+		<monster name="pirate marauder" x="-7" y="7" z="3" spawntime="60" />
+		<monster name="pirate Buccaneer" x="-10" y="8" z="3" spawntime="60" />
+		<monster name="pirate Buccaneer" x="-4" y="8" z="3" spawntime="60" />
+		<monster name="pirate cutthroat" x="0" y="8" z="3" spawntime="60" />
+		<monster name="pirate marauder" x="3" y="8" z="3" spawntime="60" />
+	</spawn>
 	<spawn centerx="33235" centery="29056" centerz="4" radius="1" />
 	<spawn centerx="33304" centery="29130" centerz="4" radius="1" />
 	<spawn centerx="33350" centery="29136" centerz="4" radius="1">
@@ -1954,117 +1996,121 @@
 		<npc name="Dario" x="0" y="1" z="4" spawntime="60" />
 	</spawn>
 	<spawn centerx="31970" centery="32810" centerz="4" radius="5">
-		<monster name="pirate marauder" x="-3" y="-2" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-4" y="-1" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-3" y="-1" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-2" y="-1" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-4" y="0" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-3" y="0" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-2" y="0" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="5" y="0" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-4" y="1" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-3" y="1" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-5" y="-3" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-3" y="-3" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="-3" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="-1" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="5" y="-1" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-5" y="0" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="0" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="0" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="-2" y="1" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="1" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="5" y="1" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="1" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-5" y="2" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="4" y="2" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="5" y="2" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="4" y="3" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="5" y="3" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="3" y="3" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="2" y="4" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="5" y="4" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-4" y="5" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-3" y="5" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="3" y="5" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="5" z="4" spawntime="5" />
 	</spawn>
 	<spawn centerx="32038" centery="32827" centerz="4" radius="2">
 		<monster name="pirate cutthroat" x="-1" y="0" z="4" spawntime="60" />
 	</spawn>
 	<spawn centerx="31975" centery="32828" centerz="4" radius="18">
-		<monster name="pirate Buccaneer" x="1" y="-17" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="-16" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-14" y="-18" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="-18" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-13" y="-17" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-12" y="-16" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="1" y="-16" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="-16" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="5" y="-16" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="1" y="-15" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="8" y="-15" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="9" y="-15" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="8" y="-14" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="9" y="-14" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="7" y="-14" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="10" y="-14" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="8" y="-13" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="9" y="-13" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="7" y="-13" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="9" y="-13" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="10" y="-13" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-9" y="-12" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-12" y="-12" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-8" y="-12" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-7" y="-12" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-5" y="-12" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-3" y="-12" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-2" y="-12" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-1" y="-12" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="8" y="-12" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="9" y="-12" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="10" y="-12" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-12" y="-11" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="12" y="-12" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-13" y="-11" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-11" y="-11" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-9" y="-11" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-8" y="-11" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-7" y="-11" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-3" y="-11" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-2" y="-11" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="-11" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="13" y="-11" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="0" y="-11" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="9" y="-11" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="11" y="-11" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-13" y="-10" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-12" y="-10" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-11" y="-10" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-9" y="-10" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-8" y="-10" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-7" y="-10" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-3" y="-10" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="-10" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="-2" y="-10" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="-10" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="12" y="-10" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="13" y="-10" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="11" y="-10" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="13" y="-10" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="14" y="-10" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-13" y="-9" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-12" y="-9" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-11" y="-9" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="12" y="-9" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="13" y="-9" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="14" y="-9" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-13" y="-8" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-9" y="-9" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-5" y="-9" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-2" y="-9" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="-9" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="14" y="-9" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="-12" y="-8" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-11" y="-8" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="12" y="-8" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-10" y="-8" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="13" y="-8" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="14" y="-8" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-11" y="-7" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="15" y="-7" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-2" y="-6" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="17" y="-6" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="17" y="-4" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="18" y="-2" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="18" y="-1" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="18" y="0" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="18" y="1" z="4" spawntime="5" />
 	</spawn>
 	<spawn centerx="31995" centery="32828" centerz="4" radius="5">
-		<monster name="pirate marauder" x="-1" y="-2" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="-1" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="-1" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-1" y="0" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="0" y="0" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="1" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="1" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-1" y="-3" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="0" y="-1" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-1" y="0" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="0" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="2" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="3" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="5" z="4" spawntime="5" />
 	</spawn>
 	<spawn centerx="32045" centery="32829" centerz="4" radius="5">
-		<monster name="pirate marauder" x="0" y="-1" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="0" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="0" y="-3" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="0" y="-2" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="3" y="-2" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="5" y="-2" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="-1" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="0" y="0" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="0" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="1" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="0" y="1" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="1" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="2" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="2" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="1" y="2" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="0" y="2" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="2" y="2" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-1" y="3" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="3" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="4" y="3" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="4" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="3" y="5" z="4" spawntime="5" />
 	</spawn>
 	<spawn centerx="32052" centery="32829" centerz="4" radius="5">
-		<monster name="pirate marauder" x="0" y="-3" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="-2" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="-2" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="-2" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="-1" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="0" y="-1" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="-1" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="-3" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="-3" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="-2" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="4" y="-1" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="-1" y="0" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="0" y="0" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="1" y="0" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="5" y="2" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="3" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="3" y="3" z="4" spawntime="5" />
 	</spawn>
 	<spawn centerx="32413" centery="32830" centerz="4" radius="2">
 		<npc name="Isolde" x="-1" y="0" z="4" spawntime="60" />
@@ -2076,253 +2122,248 @@
 	<spawn centerx="32048" centery="32836" centerz="4" radius="5">
 		<monster name="pirate marauder" x="1" y="-1" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="0" y="0" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="0" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="2" y="0" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="0" y="1" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="1" y="1" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="2" y="1" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="2" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="1" y="2" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="2" y="2" z="4" spawntime="5" />
-	</spawn>
-	<spawn centerx="31999" centery="32839" centerz="4" radius="5">
-		<monster name="pirate marauder" x="0" y="-2" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="-1" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="-1" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="-1" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="0" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="0" y="0" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="0" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="1" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="1" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="1" y="1" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="0" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-2" y="1" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="2" y="2" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="5" y="2" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="3" z="4" spawntime="5" />
 	</spawn>
 	<spawn centerx="32025" centery="32839" centerz="4" radius="5">
+		<monster name="pirate Corsair" x="-2" y="-5" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="-4" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-1" y="-4" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="0" y="-4" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-2" y="-3" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="-3" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="-3" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-2" y="-2" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-1" y="-2" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="-2" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="0" y="-2" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-2" y="-1" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="-1" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="-1" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="1" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="2" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="2" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="2" y="2" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="0" y="3" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="1" y="3" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="-1" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="0" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="0" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="0" y="1" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="2" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="2" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-3" y="3" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="3" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="2" y="3" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="4" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="1" y="4" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="2" y="4" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="4" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-1" y="4" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="5" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="3" y="5" z="4" spawntime="5" />
 	</spawn>
-	<spawn centerx="31999" centery="32847" centerz="4" radius="5">
+	<spawn centerx="31999" centery="32840" centerz="4" radius="5">
+		<monster name="pirate Buccaneer" x="-1" y="-5" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="-3" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="1" y="-3" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="-2" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-1" y="-1" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-2" y="0" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="0" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="0" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-2" y="1" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-1" y="1" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="0" y="1" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-2" y="2" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="2" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="2" z="4" spawntime="5" />
-	</spawn>
-	<spawn centerx="32000" centery="32860" centerz="4" radius="5">
-		<monster name="pirate marauder" x="0" y="-2" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="-1" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="-1" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="-1" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="0" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="0" y="0" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="0" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="1" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="-1" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="0" y="1" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="1" y="1" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="0" y="3" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="5" z="4" spawntime="5" />
+	</spawn>
+	<spawn centerx="31999" centery="32848" centerz="4" radius="5">
+		<monster name="pirate Buccaneer" x="0" y="-2" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="-1" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="0" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-5" y="1" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-3" y="1" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-1" y="2" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="2" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-3" y="3" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="3" z="4" spawntime="5" />
+	</spawn>
+	<spawn centerx="31999" centery="32860" centerz="4" radius="5">
+		<monster name="pirate marauder" x="-1" y="-5" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="2" y="-4" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="-3" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="0" y="-2" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="2" y="-1" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="0" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="2" y="1" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="2" y="3" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="4" y="4" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="3" y="5" z="4" spawntime="5" />
 	</spawn>
 	<spawn centerx="32032" centery="32878" centerz="4" radius="30">
-		<monster name="pirate marauder" x="-5" y="-29" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="-30" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-11" y="-29" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-6" y="-28" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="-28" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-4" y="-28" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-6" y="-27" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-5" y="-27" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="0" y="-28" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-12" y="-27" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-8" y="-27" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-4" y="-27" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-11" y="-26" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-10" y="-26" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="-6" y="-26" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-5" y="-26" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-4" y="-26" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-11" y="-25" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-10" y="-25" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-9" y="-25" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="4" y="-25" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-11" y="-24" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-10" y="-24" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="0" y="-26" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="2" y="-26" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-5" y="-25" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="-25" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-13" y="-24" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-11" y="-24" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-9" y="-24" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="3" y="-24" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="-24" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="5" y="-24" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-11" y="-23" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-10" y="-23" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-9" y="-23" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="3" y="-23" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="4" y="-23" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="5" y="-23" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="-24" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="6" y="-24" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-6" y="-23" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-3" y="-23" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="4" y="-23" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-10" y="-22" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="3" y="-22" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="4" y="-22" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="5" y="-22" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="7" y="-22" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-11" y="-21" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-9" y="-21" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-7" y="-21" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-5" y="-21" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-2" y="-21" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="-21" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="-21" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="5" y="-21" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-8" y="-20" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-10" y="-19" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="-19" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="-19" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="0" y="-19" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="-18" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="-18" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="-18" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="-19" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="7" y="-19" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="-18" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="6" y="-18" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-8" y="-17" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="-17" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="0" y="-17" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="-17" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-9" y="-16" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-8" y="-16" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-7" y="-16" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="-16" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="-16" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="1" y="-16" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-9" y="-15" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-8" y="-15" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-7" y="-15" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="2" y="-15" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-9" y="-14" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-8" y="-14" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-7" y="-14" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="-14" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-2" y="-17" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="4" y="-17" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-10" y="-16" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-5" y="-16" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="-16" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="-16" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-7" y="-15" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="2" y="-15" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="2" y="-14" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="3" y="-14" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="-13" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="1" y="-13" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="2" y="-13" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="3" y="-13" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="1" y="-12" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="2" y="-12" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="3" y="-12" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-3" y="-9" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-25" y="-8" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-4" y="-8" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-3" y="-8" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-7" y="-12" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-2" y="-12" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-27" y="-11" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-3" y="-11" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="0" y="-11" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="5" y="-11" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="-10" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-1" y="-10" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-26" y="-9" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="-9" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="3" y="-9" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-27" y="-8" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-24" y="-8" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-6" y="-8" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-2" y="-8" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-26" y="-7" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-25" y="-7" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-24" y="-7" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-4" y="-7" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-3" y="-7" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-2" y="-7" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-6" y="-7" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="-7" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-26" y="-6" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-25" y="-6" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-24" y="-6" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-4" y="-6" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-3" y="-6" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-2" y="-6" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-26" y="-5" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-25" y="-5" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="0" y="-6" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="-24" y="-5" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-3" y="-5" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-1" y="-5" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-2" y="-4" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="-4" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="1" y="-5" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-22" y="-4" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-5" y="-4" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="0" y="-4" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-2" y="-3" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-1" y="-3" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="0" y="-3" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-2" y="-2" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="-2" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="-2" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-4" y="2" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="3" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-4" y="3" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-3" y="3" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-5" y="4" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-4" y="4" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-3" y="4" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="0" y="4" z="4" spawntime="60" />
-		<monster name="pirate cutthroat" x="-5" y="5" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-4" y="5" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-3" y="5" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-25" y="7" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="0" y="7" z="4" spawntime="60" />
-		<monster name="pirate Buccaneer" x="-26" y="8" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-25" y="8" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-24" y="8" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-26" y="9" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-25" y="9" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-2" y="-3" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="2" y="-3" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-21" y="-2" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-3" y="-2" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-25" y="-1" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-23" y="-1" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-3" y="-1" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="-1" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="-1" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="0" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-6" y="3" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-4" y="4" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-2" y="4" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="2" y="4" z="4" spawntime="60" />
+		<monster name="pirate Buccaneer" x="-24" y="5" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-7" y="5" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-26" y="6" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-22" y="6" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-6" y="6" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-3" y="6" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-28" y="7" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="7" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="7" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="7" z="4" spawntime="60" />
+		<monster name="pirate cutthroat" x="-26" y="8" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-28" y="9" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-24" y="9" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-26" y="10" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-25" y="10" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-24" y="10" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-8" y="9" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-6" y="9" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="0" y="9" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-4" y="10" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="10" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-26" y="11" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-9" y="11" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-6" y="11" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-24" y="12" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-3" y="12" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-22" y="13" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-10" y="13" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-4" y="13" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="13" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="2" y="13" z="4" spawntime="60" />
-		<monster name="pirate Buccaneer" x="-11" y="14" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-10" y="14" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-9" y="14" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="14" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-4" y="14" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-3" y="14" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-12" y="14" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="-1" y="14" z="4" spawntime="60" />
 		<monster name="pirate marauder" x="-11" y="15" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-10" y="15" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-9" y="15" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-5" y="15" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-4" y="15" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-3" y="15" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-11" y="16" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-10" y="16" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-9" y="16" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-7" y="16" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="-5" y="16" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-4" y="16" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-3" y="16" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="0" y="16" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="17" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-15" y="18" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-13" y="18" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-9" y="18" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-6" y="18" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="18" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-11" y="19" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-17" y="20" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-15" y="20" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-12" y="20" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-11" y="20" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-10" y="20" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-18" y="21" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-17" y="21" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-16" y="21" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-12" y="21" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-11" y="21" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-10" y="21" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-18" y="22" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-17" y="22" z="4" spawntime="5" />
-		<monster name="pirate marauder" x="-16" y="22" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-12" y="22" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-11" y="22" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-15" y="21" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-6" y="21" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-18" y="22" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-16" y="22" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-13" y="22" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="-10" y="22" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-18" y="23" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-17" y="23" z="4" spawntime="5" />
-		<monster name="pirate cutthroat" x="-16" y="23" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-9" y="22" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-19" y="23" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-17" y="23" z="4" spawntime="5" />
+		<monster name="pirate marauder" x="-15" y="23" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-11" y="23" z="4" spawntime="5" />
+		<monster name="pirate cutthroat" x="-17" y="24" z="4" spawntime="5" />
 	</spawn>
 	<spawn centerx="32035" centery="32883" centerz="4" radius="3" />
 	<spawn centerx="32034" centery="32892" centerz="4" radius="3" />
 	<spawn centerx="31944" centery="32920" centerz="4" radius="27">
-		<monster name="pirate Buccaneer" x="8" y="-6" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="5" y="-9" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="8" y="-5" z="4" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="7" y="-3" z="4" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="6" y="3" z="4" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="7" y="3" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="4" z="4" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="1" y="4" z="4" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="5" y="4" z="4" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="2" y="5" z="4" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="3" y="5" z="4" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="4" y="5" z="4" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="2" y="6" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-6" y="9" z="4" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="-6" y="11" z="4" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="5" y="13" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="14" z="4" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="-7" y="15" z="4" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="2" y="6" z="4" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="0" y="7" z="4" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-8" y="8" z="4" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="3" y="8" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="10" z="4" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-9" y="11" z="4" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="7" y="12" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-6" y="13" z="4" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="5" y="13" z="4" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="-7" y="16" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="3" y="16" z="4" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="3" y="17" z="4" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="-7" y="22" z="4" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-7" y="23" z="4" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="5" y="16" z="4" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="0" y="18" z="4" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-9" y="23" z="4" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-6" y="25" z="4" spawntime="32768" />
 	</spawn>
 	<spawn centerx="32277" centery="30947" centerz="5" radius="1" />
 	<spawn centerx="32165" centery="31031" centerz="5" radius="3">
@@ -3535,35 +3576,33 @@
 		<monster name="hyaena" x="0" y="2" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="31958" centery="32803" centerz="5" radius="5">
+		<monster name="pirate Corsair" x="-4" y="-4" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="-4" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="-2" y="-4" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-3" y="-3" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-2" y="-3" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="-3" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-3" y="-2" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="-2" y="-2" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="-2" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-3" y="-1" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="-3" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="-3" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="-2" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="-2" y="-1" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="-1" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="3" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="4" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="4" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="2" y="4" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="0" y="5" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="1" y="5" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-2" y="0" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="0" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="2" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-4" y="3" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="4" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="4" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="-2" y="5" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="2" y="5" z="5" spawntime="5" />
 	</spawn>
 	<spawn centerx="32006" centery="32808" centerz="5" radius="5">
-		<monster name="pirate marauder" x="0" y="-3" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="0" y="-5" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="3" y="-5" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="-4" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="-3" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="3" y="-3" z="5" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-1" y="-2" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="-2" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="-2" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="-1" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="0" y="-1" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="-1" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="0" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="0" y="0" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="1" y="0" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-3" y="1" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="3" z="5" spawntime="5" />
 	</spawn>
 	<spawn centerx="32347" centery="32809" centerz="5" radius="2">
 		<npc name="Malunga" x="-2" y="0" z="5" spawntime="60" />
@@ -3586,134 +3625,127 @@
 		<monster name="pirate marauder" x="2" y="-3" z="5" spawntime="60" />
 		<monster name="pirate marauder" x="2" y="0" z="5" spawntime="60" />
 		<monster name="pirate Buccaneer" x="-3" y="3" z="5" spawntime="60" />
+		<monster name="pirate Buccaneer" x="3" y="3" z="5" spawntime="5" />
 	</spawn>
 	<spawn centerx="32054" centery="32827" centerz="5" radius="5">
-		<monster name="pirate marauder" x="3" y="-2" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-3" y="-1" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="2" y="-1" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="3" y="-1" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="-1" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="2" y="-4" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-3" y="-3" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="-3" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="3" y="-3" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="-2" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-2" y="-1" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="-1" z="5" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-4" y="0" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-3" y="0" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-2" y="0" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="2" y="0" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="3" y="0" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="4" y="0" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-4" y="1" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="-3" y="1" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="-2" y="1" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="2" y="1" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="3" y="1" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="4" y="1" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-4" y="2" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-3" y="2" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="-2" y="2" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="5" y="2" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="3" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="5" y="3" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="4" y="4" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="5" y="4" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="4" y="5" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="5" y="5" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="5" y="2" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="3" y="3" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="2" y="5" z="5" spawntime="5" />
 	</spawn>
 	<spawn centerx="32041" centery="32833" centerz="5" radius="2">
+		<monster name="pirate marauder" x="2" y="-1" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-2" y="0" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="0" y="1" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="31973" centery="32834" centerz="5" radius="29">
-		<monster name="pirate marauder" x="-1" y="-27" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="-29" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="0" y="-28" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-4" y="-27" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="-6" y="-26" z="5" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-2" y="-26" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="-26" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="-26" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-17" y="-25" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="-15" y="-25" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-14" y="-25" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-13" y="-25" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-2" y="-25" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="-1" y="-25" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="0" y="-25" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-2" y="-24" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="-24" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="-24" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="21" y="-18" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="-17" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="20" y="-17" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="21" y="-17" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="-25" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-8" y="-24" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-13" y="-23" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="-23" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-17" y="-22" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="0" y="-22" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-14" y="-21" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-11" y="-20" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="25" y="-20" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="24" y="-19" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-2" y="-18" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-11" y="-17" z="5" spawntime="5" />
 		<monster name="pirate Buccaneer" x="22" y="-17" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="-16" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="-16" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="2" y="-16" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="20" y="-16" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="21" y="-16" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="22" y="-16" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="0" y="-15" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="1" y="-15" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="25" y="-17" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-3" y="-16" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="-16" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="19" y="-16" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="21" y="-16" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="-8" y="-15" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="2" y="-15" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="20" y="-15" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="21" y="-15" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="22" y="-15" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="-14" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="1" y="-14" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="2" y="-14" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="10" y="-7" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="9" y="-6" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="10" y="-6" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="11" y="-6" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="9" y="-5" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="10" y="-5" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="11" y="-5" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="9" y="-4" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="17" y="-14" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="18" y="-13" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="2" y="-12" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="-11" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="17" y="-11" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="15" y="-10" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="-9" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="14" y="-8" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="6" y="-7" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="8" y="-7" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="12" y="-7" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="13" y="-6" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="7" y="-5" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="10" y="-4" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="11" y="-4" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="19" y="5" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="18" y="6" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="19" y="6" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="13" y="-4" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="9" y="-2" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="12" y="-2" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="14" y="0" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="17" y="2" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="16" y="3" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="19" y="3" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="18" y="4" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="6" y="6" z="5" spawntime="5" />
 		<monster name="pirate Buccaneer" x="20" y="6" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="7" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="6" y="7" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="18" y="7" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="19" y="7" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="20" y="7" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-14" y="8" z="5" spawntime="5" />
 		<monster name="pirate Buccaneer" x="5" y="8" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="6" y="8" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="7" y="8" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="18" y="8" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="19" y="8" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="20" y="8" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="8" y="8" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="-16" y="9" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="-13" y="9" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="5" y="9" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="6" y="9" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="7" y="9" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-14" y="10" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="3" y="9" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="6" y="9" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="18" y="9" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="20" y="9" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-16" y="10" z="5" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-13" y="10" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-12" y="10" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="5" y="10" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="6" y="10" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="7" y="10" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="4" y="10" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="19" y="10" z="5" spawntime="60" />
-		<monster name="pirate cutthroat" x="20" y="10" z="5" spawntime="236674048" />
-		<monster name="pirate marauder" x="-14" y="11" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="-13" y="11" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-12" y="11" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-14" y="12" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-13" y="12" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-12" y="12" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-14" y="11" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-11" y="11" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="6" y="11" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="21" y="11" z="5" spawntime="236674048" />
+		<monster name="pirate cutthroat" x="6" y="12" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="19" y="12" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-14" y="13" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-12" y="13" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="20" y="13" z="5" spawntime="60" />
-		<monster name="pirate cutthroat" x="-14" y="14" z="5" spawntime="60" />
-		<monster name="pirate marauder" x="11" y="17" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="10" y="18" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="11" y="18" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="12" y="18" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="10" y="19" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="11" y="19" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="12" y="19" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-13" y="15" z="5" spawntime="60" />
+		<monster name="pirate marauder" x="12" y="16" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-13" y="17" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="9" y="17" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="18" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="5" y="18" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="12" y="18" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="5" y="19" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="9" y="19" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="3" y="20" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="10" y="20" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="11" y="20" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="12" y="20" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="21" y="20" z="5" spawntime="60" />
+		<monster name="pirate marauder" x="20" y="21" z="5" spawntime="236674304" />
+		<monster name="pirate marauder" x="19" y="22" z="5" spawntime="236674304" />
 		<monster name="pirate marauder" x="21" y="23" z="5" spawntime="236674304" />
-		<monster name="pirate marauder" x="21" y="24" z="5" spawntime="236674304" />
-		<monster name="pirate marauder" x="21" y="25" z="5" spawntime="236674304" />
 		<monster name="pirate marauder" x="22" y="26" z="5" spawntime="236674304" />
-		<monster name="pirate marauder" x="22" y="27" z="5" spawntime="236674304" />
-		<monster name="pirate marauder" x="22" y="28" z="5" spawntime="60" />
+		<monster name="pirate marauder" x="21" y="27" z="5" spawntime="236674304" />
+		<monster name="pirate marauder" x="22" y="29" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="32044" centery="32848" centerz="5" radius="2">
 		<monster name="pirate cutthroat" x="-2" y="-2" z="5" spawntime="60" />
@@ -3725,36 +3757,45 @@
 		<monster name="lizard snakecharmer" x="2" y="0" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="32046" centery="32856" centerz="5" radius="27">
-		<monster name="pirate Buccaneer" x="14" y="-26" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="15" y="-27" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="-3" y="-26" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="-26" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="-25" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="14" y="-25" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="14" y="-24" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-15" y="-12" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-16" y="-11" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-15" y="-11" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-14" y="-11" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="15" y="-24" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="9" y="-22" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="14" y="-22" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-9" y="-21" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="6" y="-20" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-8" y="-18" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="7" y="-18" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="13" y="-18" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-12" y="-17" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="10" y="-17" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-10" y="-14" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-13" y="-13" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="-16" y="-10" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="-15" y="-10" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-14" y="-10" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-16" y="-9" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-15" y="-9" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-14" y="-9" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-23" y="-1" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-24" y="0" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-23" y="0" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-22" y="0" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-24" y="1" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="-23" y="1" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-22" y="1" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-24" y="2" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-23" y="2" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-13" y="-10" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="-10" y="-9" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-17" y="-8" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-16" y="-6" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-18" y="-5" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-20" y="-3" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-21" y="-2" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-23" y="-1" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-25" y="1" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-23" y="1" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="-22" y="2" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="-26" y="3" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-23" y="3" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-27" y="5" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="-2" y="5" z="5" spawntime="60" />
 		<monster name="pirate cutthroat" x="-14" y="19" z="5" spawntime="60" />
-		<monster name="pirate marauder" x="-27" y="23" z="5" spawntime="236674304" />
+		<monster name="pirate marauder" x="-27" y="21" z="5" spawntime="236674304" />
+		<monster name="pirate marauder" x="-26" y="23" z="5" spawntime="236674304" />
 		<monster name="pirate Buccaneer" x="-13" y="23" z="5" spawntime="60" />
-		<monster name="pirate marauder" x="-27" y="24" z="5" spawntime="236674304" />
-		<monster name="pirate marauder" x="-27" y="25" z="5" spawntime="236674304" />
-		<monster name="pirate marauder" x="-27" y="27" z="5" spawntime="236674304" />
+		<monster name="pirate marauder" x="-22" y="24" z="5" spawntime="236674304" />
+		<monster name="pirate marauder" x="-23" y="26" z="5" spawntime="236674304" />
 	</spawn>
 	<spawn centerx="31939" centery="32859" centerz="5" radius="5">
 		<monster name="pirate marauder" x="-3" y="-4" z="5" spawntime="5" />
@@ -3788,96 +3829,96 @@
 	<spawn centerx="32032" centery="32873" centerz="5" radius="2" />
 	<spawn centerx="32035" centery="32880" centerz="5" radius="2" />
 	<spawn centerx="32021" centery="32885" centerz="5" radius="21">
+		<monster name="pirate Corsair" x="-8" y="-21" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-18" y="-20" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="-15" y="-20" z="5" spawntime="60" />
-		<monster name="pirate marauder" x="-9" y="-20" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-10" y="-19" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-11" y="-20" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-7" y="-20" z="5" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-9" y="-19" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-8" y="-19" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-10" y="-18" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="-9" y="-18" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-11" y="-18" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="-8" y="-18" z="5" spawntime="5" />
 		<monster name="pirate cutthroat" x="-10" y="-17" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-9" y="-17" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-8" y="-17" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-8" y="-16" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="-21" y="-15" z="5" spawntime="60" />
-		<monster name="pirate marauder" x="-6" y="-13" z="5" spawntime="60" />
+		<monster name="pirate cutthroat" x="-7" y="-14" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-6" y="-12" z="5" spawntime="60" />
 		<monster name="pirate marauder" x="-5" y="-12" z="5" spawntime="236674304" />
-		<monster name="pirate marauder" x="-4" y="-11" z="5" spawntime="236674304" />
 		<monster name="pirate marauder" x="-4" y="-10" z="5" spawntime="236674304" />
-		<monster name="pirate marauder" x="-4" y="-9" z="5" spawntime="236674304" />
-		<monster name="pirate marauder" x="-3" y="-8" z="5" spawntime="236674304" />
 		<monster name="pirate marauder" x="-19" y="-7" z="5" spawntime="60" />
 		<monster name="pirate marauder" x="-3" y="-7" z="5" spawntime="236674304" />
 		<monster name="pirate marauder" x="-21" y="-4" z="5" spawntime="60" />
-		<monster name="pirate marauder" x="2" y="-1" z="5" spawntime="60" />
+		<monster name="pirate marauder" x="-5" y="-1" z="5" spawntime="236674304" />
 		<monster name="pirate marauder" x="-2" y="0" z="5" spawntime="236674304" />
 		<monster name="pirate cutthroat" x="14" y="0" z="5" spawntime="60" />
+		<monster name="pirate marauder" x="-7" y="1" z="5" spawntime="236674304" />
+		<monster name="pirate marauder" x="2" y="1" z="5" spawntime="236674304" />
 		<monster name="pirate marauder" x="12" y="2" z="5" spawntime="60" />
-		<monster name="pirate marauder" x="-4" y="4" z="5" spawntime="60" />
-		<monster name="pirate marauder" x="-3" y="5" z="5" spawntime="60" />
+		<monster name="pirate marauder" x="-4" y="3" z="5" spawntime="60" />
+		<monster name="pirate marauder" x="-5" y="5" z="5" spawntime="60" />
+		<monster name="pirate marauder" x="0" y="8" z="5" spawntime="60" />
 		<monster name="pirate marauder" x="-5" y="10" z="5" spawntime="60" />
 		<monster name="pirate Corsair" x="4" y="17" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="32035" centery="32886" centerz="5" radius="2" />
 	<spawn centerx="32027" centery="32901" centerz="5" radius="2" />
 	<spawn centerx="31948" centery="32916" centerz="5" radius="22">
-		<monster name="pirate marauder" x="0" y="-16" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="-15" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="-15" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="0" y="-20" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="0" y="-18" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="-16" z="5" spawntime="5" />
 		<monster name="pirate Buccaneer" x="1" y="-15" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="-14" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="0" y="-14" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="-14" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="-13" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="-13" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="1" y="-13" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-6" y="-3" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-7" y="-2" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-6" y="-2" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="-2" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-7" y="-1" z="5" spawntime="5" />
-		<monster name="pirate Corsair" x="-6" y="-1" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="0" y="-14" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="-12" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="-12" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="3" y="-12" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="2" y="-11" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="4" y="-9" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-7" y="-3" z="5" spawntime="5" />
+		<monster name="pirate Corsair" x="-9" y="-2" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-3" y="-2" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="-5" y="-1" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-7" y="0" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-6" y="0" z="5" spawntime="5" />
-		<monster name="pirate cutthroat" x="-5" y="0" z="5" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-7" y="5" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-9" y="6" z="5" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-8" y="0" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="0" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-11" y="1" z="5" spawntime="5" />
+		<monster name="pirate cutthroat" x="-7" y="2" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="0" y="3" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-9" y="4" z="5" spawntime="32768" />
 		<monster name="pirate marauder" x="-8" y="6" z="5" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-6" y="6" z="5" spawntime="32768" />
 		<monster name="pirate marauder" x="-10" y="7" z="5" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="-6" y="7" z="5" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="-5" y="7" z="5" spawntime="32768" />
+		<monster name="pirate cutthroat" x="-1" y="7" z="5" spawntime="5" />
 		<monster name="pirate Buccaneer" x="1" y="7" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-13" y="8" z="5" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="-5" y="8" z="5" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="-3" y="8" z="5" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="1" y="8" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-12" y="9" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-14" y="9" z="5" spawntime="32768" />
 		<monster name="pirate marauder" x="-11" y="9" z="5" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="-3" y="9" z="5" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="-1" y="9" z="5" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="0" y="9" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-12" y="10" z="5" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="-3" y="10" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-11" y="10" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-5" y="10" z="5" spawntime="32768" />
 		<monster name="pirate marauder" x="-12" y="11" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-3" y="11" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-11" y="12" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-10" y="12" z="5" spawntime="32768" />
 		<monster name="pirate marauder" x="-9" y="12" z="5" spawntime="5" />
 		<monster name="pirate marauder" x="-6" y="12" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-5" y="12" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-8" y="13" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-8" y="16" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-8" y="17" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-3" y="12" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-10" y="14" z="5" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-8" y="15" z="5" spawntime="5" />
+		<monster name="pirate marauder" x="-6" y="15" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-9" y="18" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-8" y="21" z="5" spawntime="32768" />
 	</spawn>
 	<spawn centerx="31946" centery="32945" centerz="5" radius="9">
-		<monster name="pirate marauder" x="-7" y="-5" z="5" spawntime="5" />
-		<monster name="pirate marauder" x="-7" y="-3" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-8" y="-2" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-7" y="-1" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-6" y="-1" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-7" y="0" z="5" spawntime="32768" />
-		<monster name="pirate marauder" x="-6" y="0" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-8" y="-6" z="5" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-6" y="-6" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-9" y="-3" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-6" y="-3" z="5" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-7" y="-1" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-5" y="0" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-8" y="1" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-2" y="2" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-7" y="3" z="5" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="0" y="4" z="5" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-6" y="5" z="5" spawntime="32768" />
+		<monster name="pirate marauder" x="-7" y="6" z="5" spawntime="32768" />
 	</spawn>
 	<spawn centerx="32361" centery="31029" centerz="6" radius="2">
 		<npc name="Siflind" x="-1" y="1" z="6" spawntime="240" />
@@ -6093,95 +6134,98 @@
 		<npc name="Tesha" x="1" y="1" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="32059" centery="32822" centerz="6" radius="5">
-		<monster name="pirate marauder" x="0" y="3" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="1" y="3" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="2" y="3" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="4" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="1" y="4" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="-1" y="1" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-3" y="2" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="2" y="2" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="0" y="3" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="4" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="2" y="4" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="5" y="4" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-5" y="5" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="32053" centery="32826" centerz="6" radius="3">
 		<monster name="pirate marauder" x="-1" y="-2" z="6" spawntime="60" />
-		<monster name="pirate cutthroat" x="-1" y="2" z="6" spawntime="60" />
-		<monster name="pirate marauder" x="1" y="3" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-3" y="3" z="6" spawntime="5" />
 	</spawn>
 	<spawn centerx="32001" centery="32828" centerz="6" radius="30">
-		<monster name="pirate marauder" x="12" y="-28" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="13" y="-28" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="10" y="-27" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="9" y="-30" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="13" y="-29" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-14" y="-28" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="7" y="-28" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="10" y="-28" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="6" y="-27" z="6" spawntime="32768" />
 		<monster name="pirate marauder" x="-15" y="-26" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-14" y="-26" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="8" y="-26" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-15" y="-25" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="6" y="-25" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="7" y="-25" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="5" y="-23" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="6" y="-23" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="11" y="-26" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-15" y="-24" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="5" y="-24" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="8" y="-24" z="6" spawntime="32768" />
 		<monster name="pirate marauder" x="4" y="-22" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="3" y="-21" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="0" y="-20" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="1" y="-20" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="0" y="-19" z="6" spawntime="32768" />
-		<monster name="pirate cutthroat" x="-22" y="-17" z="6" spawntime="32768" />
-		<monster name="pirate cutthroat" x="-21" y="-17" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="1" y="-21" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-1" y="-19" z="6" spawntime="32768" />
+		<monster name="pirate cutthroat" x="-24" y="-17" z="6" spawntime="32768" />
+		<monster name="pirate cutthroat" x="-20" y="-17" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-4" y="-17" z="6" spawntime="32768" />
 		<monster name="pirate cutthroat" x="-19" y="-16" z="6" spawntime="32768" />
 		<monster name="pirate cutthroat" x="-17" y="-16" z="6" spawntime="32768" />
 		<monster name="pirate cutthroat" x="-16" y="-16" z="6" spawntime="32768" />
 		<monster name="pirate cutthroat" x="-15" y="-16" z="6" spawntime="32768" />
-		<monster name="pirate cutthroat" x="-13" y="-15" z="6" spawntime="32768" />
 		<monster name="pirate cutthroat" x="-22" y="-14" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-13" y="-14" z="6" spawntime="32768" />
-		<monster name="pirate cutthroat" x="-11" y="-14" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-2" y="-6" z="6" spawntime="32768" />
+		<monster name="pirate cutthroat" x="-9" y="-13" z="6" spawntime="32768" />
+		<monster name="pirate cutthroat" x="-5" y="-12" z="6" spawntime="32768" />
+		<monster name="pirate cutthroat" x="-4" y="-10" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="0" y="-5" z="6" spawntime="32768" />
 		<monster name="pirate cutthroat" x="1" y="-5" z="6" spawntime="32768" />
+		<monster name="pirate cutthroat" x="-2" y="-4" z="6" spawntime="32768" />
 		<monster name="pirate cutthroat" x="1" y="-4" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="-1" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="2" y="-1" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="3" y="0" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="5" y="1" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="8" y="4" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="9" y="5" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-13" y="11" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-14" y="12" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-13" y="12" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-12" y="12" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-14" y="13" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="-13" y="13" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-12" y="13" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-14" y="14" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-13" y="14" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-12" y="14" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="1" y="-2" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="3" y="1" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="7" y="1" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="9" y="3" z="6" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-29" y="5" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="6" y="5" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="10" y="5" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="7" y="8" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="9" y="8" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-28" y="9" z="6" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-13" y="10" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-12" y="10" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="-13" y="12" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-11" y="12" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="11" y="12" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-15" y="13" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-13" y="14" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-11" y="14" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="11" y="14" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-14" y="16" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="12" y="16" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="11" y="17" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="12" y="17" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="13" y="17" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="11" y="18" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="12" y="18" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="13" y="18" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="11" y="19" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="12" y="19" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="13" y="19" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="27" y="19" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="9" y="17" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="14" y="18" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="18" y="18" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-14" y="19" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="9" y="19" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="11" y="19" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="16" y="19" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="24" y="19" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="30" y="19" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="13" y="20" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="15" y="20" z="6" spawntime="5" />
 		<monster name="pirate Buccaneer" x="26" y="20" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="27" y="20" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="28" y="20" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="26" y="21" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="27" y="21" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="28" y="21" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="26" y="22" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="29" y="20" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-15" y="21" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="24" y="21" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="27" y="22" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="28" y="22" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-23" y="27" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-24" y="28" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-23" y="28" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-22" y="28" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-24" y="29" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="-23" y="29" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="25" y="23" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="28" y="23" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-24" y="26" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-30" y="28" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-26" y="28" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-21" y="28" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-19" y="28" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="-22" y="29" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-24" y="30" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-23" y="30" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-22" y="30" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-25" y="30" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="2" y="30" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="4" y="30" z="6" spawntime="5" />
 	</spawn>
 	<spawn centerx="32073" centery="32830" centerz="6" radius="2">
 		<monster name="pirate marauder" x="-1" y="0" z="6" spawntime="60" />
@@ -6194,104 +6238,102 @@
 		<monster name="pirate cutthroat" x="-1" y="-1" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="31954" centery="32837" centerz="6" radius="27">
-		<monster name="pirate cutthroat" x="-2" y="-27" z="6" spawntime="60" />
-		<monster name="pirate cutthroat" x="5" y="-27" z="6" spawntime="32768" />
-		<monster name="pirate cutthroat" x="5" y="-26" z="6" spawntime="32768" />
-		<monster name="pirate cutthroat" x="6" y="-26" z="6" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="-17" y="-18" z="6" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="-20" y="-17" z="6" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="7" y="-17" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-21" y="-16" z="6" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="-18" y="-16" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="7" y="-16" z="6" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="-18" y="-15" z="6" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="7" y="-15" z="6" spawntime="32768" />
+		<monster name="pirate cutthroat" x="-3" y="-26" z="6" spawntime="60" />
+		<monster name="pirate cutthroat" x="4" y="-25" z="6" spawntime="32768" />
+		<monster name="pirate cutthroat" x="5" y="-21" z="6" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-20" y="-19" z="6" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-16" y="-18" z="6" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="5" y="-18" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-18" y="-17" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="6" y="-16" z="6" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-22" y="-15" z="6" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="-17" y="-15" z="6" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="-23" y="-14" z="6" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="-19" y="-14" z="6" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="-23" y="-13" z="6" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="-21" y="-13" z="6" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="7" y="-12" z="6" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="10" y="-12" z="6" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="11" y="-11" z="6" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="12" y="-10" z="6" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="14" y="-8" z="6" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="14" y="-7" z="6" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="15" y="-6" z="6" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="14" y="-5" z="6" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="15" y="-5" z="6" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="14" y="-4" z="6" spawntime="32768" />
-		<monster name="pirate Buccaneer" x="14" y="-3" z="6" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="15" y="-4" z="6" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="13" y="-1" z="6" spawntime="32768" />
+		<monster name="pirate Buccaneer" x="7" y="1" z="6" spawntime="32768" />
 		<monster name="pirate Corsair" x="15" y="1" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="7" y="11" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-10" y="12" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="6" y="12" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="7" y="12" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="6" y="4" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-12" y="9" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="6" y="9" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="-10" y="10" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="5" y="10" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-11" y="11" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-9" y="12" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="12" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="6" y="12" z="6" spawntime="5" />
 		<monster name="pirate Buccaneer" x="8" y="12" z="6" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-11" y="13" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-10" y="13" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-9" y="13" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="6" y="13" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="7" y="13" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="8" y="13" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-11" y="14" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="-10" y="14" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-10" y="13" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-12" y="14" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="-9" y="14" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="14" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="6" y="14" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="7" y="14" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="8" y="14" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-11" y="15" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="10" y="14" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="-10" y="15" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-9" y="15" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="7" y="15" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-9" y="16" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="9" y="16" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-10" y="17" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="15" y="20" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="9" y="21" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-10" y="22" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="-8" y="22" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="6" y="22" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="5" y="22" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="10" y="22" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="25" y="22" z="6" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-9" y="23" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-8" y="23" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-7" y="23" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="5" y="23" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="6" y="23" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-5" y="23" z="6" spawntime="5" />
 		<monster name="pirate Buccaneer" x="7" y="23" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-9" y="24" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="-8" y="24" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-7" y="24" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="5" y="24" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="6" y="24" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="7" y="24" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-8" y="24" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-6" y="24" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="-4" y="24" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="4" y="24" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="6" y="24" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="24" y="24" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="-9" y="25" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-8" y="25" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-7" y="25" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="5" y="25" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="6" y="25" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="25" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="3" y="25" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="7" y="25" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="5" y="26" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="3" y="27" z="6" spawntime="5" />
 	</spawn>
 	<spawn centerx="32054" centery="32841" centerz="6" radius="2">
 		<monster name="pirate marauder" x="0" y="-1" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="32050" centery="32846" centerz="6" radius="21">
 		<monster name="pirate Buccaneer" x="3" y="-16" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="-16" z="6" spawntime="5" />
 		<monster name="pirate Buccaneer" x="5" y="-16" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="3" y="-15" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="4" y="-15" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="5" y="-15" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="3" y="-14" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="4" y="-14" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="5" y="-14" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="2" y="-15" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="-14" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="9" y="-14" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="6" y="-13" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="3" y="-11" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="6" y="-10" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="-5" y="0" z="6" spawntime="60" />
-		<monster name="pirate marauder" x="-16" y="2" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-17" y="3" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-16" y="3" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-15" y="3" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-17" y="4" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="-16" y="4" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-15" y="4" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-17" y="5" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-16" y="5" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-15" y="5" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-16" y="1" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-17" y="3" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-14" y="3" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-11" y="4" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-17" y="5" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-13" y="5" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="-1" y="6" z="6" spawntime="60" />
 		<monster name="smuggler" x="-9" y="7" z="6" spawntime="60" />
+		<monster name="pirate cutthroat" x="-15" y="8" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="-13" y="8" z="6" spawntime="60" />
 		<monster name="smuggler" x="-2" y="9" z="6" spawntime="60" />
+		<monster name="pirate cutthroat" x="-15" y="11" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="-10" y="12" z="6" spawntime="60" />
 		<monster name="smuggler" x="5" y="12" z="6" spawntime="60" />
+		<monster name="pirate cutthroat" x="-17" y="14" z="6" spawntime="5" />
 		<monster name="smuggler" x="-13" y="14" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="32046" centery="32847" centerz="6" radius="2" />
@@ -6305,12 +6347,8 @@
 	<spawn centerx="32038" centery="32856" centerz="6" radius="4" />
 	<spawn centerx="32054" centery="32859" centerz="6" radius="2" />
 	<spawn centerx="32026" centery="32867" centerz="6" radius="5">
+		<monster name="pirate Buccaneer" x="-4" y="-3" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="-3" y="-1" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-4" y="0" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-3" y="0" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-4" y="1" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="-3" y="1" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-4" y="2" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="-3" y="2" z="6" spawntime="5" />
 	</spawn>
 	<spawn centerx="33148" centery="32867" centerz="6" radius="2">
@@ -6322,82 +6360,83 @@
 		<monster name="pirate Buccaneer" x="0" y="1" z="6" spawntime="236674560" />
 	</spawn>
 	<spawn centerx="31993" centery="32875" centerz="6" radius="30">
-		<monster name="pirate marauder" x="10" y="-15" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="9" y="-14" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="10" y="-14" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="11" y="-14" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="9" y="-13" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="10" y="-13" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="11" y="-13" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="-16" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="7" y="-16" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="15" y="-16" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="8" y="-14" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="12" y="-14" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="-2" y="-13" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="10" y="-13" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="9" y="-12" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="10" y="-12" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="11" y="-12" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="24" y="-11" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="27" y="-7" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-15" y="-5" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="25" y="-5" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="27" y="-4" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-15" y="0" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-16" y="2" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-8" y="3" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-5" y="3" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-24" y="4" z="6" spawntime="60" />
+		<monster name="pirate Buccaneer" x="-15" y="4" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-9" y="4" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="-26" y="5" z="6" spawntime="236674304" />
-		<monster name="pirate marauder" x="-25" y="5" z="6" spawntime="60" />
-		<monster name="pirate marauder" x="-28" y="6" z="6" spawntime="236674304" />
+		<monster name="pirate marauder" x="-25" y="5" z="6" spawntime="236674304" />
+		<monster name="pirate Buccaneer" x="-6" y="5" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="14" y="5" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="-27" y="6" z="6" spawntime="236674304" />
-		<monster name="pirate marauder" x="-15" y="6" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-28" y="7" z="6" spawntime="236674304" />
-		<monster name="pirate Buccaneer" x="-16" y="7" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-15" y="7" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-14" y="7" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-7" y="7" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-16" y="8" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-17" y="7" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-13" y="7" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="10" y="7" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="12" y="7" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="14" y="7" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="16" y="7" z="6" spawntime="5" />
 		<monster name="pirate Corsair" x="-15" y="8" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-14" y="8" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-8" y="8" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-7" y="8" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-6" y="8" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="16" y="8" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-16" y="9" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-15" y="9" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-14" y="9" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-8" y="9" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="-7" y="9" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-6" y="9" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="15" y="9" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="16" y="9" z="6" spawntime="5" />
+		<monster name="pirate Corsair" x="-5" y="8" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-28" y="9" z="6" spawntime="236674304" />
+		<monster name="pirate cutthroat" x="-17" y="9" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-13" y="9" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-6" y="9" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="12" y="9" z="6" spawntime="5" />
 		<monster name="pirate Buccaneer" x="17" y="9" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-15" y="10" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="-8" y="10" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-7" y="10" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-6" y="10" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="15" y="10" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="16" y="10" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="17" y="10" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="15" y="11" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="16" y="11" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="17" y="11" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-7" y="11" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="18" y="11" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="28" y="11" z="6" spawntime="60" />
+		<monster name="pirate cutthroat" x="14" y="12" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="16" y="12" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-8" y="13" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-6" y="13" z="6" spawntime="5" />
 	</spawn>
 	<spawn centerx="32037" centery="32875" centerz="6" radius="2">
 		<monster name="pirate cutthroat" x="-1" y="0" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="31943" centery="32882" centerz="6" radius="10">
 		<monster name="pirate marauder" x="-5" y="-9" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="9" y="-9" z="6" spawntime="236674560" />
-		<monster name="pirate Buccaneer" x="-6" y="-8" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="-8" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-4" y="-8" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="9" y="-8" z="6" spawntime="236674560" />
+		<monster name="pirate Corsair" x="-3" y="-9" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-7" y="-8" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="10" y="-8" z="6" spawntime="236674560" />
 		<monster name="pirate marauder" x="-6" y="-7" z="6" spawntime="5" />
-		<monster name="pirate Corsair" x="-5" y="-7" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-4" y="-7" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="9" y="-7" z="6" spawntime="236674560" />
-		<monster name="pirate cutthroat" x="-6" y="-6" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-5" y="-6" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-3" y="-7" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="0" y="-7" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="8" y="-7" z="6" spawntime="236674560" />
+		<monster name="pirate Buccaneer" x="-8" y="-6" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="-4" y="-6" z="6" spawntime="5" />
-		<monster name="pirate Buccaneer" x="9" y="-6" z="6" spawntime="236674560" />
-		<monster name="pirate Buccaneer" x="9" y="-5" z="6" spawntime="236674560" />
-		<monster name="pirate Buccaneer" x="9" y="-4" z="6" spawntime="60" />
+		<monster name="pirate Buccaneer" x="7" y="-6" z="6" spawntime="236674560" />
+		<monster name="pirate Buccaneer" x="10" y="-6" z="6" spawntime="236674560" />
+		<monster name="pirate cutthroat" x="-1" y="-5" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="-4" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="9" y="-4" z="6" spawntime="236674560" />
+		<monster name="pirate Buccaneer" x="8" y="-2" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="31957" centery="32884" centerz="6" radius="1">
+		<monster name="pirate Buccaneer" x="1" y="-1" z="6" spawntime="236674560" />
 		<monster name="pirate Buccaneer" x="-1" y="0" z="6" spawntime="236674560" />
 		<monster name="pirate Buccaneer" x="0" y="0" z="6" spawntime="236674560" />
-		<monster name="pirate Buccaneer" x="1" y="0" z="6" spawntime="236674560" />
 	</spawn>
 	<spawn centerx="31959" centery="32884" centerz="6" radius="1">
 		<monster name="pirate Buccaneer" x="0" y="0" z="6" spawntime="236674560" />
-		<monster name="pirate Buccaneer" x="1" y="0" z="6" spawntime="236674560" />
 	</spawn>
 	<spawn centerx="31961" centery="32884" centerz="6" radius="1">
 		<monster name="pirate Buccaneer" x="0" y="0" z="6" spawntime="60" />
@@ -6421,30 +6460,32 @@
 		<npc name="Captain Max" x="0" y="-1" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="31955" centery="32919" centerz="6" radius="21">
-		<monster name="pirate marauder" x="-6" y="-1" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-5" y="-1" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-8" y="0" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-7" y="0" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-4" y="0" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-6" y="-3" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-13" y="-2" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-11" y="-2" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-7" y="-1" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-3" y="-1" z="6" spawntime="32768" />
 		<monster name="pirate marauder" x="-10" y="1" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-4" y="1" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-10" y="2" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="-5" y="2" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-4" y="2" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-6" y="3" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-5" y="3" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-6" y="4" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-5" y="9" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-5" y="10" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-2" y="2" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-11" y="3" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-13" y="4" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="0" y="4" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-2" y="6" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-8" y="7" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-5" y="7" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-3" y="8" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="-5" y="12" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-5" y="14" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-6" y="13" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="-6" y="17" z="6" spawntime="32768" />
 		<monster name="pirate marauder" x="-8" y="19" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-7" y="19" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-9" y="20" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-8" y="20" z="6" spawntime="32768" />
 		<monster name="pirate marauder" x="-12" y="21" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-11" y="21" z="6" spawntime="32768" />
-		<monster name="pirate marauder" x="-10" y="21" z="6" spawntime="5" />
+	</spawn>
+	<spawn centerx="31932" centery="32938" centerz="6" radius="5">
+		<monster name="pirate marauder" x="-2" y="-3" z="6" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="-1" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="0" y="3" z="6" spawntime="32768" />
+		<monster name="pirate marauder" x="4" y="4" z="6" spawntime="5" />
 	</spawn>
 	<spawn centerx="32071" centery="32951" centerz="6" radius="1" />
 	<spawn centerx="18231" centery="18044" centerz="7" radius="1">
@@ -27615,20 +27656,18 @@
 		<monster name="rotworm" x="1" y="1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="31991" centery="32795" centerz="8" radius="8">
-		<monster name="pirate marauder" x="0" y="1" z="8" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-1" y="2" z="8" spawntime="5" />
-		<monster name="pirate Buccaneer" x="0" y="2" z="8" spawntime="5" />
-		<monster name="pirate Buccaneer" x="1" y="2" z="8" spawntime="5" />
-		<monster name="pirate marauder" x="-1" y="3" z="8" spawntime="5" />
-		<monster name="pirate Corsair" x="0" y="3" z="8" spawntime="5" />
-		<monster name="pirate marauder" x="1" y="3" z="8" spawntime="5" />
-		<monster name="pirate cutthroat" x="-1" y="4" z="8" spawntime="5" />
-		<monster name="pirate cutthroat" x="0" y="4" z="8" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="-3" z="8" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="-3" z="8" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="-3" z="8" spawntime="5" />
+		<monster name="pirate marauder" x="-4" y="-1" z="8" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-4" y="1" z="8" spawntime="5" />
+		<monster name="pirate marauder" x="-6" y="2" z="8" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="2" z="8" spawntime="5" />
+		<monster name="pirate Corsair" x="0" y="2" z="8" spawntime="5" />
 		<monster name="pirate cutthroat" x="1" y="4" z="8" spawntime="5" />
-		<monster name="pirate marauder" x="-3" y="7" z="8" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-2" y="6" z="8" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="6" z="8" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-4" y="8" z="8" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-3" y="8" z="8" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-2" y="8" z="8" spawntime="5" />
 	</spawn>
 	<spawn centerx="32199" centery="32795" centerz="8" radius="1">
 		<monster name="rotworm" x="1" y="0" z="8" spawntime="60" />
@@ -27677,7 +27716,10 @@
 	<spawn centerx="32262" centery="32808" centerz="8" radius="1">
 		<monster name="rotworm" x="1" y="0" z="8" spawntime="60" />
 	</spawn>
-	<spawn centerx="31987" centery="32810" centerz="8" radius="3" />
+	<spawn centerx="31987" centery="32810" centerz="8" radius="3">
+		<monster name="pirate Buccaneer" x="2" y="-2" z="8" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="0" z="8" spawntime="5" />
+	</spawn>
 	<spawn centerx="32222" centery="32810" centerz="8" radius="1">
 		<monster name="rotworm" x="1" y="0" z="8" spawntime="60" />
 	</spawn>
@@ -37413,91 +37455,92 @@
 		<monster name="larva" x="-1" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32019" centery="32813" centerz="9" radius="23">
-		<monster name="pirate marauder" x="17" y="-22" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="16" y="-21" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="17" y="-21" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="18" y="-21" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-20" y="-20" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="16" y="-20" z="9" spawntime="5" />
-		<monster name="pirate Corsair" x="17" y="-20" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="18" y="-20" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-21" y="-19" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-20" y="-19" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-15" y="-23" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="15" y="-23" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="17" y="-23" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-21" y="-22" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-22" y="-20" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-14" y="-20" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="7" y="-20" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="21" y="-20" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-19" y="-19" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="16" y="-19" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="17" y="-19" z="9" spawntime="5" />
+		<monster name="pirate Corsair" x="-17" y="-19" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-12" y="-19" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="5" y="-19" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="16" y="-19" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="18" y="-19" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-21" y="-18" z="9" spawntime="5" />
-		<monster name="pirate Corsair" x="-20" y="-18" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-19" y="-18" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="6" y="-18" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-21" y="-17" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-20" y="-17" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-22" y="-18" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="6" y="-18" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="14" y="-18" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="-19" y="-17" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="5" y="-17" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="6" y="-17" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="7" y="-17" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="5" y="-16" z="9" spawntime="5" />
-		<monster name="pirate Corsair" x="6" y="-16" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="7" y="-16" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="5" y="-15" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="6" y="-15" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="7" y="-15" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-12" y="-13" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-13" y="-12" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-12" y="-12" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-13" y="-17" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="8" y="-17" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="12" y="-17" z="9" spawntime="5" />
+		<monster name="pirate Corsair" x="20" y="-17" z="9" spawntime="5" />
+		<monster name="pirate Corsair" x="5" y="-16" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="8" y="-16" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-22" y="-15" z="9" spawntime="5" />
+		<monster name="pirate Corsair" x="-13" y="-15" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="4" y="-15" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="6" y="-15" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="14" y="-15" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-14" y="-14" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-11" y="-14" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="17" y="-14" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="4" y="-13" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="14" y="-13" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-20" y="-12" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-11" y="-12" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-13" y="-11" z="9" spawntime="5" />
-		<monster name="pirate Corsair" x="-12" y="-11" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="11" y="-12" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-17" y="-11" z="9" spawntime="5" />
 		<monster name="pirate marauder" x="-11" y="-11" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-21" y="-10" z="9" spawntime="5" />
 		<monster name="pirate marauder" x="-19" y="-10" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-13" y="-10" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-12" y="-10" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-11" y="-10" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-20" y="-9" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-19" y="-9" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-18" y="-9" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-20" y="-8" z="9" spawntime="5" />
-		<monster name="pirate Corsair" x="-19" y="-8" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-18" y="-8" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="3" y="-8" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-20" y="-7" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-19" y="-7" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-18" y="-7" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-15" y="-10" z="9" spawntime="5" />
+		<monster name="pirate Corsair" x="5" y="-10" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="8" y="-10" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-12" y="-9" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="-9" z="9" spawntime="5" />
+		<monster name="pirate Corsair" x="-22" y="-8" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-11" y="-8" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="5" y="-8" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-20" y="-7" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="2" y="-7" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="3" y="-7" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="4" y="-7" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="2" y="-6" z="9" spawntime="5" />
-		<monster name="pirate Corsair" x="3" y="-6" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="4" y="-6" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="2" y="-5" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="3" y="-5" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="4" y="-5" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-5" y="0" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-6" y="1" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="1" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-4" y="1" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-6" y="2" z="9" spawntime="5" />
-		<monster name="pirate Corsair" x="-5" y="2" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-4" y="2" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-6" y="3" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-5" y="3" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-21" y="-6" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="4" y="-6" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-22" y="-5" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-19" y="-5" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="3" y="-5" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-18" y="-4" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-10" y="-4" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-21" y="-3" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-9" y="-3" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="1" y="-3" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-11" y="-2" z="9" spawntime="5" />
+		<monster name="pirate Corsair" x="-8" y="-1" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="-1" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-9" y="0" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-3" y="1" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-8" y="2" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-2" y="2" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-7" y="3" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="-4" y="3" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="4" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-7" y="5" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="6" z="9" spawntime="5" />
 		<monster name="pirate Corsair" x="14" y="6" z="9" spawntime="5" />
 		<monster name="pirate marauder" x="-7" y="7" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="11" y="7" z="9" spawntime="5" />
 		<monster name="pirate marauder" x="18" y="7" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="20" y="7" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-8" y="8" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-7" y="8" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-6" y="8" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-8" y="9" z="9" spawntime="5" />
-		<monster name="pirate Corsair" x="-7" y="9" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-10" y="9" z="9" spawntime="5" />
 		<monster name="pirate marauder" x="-6" y="9" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="17" y="9" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="21" y="9" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-14" y="10" z="9" spawntime="5" />
+		<monster name="pirate Corsair" x="-13" y="10" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="-8" y="10" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-7" y="10" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="-6" y="10" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="11" y="10" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="13" y="10" z="9" spawntime="32768" />
@@ -37505,50 +37548,49 @@
 		<monster name="pirate marauder" x="-14" y="11" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="12" y="11" z="9" spawntime="32768" />
 		<monster name="pirate Corsair" x="15" y="11" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-15" y="12" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-14" y="12" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-13" y="12" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-6" y="12" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="11" y="12" z="9" spawntime="32768" />
 		<monster name="pirate Buccaneer" x="16" y="12" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-15" y="13" z="9" spawntime="5" />
-		<monster name="pirate Corsair" x="-14" y="13" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-15" y="13" z="9" spawntime="5" />
 		<monster name="pirate marauder" x="-13" y="13" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="10" y="13" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="14" y="13" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-15" y="14" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-14" y="14" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="-13" y="14" z="9" spawntime="5" />
+		<monster name="pirate Corsair" x="-4" y="14" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-16" y="15" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-14" y="15" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="10" y="15" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="13" y="15" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="19" y="15" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="21" y="15" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-5" y="16" z="9" spawntime="5" />
 		<monster name="pirate marauder" x="8" y="16" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="16" y="16" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="21" y="16" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-6" y="17" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="17" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="10" y="17" z="9" spawntime="5" />
 		<monster name="pirate marauder" x="13" y="17" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-15" y="18" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-7" y="18" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-6" y="18" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="18" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-5" y="18" z="9" spawntime="5" />
 		<monster name="pirate marauder" x="8" y="18" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-16" y="19" z="9" spawntime="5" />
 		<monster name="pirate marauder" x="-14" y="19" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-7" y="19" z="9" spawntime="5" />
-		<monster name="pirate Corsair" x="-6" y="19" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-5" y="19" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-15" y="20" z="9" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-14" y="20" z="9" spawntime="5" />
+		<monster name="pirate Corsair" x="-9" y="19" z="9" spawntime="5" />
+		<monster name="pirate Corsair" x="-15" y="20" z="9" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-13" y="20" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-7" y="20" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-6" y="20" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-5" y="20" z="9" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-8" y="20" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-1" y="20" z="9" spawntime="5" />
 		<monster name="pirate marauder" x="8" y="20" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-15" y="21" z="9" spawntime="5" />
-		<monster name="pirate Corsair" x="-14" y="21" z="9" spawntime="5" />
-		<monster name="pirate marauder" x="-13" y="21" z="9" spawntime="5" />
-		<monster name="pirate cutthroat" x="-15" y="22" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-16" y="21" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-14" y="21" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-11" y="21" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-4" y="21" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="-14" y="22" z="9" spawntime="5" />
 		<monster name="pirate cutthroat" x="-13" y="22" z="9" spawntime="5" />
+		<monster name="pirate cutthroat" x="-7" y="22" z="9" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="22" z="9" spawntime="5" />
 	</spawn>
 	<spawn centerx="32181" centery="32813" centerz="9" radius="1">
 		<monster name="centipede" x="-1" y="-1" z="9" spawntime="60" />
@@ -44791,46 +44833,46 @@
 		<monster name="Novice Of The Cult" x="0" y="8" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32042" centery="32818" centerz="10" radius="20">
-		<monster name="pirate marauder" x="7" y="-17" z="10" spawntime="5" />
-		<monster name="pirate Buccaneer" x="6" y="-16" z="10" spawntime="5" />
-		<monster name="pirate Buccaneer" x="7" y="-16" z="10" spawntime="5" />
-		<monster name="pirate Buccaneer" x="8" y="-16" z="10" spawntime="5" />
-		<monster name="pirate marauder" x="6" y="-15" z="10" spawntime="5" />
-		<monster name="pirate Corsair" x="7" y="-15" z="10" spawntime="5" />
-		<monster name="pirate marauder" x="8" y="-15" z="10" spawntime="5" />
+		<monster name="pirate Corsair" x="10" y="-19" z="10" spawntime="5" />
+		<monster name="pirate Buccaneer" x="1" y="-18" z="10" spawntime="5" />
+		<monster name="pirate Buccaneer" x="6" y="-18" z="10" spawntime="5" />
+		<monster name="pirate marauder" x="8" y="-18" z="10" spawntime="5" />
+		<monster name="pirate marauder" x="-14" y="-17" z="10" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-11" y="-17" z="10" spawntime="5" />
+		<monster name="pirate cutthroat" x="-9" y="-17" z="10" spawntime="5" />
+		<monster name="pirate marauder" x="-6" y="-14" z="10" spawntime="5" />
+		<monster name="pirate marauder" x="-2" y="-14" z="10" spawntime="5" />
 		<monster name="pirate cutthroat" x="6" y="-14" z="10" spawntime="5" />
-		<monster name="pirate cutthroat" x="7" y="-14" z="10" spawntime="5" />
-		<monster name="pirate cutthroat" x="8" y="-14" z="10" spawntime="5" />
-		<monster name="pirate marauder" x="-4" y="-7" z="10" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-5" y="-6" z="10" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-4" y="-6" z="10" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-3" y="-6" z="10" spawntime="5" />
-		<monster name="pirate marauder" x="-5" y="-5" z="10" spawntime="5" />
-		<monster name="pirate Corsair" x="-4" y="-5" z="10" spawntime="5" />
-		<monster name="pirate marauder" x="-3" y="-5" z="10" spawntime="5" />
+		<monster name="pirate Buccaneer" x="8" y="-13" z="10" spawntime="5" />
+		<monster name="pirate marauder" x="0" y="-12" z="10" spawntime="5" />
+		<monster name="pirate Corsair" x="-15" y="-11" z="10" spawntime="5" />
+		<monster name="pirate cutthroat" x="-14" y="-10" z="10" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-12" y="-9" z="10" spawntime="5" />
+		<monster name="pirate cutthroat" x="-7" y="-9" z="10" spawntime="5" />
+		<monster name="pirate cutthroat" x="-1" y="-9" z="10" spawntime="5" />
+		<monster name="pirate marauder" x="-9" y="-8" z="10" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-1" y="-5" z="10" spawntime="5" />
 		<monster name="pirate cutthroat" x="-5" y="-4" z="10" spawntime="5" />
-		<monster name="pirate cutthroat" x="-4" y="-4" z="10" spawntime="5" />
-		<monster name="pirate cutthroat" x="-3" y="-4" z="10" spawntime="5" />
-		<monster name="pirate marauder" x="15" y="1" z="10" spawntime="5" />
-		<monster name="pirate Buccaneer" x="14" y="2" z="10" spawntime="5" />
-		<monster name="pirate Buccaneer" x="15" y="2" z="10" spawntime="5" />
+		<monster name="pirate Buccaneer" x="5" y="-4" z="10" spawntime="5" />
+		<monster name="pirate marauder" x="2" y="-3" z="10" spawntime="5" />
+		<monster name="pirate marauder" x="7" y="-3" z="10" spawntime="5" />
+		<monster name="pirate Buccaneer" x="8" y="-1" z="10" spawntime="5" />
+		<monster name="pirate Corsair" x="14" y="0" z="10" spawntime="5" />
+		<monster name="pirate marauder" x="13" y="2" z="10" spawntime="5" />
 		<monster name="pirate Buccaneer" x="16" y="2" z="10" spawntime="5" />
-		<monster name="pirate marauder" x="14" y="3" z="10" spawntime="5" />
-		<monster name="pirate Corsair" x="15" y="3" z="10" spawntime="5" />
-		<monster name="pirate marauder" x="16" y="3" z="10" spawntime="5" />
-		<monster name="pirate cutthroat" x="14" y="4" z="10" spawntime="5" />
-		<monster name="pirate cutthroat" x="15" y="4" z="10" spawntime="5" />
-		<monster name="pirate cutthroat" x="16" y="4" z="10" spawntime="5" />
-		<monster name="pirate marauder" x="-10" y="14" z="10" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-11" y="15" z="10" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-10" y="15" z="10" spawntime="5" />
-		<monster name="pirate Buccaneer" x="-9" y="15" z="10" spawntime="5" />
-		<monster name="pirate marauder" x="-11" y="16" z="10" spawntime="5" />
-		<monster name="pirate Corsair" x="-10" y="16" z="10" spawntime="5" />
-		<monster name="pirate marauder" x="-9" y="16" z="10" spawntime="5" />
-		<monster name="pirate cutthroat" x="-11" y="17" z="10" spawntime="5" />
-		<monster name="pirate cutthroat" x="-10" y="17" z="10" spawntime="5" />
+		<monster name="pirate cutthroat" x="15" y="3" z="10" spawntime="5" />
+		<monster name="pirate cutthroat" x="12" y="4" z="10" spawntime="5" />
+		<monster name="pirate marauder" x="-9" y="5" z="10" spawntime="5" />
+		<monster name="pirate cutthroat" x="15" y="5" z="10" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-9" y="8" z="10" spawntime="5" />
+		<monster name="pirate marauder" x="-11" y="10" z="10" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-15" y="11" z="10" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-17" y="13" z="10" spawntime="5" />
+		<monster name="pirate marauder" x="-10" y="13" z="10" spawntime="5" />
+		<monster name="pirate cutthroat" x="-19" y="16" z="10" spawntime="5" />
 		<monster name="pirate cutthroat" x="-9" y="17" z="10" spawntime="5" />
+		<monster name="pirate cutthroat" x="-17" y="18" z="10" spawntime="5" />
+		<monster name="pirate Corsair" x="-12" y="18" z="10" spawntime="5" />
 	</spawn>
 	<spawn centerx="32212" centery="32829" centerz="10" radius="4">
 		<monster name="rotworm" x="1" y="-3" z="10" spawntime="60" />
