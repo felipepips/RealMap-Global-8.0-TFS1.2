@@ -257,16 +257,12 @@
 	<spawn centerx="33024" centery="32743" centerz="1" radius="2">
 		<monster name="bandit" x="-1" y="1" z="1" spawntime="60" />
 	</spawn>
-	<spawn centerx="32404" centery="32747" centerz="1" radius="2">
-		<monster name="behemoth" x="1" y="-1" z="1" spawntime="60" />
-	</spawn>
 	<spawn centerx="32412" centery="32752" centerz="1" radius="2">
 		<monster name="behemoth" x="0" y="0" z="1" spawntime="60" />
 	</spawn>
 	<spawn centerx="32402" centery="32758" centerz="1" radius="3">
 		<monster name="behemoth" x="0" y="-1" z="1" spawntime="60" />
 	</spawn>
-	<spawn centerx="32411" centery="32765" centerz="1" radius="3" />
 	<spawn centerx="32423" centery="32772" centerz="1" radius="2">
 		<monster name="tarantula" x="0" y="-1" z="1" spawntime="60" />
 	</spawn>
@@ -658,22 +654,6 @@
 		<monster name="gargoyle" x="1" y="-1" z="2" spawntime="60" />
 		<monster name="stalker" x="-1" y="0" z="2" spawntime="60" />
 	</spawn>
-	<spawn centerx="32405" centery="32729" centerz="2" radius="4" />
-	<spawn centerx="32395" centery="32733" centerz="2" radius="2" />
-	<spawn centerx="32414" centery="32735" centerz="2" radius="2" />
-	<spawn centerx="32390" centery="32739" centerz="2" radius="2" />
-	<spawn centerx="32416" centery="32743" centerz="2" radius="3" />
-	<spawn centerx="32398" centery="32747" centerz="2" radius="2" />
-	<spawn centerx="32409" centery="32751" centerz="2" radius="2" />
-	<spawn centerx="32423" centery="32751" centerz="2" radius="2" />
-	<spawn centerx="32401" centery="32753" centerz="2" radius="2" />
-	<spawn centerx="32394" centery="32757" centerz="2" radius="2" />
-	<spawn centerx="32419" centery="32761" centerz="2" radius="3" />
-	<spawn centerx="32428" centery="32761" centerz="2" radius="2" />
-	<spawn centerx="32403" centery="32764" centerz="2" radius="2" />
-	<spawn centerx="32419" centery="32770" centerz="2" radius="2" />
-	<spawn centerx="32410" centery="32772" centerz="2" radius="2" />
-	<spawn centerx="32393" centery="32773" centerz="2" radius="3" />
 	<spawn centerx="32432" centery="32775" centerz="2" radius="2">
 		<monster name="centipede" x="1" y="0" z="2" spawntime="60" />
 	</spawn>
@@ -1057,30 +1037,11 @@
 	<spawn centerx="33066" centery="32680" centerz="3" radius="1" />
 	<spawn centerx="33060" centery="32684" centerz="3" radius="1" />
 	<spawn centerx="33065" centery="32691" centerz="3" radius="1" />
-	<spawn centerx="32401" centery="32723" centerz="3" radius="2" />
-	<spawn centerx="32417" centery="32731" centerz="3" radius="2" />
-	<spawn centerx="32384" centery="32733" centerz="3" radius="2" />
-	<spawn centerx="32404" centery="32733" centerz="3" radius="2" />
-	<spawn centerx="32394" centery="32739" centerz="3" radius="2" />
-	<spawn centerx="32410" centery="32739" centerz="3" radius="2" />
-	<spawn centerx="32383" centery="32742" centerz="3" radius="2" />
-	<spawn centerx="32408" centery="32746" centerz="3" radius="3" />
-	<spawn centerx="32416" centery="32749" centerz="3" radius="3" />
-	<spawn centerx="32433" centery="32751" centerz="3" radius="3" />
 	<spawn centerx="33040" centery="32751" centerz="3" radius="1" />
-	<spawn centerx="32406" centery="32753" centerz="3" radius="2" />
-	<spawn centerx="32422" centery="32757" centerz="3" radius="3" />
 	<spawn centerx="33037" centery="32758" centerz="3" radius="1" />
-	<spawn centerx="32403" centery="32760" centerz="3" radius="2" />
-	<spawn centerx="32408" centery="32767" centerz="3" radius="2" />
-	<spawn centerx="32388" centery="32768" centerz="3" radius="2" />
-	<spawn centerx="32395" centery="32771" centerz="3" radius="2" />
-	<spawn centerx="32429" centery="32773" centerz="3" radius="2" />
 	<spawn centerx="32385" centery="32777" centerz="3" radius="2">
 		<monster name="centipede" x="1" y="0" z="3" spawntime="60" />
 	</spawn>
-	<spawn centerx="32408" centery="32777" centerz="3" radius="2" />
-	<spawn centerx="32414" centery="32778" centerz="3" radius="2" />
 	<spawn centerx="32397" centery="32787" centerz="3" radius="3">
 		<monster name="centipede" x="1" y="-1" z="3" spawntime="60" />
 		<monster name="centipede" x="-2" y="1" z="3" spawntime="60" />
@@ -1950,48 +1911,26 @@
 		<monster name="dragon" x="0" y="-1" z="4" spawntime="60" />
 	</spawn>
 	<spawn centerx="33054" centery="32726" centerz="4" radius="2" />
-	<spawn centerx="32381" centery="32727" centerz="4" radius="2" />
-	<spawn centerx="32406" centery="32730" centerz="4" radius="2" />
-	<spawn centerx="32397" centery="32731" centerz="4" radius="2" />
 	<spawn centerx="33053" centery="32734" centerz="4" radius="1" />
-	<spawn centerx="32385" centery="32735" centerz="4" radius="2" />
 	<spawn centerx="33048" centery="32735" centerz="4" radius="2" />
-	<spawn centerx="32410" centery="32739" centerz="4" radius="2" />
 	<spawn centerx="33043" centery="32743" centerz="4" radius="2" />
-	<spawn centerx="32393" centery="32749" centerz="4" radius="2" />
-	<spawn centerx="32421" centery="32749" centerz="4" radius="2" />
-	<spawn centerx="32403" centery="32754" centerz="4" radius="2" />
-	<spawn centerx="32427" centery="32755" centerz="4" radius="2" />
-	<spawn centerx="32391" centery="32757" centerz="4" radius="2" />
 	<spawn centerx="33013" centery="32757" centerz="4" radius="2">
 		<monster name="lizard sentinel" x="0" y="0" z="4" spawntime="60" />
 	</spawn>
-	<spawn centerx="32407" centery="32761" centerz="4" radius="3" />
-	<spawn centerx="32430" centery="32762" centerz="4" radius="2" />
 	<spawn centerx="33004" centery="32762" centerz="4" radius="2">
 		<monster name="lizard templar" x="0" y="1" z="4" spawntime="60" />
 	</spawn>
-	<spawn centerx="32391" centery="32764" centerz="4" radius="2" />
 	<spawn centerx="33012" centery="32768" centerz="4" radius="2">
 		<monster name="lizard templar" x="-1" y="0" z="4" spawntime="60" />
 	</spawn>
-	<spawn centerx="32413" centery="32769" centerz="4" radius="3" />
-	<spawn centerx="32388" centery="32772" centerz="4" radius="2" />
-	<spawn centerx="32432" centery="32773" centerz="4" radius="2" />
 	<spawn centerx="33038" centery="32773" centerz="4" radius="2">
 		<monster name="hyaena" x="-2" y="-1" z="4" spawntime="60" />
 		<monster name="hyaena" x="0" y="2" z="4" spawntime="60" />
 	</spawn>
-	<spawn centerx="32399" centery="32777" centerz="4" radius="3" />
-	<spawn centerx="32391" centery="32778" centerz="4" radius="2" />
-	<spawn centerx="32407" centery="32778" centerz="4" radius="2" />
-	<spawn centerx="32414" centery="32781" centerz="4" radius="2" />
-	<spawn centerx="32398" centery="32785" centerz="4" radius="2" />
 	<spawn centerx="33035" centery="32785" centerz="4" radius="2">
 		<monster name="hyaena" x="-2" y="-2" z="4" spawntime="60" />
 		<monster name="hyaena" x="1" y="0" z="4" spawntime="60" />
 	</spawn>
-	<spawn centerx="32424" centery="32786" centerz="4" radius="4" />
 	<spawn centerx="33156" centery="32809" centerz="4" radius="1">
 		<npc name="Dario" x="0" y="1" z="4" spawntime="60" />
 	</spawn>
@@ -3511,29 +3450,14 @@
 	<spawn centerx="33042" centery="32727" centerz="5" radius="2">
 		<monster name="dragon" x="0" y="0" z="5" spawntime="60" />
 	</spawn>
-	<spawn centerx="32406" centery="32729" centerz="5" radius="3">
-		<monster name="wyvern" x="3" y="1" z="5" spawntime="60" />
+	<spawn centerx="32622" centery="32740" centerz="5" radius="1">
+		<npc name="Tandros" x="-1" y="0" z="5" spawntime="60" />
 	</spawn>
-	<spawn centerx="32413" centery="32730" centerz="5" radius="2" />
-	<spawn centerx="32387" centery="32735" centerz="5" radius="2">
-		<monster name="Bonebeast" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="32413" centery="32736" centerz="5" radius="2" />
-	<spawn centerx="32635" centery="32739" centerz="5" radius="1">
+	<spawn centerx="32635" centery="32740" centerz="5" radius="1">
 		<npc name="Perod" x="-1" y="0" z="5" spawntime="60" />
 	</spawn>
-	<spawn centerx="32622" centery="32740" centerz="5" radius="1">
-		<npc name="Tandros" x="-1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="32407" centery="32742" centerz="5" radius="2" />
 	<spawn centerx="32622" centery="32747" centerz="5" radius="1">
-		<npc name="Zaidal" x="-1" y="0" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="32389" centery="32749" centerz="5" radius="4" />
-	<spawn centerx="32429" centery="32754" centerz="5" radius="2" />
-	<spawn centerx="32407" centery="32758" centerz="5" radius="2" />
-	<spawn centerx="32433" centery="32761" centerz="5" radius="2">
-		<monster name="wyvern" x="1" y="0" z="5" spawntime="60" />
+		<npc name="Zaidal" x="0" y="-1" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="32332" centery="32764" centerz="5" radius="1">
 		<npc name="Eleonore" x="-1" y="-1" z="5" spawntime="60" />
@@ -3543,33 +3467,12 @@
 		<monster name="bat" x="2" y="-1" z="5" spawntime="60" />
 		<monster name="bat" x="2" y="3" z="5" spawntime="60" />
 	</spawn>
-	<spawn centerx="32436" centery="32768" centerz="5" radius="3" />
-	<spawn centerx="32391" centery="32769" centerz="5" radius="2">
-		<monster name="giant spider" x="0" y="2" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="32408" centery="32770" centerz="5" radius="2">
-		<monster name="giant spider" x="0" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="32428" centery="32770" centerz="5" radius="2">
-		<monster name="Bonebeast" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
 	<spawn centerx="32329" centery="32772" centerz="5" radius="3">
 		<monster name="dog" x="1" y="-3" z="5" spawntime="60" />
 	</spawn>
-	<spawn centerx="32391" centery="32776" centerz="5" radius="3" />
-	<spawn centerx="32434" centery="32782" centerz="5" radius="2" />
 	<spawn centerx="33032" centery="32783" centerz="5" radius="2">
 		<monster name="hyaena" x="-2" y="-2" z="5" spawntime="60" />
 		<monster name="hyaena" x="1" y="2" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="32398" centery="32785" centerz="5" radius="2">
-		<monster name="Bonebeast" x="0" y="0" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="32412" centery="32786" centerz="5" radius="2">
-		<monster name="Bonebeast" x="0" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="32425" centery="32790" centerz="5" radius="3">
-		<monster name="Bonebeast" x="-2" y="1" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="33030" centery="32796" centerz="5" radius="2">
 		<monster name="hyaena" x="1" y="-1" z="5" spawntime="60" />
@@ -3990,9 +3893,6 @@
 	</spawn>
 	<spawn centerx="32042" centery="31122" centerz="6" radius="2">
 		<monster name="mammoth" x="0" y="0" z="6" spawntime="240" />
-	</spawn>
-	<spawn centerx="32354" centery="31125" centerz="6" radius="3">
-		<npc name="Captain Haba" x="-1" y="-1" z="6" spawntime="240" />
 	</spawn>
 	<spawn centerx="32036" centery="31127" centerz="6" radius="2">
 		<monster name="mammoth" x="1" y="0" z="6" spawntime="240" />
@@ -18403,8 +18303,14 @@
 	<spawn centerx="32950" centery="32751" centerz="7" radius="2">
 		<monster name="poison spider" x="2" y="1" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="32574" centery="32752" centerz="7" radius="1">
+		<npc name="Clyde" x="0" y="1" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="32852" centery="32752" centerz="7" radius="1">
 		<monster name="Parrot" x="1" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="32580" centery="32753" centerz="7" radius="1">
+		<npc name="Rashid" x="0" y="-1" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32859" centery="32753" centerz="7" radius="1">
 		<monster name="cobra" x="1" y="0" z="7" spawntime="60" />
@@ -27635,6 +27541,9 @@
 	</spawn>
 	<spawn centerx="32206" centery="32790" centerz="8" radius="1">
 		<monster name="rotworm" x="-1" y="0" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="32361" centery="32790" centerz="8" radius="1">
+		<monster name="Demon" x="1" y="0" z="8" spawntime="240" />
 	</spawn>
 	<spawn centerx="32215" centery="32791" centerz="8" radius="1">
 		<monster name="rotworm" x="-1" y="0" z="8" spawntime="60" />
@@ -37635,14 +37544,8 @@
 	<spawn centerx="32246" centery="32829" centerz="9" radius="1">
 		<monster name="rotworm" x="1" y="0" z="9" spawntime="60" />
 	</spawn>
-	<spawn centerx="32544" centery="32830" centerz="9" radius="2">
-		<monster name="water elemental" x="0" y="0" z="9" spawntime="60" />
-	</spawn>
 	<spawn centerx="32199" centery="32832" centerz="9" radius="1">
 		<monster name="centipede" x="1" y="0" z="9" spawntime="60" />
-	</spawn>
-	<spawn centerx="32558" centery="32833" centerz="9" radius="2">
-		<monster name="water elemental" x="1" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32221" centery="32835" centerz="9" radius="1">
 		<monster name="rotworm" x="0" y="1" z="9" spawntime="60" />
@@ -37650,21 +37553,12 @@
 	<spawn centerx="32245" centery="32835" centerz="9" radius="1">
 		<monster name="rotworm" x="1" y="-1" z="9" spawntime="60" />
 	</spawn>
-	<spawn centerx="32566" centery="32836" centerz="9" radius="2">
-		<monster name="water elemental" x="0" y="0" z="9" spawntime="60" />
-	</spawn>
 	<spawn centerx="32199" centery="32837" centerz="9" radius="1">
 		<monster name="rotworm" x="1" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32241" centery="32838" centerz="9" radius="1">
 		<monster name="rotworm" x="1" y="-1" z="9" spawntime="60" />
 		<monster name="rotworm" x="1" y="1" z="9" spawntime="60" />
-	</spawn>
-	<spawn centerx="32543" centery="32839" centerz="9" radius="2">
-		<monster name="Quara Mantassin Scout" x="0" y="0" z="9" spawntime="60" />
-	</spawn>
-	<spawn centerx="32554" centery="32840" centerz="9" radius="2">
-		<monster name="water elemental" x="0" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33150" centery="32842" centerz="9" radius="12">
 		<monster name="larva" x="-2" y="-10" z="9" spawntime="60" />
@@ -37715,14 +37609,8 @@
 	<spawn centerx="32214" centery="32854" centerz="9" radius="1">
 		<monster name="centipede" x="-1" y="-1" z="9" spawntime="60" />
 	</spawn>
-	<spawn centerx="32548" centery="32854" centerz="9" radius="2">
-		<monster name="water elemental" x="0" y="0" z="9" spawntime="60" />
-	</spawn>
 	<spawn centerx="32208" centery="32855" centerz="9" radius="1">
 		<monster name="centipede" x="0" y="1" z="9" spawntime="60" />
-	</spawn>
-	<spawn centerx="32542" centery="32857" centerz="9" radius="2">
-		<monster name="water elemental" x="0" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32601" centery="32858" centerz="9" radius="1">
 		<monster name="dworc venomsniper" x="1" y="0" z="9" spawntime="60" />
@@ -43421,9 +43309,6 @@
 		<monster name="larva" x="-2" y="3" z="10" spawntime="60" />
 		<monster name="larva" x="3" y="3" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="33007" centery="32592" centerz="10" radius="3">
-		<monster name="dwarf soldier" x="-1" y="1" z="10" spawntime="60" />
-	</spawn>
 	<spawn centerx="33270" centery="32593" centerz="10" radius="3">
 		<monster name="larva" x="-1" y="-2" z="10" spawntime="60" />
 		<monster name="larva" x="3" y="-1" z="10" spawntime="60" />
@@ -43463,13 +43348,6 @@
 		<monster name="scarab" x="2" y="1" z="10" spawntime="60" />
 		<monster name="larva" x="-4" y="3" z="10" spawntime="60" />
 		<monster name="larva" x="1" y="3" z="10" spawntime="60" />
-	</spawn>
-	<spawn centerx="33006" centery="32600" centerz="10" radius="3">
-		<monster name="dwarf guard" x="0" y="2" z="10" spawntime="60" />
-	</spawn>
-	<spawn centerx="33015" centery="32600" centerz="10" radius="3">
-		<monster name="dwarf guard" x="-2" y="-1" z="10" spawntime="60" />
-		<monster name="dwarf soldier" x="-1" y="0" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33174" centery="32600" centerz="10" radius="5">
 		<monster name="larva" x="-5" y="-5" z="10" spawntime="60" />
@@ -43609,18 +43487,10 @@
 		<monster name="larva" x="-2" y="2" z="10" spawntime="60" />
 		<monster name="larva" x="1" y="2" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="33015" centery="32618" centerz="10" radius="3">
-		<monster name="dwarf soldier" x="-3" y="0" z="10" spawntime="60" />
-		<monster name="dwarf guard" x="-1" y="2" z="10" spawntime="60" />
-	</spawn>
 	<spawn centerx="33226" centery="32618" centerz="10" radius="3">
 		<monster name="larva" x="-2" y="-2" z="10" spawntime="60" />
 		<monster name="larva" x="-3" y="0" z="10" spawntime="60" />
 		<monster name="larva" x="2" y="1" z="10" spawntime="60" />
-	</spawn>
-	<spawn centerx="33024" centery="32619" centerz="10" radius="3">
-		<monster name="dwarf soldier" x="-3" y="0" z="10" spawntime="60" />
-		<monster name="dwarf guard" x="-1" y="0" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33086" centery="32620" centerz="10" radius="3">
 		<monster name="scarab" x="3" y="-3" z="10" spawntime="60" />
@@ -43633,9 +43503,6 @@
 		<monster name="larva" x="-3" y="0" z="10" spawntime="60" />
 		<monster name="larva" x="-1" y="1" z="10" spawntime="60" />
 		<monster name="larva" x="2" y="1" z="10" spawntime="60" />
-	</spawn>
-	<spawn centerx="33007" centery="32621" centerz="10" radius="3">
-		<monster name="dwarf guard" x="0" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33134" centery="32622" centerz="10" radius="4">
 		<monster name="scarab" x="1" y="-3" z="10" spawntime="60" />
@@ -43665,10 +43532,6 @@
 		<monster name="larva" x="0" y="-2" z="10" spawntime="60" />
 		<monster name="larva" x="-2" y="1" z="10" spawntime="60" />
 		<monster name="larva" x="2" y="2" z="10" spawntime="60" />
-	</spawn>
-	<spawn centerx="33007" centery="32631" centerz="10" radius="3">
-		<monster name="dwarf soldier" x="-1" y="-1" z="10" spawntime="60" />
-		<monster name="dwarf guard" x="1" y="1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33079" centery="32631" centerz="10" radius="3">
 		<monster name="scarab" x="-2" y="-1" z="10" spawntime="60" />
@@ -43716,12 +43579,6 @@
 		<monster name="scarab" x="0" y="-1" z="10" spawntime="60" />
 		<monster name="larva" x="2" y="2" z="10" spawntime="60" />
 		<monster name="larva" x="-3" y="3" z="10" spawntime="60" />
-	</spawn>
-	<spawn centerx="32977" centery="32636" centerz="10" radius="4">
-		<monster name="dwarf geomancer" x="2" y="-3" z="10" spawntime="60" />
-		<monster name="dwarf guard" x="1" y="-2" z="10" spawntime="60" />
-		<monster name="dwarf geomancer" x="-2" y="0" z="10" spawntime="60" />
-		<monster name="dwarf guard" x="1" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33240" centery="32636" centerz="10" radius="4">
 		<monster name="scarab" x="-1" y="-3" z="10" spawntime="60" />
@@ -43980,17 +43837,9 @@
 		<monster name="scarab" x="-2" y="-1" z="10" spawntime="60" />
 		<monster name="scarab" x="0" y="2" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="32990" centery="32682" centerz="10" radius="3">
-		<monster name="dwarf soldier" x="-1" y="-2" z="10" spawntime="60" />
-		<monster name="dwarf guard" x="-2" y="1" z="10" spawntime="60" />
-		<monster name="dwarf soldier" x="2" y="1" z="10" spawntime="60" />
-	</spawn>
 	<spawn centerx="33092" centery="32682" centerz="10" radius="3">
 		<monster name="scarab" x="2" y="-2" z="10" spawntime="60" />
 		<monster name="scarab" x="0" y="2" z="10" spawntime="60" />
-	</spawn>
-	<spawn centerx="33001" centery="32686" centerz="10" radius="3">
-		<monster name="dwarf soldier" x="3" y="-1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33055" centery="32686" centerz="10" radius="5">
 		<monster name="scarab" x="-1" y="-3" z="10" spawntime="60" />
@@ -44012,9 +43861,6 @@
 		<monster name="carrion worm" x="-2" y="0" z="10" spawntime="60" />
 		<monster name="rotworm" x="-3" y="2" z="10" spawntime="60" />
 		<monster name="rotworm" x="0" y="3" z="10" spawntime="60" />
-	</spawn>
-	<spawn centerx="32989" centery="32692" centerz="10" radius="3">
-		<monster name="dwarf geomancer" x="-1" y="0" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33170" centery="32694" centerz="10" radius="3">
 		<monster name="larva" x="-3" y="-2" z="10" spawntime="60" />
