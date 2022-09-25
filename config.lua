@@ -95,7 +95,7 @@ summonsDropCorpse = true
 
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages in data/XML/stages.xml
-rateExp = 250
+rateExp = 1
 rateSkill = 30
 rateLoot = 30
 rateMagic = 8
@@ -104,6 +104,10 @@ rateSpawn = 1
 -- Monsters
 deSpawnRange = 2
 deSpawnRadius = 50
+rateMonsterHealth = 1.0
+rateMonsterMana = 1.0
+rateMonsterAttack = 1.0
+rateMonsterDefense = 1.0
 
 -- Stamina
 staminaSystem = false
