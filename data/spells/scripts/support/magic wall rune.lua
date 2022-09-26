@@ -15,6 +15,6 @@ local function countDown(cid, position, time)
 end
 
 function onCastSpell(creature, variant, isHotkey)
-    countDown(creature.uid, Variant.getPosition(variant), 20)
+    countDown(creature.uid, Variant.getPosition(variant), 0)
 	return combat:execute(creature, variant)
 end

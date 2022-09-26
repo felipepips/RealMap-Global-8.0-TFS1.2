@@ -3,10 +3,10 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if item.actionid == 50023 then
 		local laddertile = Tile(Position({x = 32225, y = 32276, z = 8}))
 			if item.itemid == 1945 then
-				laddertile:getItemById(9021):transform(8280)
+				laddertile:getItemById(351):transform(369)
 				item:transform(1946)
 			else
-				laddertile:getItemById(8280):transform(9021)
+				laddertile:getItemById(369):transform(351)
 				item:transform(1945)
 			end
 	--second lever to open the portal to cyclops

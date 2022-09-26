@@ -12,11 +12,11 @@
 	<outfit type="0" looktype="148" name="Druid" premium="yes" unlocked="yes" enabled="yes" />
 	<outfit type="0" looktype="149" name="Wizard" premium="yes" unlocked="yes" enabled="yes" />
 	<outfit type="0" looktype="150" name="Oriental" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="155" name="Pirate" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="156" name="Assassin" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="157" name="Beggar" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="158" name="Shaman" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="252" name="Norsewoman" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="155" name="Pirate" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="156" name="Assassin" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="157" name="Beggar" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="158" name="Shaman" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="252" name="Norsewoman" premium="yes" unlocked="no" enabled="yes" />
 
 	<!-- Male outfits -->
 	<outfit type="1" looktype="128" name="Citizen" premium="no" unlocked="yes" enabled="yes" />
@@ -30,9 +30,9 @@
 	<outfit type="1" looktype="144" name="Druid" premium="yes" unlocked="yes" enabled="yes" />
 	<outfit type="1" looktype="145" name="Wizard" premium="yes" unlocked="yes" enabled="yes" />
 	<outfit type="1" looktype="146" name="Oriental" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="151" name="Pirate" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="152" name="Assassin" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="153" name="Beggar" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="154" name="Shaman" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="251" name="Norseman" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="151" name="Pirate" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="152" name="Assassin" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="153" name="Beggar" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="154" name="Shaman" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="251" name="Norseman" premium="yes" unlocked="no" enabled="yes" />
 </outfits>

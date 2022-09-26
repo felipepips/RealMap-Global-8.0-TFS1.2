@@ -5,7 +5,7 @@ function onStepIn(creature, item, position, fromPosition)
 	if item.actionid == 50025 then
 		local stairsItem = Tile(stairsPosition):getItemById(424)
 		if stairsItem then
-			stairsItem:transform(8280)
+			stairsItem:transform(4836)
 		end
 		item:transform(425)
 

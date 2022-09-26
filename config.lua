@@ -104,6 +104,8 @@ rateSpawn = 1
 -- Monsters
 deSpawnRange = 2
 deSpawnRadius = 50
+
+-- Monster rates (not found)
 rateMonsterHealth = 1.0
 rateMonsterMana = 1.0
 rateMonsterAttack = 1.0
