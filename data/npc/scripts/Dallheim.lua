@@ -150,21 +150,26 @@ keywordHandler:addKeyword({'billy'}, StdModule.say, {npcHandler = npcHandler, te
 keywordHandler:addAliasKeyword({'willie'})
 
 -- Healing
-keywordHandler:addKeyword({'heal'}, StdModule.say, {npcHandler = npcHandler, text = 'You are poisoned. I will help you.'},
-	function(player) return player:getCondition(CONDITION_POISON) ~= nil end,
+local function addHealKeyword(text, condition, effect)
+	keywordHandler:addKeyword({'heal'}, StdModule.say, {npcHandler = npcHandler, text = text},
+		function(player) return player:getCondition(condition) ~= nil end,
+		function(player)
+			player:removeCondition(condition)
+			player:getPosition():sendMagicEffect(effect)
+		end
+	)
+end
+
+addHealKeyword('You are burning. Let me quench those flames.', CONDITION_FIRE, CONST_ME_MAGIC_GREEN)
+addHealKeyword('You are poisoned. Let me soothe your pain.', CONDITION_POISON, CONST_ME_MAGIC_RED)
+addHealKeyword('You are electrified, my child. Let me help you to stop trembling.', CONDITION_ENERGY, CONST_ME_MAGIC_GREEN)
+
+keywordHandler:addKeyword({'heal'}, StdModule.say, {npcHandler = npcHandler, text = 'You are hurt, my child. I will heal your wounds.'},
+	function(player) return player:getHealth() < 40 end,
 	function(player)
 		local health = player:getHealth()
-		if health < 65 then player:addHealth(65 - health) end
-		player:removeCondition(CONDITION_POISON)
-		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
-	end
-)
-keywordHandler:addKeyword({'heal'}, StdModule.say, {npcHandler = npcHandler, text = 'You are looking really bad. Let me heal your wounds.'},
-	function(player) return player:getHealth() < 65 end,
-	function(player)
-		local health = player:getHealth()
-		if health < 65 then player:addHealth(65 - health) end
-		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
+		if health < 40 then player:addHealth(40 - health) end
+		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 	end
 )
 keywordHandler:addKeyword({'heal'}, StdModule.say, {npcHandler = npcHandler, text = 'You aren\'t looking really bad. Eat some food to regain strength.'})
