@@ -74,7 +74,7 @@ shopModule:addBuyableItem({'volcanic rod', 'volcanic'}, 2185, 1000, 'volcanic ro
 shopModule:addBuyableItem({'quagmire rod', 'quagmire'}, 2181, 2000, 'quagmire rod')
 shopModule:addBuyableItem({'tempest rod', 'tempest'}, 2183, 3000, 'tempest rod')
 
-shopModule:addSellableItem({'vial', 'flask'}, 2006, 25, 'vial')
+shopModule:addSellableItem({'vial', 'flask'}, 2006, 5, 'vial')
 
 shopModule:addSellableItem({'wand of vortex', 'vortex'}, 2190, 100, 'wand of vortex')
 shopModule:addSellableItem({'wand of dragonbreath', 'dragonbreath'}, 2191, 200, 'wand of dragonbreath')

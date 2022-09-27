@@ -137,3 +137,31 @@ function getBlessingsCost(level)
 		return (level - 20) * 200
 	end
 end
+
+function Player.depositMoney(self, amount)
+    if not self:removeMoney(amount) then
+        return false
+    end
+    self:setBankBalance(self:getBankBalance() + amount)
+    return true
+end
+
+
+function Player.transferMoneyTo(self, target, amount)
+    local balance = self:getBankBalance()
+    if amount > balance then
+        return false
+    end
+
+    local targetPlayer = Player(target)
+    if targetPlayer then
+        targetPlayer:setBankBalance(targetPlayer:getBankBalance() + amount)
+    else
+        if not playerExists(target) then
+            return false
+        end
+        db.query("UPDATE `players` SET `balance` = `balance` + '" .. amount .. "' WHERE `name` = " .. db.escapeString(target))
+    end
+    self:setBankBalance(self:getBankBalance() - amount)
+    return true
+end

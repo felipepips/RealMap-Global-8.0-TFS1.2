@@ -31,13 +31,13 @@ keywordHandler:addKeyword({'kaz'}, StdModule.say, {npcHandler = npcHandler, only
 local shopModule = ShopModule:new()
 npcHandler:addModule(shopModule)
 
+shopModule:addBuyableItem({'crossbow'}, 					Cfcrossbow, 500)
+shopModule:addSellableItem({'crossbow'}, 					Cfcrossbow, 150)
 shopModule:addBuyableItem({'arrow'}, 					Cfarrow, 3)
 shopModule:addBuyableItem({'power bolt'}, 					Cfpowerbolt, 7)
 shopModule:addBuyableItem({'bow'}, 					Cfbow, 400)
 shopModule:addSellableItem({'bow'}, 					Cfbow, 100)
 shopModule:addBuyableItem({'bolt'}, 					Cfbolt, 4)
-shopModule:addBuyableItem({'crossbow'}, 					Cfcrossbow, 500)
-shopModule:addSellableItem({'crossbow'}, 					Cfcrossbow, 500)
 shopModule:addBuyableItem({'spear'}, 					Cfspear, 9)
 
 npcHandler:addModule(FocusModule:new())

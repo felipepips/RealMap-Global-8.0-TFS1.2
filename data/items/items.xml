@@ -13033,6 +13033,9 @@
 		<attribute key="description" value="It contains highly intensified poison against vermin." />
 		<attribute key="weight" value="180" />
 	</item>
+	<item id="7489" name="gold converter">
+		<attribute key="weight" value="100" />
+	</item>
 	<item id="30001" name="water" />
 	<item id="30002" name="lifefluid" />
 	<item id="30003" name="beer" />

@@ -7,11 +7,12 @@
 	<action itemid="7477" script="donations/bluedjin.lua"/>
 	<action itemid="7478" script="donations/postman.lua"/>
 	<action itemid="7479" script="donations/rashid.lua"/>
-	<action itemid="7480" script="donations/sex_change_scroll.lua"/>
-	<action itemid="7481" script="donations/namelock_ticket.lua"/>	
+	<action itemid="7480" script="donations/sex change scroll.lua"/>
+	<action itemid="7481" script="donations/namelock ticket.lua"/>	
 	<action itemid="7485" script="donations/7premdays.lua"/>
 	<action itemid="7486" script="donations/14premdays.lua"/>
 	<action itemid="7487" script="donations/30premdays.lua"/>
+	<action itemid="7489" script="donations/gold converter.lua"/>
 	
 	<!-- Item Rarity system -->	
 	<action fromid="12663" toid="12665" script="Other/other/slot.lua"/>
@@ -255,7 +256,6 @@
 	<action itemid="3955" script="Other/special Items/voodooDoll.lua" />
 	<!-- teleports -->	
 	<action itemid="430" script="Other/teleports/teleport.lua" />
-	<action itemid="1369" script="Other/teleports/teleport.lua" />
 	<action itemid="1386" script="Other/teleports/teleport.lua" />
 	<action itemid="3678" script="Other/teleports/teleport.lua" />
 	<action itemid="5543" script="Other/teleports/teleport.lua" />	

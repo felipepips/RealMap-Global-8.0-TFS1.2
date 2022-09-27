@@ -5,6 +5,5 @@
 	<parameters>
 		<parameter key="module_shop" value="1" />
 		<parameter key="shop_sellable" value="vial,2006,5" />
-		<parameter key="shop_buyable" value="lifefluid,2006,50,2;" />
 	</parameters>
 </npc>
