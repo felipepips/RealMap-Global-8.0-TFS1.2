@@ -38,11 +38,11 @@ maxPlayers = 100
 motd = "Welcome to Tibia2."
 onePlayerOnlinePerAccount = true
 allowClones = false
-teleportSummons = true
+teleportSummons = false
 serverName = "Tibia2"
 statusTimeout = 50000
 replaceKickOnLogin = true
-maxPacketsPerSecond = 100
+maxPacketsPerSecond = 1000
 enableLiveCasting = true
 liveCastPort = 7173
 
@@ -96,7 +96,7 @@ summonsDropCorpse = true
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages in data/XML/stages.xml
 rateExp = 1
-rateSkill = 30
+rateSkill = 1
 rateLoot = 30
 rateMagic = 8
 rateSpawn = 1

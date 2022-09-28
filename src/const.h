@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 #ifndef FS_CONST_H_0A49B5996F074465BF44B90F4F780E8B
 #define FS_CONST_H_0A49B5996F074465BF44B90F4F780E8B
 
-static constexpr int32_t NETWORKMESSAGE_MAXSIZE = 24590;
+#define NETWORKMESSAGE_MAXSIZE 24590
 
 enum MagicEffectClasses : uint8_t {
 	CONST_ME_NONE,
@@ -94,7 +94,25 @@ enum MagicEffectClasses : uint8_t {
 	CONST_ME_BATS = 67,
 	CONST_ME_SMOKE = 68,
 	CONST_ME_INSECTS = 69,
-	CONST_ME_DRAGONHEAD = 70
+	CONST_ME_DRAGONHEAD = 70,
+	CONST_ME_ORCSHAMAN = 71,
+	CONST_ME_ORCSHAMAN_FIRE = 72,
+	CONST_ME_THUNDER = 73,
+	CONST_ME_FERUMBRAS = 74,
+	CONST_ME_CONFETTI_HORIZONTAL = 75,
+	CONST_ME_CONFETTI_VERTICAL = 76,
+	// 77-157 are empty
+	CONST_ME_BLACKSMOKE = 158,
+	// 159-166 are empty
+	CONST_ME_REDSMOKE = 167,
+	CONST_ME_YELLOWSMOKE = 168,
+	CONST_ME_GREENSMOKE = 169,
+	CONST_ME_PURPLESMOKE = 170,
+	CONST_ME_EARLY_THUNDER = 171,
+	CONST_ME_RAGIAZ_BONECAPSULE = 172,
+	CONST_ME_CRITICAL_DAMAGE = 173,
+	// 174 is empty
+	CONST_ME_PLUNGING_FISH = 175,
 };
 
 enum ShootType_t : uint8_t {
@@ -141,6 +159,18 @@ enum ShootType_t : uint8_t {
 	CONST_ANI_SMALLEARTH = 39,
 	CONST_ANI_EARTHARROW = 40,
 	CONST_ANI_EXPLOSION = 41,
+	CONST_ANI_CAKE = 42,
+
+	CONST_ANI_TARSALARROW = 44,
+	CONST_ANI_VORTEXBOLT = 45,
+
+	CONST_ANI_PRISMATICBOLT = 48,
+	CONST_ANI_CRYSTALLINEARROW = 49,
+	CONST_ANI_DRILLBOLT = 50,
+	CONST_ANI_ENVENOMEDARROW = 51,
+
+	CONST_ANI_GLOOTHSPEAR = 53,
+	CONST_ANI_SIMPLEARROW = 54,
 
 	// for internal use, don't send to client
 	CONST_ANI_WEAPONTYPE = 0xFE, // 254
@@ -150,34 +180,32 @@ enum SpeakClasses : uint8_t {
 	TALKTYPE_SAY = 1,
 	TALKTYPE_WHISPER = 2,
 	TALKTYPE_YELL = 3,
-	TALKTYPE_PRIVATE_PN = 4,
-	TALKTYPE_PRIVATE_NP = 5,
-	TALKTYPE_PRIVATE = 6,
-	TALKTYPE_CHANNEL_Y = 7,
-	TALKTYPE_CHANNEL_W = 8,
-	TALKTYPE_RVR_CHANNEL = 9,
-	TALKTYPE_RVR_ANSWER = 10,
-	TALKTYPE_RVR_CONTINUE = 11,
-	TALKTYPE_BROADCAST = 12,
-	TALKTYPE_CHANNEL_R1 = 13, //red - #c text
-	TALKTYPE_PRIVATE_RED = 14, //@name@text
-	TALKTYPE_CHANNEL_O = 15, //@name@text
-	TALKTYPE_CHANNEL_R2 = 17, //#d
-	TALKTYPE_MONSTER_SAY = 19,
-	TALKTYPE_MONSTER_YELL = 20,
+	TALKTYPE_PRIVATE = 4,
+	TALKTYPE_CHANNEL_Y = 5,
+	TALKTYPE_RVR_CHANNEL = 6,
+	TALKTYPE_RVR_ANSWER = 7,
+	TALKTYPE_RVR_CONTINUE = 8,
+	TALKTYPE_BROADCAST = 9,
+	TALKTYPE_CHANNEL_R1 = 10, //red - #c text
+	TALKTYPE_PRIVATE_RED = 11, //@name@text
+	TALKTYPE_CHANNEL_O = 12, //@name@text
+	TALKTYPE_CHANNEL_R2 = 14, //#d
+	TALKTYPE_MONSTER_SAY = 16,
+	TALKTYPE_MONSTER_YELL = 17,
 };
 
 enum MessageClasses : uint8_t {
-	MESSAGE_STATUS_CONSOLE_RED = 18, /*Red message in the console*/
-	MESSAGE_EVENT_ORANGE = 19, /*Orange message in the console*/
-	MESSAGE_STATUS_CONSOLE_ORANGE = 20,  /*Orange message in the console*/
-	MESSAGE_STATUS_WARNING = 21, /*Red message in game window and in the console*/
-	MESSAGE_EVENT_ADVANCE = 22, /*White message in game window and in the console*/
-	MESSAGE_EVENT_DEFAULT = 23, /*White message at the bottom of the game window and in the console*/
-	MESSAGE_STATUS_DEFAULT = 24, /*White message at the bottom of the game window and in the console*/
-	MESSAGE_INFO_DESCR = 25, /*Green message in game window and in the console*/
-	MESSAGE_STATUS_SMALL = 26, /*White message at the bottom of the game window"*/
-	MESSAGE_STATUS_CONSOLE_BLUE = 27, /*FIXME Blue message in the console*/
+	MESSAGE_STATUS_CONSOLE_YELLOW = 1, /*Yellow message in the console*/
+	MESSAGE_STATUS_CONSOLE_LIGHTBLUE = 4, /*Light blue message in the console*/
+	MESSAGE_STATUS_CONSOLE_ORANGE = 17, /*Orange message in the console*/
+	MESSAGE_STATUS_WARNING = 18, /*Red message in game window and in the console*/
+	MESSAGE_EVENT_ADVANCE = 19, /*White message in game window and in the console*/
+	MESSAGE_EVENT_DEFAULT = 20, /*White message at the bottom of the game window and in the console*/
+	MESSAGE_STATUS_DEFAULT = 21, /*White message at the bottom of the game window and in the console*/
+	MESSAGE_INFO_DESCR = 22, /*Green message in game window and in the console*/
+	MESSAGE_STATUS_SMALL = 23, /*White message at the bottom of the game window"*/
+	MESSAGE_STATUS_CONSOLE_BLUE	= 24, /*Blue message in the console*/
+	MESSAGE_STATUS_CONSOLE_RED = 25, /*Red message in the console*/
 };
 
 enum FluidColors_t : uint8_t {
@@ -282,27 +310,22 @@ enum SquareColor_t : uint8_t {
 };
 
 enum TextColor_t : uint8_t {
-	TEXTCOLOR_BLACK = 0,
 	TEXTCOLOR_BLUE = 5,
 	TEXTCOLOR_GREEN = 18,
-	TEXTCOLOR_LIGHTGREEN = 66,
-	TEXTCOLOR_DARKBROWN = 78,
-	TEXTCOLOR_LIGHTBLUE = 89,
+	TEXTCOLOR_LIGHTGREEN = 30,
+	TEXTCOLOR_LIGHTBLUE = 35,
+	TEXTCOLOR_TEAL = 65,
 	TEXTCOLOR_MAYABLUE = 95,
 	TEXTCOLOR_DARKRED = 108,
-	TEXTCOLOR_DARKPURPLE = 112,
-	TEXTCOLOR_BROWN = 120,
-	TEXTCOLOR_GREY = 129,
-	TEXTCOLOR_TEAL = 143,
-	TEXTCOLOR_DARKPINK = 152,
+	TEXTCOLOR_LIGHTGREY = 129,
+	TEXTCOLOR_SKYBLUE = 143,
 	TEXTCOLOR_PURPLE = 154,
-	TEXTCOLOR_DARKORANGE = 156,
+	TEXTCOLOR_ELECTRICPURPLE = 155,
 	TEXTCOLOR_RED = 180,
-	TEXTCOLOR_PINK = 190,
-	TEXTCOLOR_ORANGE = 192,
-	TEXTCOLOR_DARKYELLOW = 205,
+	TEXTCOLOR_PASTELRED = 194,
+	TEXTCOLOR_ORANGE = 198,
 	TEXTCOLOR_YELLOW = 210,
-	TEXTCOLOR_WHITE = 215,
+	TEXTCOLOR_WHITE_EXP = 215,
 	TEXTCOLOR_NONE = 255,
 };
 
@@ -316,12 +339,6 @@ enum Icons_t {
 	ICON_HASTE = 1 << 6,
 	ICON_SWORDS = 1 << 7,
 	ICON_DROWNING = 1 << 8,
-	ICON_FREEZING = 1 << 9,
-	ICON_DAZZLED = 1 << 10,
-	ICON_CURSED = 1 << 11,
-	ICON_PARTY_BUFF = 1 << 12,
-	ICON_REDSWORDS = 1 << 13,
-	ICON_PIGEON = 1 << 14,
 };
 
 enum WeaponType_t : uint8_t {
@@ -354,7 +371,6 @@ enum WeaponAction_t : uint8_t {
 };
 
 enum WieldInfo_t {
-	WIELDINFO_NONE = 0 << 0,
 	WIELDINFO_LEVEL = 1 << 0,
 	WIELDINFO_MAGLV = 1 << 1,
 	WIELDINFO_VOCREQ = 1 << 2,
@@ -367,7 +383,6 @@ enum Skulls_t : uint8_t {
 	SKULL_GREEN = 2,
 	SKULL_WHITE = 3,
 	SKULL_RED = 4,
-	SKULL_BLACK = 5
 };
 
 enum PartyShields_t : uint8_t {
@@ -376,19 +391,6 @@ enum PartyShields_t : uint8_t {
 	SHIELD_WHITEBLUE = 2,
 	SHIELD_BLUE = 3,
 	SHIELD_YELLOW = 4,
-	SHIELD_BLUE_SHAREDEXP = 5,
-	SHIELD_YELLOW_SHAREDEXP = 6,
-	SHIELD_BLUE_NOSHAREDEXP_BLINK = 7,
-	SHIELD_YELLOW_NOSHAREDEXP_BLINK = 8,
-	SHIELD_BLUE_NOSHAREDEXP = 9,
-	SHIELD_YELLOW_NOSHAREDEXP = 10,
-};
-
-enum GuildEmblems_t : uint8_t {
-	GUILDEMBLEM_NONE = 0,
-	GUILDEMBLEM_ALLY = 1,
-	GUILDEMBLEM_ENEMY = 2,
-	GUILDEMBLEM_NEUTRAL = 3
 };
 
 enum item_t : uint16_t {
@@ -410,16 +412,13 @@ enum item_t : uint16_t {
 
 	ITEM_MAGICWALL = 1497,
 	ITEM_MAGICWALL_PERSISTENT = 1498,
-	ITEM_MAGICWALL_SAFE = 11098,
-	ITEM_MAGICWALL_NOPVP = 20669,
+	ITEM_MAGICWALL_SAFE = 1497,
 
 	ITEM_WILDGROWTH = 1499,
 	ITEM_WILDGROWTH_PERSISTENT = 2721,
-	ITEM_WILDGROWTH_SAFE = 11099,
-	ITEM_WILDGROWTH_NOPVP = 20670,
+	ITEM_WILDGROWTH_SAFE = 1499,
 
 	ITEM_BAG = 1987,
-	ITEM_BACKPACK = 1988,
 
 	ITEM_GOLD_COIN = 2148,
 	ITEM_PLATINUM_COIN = 2152,
@@ -483,42 +482,21 @@ enum PlayerFlags : uint64_t {
 	PlayerFlag_IgnoreWeaponCheck = static_cast<uint64_t>(1) << 35,
 	PlayerFlag_CannotBeMuted = static_cast<uint64_t>(1) << 36,
 	PlayerFlag_IsAlwaysPremium = static_cast<uint64_t>(1) << 37,
+	PlayerFlag_CanAnswerRuleViolations = static_cast<uint64_t>(1) << 38,
 };
 
-enum ReloadTypes_t : uint8_t  {
-	RELOAD_TYPE_ALL,
-	RELOAD_TYPE_ACTIONS,
-	RELOAD_TYPE_CHAT,
-	RELOAD_TYPE_CONFIG,
-	RELOAD_TYPE_CREATURESCRIPTS,
-	RELOAD_TYPE_EVENTS,
-	RELOAD_TYPE_GLOBAL,
-	RELOAD_TYPE_GLOBALEVENTS,
-	RELOAD_TYPE_ITEMS,
-	RELOAD_TYPE_MONSTERS,
-	RELOAD_TYPE_MOUNTS,
-	RELOAD_TYPE_MOVEMENTS,
-	RELOAD_TYPE_NPCS,
-	RELOAD_TYPE_QUESTS,
-	RELOAD_TYPE_RAIDS,
-	RELOAD_TYPE_SCRIPTS,
-	RELOAD_TYPE_SPELLS,
-	RELOAD_TYPE_TALKACTIONS,
-	RELOAD_TYPE_WEAPONS,
-};
+#define CHANNEL_GUILD 0x00
+#define CHANNEL_PARTY 0x01
+#define CHANNEL_LOOT 0x09
+#define CHANNEL_PRIVATE 0xFFFF
 
-static constexpr int32_t CHANNEL_GUILD = 0x00;
-static constexpr int32_t CHANNEL_PARTY = 0x01;
-static constexpr int32_t CHANNEL_PRIVATE = 0xFFFF;
-
-//Reserved player storage key ranges;
-//[10000000 - 20000000];
-static constexpr int32_t PSTRG_RESERVED_RANGE_START = 10000000;
-static constexpr int32_t PSTRG_RESERVED_RANGE_SIZE = 10000000;
-//[1000 - 1500];
-static constexpr int32_t PSTRG_OUTFITS_RANGE_START = (PSTRG_RESERVED_RANGE_START + 1000);
-static constexpr int32_t PSTRG_OUTFITS_RANGE_SIZE = 500;
-
+//Reserved player storage key ranges
+//[10000000 - 20000000]
+#define PSTRG_RESERVED_RANGE_START 10000000
+#define PSTRG_RESERVED_RANGE_SIZE 10000000
+//[1000 - 1500]
+#define PSTRG_OUTFITS_RANGE_START (PSTRG_RESERVED_RANGE_START + 1000)
+#define PSTRG_OUTFITS_RANGE_SIZE 500
 
 #define IS_IN_KEYRANGE(key, range) (key >= PSTRG_##range##_START && ((key - PSTRG_##range##_START) <= PSTRG_##range##_SIZE))
 

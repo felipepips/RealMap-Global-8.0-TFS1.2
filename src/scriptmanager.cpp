@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,7 +29,6 @@
 #include "weapons.h"
 #include "globalevent.h"
 #include "events.h"
-#include "script.h"
 
 Actions* g_actions = nullptr;
 CreatureEvents* g_creatureEvents = nullptr;
@@ -40,9 +39,13 @@ Spells* g_spells = nullptr;
 TalkActions* g_talkActions = nullptr;
 MoveEvents* g_moveEvents = nullptr;
 Weapons* g_weapons = nullptr;
-Scripts* g_scripts = nullptr;
 
 extern LuaEnvironment g_luaEnvironment;
+
+ScriptingManager::ScriptingManager()
+{
+	//
+}
 
 ScriptingManager::~ScriptingManager()
 {
@@ -55,20 +58,12 @@ ScriptingManager::~ScriptingManager()
 	delete g_chat;
 	delete g_creatureEvents;
 	delete g_globalEvents;
-	delete g_scripts;
 }
 
 bool ScriptingManager::loadScriptSystems()
 {
 	if (g_luaEnvironment.loadFile("data/global.lua") == -1) {
 		std::cout << "[Warning - ScriptingManager::loadScriptSystems] Can not load data/global.lua" << std::endl;
-	}
-
-	g_scripts = new Scripts();
-	std::cout << ">> Loading lua libs" << std::endl;
-	if (!g_scripts->loadScripts("scripts/lib", true, false)) {
-		std::cout << "> ERROR: Unable to load lua libs!" << std::endl;
-		return false;
 	}
 
 	g_chat = new Chat();

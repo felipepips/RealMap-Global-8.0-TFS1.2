@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,12 +21,11 @@
 #define FS_PROTOCOL_H_D71405071ACF4137A4B1203899DE80E1
 
 #include "connection.h"
-#include "xtea.h"
 
 class Protocol : public std::enable_shared_from_this<Protocol>
 {
 	public:
-		explicit Protocol(Connection_ptr connection) : connection(connection) {}
+		explicit Protocol(Connection_ptr connection) : connection(connection), key(), encryptionEnabled(false), rawMessages(false) {}
 		virtual ~Protocol() = default;
 
 		// non-copyable
@@ -72,13 +71,12 @@ class Protocol : public std::enable_shared_from_this<Protocol>
 		void enableXTEAEncryption() {
 			encryptionEnabled = true;
 		}
-		void setXTEAKey(xtea::key key) {
-			this->key = std::move(key);
-		}
-		void disableChecksum() {
-			checksumEnabled = false;
+		void setXTEAKey(const uint32_t* key) {
+			memcpy(this->key, key, sizeof(*key) * 4);
 		}
 
+		void XTEA_encrypt(OutputMessage& msg) const;
+		bool XTEA_decrypt(NetworkMessage& msg) const;
 		static bool RSA_decrypt(NetworkMessage& msg);
 
 		void setRawMessages(bool value) {
@@ -86,20 +84,14 @@ class Protocol : public std::enable_shared_from_this<Protocol>
 		}
 
 		virtual void release() {}
-
-	private:
-		void XTEA_encrypt(OutputMessage& msg) const;
-		bool XTEA_decrypt(NetworkMessage& msg) const;
-
 		friend class Connection;
 
 		OutputMessage_ptr outputBuffer;
-
+	private:
 		const ConnectionWeak_ptr connection;
-		xtea::key key;
-		bool encryptionEnabled = false;
-		bool checksumEnabled = true;
-		bool rawMessages = false;
+		uint32_t key[4];
+		bool encryptionEnabled;
+		bool rawMessages;
 };
 
 #endif

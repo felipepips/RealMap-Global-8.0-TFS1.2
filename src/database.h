@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,15 +22,15 @@
 
 #include <boost/lexical_cast.hpp>
 
-#include <mysql/mysql.h>
+#include <mysql.h>
 
 class DBResult;
-using DBResult_ptr = std::shared_ptr<DBResult>;
+typedef std::shared_ptr<DBResult> DBResult_ptr;
 
 class Database
 {
 	public:
-		Database() = default;
+		Database();
 		~Database();
 
 		// non-copyable
@@ -42,10 +42,10 @@ class Database
 		 *
 		 * @return database connection handler singleton
 		 */
-		static Database& getInstance()
+		static Database* getInstance()
 		{
 			static Database instance;
-			return instance;
+			return &instance;
 		}
 
 		/**
@@ -117,7 +117,7 @@ class Database
 			return maxPacketSize;
 		}
 
-	private:
+	protected:
 		/**
 		 * Transaction related methods.
 		 *
@@ -129,9 +129,10 @@ class Database
 		bool rollback();
 		bool commit();
 
-		MYSQL* handle = nullptr;
+	private:
+		MYSQL* handle;
 		std::recursive_mutex databaseLock;
-		uint64_t maxPacketSize = 1048576;
+		uint64_t maxPacketSize;
 
 	friend class DBTransaction;
 };
@@ -194,7 +195,7 @@ class DBInsert
 		bool addRow(std::ostringstream& row);
 		bool execute();
 
-	private:
+	protected:
 		std::string query;
 		std::string values;
 		size_t length;
@@ -203,11 +204,13 @@ class DBInsert
 class DBTransaction
 {
 	public:
-		constexpr DBTransaction() = default;
+		DBTransaction() {
+			state = STATE_NO_START;
+		}
 
 		~DBTransaction() {
 			if (state == STATE_START) {
-				Database::getInstance().rollback();
+				Database::getInstance()->rollback();
 			}
 		}
 
@@ -217,7 +220,7 @@ class DBTransaction
 
 		bool begin() {
 			state = STATE_START;
-			return Database::getInstance().beginTransaction();
+			return Database::getInstance()->beginTransaction();
 		}
 
 		bool commit() {
@@ -225,18 +228,18 @@ class DBTransaction
 				return false;
 			}
 
-			state = STATE_COMMIT;
-			return Database::getInstance().commit();
+			state = STEATE_COMMIT;
+			return Database::getInstance()->commit();
 		}
 
 	private:
 		enum TransactionStates_t {
 			STATE_NO_START,
 			STATE_START,
-			STATE_COMMIT,
+			STEATE_COMMIT,
 		};
 
-		TransactionStates_t state = STATE_NO_START;
+		TransactionStates_t state;
 };
 
 #endif

@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,6 +28,14 @@ extern Scheduler g_scheduler;
 
 const uint16_t OUTPUTMESSAGE_FREE_LIST_CAPACITY = 2048;
 const std::chrono::milliseconds OUTPUTMESSAGE_AUTOSEND_DELAY {10};
+
+class OutputMessageAllocator
+{
+	public:
+		typedef OutputMessage value_type;
+		template<typename U>
+		struct rebind {typedef LockfreePoolingAllocator<U, OUTPUTMESSAGE_FREE_LIST_CAPACITY> other;};
+};
 
 void OutputMessagePool::scheduleSendAll()
 {
@@ -64,14 +72,11 @@ void OutputMessagePool::removeProtocolFromAutosend(const Protocol_ptr& protocol)
 	//dispatcher thread
 	auto it = std::find(bufferedProtocols.begin(), bufferedProtocols.end(), protocol);
 	if (it != bufferedProtocols.end()) {
-		std::swap(*it, bufferedProtocols.back());
-		bufferedProtocols.pop_back();
+		bufferedProtocols.erase(it);
 	}
 }
 
 OutputMessage_ptr OutputMessagePool::getOutputMessage()
 {
-	// LockfreePoolingAllocator<void,...> will leave (void* allocate) ill-formed because
-	// of sizeof(T), so this guaranatees that only one list will be initialized
-	return std::allocate_shared<OutputMessage>(LockfreePoolingAllocator<void, OUTPUTMESSAGE_FREE_LIST_CAPACITY>());
+	return std::allocate_shared<OutputMessage>(OutputMessageAllocator());
 }

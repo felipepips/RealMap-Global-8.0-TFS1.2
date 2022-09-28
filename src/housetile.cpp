@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,11 +22,16 @@
 #include "housetile.h"
 #include "house.h"
 #include "game.h"
+#include "configmanager.h"
 
 extern Game g_game;
+extern ConfigManager g_config;
 
-HouseTile::HouseTile(int32_t x, int32_t y, int32_t z, House* house) :
-	DynamicTile(x, y, z), house(house) {}
+HouseTile::HouseTile(int32_t x, int32_t y, int32_t z, House* _house) :
+	DynamicTile(x, y, z)
+{
+	house = _house;
+}
 
 void HouseTile::addThing(int32_t index, Thing* thing)
 {
@@ -84,9 +89,11 @@ ReturnValue HouseTile::queryAdd(int32_t index, const Thing& thing, uint32_t coun
 			return RETURNVALUE_NOTPOSSIBLE;
 		}
 	} else if (thing.getItem() && actor) {
+		if (g_config.getBoolean(ConfigManager::HOUSE_ANTI_TRASH)) {
 		Player* actorPlayer = actor->getPlayer();
 		if (!house->isInvited(actorPlayer)) {
 			return RETURNVALUE_CANNOTTHROW;
+			}
 		}
 	}
 	return Tile::queryAdd(index, thing, count, flags, actor);
@@ -119,4 +126,20 @@ Tile* HouseTile::queryDestination(int32_t& index, const Thing& thing, Item** des
 	}
 
 	return Tile::queryDestination(index, thing, destItem, flags);
+}
+
+ReturnValue HouseTile::queryRemove(const Thing& thing, uint32_t count, uint32_t flags, Creature* actor /*= nullptr*/) const
+{
+	const Item* item = thing.getItem();
+	if (!item) {
+		return RETURNVALUE_NOTPOSSIBLE;
+	}
+
+	if (actor && g_config.getBoolean(ConfigManager::ONLY_INVITED_CAN_MOVE_HOUSE_ITEMS)) {
+		Player* actorPlayer = actor->getPlayer();
+		if (!house->isInvited(actorPlayer)) {
+			return RETURNVALUE_NOTPOSSIBLE;
+		}
+	}
+	return Tile::queryRemove(thing, count, flags);
 }

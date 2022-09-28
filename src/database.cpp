@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,9 +22,15 @@
 #include "configmanager.h"
 #include "database.h"
 
-#include <mysql/errmsg.h>
+#include <errmsg.h>
 
 extern ConfigManager g_config;
+
+Database::Database()
+{
+	handle = nullptr;
+	maxPacketSize = 1048576;
+}
 
 Database::~Database()
 {
@@ -43,7 +49,7 @@ bool Database::connect()
 	}
 
 	// automatic reconnect
-	bool reconnect = true;
+	my_bool reconnect = true;
 	mysql_options(handle, MYSQL_OPT_RECONNECT, &reconnect);
 
 	// connects to database
@@ -245,7 +251,7 @@ bool DBResult::next()
 	return row != nullptr;
 }
 
-DBInsert::DBInsert(std::string query) : query(std::move(query))
+DBInsert::DBInsert(std::string query) : query(query)
 {
 	this->length = this->query.length();
 }
@@ -255,7 +261,7 @@ bool DBInsert::addRow(const std::string& row)
 	// adds new row to buffer
 	const size_t rowLength = row.length();
 	length += rowLength;
-	if (length > Database::getInstance().getMaxPacketSize() && !execute()) {
+	if (length > Database::getInstance()->getMaxPacketSize() && !execute()) {
 		return false;
 	}
 
@@ -288,7 +294,7 @@ bool DBInsert::execute()
 	}
 
 	// executes buffer
-	bool res = Database::getInstance().executeQuery(query + values);
+	bool res = Database::getInstance()->executeQuery(query + values);
 	values.clear();
 	length = query.length();
 	return res;

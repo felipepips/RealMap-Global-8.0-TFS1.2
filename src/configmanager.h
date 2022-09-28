@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,21 +20,24 @@
 #ifndef FS_CONFIGMANAGER_H_6BDD23BD0B8344F4B7C40E8BE6AF6F39
 #define FS_CONFIGMANAGER_H_6BDD23BD0B8344F4B7C40E8BE6AF6F39
 
+#include <lua.hpp>
+
 class ConfigManager
 {
 	public:
+		ConfigManager();
+
 		enum boolean_config_t {
 			ALLOW_CHANGEOUTFIT,
 			ONE_PLAYER_ON_ACCOUNT,
 			AIMBOT_HOTKEY_ENABLED,
 			REMOVE_RUNE_CHARGES,
-			REMOVE_WEAPON_AMMO,
-			REMOVE_WEAPON_CHARGES,
-			REMOVE_POTION_CHARGES,			
 			EXPERIENCE_FROM_PLAYERS,
+			ALLOW_FIGHT_BACK,
 			FREE_PREMIUM,
 			REPLACE_KICK_ON_LOGIN,
 			ALLOW_CLONES,
+			TELEPORT_SUMMONS,
 			BIND_ONLY_GLOBAL_ADDRESS,
 			OPTIMIZE_DATABASE,
 			EMOTE_SPELLS,
@@ -43,20 +46,19 @@ class ConfigManager
 			CONVERT_UNSAFE_SCRIPTS,
 			CLASSIC_EQUIPMENT_SLOTS,
 			CLASSIC_ATTACK_SPEED,
-			SCRIPTS_CONSOLE_LOGS,
-			SERVER_SAVE_NOTIFY_MESSAGE,
-			SERVER_SAVE_CLEAN_MAP,
-			SERVER_SAVE_CLOSE,
-			SERVER_SAVE_SHUTDOWN,
-			ONLINE_OFFLINE_CHARLIST,
-			YELL_ALLOW_PREMIUM,
-			FORCE_MONSTERTYPE_LOAD,
-
+			HOUSE_ANTI_TRASH,
+			ONLY_INVITED_CAN_MOVE_HOUSE_ITEMS,
+			AUTO_STACK_ITEMS,
+			LOOT_MESSAGE,
+			REMOVE_WEAPON_AMMO,
+			STOP_ATTACK_AT_EXIT,
+			SUMMONS_DROP_CORPSE,
+			
 			LAST_BOOLEAN_CONFIG /* this must be the last one */
 		};
 
 		enum string_config_t {
-			IP_STRING,
+			DUMMY_STR,
 			MAP_NAME,
 			HOUSE_RENT_PERIOD,
 			SERVER_NAME,
@@ -64,6 +66,7 @@ class ConfigManager
 			OWNER_EMAIL,
 			URL,
 			LOCATION,
+			IP,
 			MOTD,
 			WORLD_TYPE,
 			MYSQL_HOST,
@@ -78,7 +81,6 @@ class ConfigManager
 		};
 
 		enum integer_config_t {
-			IP,
 			SQL_PORT,
 			MAX_PLAYERS,
 			PZ_LOCKED,
@@ -91,7 +93,6 @@ class ConfigManager
 			RATE_SPAWN,
 			HOUSE_PRICE,
 			KILLS_TO_RED,
-			KILLS_TO_BLACK,
 			MAX_MESSAGEBUFFER,
 			ACTIONS_DELAY_INTERVAL,
 			EX_ACTIONS_DELAY_INTERVAL,
@@ -107,8 +108,6 @@ class ConfigManager
 			STAIRHOP_DELAY,
 			EXP_FROM_PLAYERS_LEVEL_RANGE,
 			MAX_PACKETS_PER_SECOND,
-			SERVER_SAVE_NOTIFY_DURATION,
-			YELL_MINIMUM_LEVEL,
 
 			LAST_INTEGER_CONFIG /* this must be the last one */
 		};
@@ -116,16 +115,20 @@ class ConfigManager
 		bool load();
 		bool reload();
 
-		const std::string& getString(string_config_t what) const;
-		int32_t getNumber(integer_config_t what) const;
-		bool getBoolean(boolean_config_t what) const;
+		const std::string& getString(string_config_t _what) const;
+		int32_t getNumber(integer_config_t _what) const;
+		bool getBoolean(boolean_config_t _what) const;
 
 	private:
-		std::string string[LAST_STRING_CONFIG] = {};
-		int32_t integer[LAST_INTEGER_CONFIG] = {};
-		bool boolean[LAST_BOOLEAN_CONFIG] = {};
+		static std::string getGlobalString(lua_State* L, const char* identifier, const char* _default);
+		static int32_t getGlobalNumber(lua_State* L, const char* identifier, const int32_t _default = 0);
+		static bool getGlobalBoolean(lua_State* L, const char* identifier, const bool _default);
 
-		bool loaded = false;
+		std::string string[LAST_STRING_CONFIG];
+		int32_t integer[LAST_INTEGER_CONFIG];
+		bool boolean[LAST_BOOLEAN_CONFIG];
+
+		bool loaded;
 };
 
 #endif

@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -37,50 +37,48 @@ extern Vocations g_vocations;
 
 Items Item::items;
 
-Item* Item::CreateItem(const uint16_t type, uint16_t count /*= 0*/)
+Item* Item::CreateItem(const uint16_t _type, uint16_t _count /*= 0*/)
 {
 	Item* newItem = nullptr;
 
-	const ItemType& it = Item::items[type];
+	const ItemType& it = Item::items[_type];
 	if (it.group == ITEM_GROUP_DEPRECATED) {
 		return nullptr;
 	}
 
-	if (it.stackable && count == 0) {
-		count = 1;
+	if (it.stackable && _count == 0) {
+		_count = 1;
 	}
 
 	if (it.id != 0) {
 		if (it.isDepot()) {
-			newItem = new DepotLocker(type);
+			newItem = new DepotLocker(_type);
 		} else if (it.isContainer()) {
-			newItem = new Container(type);
+			newItem = new Container(_type);
 		} else if (it.isTeleport()) {
-			newItem = new Teleport(type);
+			newItem = new Teleport(_type);
 		} else if (it.isMagicField()) {
-			newItem = new MagicField(type);
+			newItem = new MagicField(_type);
 		} else if (it.isDoor()) {
-			newItem = new Door(type);
+			newItem = new Door(_type);
 		} else if (it.isTrashHolder()) {
-			newItem = new TrashHolder(type);
+			newItem = new TrashHolder(_type);
 		} else if (it.isMailbox()) {
-			newItem = new Mailbox(type);
+			newItem = new Mailbox(_type);
 		} else if (it.isBed()) {
-			newItem = new BedItem(type);
+			newItem = new BedItem(_type);
 		} else if (it.id >= 2210 && it.id <= 2212) {
-			newItem = new Item(type - 3, count);
+			newItem = new Item(_type - 3, _count);
 		} else if (it.id == 2215 || it.id == 2216) {
-			newItem = new Item(type - 2, count);
+			newItem = new Item(_type - 2, _count);
 		} else if (it.id >= 2202 && it.id <= 2206) {
-			newItem = new Item(type - 37, count);
+			newItem = new Item(_type - 37, _count);
 		} else if (it.id == 2640) {
-			newItem = new Item(6132, count);
+			newItem = new Item(6132, _count);
 		} else if (it.id == 6301) {
-			newItem = new Item(6300, count);
-		} else if (it.id == 18528) {
-			newItem = new Item(18408, count);
+			newItem = new Item(6300, _count);
 		} else {
-			newItem = new Item(type, count);
+			newItem = new Item(_type, _count);
 		}
 
 		newItem->incrementReferenceCounter();
@@ -89,105 +87,122 @@ Item* Item::CreateItem(const uint16_t type, uint16_t count /*= 0*/)
 	return newItem;
 }
 
-Container* Item::CreateItemAsContainer(const uint16_t type, uint16_t size)
+Container* Item::CreateItemAsContainer(const uint16_t _type, uint16_t _size)
 {
-	const ItemType& it = Item::items[type];
+	const ItemType& it = Item::items[_type];
 	if (it.id == 0 || it.group == ITEM_GROUP_DEPRECATED || it.stackable || it.useable || it.moveable || it.pickupable || it.isDepot() || it.isSplash() || it.isDoor()) {
 		return nullptr;
 	}
 
-	Container* newItem = new Container(type, size);
+	Container* newItem = new Container(_type, _size);
 	newItem->incrementReferenceCounter();
 	return newItem;
 }
 
 Item* Item::CreateItem(PropStream& propStream)
 {
-	uint16_t id;
-	if (!propStream.read<uint16_t>(id)) {
+	uint16_t _id;
+	if (!propStream.read<uint16_t>(_id)) {
 		return nullptr;
 	}
 
-	switch (id) {
+	switch (_id) {
 		case ITEM_FIREFIELD_PVP_FULL:
-			id = ITEM_FIREFIELD_PERSISTENT_FULL;
+			_id = ITEM_FIREFIELD_PERSISTENT_FULL;
 			break;
 
 		case ITEM_FIREFIELD_PVP_MEDIUM:
-			id = ITEM_FIREFIELD_PERSISTENT_MEDIUM;
+			_id = ITEM_FIREFIELD_PERSISTENT_MEDIUM;
 			break;
 
 		case ITEM_FIREFIELD_PVP_SMALL:
-			id = ITEM_FIREFIELD_PERSISTENT_SMALL;
+			_id = ITEM_FIREFIELD_PERSISTENT_SMALL;
 			break;
 
 		case ITEM_ENERGYFIELD_PVP:
-			id = ITEM_ENERGYFIELD_PERSISTENT;
+			_id = ITEM_ENERGYFIELD_PERSISTENT;
 			break;
 
 		case ITEM_POISONFIELD_PVP:
-			id = ITEM_POISONFIELD_PERSISTENT;
+			_id = ITEM_POISONFIELD_PERSISTENT;
 			break;
 
 		case ITEM_MAGICWALL:
-			id = ITEM_MAGICWALL_PERSISTENT;
+			_id = ITEM_MAGICWALL_PERSISTENT;
 			break;
 
 		case ITEM_WILDGROWTH:
-			id = ITEM_WILDGROWTH_PERSISTENT;
+			_id = ITEM_WILDGROWTH_PERSISTENT;
 			break;
 
 		default:
 			break;
 	}
 
-	return Item::CreateItem(id, 0);
+	return Item::CreateItem(_id, 0);
 }
 
-Item::Item(const uint16_t type, uint16_t count /*= 0*/) :
-	id(type)
+Item::Item(const uint16_t _type, uint16_t _count /*= 0*/)
 {
+	parent = nullptr;
+	referenceCounter = 0;
+
+	id = _type;
+	attributes = nullptr;
+
 	const ItemType& it = items[id];
 
+	setItemCount(1);
+
 	if (it.isFluidContainer() || it.isSplash()) {
-		setFluidType(count);
+		setFluidType(_count);
 	} else if (it.stackable) {
-		if (count != 0) {
-			setItemCount(count);
+		if (_count != 0) {
+			setItemCount(_count);
 		} else if (it.charges != 0) {
 			setItemCount(it.charges);
 		}
 	} else if (it.charges != 0) {
-		if (count != 0) {
-			setCharges(count);
+		if (_count != 0) {
+			setCharges(_count);
 		} else {
 			setCharges(it.charges);
 		}
 	}
 
+	loadedFromMap = false;
 	setDefaultDuration();
 }
 
 Item::Item(const Item& i) :
-	Thing(), id(i.id), count(i.count), loadedFromMap(i.loadedFromMap)
+	Thing()
 {
+	parent = nullptr;
+	referenceCounter = 0;
+
+	id = i.id;
+	count = i.count;
+	loadedFromMap = i.loadedFromMap;
+
 	if (i.attributes) {
-		attributes.reset(new ItemAttributes(*i.attributes));
+		attributes = new ItemAttributes(*i.attributes);
+	} else {
+		attributes = nullptr;
 	}
 }
 
 Item* Item::clone() const
 {
-	Item* item = Item::CreateItem(id, count);
+	Item* _item = Item::CreateItem(id, count);
 	if (attributes) {
-		item->attributes.reset(new ItemAttributes(*attributes));
-		if (item->getDuration() > 0) {
-			item->incrementReferenceCounter();
-			item->setDecaying(DECAYING_TRUE);
-			g_game.toDecayItems.push_front(item);
-		}
+		_item->attributes = new ItemAttributes(*attributes);
 	}
-	return item;
+	return _item;
+}
+
+Item::~Item()
+{
+	delete attributes;
 }
 
 bool Item::equals(const Item* otherItem) const
@@ -200,7 +215,7 @@ bool Item::equals(const Item* otherItem) const
 		return !otherItem->attributes;
 	}
 
-	const auto& otherAttributes = otherItem->attributes;
+	const ItemAttributes* otherAttributes = otherItem->attributes;
 	if (!otherAttributes || attributes->attributeBits != otherAttributes->attributeBits) {
 		return false;
 	}
@@ -373,12 +388,12 @@ Attr_ReadValue Item::readAttr(AttrTypes_t attr, PropStream& propStream)
 	switch (attr) {
 		case ATTR_COUNT:
 		case ATTR_RUNE_CHARGES: {
-			uint8_t count;
-			if (!propStream.read<uint8_t>(count)) {
+			uint8_t _count;
+			if (!propStream.read<uint8_t>(_count)) {
 				return ATTR_READ_ERROR;
 			}
 
-			setSubType(count);
+			setSubType(_count);
 			break;
 		}
 
@@ -574,16 +589,6 @@ Attr_ReadValue Item::readAttr(AttrTypes_t attr, PropStream& propStream)
 			break;
 		}
 
-		case ATTR_DECAYTO: {
-			int32_t decayTo;
-			if (!propStream.read<int32_t>(decayTo)) {
-				return ATTR_READ_ERROR;
-			}
-
-			setIntAttr(ITEM_ATTRIBUTE_DECAYTO, decayTo);
-			break;
-		}
-
 		//these should be handled through derived classes
 		//If these are called then something has changed in the items.xml since the map was saved
 		//just read the values
@@ -632,30 +637,6 @@ Attr_ReadValue Item::readAttr(AttrTypes_t attr, PropStream& propStream)
 			return ATTR_READ_ERROR;
 		}
 
-		case ATTR_CUSTOM_ATTRIBUTES: {
-			uint64_t size;
-			if (!propStream.read<uint64_t>(size)) {
-				return ATTR_READ_ERROR;
-			}
-
-			for (uint64_t i = 0; i < size; i++) {
-				// Unserialize key type and value
-				std::string key;
-				if (!propStream.readString(key)) {
-					return ATTR_READ_ERROR;
-				};
-
-				// Unserialize value type and value
-				ItemAttributes::CustomAttribute val;
-				if (!val.unserialize(propStream)) {
-					return ATTR_READ_ERROR;
-				}
-
-				setCustomAttribute(key, val);
-			}
-			break;
-		}
-
 		default:
 			return ATTR_READ_ERROR;
 	}
@@ -677,7 +658,7 @@ bool Item::unserializeAttr(PropStream& propStream)
 	return true;
 }
 
-bool Item::unserializeItemNode(OTB::Loader&, const OTB::Node&, PropStream& propStream)
+bool Item::unserializeItemNode(FileLoader&, NODE, PropStream& propStream)
 {
 	return unserializeAttr(propStream);
 }
@@ -788,24 +769,6 @@ void Item::serializeAttr(PropWriteStream& propWriteStream) const
 		propWriteStream.write<uint8_t>(ATTR_SHOOTRANGE);
 		propWriteStream.write<uint8_t>(getIntAttr(ITEM_ATTRIBUTE_SHOOTRANGE));
 	}
-
-	if (hasAttribute(ITEM_ATTRIBUTE_DECAYTO)) {
-		propWriteStream.write<uint8_t>(ATTR_DECAYTO);
-		propWriteStream.write<int32_t>(getIntAttr(ITEM_ATTRIBUTE_DECAYTO));
-	}
-
-	if (hasAttribute(ITEM_ATTRIBUTE_CUSTOM)) {
-		const ItemAttributes::CustomAttributeMap* customAttrMap = attributes->getCustomAttributeMap();
-		propWriteStream.write<uint8_t>(ATTR_CUSTOM_ATTRIBUTES);
-		propWriteStream.write<uint64_t>(static_cast<uint64_t>(customAttrMap->size()));
-		for (const auto &entry : *customAttrMap) {
-			// Serializing key type and value
-			propWriteStream.writeString(entry.first);
-
-			// Serializing value type and value
-			entry.second.serialize(propWriteStream);
-		}
-	}
 }
 
 bool Item::hasProperty(ITEMPROPERTY prop) const
@@ -850,6 +813,10 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance,
 	}
 
 	if (it.isRune()) {
+		if (!it.runeSpellName.empty()) {
+			s << " (\"" << it.runeSpellName << "\")";
+		}
+
 		if (it.runeLevel > 0 || it.runeMagLevel > 0) {
 			if (RuneSpell* rune = g_spells->getRuneSpell(it.id)) {
 				int32_t tmpSubType = subType;
@@ -903,7 +870,6 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance,
 			}
 		}
 	} else if (it.weaponType != WEAPON_NONE) {
-		bool begin = true;
 		if (it.weaponType == WEAPON_DISTANCE && it.ammoType != AMMO_NONE) {
 			s << " (Range:" << static_cast<uint16_t>(item ? item->getShootRange() : it.shootRange);
 
@@ -925,8 +891,9 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance,
 				s << ", Hit%" << std::showpos << static_cast<int16_t>(hitChance) << std::noshowpos;
 			}
 
-			begin = false;
+			s << ')';
 		} else if (it.weaponType != WEAPON_AMMO) {
+			bool begin = true;
 
 			int32_t attack, defense, extraDefense;
 			if (item) {
@@ -961,141 +928,141 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance,
 					s << ' ' << std::showpos << extraDefense << std::noshowpos;
 				}
 			}
-		}
 
-		if (it.abilities) {
-			for (uint8_t i = SKILL_FIRST; i <= SKILL_LAST; i++) {
-				if (!it.abilities->skills[i]) {
-					continue;
-				}
-
-				if (begin) {
-					begin = false;
-					s << " (";
-				} else {
-					s << ", ";
-				}
-
-				s << getSkillName(i) << ' ' << std::showpos << it.abilities->skills[i] << std::noshowpos;
-			}
-
-			if (it.abilities->stats[STAT_MAGICPOINTS]) {
-				if (begin) {
-					begin = false;
-					s << " (";
-				} else {
-					s << ", ";
-				}
-
-				s << "magic level " << std::showpos << it.abilities->stats[STAT_MAGICPOINTS] << std::noshowpos;
-			}
-
-			int16_t show = it.abilities->absorbPercent[0];
-			if (show != 0) {
-				for (size_t i = 1; i < COMBAT_COUNT; ++i) {
-					if (it.abilities->absorbPercent[i] != show) {
-						show = 0;
-						break;
-					}
-				}
-			}
-
-			if (show == 0) {
-				bool tmp = true;
-
-				for (size_t i = 0; i < COMBAT_COUNT; ++i) {
-					if (it.abilities->absorbPercent[i] == 0) {
+			if (it.abilities) {
+				for (uint8_t i = SKILL_FIRST; i <= SKILL_LAST; i++) {
+					if (!it.abilities->skills[i]) {
 						continue;
 					}
 
-					if (tmp) {
-						tmp = false;
-
-						if (begin) {
-							begin = false;
-							s << " (";
-						} else {
-							s << ", ";
-						}
-
-						s << "protection ";
+					if (begin) {
+						begin = false;
+						s << " (";
 					} else {
 						s << ", ";
 					}
 
-					s << getCombatName(indexToCombatType(i)) << ' ' << std::showpos << it.abilities->absorbPercent[i] << std::noshowpos << '%';
-				}
-			} else {
-				if (begin) {
-					begin = false;
-					s << " (";
-				} else {
-					s << ", ";
+					s << getSkillName(i) << ' ' << std::showpos << it.abilities->skills[i] << std::noshowpos;
 				}
 
-				s << "protection all " << std::showpos << show << std::noshowpos << '%';
-			}
-
-			show = it.abilities->fieldAbsorbPercent[0];
-			if (show != 0) {
-				for (size_t i = 1; i < COMBAT_COUNT; ++i) {
-					if (it.abilities->absorbPercent[i] != show) {
-						show = 0;
-						break;
-					}
-				}
-			}
-
-			if (show == 0) {
-				bool tmp = true;
-
-				for (size_t i = 0; i < COMBAT_COUNT; ++i) {
-					if (it.abilities->fieldAbsorbPercent[i] == 0) {
-						continue;
-					}
-
-					if (tmp) {
-						tmp = false;
-
-						if (begin) {
-							begin = false;
-							s << " (";
-						} else {
-							s << ", ";
-						}
-
-						s << "protection ";
+				if (it.abilities->stats[STAT_MAGICPOINTS]) {
+					if (begin) {
+						begin = false;
+						s << " (";
 					} else {
 						s << ", ";
 					}
 
-					s << getCombatName(indexToCombatType(i)) << " field " << std::showpos << it.abilities->fieldAbsorbPercent[i] << std::noshowpos << '%';
-				}
-			} else {
-				if (begin) {
-					begin = false;
-					s << " (";
-				} else {
-					s << ", ";
+					s << "magic level " << std::showpos << it.abilities->stats[STAT_MAGICPOINTS] << std::noshowpos;
 				}
 
-				s << "protection all fields " << std::showpos << show << std::noshowpos << '%';
+				int16_t show = it.abilities->absorbPercent[0];
+				if (show != 0) {
+					for (size_t i = 1; i < COMBAT_COUNT; ++i) {
+						if (it.abilities->absorbPercent[i] != show) {
+							show = 0;
+							break;
+						}
+					}
+				}
+
+				if (show == 0) {
+					bool tmp = true;
+
+					for (size_t i = 0; i < COMBAT_COUNT; ++i) {
+						if (it.abilities->absorbPercent[i] == 0) {
+							continue;
+						}
+
+						if (tmp) {
+							tmp = false;
+
+							if (begin) {
+								begin = false;
+								s << " (";
+							} else {
+								s << ", ";
+							}
+
+							s << "protection ";
+						} else {
+							s << ", ";
+						}
+
+						s << getCombatName(indexToCombatType(i)) << ' ' << std::showpos << it.abilities->absorbPercent[i] << std::noshowpos << '%';
+					}
+				} else {
+					if (begin) {
+						begin = false;
+						s << " (";
+					} else {
+						s << ", ";
+					}
+
+					s << "protection all " << std::showpos << show << std::noshowpos << '%';
+				}
+
+				show = it.abilities->fieldAbsorbPercent[0];
+				if (show != 0) {
+					for (size_t i = 1; i < COMBAT_COUNT; ++i) {
+						if (it.abilities->absorbPercent[i] != show) {
+							show = 0;
+							break;
+						}
+					}
+				}
+
+				if (show == 0) {
+					bool tmp = true;
+
+					for (size_t i = 0; i < COMBAT_COUNT; ++i) {
+						if (it.abilities->fieldAbsorbPercent[i] == 0) {
+							continue;
+						}
+
+						if (tmp) {
+							tmp = false;
+
+							if (begin) {
+								begin = false;
+								s << " (";
+							} else {
+								s << ", ";
+							}
+
+							s << "protection ";
+						} else {
+							s << ", ";
+						}
+
+						s << getCombatName(indexToCombatType(i)) << " field " << std::showpos << it.abilities->fieldAbsorbPercent[i] << std::noshowpos << '%';
+					}
+				} else {
+					if (begin) {
+						begin = false;
+						s << " (";
+					} else {
+						s << ", ";
+					}
+
+					s << "protection all fields " << std::showpos << show << std::noshowpos << '%';
+				}
+
+				if (it.abilities->speed) {
+					if (begin) {
+						begin = false;
+						s << " (";
+					} else {
+						s << ", ";
+					}
+
+					s << "speed " << std::showpos << (it.abilities->speed >> 1) << std::noshowpos;
+				}
 			}
 
-			if (it.abilities->speed) {
-				if (begin) {
-					begin = false;
-					s << " (";
-				} else {
-					s << ", ";
-				}
-
-				s << "speed " << std::showpos << (it.abilities->speed >> 1) << std::noshowpos;
+			if (!begin) {
+				s << ')';
 			}
-		}
-
-		if (!begin) {
-			s << ')';
 		}
 	} else if (it.armor != 0 || (item && item->getArmor() != 0) || it.showAttributes) {
 		bool begin = true;
@@ -1335,7 +1302,7 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance,
 	if (it.showDuration) {
 		if (item && item->hasAttribute(ITEM_ATTRIBUTE_DURATION)) {
 			uint32_t duration = item->getDuration() / 1000;
-			s << " that will expire in ";
+			s << " that has energy for ";
 
 			if (duration >= 86400) {
 				uint16_t days = duration / 86400;
@@ -1489,10 +1456,10 @@ std::string Item::getNameDescription() const
 	return getNameDescription(it, this);
 }
 
-std::string Item::getWeightDescription(const ItemType& it, uint32_t weight, uint32_t count /*= 1*/)
+std::string Item::getWeightDescription(const ItemType& it, uint32_t weight, uint32_t _count /*= 1*/)
 {
 	std::ostringstream ss;
-	if (it.stackable && count > 1 && it.showCount != 0) {
+	if (it.stackable && _count > 1 && it.showCount != 0) {
 		ss << "They weigh ";
 	} else {
 		ss << "It weighs ";
@@ -1545,7 +1512,7 @@ bool Item::canDecay() const
 	}
 
 	const ItemType& it = Item::items[id];
-	if (getDecayTo() < 0 || it.decayTime == 0) {
+	if (it.decayTo < 0 || it.decayTime == 0) {
 		return false;
 	}
 
@@ -1573,16 +1540,14 @@ uint32_t Item::getWorth() const
 	}
 }
 
-LightInfo Item::getLightInfo() const
+void Item::getLight(LightInfo& lightInfo) const
 {
 	const ItemType& it = items[id];
-	return {it.lightLevel, it.lightColor};
+	lightInfo.color = it.lightColor;
+	lightInfo.level = it.lightLevel;
 }
 
 std::string ItemAttributes::emptyString;
-int64_t ItemAttributes::emptyInt;
-double ItemAttributes::emptyDouble;
-bool ItemAttributes::emptyBool;
 
 const std::string& ItemAttributes::getStrAttr(itemAttrTypes type) const
 {
@@ -1695,40 +1660,4 @@ ItemAttributes::Attribute& ItemAttributes::getAttr(itemAttrTypes type)
 void Item::startDecaying()
 {
 	g_game.startDecay(this);
-}
-
-template<>
-const std::string& ItemAttributes::CustomAttribute::get<std::string>() {
-	if (value.type() == typeid(std::string)) {
-		return boost::get<std::string>(value);
-	}
-
-	return emptyString;
-}
-
-template<>
-const int64_t& ItemAttributes::CustomAttribute::get<int64_t>() {
-	if (value.type() == typeid(int64_t)) {
-		return boost::get<int64_t>(value);
-	}
-
-	return emptyInt;
-}
-
-template<>
-const double& ItemAttributes::CustomAttribute::get<double>() {
-	if (value.type() == typeid(double)) {
-		return boost::get<double>(value);
-	}
-
-	return emptyDouble;
-}
-
-template<>
-const bool& ItemAttributes::CustomAttribute::get<bool>() {
-	if (value.type() == typeid(bool)) {
-		return boost::get<bool>(value);
-	}
-
-	return emptyBool;
 }

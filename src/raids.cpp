@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -32,7 +32,14 @@ extern Game g_game;
 extern ConfigManager g_config;
 
 Raids::Raids()
+	: scriptInterface("Raid Interface")
 {
+	loaded = false;
+	started = false;
+	running = nullptr;
+	lastRaidEnd = 0;
+	checkRaidsEvent = 0;
+
 	scriptInterface.initState();
 }
 
@@ -110,7 +117,7 @@ bool Raids::loadFromXml()
 	return true;
 }
 
-static constexpr int32_t MAX_RAND_RANGE = 10000000;
+#define MAX_RAND_RANGE 10000000
 
 bool Raids::startup()
 {
@@ -192,16 +199,16 @@ Raid::~Raid()
 	}
 }
 
-bool Raid::loadFromXml(const std::string& filename)
+bool Raid::loadFromXml(const std::string& _filename)
 {
 	if (isLoaded()) {
 		return true;
 	}
 
 	pugi::xml_document doc;
-	pugi::xml_parse_result result = doc.load_file(filename.c_str());
+	pugi::xml_parse_result result = doc.load_file(_filename.c_str());
 	if (!result) {
-		printXMLError("Error - Raid::loadFromXml", filename, result);
+		printXMLError("Error - Raid::loadFromXml", _filename, result);
 		return false;
 	}
 
@@ -222,15 +229,13 @@ bool Raid::loadFromXml(const std::string& filename)
 		if (event->configureRaidEvent(eventNode)) {
 			raidEvents.push_back(event);
 		} else {
-			std::cout << "[Error - Raid::loadFromXml] In file (" << filename << "), eventNode: " << eventNode.name() << std::endl;
+			std::cout << "[Error - Raid::loadFromXml] In file (" << _filename << "), eventNode: " << eventNode.name() << std::endl;
 			delete event;
 		}
 	}
 
 	//sort by delay time
-	std::sort(raidEvents.begin(), raidEvents.end(), [](const RaidEvent* lhs, const RaidEvent* rhs) {
-		return lhs->getDelay() < rhs->getDelay();
-	});
+	std::sort(raidEvents.begin(), raidEvents.end(), RaidEvent::compareEvents);
 
 	loaded = true;
 	return true;
@@ -546,6 +551,11 @@ bool AreaSpawnEvent::executeEvent()
 		}
 	}
 	return true;
+}
+
+ScriptEvent::ScriptEvent(LuaScriptInterface* _interface) :
+	Event(_interface)
+{
 }
 
 bool ScriptEvent::configureRaidEvent(const pugi::xml_node& eventNode)

@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,7 +21,6 @@
 #define FS_EVENTS_H_BD444CC0EE167E5777E4C90C766B36DC
 
 #include "luascript.h"
-#include "const.h"
 
 class Party;
 class ItemType;
@@ -29,51 +28,16 @@ class Tile;
 
 class Events
 {
-	struct EventsInfo {
-		// Creature
-		int32_t creatureOnChangeOutfit = -1;
-		int32_t creatureOnAreaCombat = -1;
-		int32_t creatureOnTargetCombat = -1;
-		int32_t creatureOnHear = -1;
-
-		// Party
-		int32_t partyOnJoin = -1;
-		int32_t partyOnLeave = -1;
-		int32_t partyOnDisband = -1;
-		int32_t partyOnShareExperience = -1;
-
-		// Player
-		int32_t playerOnLook = -1;
-		int32_t playerOnLookInBattleList = -1;
-		int32_t playerOnLookInTrade = -1;
-		int32_t playerOnLookInShop = -1;
-		int32_t playerOnMoveItem = -1;
-		int32_t playerOnItemMoved = -1;
-		int32_t playerOnMoveCreature = -1;
-		int32_t playerOnReportRuleViolation = -1;
-		int32_t playerOnReportBug = -1;
-		int32_t playerOnTurn = -1;
-		int32_t playerOnTradeRequest = -1;
-		int32_t playerOnTradeAccept = -1;
-		int32_t playerOnGainExperience = -1;
-		int32_t playerOnLoseExperience = -1;
-		int32_t playerOnGainSkillTries = -1;
-
-		// Monster
-		int32_t monsterOnDropLoot = -1;
-		int32_t monsterOnSpawn = -1;
-	};
-
 	public:
 		Events();
 
+		void clear();
 		bool load();
 
 		// Creature
 		bool eventCreatureOnChangeOutfit(Creature* creature, const Outfit_t& outfit);
 		ReturnValue eventCreatureOnAreaCombat(Creature* creature, Tile* tile, bool aggressive);
 		ReturnValue eventCreatureOnTargetCombat(Creature* creature, Creature* target);
-		void eventCreatureOnHear(Creature* creature, Creature* speaker, const std::string& words, SpeakClasses type);
 
 		// Party
 		bool eventPartyOnJoin(Party* party, Player* player);
@@ -85,12 +49,8 @@ class Events
 		void eventPlayerOnLook(Player* player, const Position& position, Thing* thing, uint8_t stackpos, int32_t lookDistance);
 		void eventPlayerOnLookInBattleList(Player* player, Creature* creature, int32_t lookDistance);
 		void eventPlayerOnLookInTrade(Player* player, Player* partner, Item* item, int32_t lookDistance);
-		bool eventPlayerOnLookInShop(Player* player, const ItemType* itemType, uint8_t count);
-		bool eventPlayerOnMoveItem(Player* player, Item* item, uint16_t count, const Position& fromPosition, const Position& toPosition, Cylinder* fromCylinder, Cylinder* toCylinder);
-		void eventPlayerOnItemMoved(Player* player, Item* item, uint16_t count, const Position& fromPosition, const Position& toPosition, Cylinder* fromCylinder, Cylinder* toCylinder);
+		bool eventPlayerOnMoveItem(Player* player, Item* item, uint16_t count, const Position& fromPosition, const Position& toPosition);
 		bool eventPlayerOnMoveCreature(Player* player, Creature* creature, const Position& fromPosition, const Position& toPosition);
-		void eventPlayerOnReportRuleViolation(Player* player, const std::string& targetName, uint8_t reportType, uint8_t reportReason, const std::string& comment, const std::string& translation);
-		bool eventPlayerOnReportBug(Player* player, const std::string& message);
 		bool eventPlayerOnTurn(Player* player, Direction direction);
 		bool eventPlayerOnTradeRequest(Player* player, Player* target, Item* item);
 		bool eventPlayerOnTradeAccept(Player* player, Player* target, Item* item, Item* targetItem);
@@ -98,13 +58,32 @@ class Events
 		void eventPlayerOnLoseExperience(Player* player, uint64_t& exp);
 		void eventPlayerOnGainSkillTries(Player* player, skills_t skill, uint64_t& tries);
 
-		// Monster
-		void eventMonsterOnDropLoot(Monster* monster, Container* corpse);
-		bool eventMonsterOnSpawn(Monster* monster, const Position& position, bool startup, bool artificial);
-
 	private:
 		LuaScriptInterface scriptInterface;
-		EventsInfo info;
+
+		// Creature
+		int32_t creatureOnChangeOutfit;
+		int32_t creatureOnAreaCombat;
+		int32_t creatureOnTargetCombat;
+
+		// Party
+		int32_t partyOnJoin;
+		int32_t partyOnLeave;
+		int32_t partyOnDisband;
+		int32_t partyOnShareExperience;
+
+		// Player
+		int32_t playerOnLook;
+		int32_t playerOnLookInBattleList;
+		int32_t playerOnLookInTrade;
+		int32_t playerOnMoveItem;
+		int32_t playerOnMoveCreature;
+		int32_t playerOnTurn;
+		int32_t playerOnTradeRequest;
+		int32_t playerOnTradeAccept;
+		int32_t playerOnGainExperience;
+		int32_t playerOnLoseExperience;
+		int32_t playerOnGainSkillTries;
 };
 
 #endif

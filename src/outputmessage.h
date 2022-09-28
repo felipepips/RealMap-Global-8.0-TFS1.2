@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,7 +29,8 @@ class Protocol;
 class OutputMessage : public NetworkMessage
 {
 	public:
-		OutputMessage() = default;
+		OutputMessage():
+			outputBufferStart(INITIAL_BUFFER_POSITION) {}
 
 		// non-copyable
 		OutputMessage(const OutputMessage&) = delete;
@@ -40,42 +41,38 @@ class OutputMessage : public NetworkMessage
 		}
 
 		void writeMessageLength() {
-			add_header(info.length);
+			add_header(length);
 		}
 
-		void addCryptoHeader(bool addChecksum) {
-			if (addChecksum) {
-				add_header(adlerChecksum(buffer + outputBufferStart, info.length));
-			}
-
+		void addCryptoHeader() {
 			writeMessageLength();
 		}
 
-		void append(const NetworkMessage& msg) {
+		inline void append(const NetworkMessage& msg) {
 			auto msgLen = msg.getLength();
-			memcpy(buffer + info.position, msg.getBuffer() + 8, msgLen);
-			info.length += msgLen;
-			info.position += msgLen;
+			memcpy(buffer + position, msg.getBuffer() + 4, msgLen);
+			length += msgLen;
+			position += msgLen;
 		}
 
-		void append(const OutputMessage_ptr& msg) {
+		inline void append(const OutputMessage_ptr& msg) {
 			auto msgLen = msg->getLength();
-			memcpy(buffer + info.position, msg->getBuffer() + 8, msgLen);
-			info.length += msgLen;
-			info.position += msgLen;
+			memcpy(buffer + position, msg->getBuffer() + 4, msgLen);
+			length += msgLen;
+			position += msgLen;
 		}
 
-	private:
+	protected:
 		template <typename T>
-		void add_header(T add) {
+		inline void add_header(T add) {
 			assert(outputBufferStart >= sizeof(T));
 			outputBufferStart -= sizeof(T);
 			memcpy(buffer + outputBufferStart, &add, sizeof(T));
 			//added header size to the message size
-			info.length += sizeof(T);
+			length += sizeof(T);
 		}
 
-		MsgSize_t outputBufferStart = INITIAL_BUFFER_POSITION;
+		MsgSize_t outputBufferStart;
 };
 
 class OutputMessagePool

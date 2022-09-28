@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,8 +28,14 @@ extern Game g_game;
 extern ConfigManager g_config;
 extern Events* g_events;
 
-Party::Party(Player* leader) : leader(leader)
+Party::Party(Player* leader)
 {
+	extraExpRate = 0.20f;
+
+	sharedExpActive = false;
+	sharedExpEnabled = false;
+
+	this->leader = leader;
 	leader->setParty(this);
 }
 
@@ -123,6 +129,7 @@ bool Party::leaveParty(Player* player)
 	player->sendTextMessage(MESSAGE_INFO_DESCR, "You have left the party.");
 
 	updateSharedExperience();
+	updateVocationsList();
 
 	clearPlayerPoints(player);
 
@@ -211,6 +218,7 @@ bool Party::joinParty(Player& player)
 
 	player.removePartyInvitation(this);
 	updateSharedExperience();
+	updateVocationsList();
 
 	const std::string& leaderName = leader->getName();
 	ss.str(std::string());
@@ -265,7 +273,7 @@ bool Party::invitePlayer(Player& player)
 	std::ostringstream ss;
 	ss << player.getName() << " has been invited.";
 
-	if (empty()) {
+	if (memberList.empty() && inviteList.empty()) {
 		ss << " Open the party channel to communicate with your members.";
 		g_game.updatePlayerShield(leader);
 		leader->sendCreatureSkull(leader);
@@ -319,6 +327,15 @@ void Party::broadcastPartyMessage(MessageClasses msgClass, const std::string& ms
 	}
 }
 
+void Party::broadcastPartyLoot(const std::string& loot)
+{
+	leader->sendChannelMessage("", loot, TALKTYPE_CHANNEL_O, CHANNEL_LOOT);
+
+	for (Player* member : memberList) {
+		member->sendChannelMessage("", loot, TALKTYPE_CHANNEL_O, CHANNEL_LOOT);
+	}
+}
+
 void Party::updateSharedExperience()
 {
 	if (sharedExpActive) {
@@ -330,22 +347,46 @@ void Party::updateSharedExperience()
 	}
 }
 
-bool Party::setSharedExperience(Player* player, bool sharedExpActive)
+void Party::updateVocationsList()
+{
+	std::set<uint32_t> vocationIds;
+
+	uint32_t vocationId = leader->getVocation()->getFromVocation();
+	if (vocationId != VOCATION_NONE) {
+		vocationIds.insert(vocationId);
+	}
+
+	for (const Player* member : memberList) {
+		vocationId = member->getVocation()->getFromVocation();
+		if (vocationId != VOCATION_NONE) {
+			vocationIds.insert(vocationId);
+		}
+	}
+
+	size_t size = vocationIds.size();
+	if (size > 1) {
+		extraExpRate = static_cast<float>(size * (10 + (size - 1) * 5)) / 100.f;
+	} else {
+		extraExpRate = 0.20f;
+	}
+}
+
+bool Party::setSharedExperience(Player* player, bool _sharedExpActive)
 {
 	if (!player || leader != player) {
 		return false;
 	}
 
-	if (this->sharedExpActive == sharedExpActive) {
+	if (sharedExpActive == _sharedExpActive) {
 		return true;
 	}
 
-	this->sharedExpActive = sharedExpActive;
+	sharedExpActive = _sharedExpActive;
 
 	if (sharedExpActive) {
-		this->sharedExpEnabled = canEnableSharedExperience();
+		sharedExpEnabled = canEnableSharedExperience();
 
-		if (this->sharedExpEnabled) {
+		if (sharedExpEnabled) {
 			leader->sendTextMessage(MESSAGE_INFO_DESCR, "Shared Experience is now active.");
 		} else {
 			leader->sendTextMessage(MESSAGE_INFO_DESCR, "Shared Experience has been activated, but some members of your party are inactive.");
@@ -382,7 +423,7 @@ bool Party::canUseSharedExperience(const Player* player) const
 		}
 	}
 
-	uint32_t minLevel = static_cast<uint32_t>(std::ceil((static_cast<float>(highestLevel) * 2) / 3));
+	uint32_t minLevel = static_cast<int32_t>(std::ceil((static_cast<float>(highestLevel) * 2) / 3));
 	if (player->getLevel() < minLevel) {
 		return false;
 	}

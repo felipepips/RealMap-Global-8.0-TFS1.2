@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -26,7 +26,7 @@
 class Player;
 class Party;
 
-using PlayerVector = std::vector<Player*>;
+typedef std::vector<Player*> PlayerVector;
 
 class Party
 {
@@ -61,13 +61,14 @@ class Party
 		bool isPlayerInvited(const Player* player) const;
 		void updateAllPartyIcons();
 		void broadcastPartyMessage(MessageClasses msgClass, const std::string& msg, bool sendToInvitations = false);
+		void broadcastPartyLoot(const std::string& loot);
 		bool empty() const {
 			return memberList.empty() && inviteList.empty();
 		}
 		bool canOpenCorpse(uint32_t ownerId) const;
 
 		void shareExperience(uint64_t experience, Creature* source = nullptr);
-		bool setSharedExperience(Player* player, bool sharedExpActive);
+		bool setSharedExperience(Player* player, bool _sharedExpActive);
 		bool isSharedExperienceActive() const {
 			return sharedExpActive;
 		}
@@ -77,10 +78,12 @@ class Party
 		bool canUseSharedExperience(const Player* player) const;
 		void updateSharedExperience();
 
+		void updateVocationsList();
+
 		void updatePlayerTicks(Player* player, uint32_t points);
 		void clearPlayerPoints(Player* player);
 
-	private:
+	protected:
 		bool canEnableSharedExperience();
 
 		std::map<uint32_t, int64_t> ticksMap;
@@ -90,8 +93,10 @@ class Party
 
 		Player* leader;
 
-		bool sharedExpActive = false;
-		bool sharedExpEnabled = false;
+		float extraExpRate;
+
+		bool sharedExpActive;
+		bool sharedExpEnabled;
 };
 
 #endif

@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -31,19 +31,18 @@ class ProtocolLogin : public Protocol
 		// static protocol information
 		enum {server_sends_first = false};
 		enum {protocol_identifier = 0x01};
-		enum {use_checksum = true};
 		static const char* protocol_name() {
 			return "login protocol";
 		}
 
 		explicit ProtocolLogin(Connection_ptr connection) : Protocol(connection) {}
 
-		void onRecvFirstMessage(NetworkMessage& msg) override;
+		void onRecvFirstMessage(NetworkMessage& msg);
 
-	private:
+	protected:
 		void disconnectClient(const std::string& message);
 
-		void getCharacterList(const std::string& accountName, const std::string& password);
+		void getCharacterList(uint32_t accountName, const std::string& password);
 };
 
 #endif

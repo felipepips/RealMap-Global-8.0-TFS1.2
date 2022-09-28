@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,21 +29,20 @@
 void printXMLError(const std::string& where, const std::string& fileName, const pugi::xml_parse_result& result);
 
 std::string transformToSHA1(const std::string& input);
-std::string generateToken(const std::string& key, uint32_t ticks);
 
 void replaceString(std::string& str, const std::string& sought, const std::string& replacement);
 void trim_right(std::string& source, char t);
 void trim_left(std::string& source, char t);
 void toLowerCaseString(std::string& source);
-std::string asLowerCaseString(std::string source);
-std::string asUpperCaseString(std::string source);
+std::string asLowerCaseString(const std::string& source);
+std::string asUpperCaseString(const std::string& source);
 
-using StringVector = std::vector<std::string>;
-using IntegerVector = std::vector<int32_t>;
+typedef std::vector<std::string> StringVec;
+typedef std::vector<int32_t> IntegerVec;
 
-StringVector explodeString(const std::string& inString, const std::string& separator, int32_t limit = -1);
-IntegerVector vectorAtoi(const StringVector& stringVector);
-constexpr bool hasBitSet(uint32_t flag, uint32_t flags) {
+StringVec explodeString(const std::string& inString, const std::string& separator, int32_t limit = -1);
+IntegerVec vectorAtoi(const StringVec& stringVector);
+inline bool hasBitSet(uint32_t flag, uint32_t flags) {
 	return (flags & flag) != 0;
 }
 
@@ -68,13 +67,11 @@ MagicEffectClasses getMagicEffect(const std::string& strValue);
 ShootType_t getShootType(const std::string& strValue);
 Ammo_t getAmmoType(const std::string& strValue);
 WeaponAction_t getWeaponAction(const std::string& strValue);
+CombatType_t getCombatType(const std::string& strValue);
 Skulls_t getSkullType(const std::string& strValue);
 std::string getCombatName(CombatType_t combatType);
 
-std::string getSpecialSkillName(uint8_t skillid);
 std::string getSkillName(uint8_t skillid);
-
-uint32_t adlerChecksum(const uint8_t* data, size_t length);
 
 std::string ucfirst(std::string str);
 std::string ucwords(std::string str);
@@ -92,7 +89,9 @@ itemAttrTypes stringToItemAttribute(const std::string& str);
 
 const char* getReturnMessage(ReturnValue value);
 
-int64_t OTSYS_TIME();
-
+inline int64_t OTSYS_TIME()
+{
+	return std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+}
 
 #endif

@@ -3115,17 +3115,15 @@
 		<monster name="Elf Scout" x="-1" y="0" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="32000" centery="32141" centerz="5" radius="1" />
-	<spawn centerx="32085" centery="32141" centerz="5" radius="1">
-		<monster name="spider" x="0" y="0" z="5" spawntime="150" />
-	</spawn>
 	<spawn centerx="32252" centery="32141" centerz="5" radius="3">
 		<monster name="orc shaman" x="1" y="-2" z="5" spawntime="60" />
 		<monster name="orc shaman" x="3" y="1" z="5" spawntime="60" />
 	</spawn>
-	<spawn centerx="32086" centery="32142" centerz="5" radius="5">
-		<monster name="spider" x="0" y="2" z="5" spawntime="150" />
+	<spawn centerx="32085" centery="32142" centerz="5" radius="3">
+		<monster name="spider" x="0" y="-1" z="5" spawntime="100" />
+		<monster name="spider" x="2" y="0" z="5" spawntime="60" />
+		<monster name="spider" x="1" y="2" z="5" spawntime="80" />
 	</spawn>
-	<spawn centerx="32086" centery="32144" centerz="5" radius="1" />
 	<spawn centerx="32779" centery="32144" centerz="5" radius="1">
 		<monster name="dragon lord" x="0" y="0" z="5" spawntime="60" />
 	</spawn>
@@ -5184,8 +5182,12 @@
 	<spawn centerx="32820" centery="32145" centerz="6" radius="1">
 		<monster name="dragon" x="1" y="-1" z="6" spawntime="60" />
 	</spawn>
-	<spawn centerx="32073" centery="32146" centerz="6" radius="5" />
+	<spawn centerx="32073" centery="32146" centerz="6" radius="5">
+		<monster name="spider" x="-4" y="-1" z="6" spawntime="150" />
+		<monster name="spider" x="-4" y="3" z="6" spawntime="100" />
+	</spawn>
 	<spawn centerx="32082" centery="32146" centerz="6" radius="5">
+		<monster name="spider" x="1" y="-1" z="6" spawntime="60" />
 		<monster name="spider" x="1" y="2" z="6" spawntime="150" />
 	</spawn>
 	<spawn centerx="32824" centery="32146" centerz="6" radius="1">
@@ -12395,8 +12397,8 @@
 	</spawn>
 	<spawn centerx="32020" centery="32144" centerz="7" radius="1" />
 	<spawn centerx="32055" centery="32144" centerz="7" radius="5">
-		<monster name="wolf" x="-5" y="-5" z="7" spawntime="5" />
-		<monster name="wolf" x="3" y="-4" z="7" spawntime="5" />
+		<monster name="wolf" x="-5" y="-5" z="7" spawntime="60" />
+		<monster name="wolf" x="3" y="-4" z="7" spawntime="60" />
 		<monster name="deer" x="-2" y="3" z="7" spawntime="5" />
 	</spawn>
 	<spawn centerx="32256" centery="32144" centerz="7" radius="9">
@@ -12653,7 +12655,7 @@
 	<spawn centerx="31968" centery="32167" centerz="7" radius="5" />
 	<spawn centerx="32017" centery="32167" centerz="7" radius="5">
 		<monster name="snake" x="2" y="1" z="7" spawntime="150" />
-		<monster name="snake" x="-5" y="5" z="7" spawntime="5" />
+		<monster name="snake" x="-5" y="5" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32270" centery="32167" centerz="7" radius="3">
 		<monster name="snake" x="3" y="-2" z="7" spawntime="60" />
@@ -12684,9 +12686,9 @@
 	</spawn>
 	<spawn centerx="32018" centery="32168" centerz="7" radius="1" />
 	<spawn centerx="32029" centery="32168" centerz="7" radius="5">
-		<monster name="snake" x="5" y="-3" z="7" spawntime="5" />
+		<monster name="snake" x="5" y="-3" z="7" spawntime="60" />
 		<monster name="snake" x="0" y="1" z="7" spawntime="150" />
-		<monster name="snake" x="-3" y="5" z="7" spawntime="5" />
+		<monster name="snake" x="-3" y="5" z="7" spawntime="65" />
 	</spawn>
 	<spawn centerx="32870" centery="32168" centerz="7" radius="1">
 		<monster name="snake" x="0" y="0" z="7" spawntime="60" />
@@ -12703,7 +12705,7 @@
 	<spawn centerx="32028" centery="32169" centerz="7" radius="1" />
 	<spawn centerx="32040" centery="32169" centerz="7" radius="5">
 		<monster name="snake" x="0" y="1" z="7" spawntime="150" />
-		<monster name="snake" x="-5" y="3" z="7" spawntime="5" />
+		<monster name="snake" x="-5" y="3" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32824" centery="32169" centerz="7" radius="2">
 		<monster name="dragon" x="2" y="0" z="7" spawntime="60" />
@@ -12871,9 +12873,9 @@
 		<monster name="deer" x="-3" y="2" z="7" spawntime="150" />
 	</spawn>
 	<spawn centerx="32034" centery="32179" centerz="7" radius="1">
-		<monster name="snake" x="-1" y="-1" z="7" spawntime="5" />
+		<monster name="snake" x="-1" y="-1" z="7" spawntime="60" />
 		<monster name="deer" x="0" y="0" z="7" spawntime="150" />
-		<monster name="snake" x="1" y="0" z="7" spawntime="5" />
+		<monster name="snake" x="1" y="0" z="7" spawntime="50" />
 	</spawn>
 	<spawn centerx="32063" centery="32179" centerz="7" radius="1">
 		<npc name="Al Dee" x="0" y="1" z="7" spawntime="150" />
@@ -26267,11 +26269,11 @@
 		<monster name="sibang" x="0" y="2" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="31954" centery="32546" centerz="8" radius="5">
-		<monster name="Island troll" x="-4" y="-1" z="8" spawntime="5" />
-		<monster name="Island troll" x="2" y="0" z="8" spawntime="5" />
-		<monster name="Island troll" x="-1" y="1" z="8" spawntime="5" />
-		<monster name="Island troll" x="3" y="3" z="8" spawntime="5" />
-		<monster name="Island troll" x="-1" y="4" z="8" spawntime="5" />
+		<monster name="Island troll" x="-4" y="-1" z="8" spawntime="60" />
+		<monster name="Island troll" x="2" y="0" z="8" spawntime="60" />
+		<monster name="Island troll" x="-1" y="1" z="8" spawntime="60" />
+		<monster name="Island troll" x="3" y="3" z="8" spawntime="60" />
+		<monster name="Island troll" x="-1" y="4" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32817" centery="32546" centerz="8" radius="7">
 		<monster name="kongra" x="0" y="-7" z="8" spawntime="60" />
@@ -26348,11 +26350,11 @@
 		<monster name="larva" x="2" y="1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="31976" centery="32567" centerz="8" radius="5">
-		<monster name="Island troll" x="-2" y="-3" z="8" spawntime="5" />
-		<monster name="Island troll" x="2" y="-2" z="8" spawntime="5" />
-		<monster name="Island troll" x="-2" y="1" z="8" spawntime="5" />
-		<monster name="Island troll" x="0" y="3" z="8" spawntime="5" />
-		<monster name="Island troll" x="3" y="3" z="8" spawntime="5" />
+		<monster name="Island troll" x="-2" y="-3" z="8" spawntime="60" />
+		<monster name="Island troll" x="2" y="-2" z="8" spawntime="60" />
+		<monster name="Island troll" x="-2" y="1" z="8" spawntime="60" />
+		<monster name="Island troll" x="0" y="3" z="8" spawntime="60" />
+		<monster name="Island troll" x="3" y="3" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32143" centery="32568" centerz="8" radius="3">
 		<monster name="fire devil" x="-3" y="-2" z="8" spawntime="60" />
@@ -35010,11 +35012,11 @@
 		<monster name="kongra" x="-1" y="2" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="31954" centery="32537" centerz="9" radius="5">
-		<monster name="Island troll" x="-2" y="-3" z="9" spawntime="5" />
-		<monster name="Island troll" x="2" y="-2" z="9" spawntime="5" />
-		<monster name="Island troll" x="-3" y="-1" z="9" spawntime="5" />
-		<monster name="Island troll" x="4" y="0" z="9" spawntime="5" />
-		<monster name="Island troll" x="2" y="1" z="9" spawntime="5" />
+		<monster name="Island troll" x="-2" y="-3" z="9" spawntime="60" />
+		<monster name="Island troll" x="2" y="-2" z="9" spawntime="60" />
+		<monster name="Island troll" x="-3" y="-1" z="9" spawntime="60" />
+		<monster name="Island troll" x="4" y="0" z="9" spawntime="60" />
+		<monster name="Island troll" x="2" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33113" centery="32537" centerz="9" radius="5">
 		<monster name="fire elemental" x="-2" y="3" z="9" spawntime="60" />
@@ -35038,11 +35040,11 @@
 		<monster name="larva" x="2" y="3" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="31941" centery="32545" centerz="9" radius="5">
-		<monster name="Island troll" x="0" y="-2" z="9" spawntime="5" />
-		<monster name="Island troll" x="2" y="-1" z="9" spawntime="5" />
-		<monster name="Island troll" x="-2" y="0" z="9" spawntime="5" />
-		<monster name="Island troll" x="1" y="1" z="9" spawntime="5" />
-		<monster name="Island troll" x="3" y="3" z="9" spawntime="5" />
+		<monster name="Island troll" x="0" y="-2" z="9" spawntime="60" />
+		<monster name="Island troll" x="2" y="-1" z="9" spawntime="60" />
+		<monster name="Island troll" x="-2" y="0" z="9" spawntime="60" />
+		<monster name="Island troll" x="1" y="1" z="9" spawntime="60" />
+		<monster name="Island troll" x="3" y="3" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33212" centery="32545" centerz="9" radius="3">
 		<monster name="scarab" x="0" y="-2" z="9" spawntime="60" />
@@ -35056,11 +35058,11 @@
 		<monster name="hyaena" x="-1" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="31964" centery="32547" centerz="9" radius="5">
-		<monster name="Island troll" x="0" y="-2" z="9" spawntime="5" />
-		<monster name="Island troll" x="2" y="-2" z="9" spawntime="5" />
-		<monster name="Island troll" x="3" y="0" z="9" spawntime="5" />
-		<monster name="Island troll" x="-2" y="1" z="9" spawntime="5" />
-		<monster name="Island troll" x="1" y="2" z="9" spawntime="5" />
+		<monster name="Island troll" x="0" y="-2" z="9" spawntime="60" />
+		<monster name="Island troll" x="2" y="-2" z="9" spawntime="60" />
+		<monster name="Island troll" x="3" y="0" z="9" spawntime="60" />
+		<monster name="Island troll" x="-2" y="1" z="9" spawntime="60" />
+		<monster name="Island troll" x="1" y="2" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32786" centery="32547" centerz="9" radius="3">
 		<monster name="kongra" x="2" y="-1" z="9" spawntime="60" />
@@ -35111,18 +35113,12 @@
 		<monster name="larva" x="1" y="-1" z="9" spawntime="60" />
 		<monster name="larva" x="2" y="1" z="9" spawntime="60" />
 	</spawn>
-	<spawn centerx="31954" centery="32556" centerz="9" radius="5">
-		<monster name="Island troll" x="-4" y="-1" z="9" spawntime="5" />
-		<monster name="Island troll" x="-2" y="0" z="9" spawntime="5" />
-		<monster name="Island troll" x="-1" y="3" z="9" spawntime="5" />
-		<monster name="Island troll" x="-4" y="4" z="9" spawntime="5" />
-	</spawn>
 	<spawn centerx="31977" centery="32556" centerz="9" radius="5">
-		<monster name="Island troll" x="0" y="-2" z="9" spawntime="5" />
-		<monster name="Island troll" x="3" y="-2" z="9" spawntime="5" />
-		<monster name="Island troll" x="-2" y="0" z="9" spawntime="5" />
-		<monster name="Island troll" x="2" y="0" z="9" spawntime="5" />
-		<monster name="Island troll" x="-4" y="1" z="9" spawntime="5" />
+		<monster name="Island troll" x="0" y="-2" z="9" spawntime="60" />
+		<monster name="Island troll" x="3" y="-2" z="9" spawntime="60" />
+		<monster name="Island troll" x="-2" y="0" z="9" spawntime="60" />
+		<monster name="Island troll" x="2" y="0" z="9" spawntime="60" />
+		<monster name="Island troll" x="-4" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32791" centery="32556" centerz="9" radius="3">
 		<monster name="sibang" x="3" y="-1" z="9" spawntime="60" />
@@ -35132,6 +35128,13 @@
 		<monster name="sibang" x="-1" y="-1" z="9" spawntime="60" />
 		<monster name="sibang" x="-2" y="2" z="9" spawntime="60" />
 		<monster name="sibang" x="2" y="2" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="31951" centery="32557" centerz="9" radius="5">
+		<monster name="Island troll" x="-1" y="-2" z="9" spawntime="60" />
+		<monster name="Island troll" x="1" y="-1" z="9" spawntime="60" />
+		<monster name="Island troll" x="-3" y="0" z="9" spawntime="60" />
+		<monster name="Island troll" x="2" y="2" z="9" spawntime="60" />
+		<monster name="Island troll" x="-1" y="3" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33101" centery="32557" centerz="9" radius="2">
 		<monster name="scarab" x="0" y="0" z="9" spawntime="60" />
@@ -35158,11 +35161,11 @@
 		<monster name="scarab" x="1" y="2" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="31967" centery="32561" centerz="9" radius="5">
-		<monster name="Island troll" x="-1" y="-4" z="9" spawntime="5" />
-		<monster name="Island troll" x="-4" y="-2" z="9" spawntime="5" />
-		<monster name="Island troll" x="-1" y="-1" z="9" spawntime="5" />
-		<monster name="Island troll" x="-4" y="1" z="9" spawntime="5" />
-		<monster name="Island troll" x="-1" y="2" z="9" spawntime="5" />
+		<monster name="Island troll" x="-1" y="-4" z="9" spawntime="60" />
+		<monster name="Island troll" x="-4" y="-2" z="9" spawntime="60" />
+		<monster name="Island troll" x="-1" y="-1" z="9" spawntime="60" />
+		<monster name="Island troll" x="-4" y="1" z="9" spawntime="60" />
+		<monster name="Island troll" x="-1" y="2" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33094" centery="32561" centerz="9" radius="2">
 		<monster name="scarab" x="1" y="0" z="9" spawntime="60" />
@@ -35195,11 +35198,11 @@
 		<monster name="kongra" x="-2" y="3" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="31988" centery="32567" centerz="9" radius="5">
-		<monster name="Island troll" x="-2" y="-2" z="9" spawntime="5" />
-		<monster name="Island troll" x="2" y="-2" z="9" spawntime="5" />
-		<monster name="Island troll" x="4" y="0" z="9" spawntime="5" />
-		<monster name="Island troll" x="-2" y="2" z="9" spawntime="5" />
-		<monster name="Island troll" x="3" y="3" z="9" spawntime="5" />
+		<monster name="Island troll" x="-2" y="-2" z="9" spawntime="60" />
+		<monster name="Island troll" x="2" y="-2" z="9" spawntime="60" />
+		<monster name="Island troll" x="4" y="0" z="9" spawntime="60" />
+		<monster name="Island troll" x="-2" y="2" z="9" spawntime="60" />
+		<monster name="Island troll" x="3" y="3" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32119" centery="32567" centerz="9" radius="5">
 		<monster name="demon skeleton" x="-2" y="3" z="9" spawntime="60" />
@@ -35411,7 +35414,6 @@
 		<monster name="larva" x="1" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="31958" centery="32585" centerz="9" radius="30">
-		<monster name="Island troll" x="-10" y="-28" z="9" spawntime="5" />
 		<monster name="fire elemental" x="-7" y="-8" z="9" spawntime="60" />
 		<monster name="fire elemental" x="1" y="-5" z="9" spawntime="60" />
 		<monster name="fire elemental" x="-3" y="4" z="9" spawntime="60" />

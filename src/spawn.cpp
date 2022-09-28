@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -26,29 +26,33 @@
 #include "scheduler.h"
 
 #include "pugicast.h"
-#include "events.h"
 
 extern ConfigManager g_config;
 extern Monsters g_monsters;
 extern Game g_game;
-extern Events* g_events;
 
-static constexpr int32_t MINSPAWN_INTERVAL = 1000;
+#define MINSPAWN_INTERVAL 1000
 
-bool Spawns::loadFromXml(const std::string& filename)
+Spawns::Spawns()
+{
+	loaded = false;
+	started = false;
+}
+
+bool Spawns::loadFromXml(const std::string& _filename)
 {
 	if (loaded) {
 		return true;
 	}
 
 	pugi::xml_document doc;
-	pugi::xml_parse_result result = doc.load_file(filename.c_str());
+	pugi::xml_parse_result result = doc.load_file(_filename.c_str());
 	if (!result) {
-		printXMLError("Error - Spawns::loadFromXml", filename, result);
+		printXMLError("Error - Spawns::loadFromXml", _filename, result);
 		return false;
 	}
 
-	this->filename = filename;
+	filename = _filename;
 	loaded = true;
 
 	for (auto spawnNode : doc.child("spawns").children()) {
@@ -182,9 +186,9 @@ Spawn::~Spawn()
 
 bool Spawn::findPlayer(const Position& pos)
 {
-	SpectatorVec spectators;
-	g_game.map.getSpectators(spectators, pos, false, true);
-	for (Creature* spectator : spectators) {
+	SpectatorVec list;
+	g_game.map.getSpectators(list, pos, false, true);
+	for (Creature* spectator : list) {
 		if (!spectator->getPlayer()->hasFlag(PlayerFlag_IgnoredByMonsters)) {
 			return true;
 		}
@@ -200,10 +204,6 @@ bool Spawn::isInSpawnZone(const Position& pos)
 bool Spawn::spawnMonster(uint32_t spawnId, MonsterType* mType, const Position& pos, Direction dir, bool startup /*= false*/)
 {
 	std::unique_ptr<Monster> monster_ptr(new Monster(mType));
-	if (!g_events->eventMonsterOnSpawn(monster_ptr.get(), pos, startup, false)) {
-		return false;
-	}
-
 	if (startup) {
 		//No need to send out events to the surrounding since there is no one out there to listen!
 		if (!g_game.internalPlaceCreature(monster_ptr.get(), pos, true)) {
@@ -290,21 +290,23 @@ void Spawn::cleanup()
 	}
 }
 
-bool Spawn::addMonster(const std::string& name, const Position& pos, Direction dir, uint32_t interval)
+bool Spawn::addMonster(const std::string& _name, const Position& _pos, Direction _dir, uint32_t _interval)
 {
-	MonsterType* mType = g_monsters.getMonsterType(name);
+	MonsterType* mType = g_monsters.getMonsterType(_name);
 	if (!mType) {
-		std::cout << "[Spawn::addMonster] Can not find " << name << std::endl;
+		std::cout << "[Spawn::addMonster] Can not find " << _name << std::endl;
 		return false;
 	}
 
-	this->interval = std::min(this->interval, interval);
+	if (_interval < interval) {
+		interval = _interval;
+	}
 
 	spawnBlock_t sb;
 	sb.mType = mType;
-	sb.pos = pos;
-	sb.direction = dir;
-	sb.interval = interval;
+	sb.pos = _pos;
+	sb.direction = _dir;
+	sb.interval = _interval;
 	sb.lastSpawn = 0;
 
 	uint32_t spawnId = spawnMap.size() + 1;

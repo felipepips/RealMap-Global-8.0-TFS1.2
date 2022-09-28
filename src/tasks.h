@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -31,9 +31,11 @@ class Task
 {
 	public:
 		// DO NOT allocate this class on the stack
-		explicit Task(std::function<void (void)>&& f) : func(std::move(f)) {}
-		Task(uint32_t ms, std::function<void (void)>&& f) :
-			expiration(std::chrono::system_clock::now() + std::chrono::milliseconds(ms)), func(std::move(f)) {}
+		Task(uint32_t ms, const std::function<void (void)>& f) : func(f) {
+			expiration = std::chrono::system_clock::now() + std::chrono::milliseconds(ms);
+		}
+		explicit Task(const std::function<void (void)>& f)
+			: expiration(SYSTEM_TIME_ZERO), func(f) {}
 
 		virtual ~Task() = default;
 		void operator()() {
@@ -52,37 +54,40 @@ class Task
 		}
 
 	protected:
-		std::chrono::system_clock::time_point expiration = SYSTEM_TIME_ZERO;
-
-	private:
 		// Expiration has another meaning for scheduler tasks,
 		// then it is the time the task should be added to the
 		// dispatcher
+		std::chrono::system_clock::time_point expiration;
 		std::function<void (void)> func;
 };
 
-Task* createTask(std::function<void (void)> f);
-Task* createTask(uint32_t expiration, std::function<void (void)> f);
+inline Task* createTask(const std::function<void (void)>& f)
+{
+	return new Task(f);
+}
 
-class Dispatcher : public ThreadHolder<Dispatcher> {
+inline Task* createTask(uint32_t expiration, const std::function<void (void)>& f)
+{
+	return new Task(expiration, f);
+}
+
+class Dispatcher : public ThreadHolder<Dispatcher>
+{
 	public:
 		void addTask(Task* task, bool push_front = false);
-
 		void shutdown();
 
 		uint64_t getDispatcherCycle() const {
 			return dispatcherCycle;
 		}
-
 		void threadMain();
-
-	private:
+	protected:
 		std::thread thread;
 		std::mutex taskLock;
 		std::condition_variable taskSignal;
 
 		std::list<Task*> taskList;
-		uint64_t dispatcherCycle = 0;
+		uint64_t dispatcherCycle {0};
 };
 
 extern Dispatcher g_dispatcher;

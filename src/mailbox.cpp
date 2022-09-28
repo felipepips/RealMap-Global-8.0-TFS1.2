@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -40,7 +40,7 @@ ReturnValue Mailbox::queryMaxCount(int32_t, const Thing&, uint32_t count, uint32
 	return RETURNVALUE_NOERROR;
 }
 
-ReturnValue Mailbox::queryRemove(const Thing&, uint32_t, uint32_t) const
+ReturnValue Mailbox::queryRemove(const Thing&, uint32_t, uint32_t, Creature* /*= nullptr */) const
 {
 	return RETURNVALUE_NOTPOSSIBLE;
 }
@@ -105,7 +105,8 @@ bool Mailbox::sendItem(Item* item) const
 	if (player) {
 		DepotLocker* depotLocker = player->getDepotLocker(depotId);
 		if (depotLocker) {
-			if (g_game.internalMoveItem(item->getParent(), depotLocker, INDEX_WHEREEVER, item, item->getItemCount(), nullptr) == RETURNVALUE_NOERROR) {
+			if (g_game.internalMoveItem(item->getParent(), depotLocker, INDEX_WHEREEVER,
+				item, item->getItemCount(), nullptr, FLAG_NOLIMIT) == RETURNVALUE_NOERROR) {
 				g_game.transformItem(item, item->getID() + 1);
 				player->onReceiveMail();
 				return true;
@@ -119,8 +120,10 @@ bool Mailbox::sendItem(Item* item) const
 
 		DepotLocker* depotLocker = tmpPlayer.getDepotLocker(depotId);
 		if (depotLocker) {
-			if (g_game.internalMoveItem(item->getParent(), depotLocker, INDEX_WHEREEVER, item, item->getItemCount(), nullptr) == RETURNVALUE_NOERROR) {
+			if (g_game.internalMoveItem(item->getParent(), depotLocker, INDEX_WHEREEVER,
+				item, item->getItemCount(), nullptr, FLAG_NOLIMIT) == RETURNVALUE_NOERROR) {
 				g_game.transformItem(item, item->getID() + 1);
+				tmpPlayer.setLastDepotId(depotLocker->getDepotId());
 				IOLoginData::savePlayer(&tmpPlayer);
 				return true;
 			}
@@ -146,13 +149,25 @@ bool Mailbox::getReceiver(Item* item, std::string& name, uint32_t& depotId) cons
 		return false;
 	}
 
-	std::string townName;
+	std::string temp;
 	std::istringstream iss(item->getText(), std::istringstream::in);
-	getline(iss, name, '\n');
-	getline(iss, townName, '\n');
+	std::string strTown = "";
+	uint32_t curLine = 1;
 
-	trimString(name);
-	Town* town = g_game.map.towns.getTown(townName);
+	while (getline(iss, temp, '\n')) {
+		if (curLine == 1) {
+			name = temp;
+		} else if (curLine == 2) {
+			strTown = temp;
+		} else {
+			break;
+		}
+
+		++curLine;
+	}
+
+	trimString(strTown);
+	Town* town = g_game.map.towns.getTown(strTown);
 	if (town) {
 		depotId = town->getID();
 		return true;

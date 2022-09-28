@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,10 +25,21 @@
 
 extern Game g_game;
 
-Container::Container(uint16_t type) :
-	Container(type, items[type].maxItems) {}
+Container::Container(uint16_t _type) : Item(_type)
+{
+	maxSize = items[_type].maxItems;
+	totalWeight = 0;
+	serializationCount = 0;
+	unlocked = true;
+}
 
-Container::Container(uint16_t type, uint16_t size) : Item(type), maxSize(size) {}
+Container::Container(uint16_t _type, uint16_t _size) : Item(_type)
+{
+	maxSize = _size;
+	totalWeight = 0;
+	serializationCount = 0;
+	unlocked = true;
+}
 
 Container::~Container()
 {
@@ -57,6 +68,11 @@ Container* Container::getParentContainer()
 	return thing->getContainer();
 }
 
+bool Container::hasParent() const
+{
+	return dynamic_cast<const Container*>(getParent()) != nullptr;
+}
+
 void Container::addItem(Item* item)
 {
 	itemlist.push_back(item);
@@ -74,22 +90,24 @@ Attr_ReadValue Container::readAttr(AttrTypes_t attr, PropStream& propStream)
 	return Item::readAttr(attr, propStream);
 }
 
-bool Container::unserializeItemNode(OTB::Loader& loader, const OTB::Node& node, PropStream& propStream)
+bool Container::unserializeItemNode(FileLoader& f, NODE node, PropStream& propStream)
 {
-	bool ret = Item::unserializeItemNode(loader, node, propStream);
+	bool ret = Item::unserializeItemNode(f, node, propStream);
 	if (!ret) {
 		return false;
 	}
 
-	for (auto& itemNode : node.children) {
+	uint32_t type;
+	NODE nodeItem = f.getChildNode(node, type);
+	while (nodeItem) {
 		//load container items
-		if (itemNode.type != OTBM_ITEM) {
+		if (type != OTBM_ITEM) {
 			// unknown type
 			return false;
 		}
 
 		PropStream itemPropStream;
-		if (!loader.getProps(itemNode, itemPropStream)) {
+		if (!f.getProps(nodeItem, itemPropStream)) {
 			return false;
 		}
 
@@ -98,12 +116,14 @@ bool Container::unserializeItemNode(OTB::Loader& loader, const OTB::Node& node, 
 			return false;
 		}
 
-		if (!item->unserializeItemNode(loader, itemNode, itemPropStream)) {
+		if (!item->unserializeItemNode(f, nodeItem, itemPropStream)) {
 			return false;
 		}
 
 		addItem(item);
 		updateItemWeight(item->getWeight());
+
+		nodeItem = f.getNextNode(nodeItem, type);
 	}
 	return true;
 }
@@ -182,48 +202,48 @@ bool Container::isHoldingItem(const Item* item) const
 
 void Container::onAddContainerItem(Item* item)
 {
-	SpectatorVec spectators;
-	g_game.map.getSpectators(spectators, getPosition(), false, true, 2, 2, 2, 2);
+	SpectatorVec list;
+	g_game.map.getSpectators(list, getPosition(), false, true, 2, 2, 2, 2);
 
 	//send to client
-	for (Creature* spectator : spectators) {
+	for (Creature* spectator : list) {
 		spectator->getPlayer()->sendAddContainerItem(this, item);
 	}
 
 	//event methods
-	for (Creature* spectator : spectators) {
+	for (Creature* spectator : list) {
 		spectator->getPlayer()->onAddContainerItem(item);
 	}
 }
 
 void Container::onUpdateContainerItem(uint32_t index, Item* oldItem, Item* newItem)
 {
-	SpectatorVec spectators;
-	g_game.map.getSpectators(spectators, getPosition(), false, true, 2, 2, 2, 2);
+	SpectatorVec list;
+	g_game.map.getSpectators(list, getPosition(), false, true, 2, 2, 2, 2);
 
 	//send to client
-	for (Creature* spectator : spectators) {
+	for (Creature* spectator : list) {
 		spectator->getPlayer()->sendUpdateContainerItem(this, index, newItem);
 	}
 
 	//event methods
-	for (Creature* spectator : spectators) {
+	for (Creature* spectator : list) {
 		spectator->getPlayer()->onUpdateContainerItem(this, oldItem, newItem);
 	}
 }
 
 void Container::onRemoveContainerItem(uint32_t index, Item* item)
 {
-	SpectatorVec spectators;
-	g_game.map.getSpectators(spectators, getPosition(), false, true, 2, 2, 2, 2);
+	SpectatorVec list;
+	g_game.map.getSpectators(list, getPosition(), false, true, 2, 2, 2, 2);
 
 	//send change to client
-	for (Creature* spectator : spectators) {
+	for (Creature* spectator : list) {
 		spectator->getPlayer()->sendRemoveContainerItem(this, index);
 	}
 
 	//event methods
-	for (Creature* spectator : spectators) {
+	for (Creature* spectator : list) {
 		spectator->getPlayer()->onRemoveContainerItem(this, item);
 	}
 }
@@ -236,6 +256,10 @@ ReturnValue Container::queryAdd(int32_t index, const Thing& thing, uint32_t coun
 		//a child container is querying, since we are the top container (not carried by a player)
 		//just return with no error.
 		return RETURNVALUE_NOERROR;
+	}
+
+	if (!unlocked) {
+		return RETURNVALUE_NOTPOSSIBLE;
 	}
 
 	const Item* item = thing.getItem();
@@ -305,19 +329,17 @@ ReturnValue Container::queryMaxCount(int32_t index, const Thing& thing, uint32_t
 			//Iterate through every item and check how much free stackable slots there is.
 			uint32_t slotIndex = 0;
 			for (Item* containerItem : itemlist) {
-				if (containerItem != item && containerItem->equals(item) && containerItem->getItemCount() < 100) {
-					uint32_t remainder = (100 - containerItem->getItemCount());
-					if (queryAdd(slotIndex++, *item, remainder, flags) == RETURNVALUE_NOERROR) {
-						n += remainder;
+				if (containerItem != item && containerItem->equals(item) && !containerItem->isRune() && containerItem->getItemCount() < 100) {
+					if (queryAdd(slotIndex++, *item, count, flags) == RETURNVALUE_NOERROR) {
+						n += 100 - containerItem->getItemCount();
 					}
 				}
 			}
 		} else {
 			const Item* destItem = getItemByIndex(index);
-			if (item->equals(destItem) && destItem->getItemCount() < 100) {
-				uint32_t remainder = 100 - destItem->getItemCount();
-				if (queryAdd(index, *item, remainder, flags) == RETURNVALUE_NOERROR) {
-					n = remainder;
+			if (item->equals(destItem) && !destItem->isRune() && destItem->getItemCount() < 100) {
+				if (queryAdd(index, *item, count, flags) == RETURNVALUE_NOERROR) {
+					n = 100 - destItem->getItemCount();
 				}
 			}
 		}
@@ -335,7 +357,7 @@ ReturnValue Container::queryMaxCount(int32_t index, const Thing& thing, uint32_t
 	return RETURNVALUE_NOERROR;
 }
 
-ReturnValue Container::queryRemove(const Thing& thing, uint32_t count, uint32_t flags) const
+ReturnValue Container::queryRemove(const Thing& thing, uint32_t count, uint32_t flags, Creature* actor /*= nullptr */) const
 {
 	int32_t index = getThingIndex(&thing);
 	if (index == -1) {
@@ -354,12 +376,21 @@ ReturnValue Container::queryRemove(const Thing& thing, uint32_t count, uint32_t 
 	if (!item->isMoveable() && !hasBitSet(FLAG_IGNORENOTMOVEABLE, flags)) {
 		return RETURNVALUE_NOTMOVEABLE;
 	}
+	
+	const HouseTile* houseTile = dynamic_cast<const HouseTile*>(getTopParent());
+	if (houseTile) {
+		return houseTile->queryRemove(thing, count, flags, actor);
+	}
 	return RETURNVALUE_NOERROR;
 }
 
-Cylinder* Container::queryDestination(int32_t& index, const Thing& thing, Item** destItem,
+Cylinder* Container::queryDestination(int32_t& index, const Thing &thing, Item** destItem,
 		uint32_t& flags)
 {
+	if (!unlocked) {
+		*destItem = nullptr;
+		return this;
+	}
 
 	if (index == 254 /*move up*/) {
 		index = INDEX_WHEREEVER;
@@ -406,8 +437,12 @@ Cylinder* Container::queryDestination(int32_t& index, const Thing& thing, Item**
 		}
 	}
 
-	bool autoStack = !hasBitSet(FLAG_IGNOREAUTOSTACK, flags);
+	bool autoStack = (g_config.getBoolean(ConfigManager::AUTO_STACK_ITEMS) && !hasBitSet(FLAG_IGNOREAUTOSTACK, flags));
 	if (autoStack && item->isStackable() && item->getParent() != this) {
+		if (*destItem && (*destItem)->equals(item) && (*destItem)->getItemCount() < 100) {
+			return this;
+		}
+
 		//try find a suitable item to stack with
 		uint32_t n = 0;
 		for (Item* listItem : itemlist) {

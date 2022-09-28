@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -42,8 +42,7 @@ bool Vocations::loadFromXml()
 
 		uint16_t id = pugi::cast<uint16_t>(attr.value());
 
-		auto res = vocationsMap.emplace(std::piecewise_construct,
-				std::forward_as_tuple(id), std::forward_as_tuple(id));
+		auto res = vocationsMap.emplace(id, id);
 		Vocation& voc = res.first->second;
 
 		if ((attr = vocationNode.attribute("name"))) {
@@ -181,6 +180,38 @@ uint16_t Vocations::getPromotedVocation(uint16_t vocationId) const
 
 uint32_t Vocation::skillBase[SKILL_LAST + 1] = {50, 50, 50, 50, 30, 100, 20};
 
+Vocation::Vocation(uint16_t id)
+	: name("none"), id(id)
+{
+	gainHealthTicks = 6;
+	gainHealthAmount = 1;
+	gainManaTicks = 6;
+	gainManaAmount = 1;
+	gainSoulTicks = 120;
+	soulMax = 100;
+
+	clientId = 0;
+	fromVocation = VOCATION_NONE;
+
+	gainCap = 500;
+	gainMana = 5;
+	gainHP = 5;
+	attackSpeed = 1500;
+	baseSpeed = 220;
+	manaMultiplier = 4.0;
+	meleeDamageMultiplier = 1.0;
+	distDamageMultiplier = 1.0;
+	defenseMultiplier = 1.0;
+	armorMultiplier = 1.0;
+	skillMultipliers[0] = 1.5f;
+	skillMultipliers[1] = 2.0f;
+	skillMultipliers[2] = 2.0f;
+	skillMultipliers[3] = 2.0f;
+	skillMultipliers[4] = 2.0f;
+	skillMultipliers[5] = 1.5f;
+	skillMultipliers[6] = 1.1f;
+}
+
 uint64_t Vocation::getReqSkillTries(uint8_t skill, uint16_t level)
 {
 	if (skill > SKILL_LAST) {
@@ -204,7 +235,14 @@ uint64_t Vocation::getReqMana(uint32_t magLevel)
 		return it->second;
 	}
 
-	uint64_t reqMana = std::floor<uint64_t>(1600 * std::pow<double>(manaMultiplier, static_cast<int32_t>(magLevel) - 1));
+	uint64_t reqMana = static_cast<uint64_t>(1600 * std::pow<double>(manaMultiplier, static_cast<int32_t>(magLevel) - 1));
+	uint32_t modResult = reqMana % 20;
+	if (modResult < 10) {
+		reqMana -= modResult;
+	} else {
+		reqMana -= modResult + 20;
+	}
+
 	cacheMana[magLevel] = reqMana;
 	return reqMana;
 }

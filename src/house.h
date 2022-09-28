@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,9 +20,7 @@
 #ifndef FS_HOUSE_H_EB9732E7771A438F9CD0EFA8CB4C58C4
 #define FS_HOUSE_H_EB9732E7771A438F9CD0EFA8CB4C58C4
 
-#include <regex>
 #include <set>
-#include <unordered_set>
 
 #include "container.h"
 #include "housetile.h"
@@ -35,37 +33,35 @@ class Player;
 class AccessList
 {
 	public:
-		void parseList(const std::string& list);
+		void parseList(const std::string& _list);
 		void addPlayer(const std::string& name);
 		void addGuild(const std::string& name);
-		void addGuildRank(const std::string& name, const std::string& rankName);
-		void addExpression(const std::string& expression);
 
 		bool isInList(const Player* player);
 
-		void getList(std::string& list) const;
+		void getList(std::string& _list) const;
 
 	private:
 		std::string list;
 		std::unordered_set<uint32_t> playerList;
-		std::unordered_set<uint32_t> guildRankList;
-		std::list<std::string> expressionList;
-		std::list<std::pair<std::regex, bool>> regExList;
+		std::unordered_set<uint32_t> guildList; // TODO: include ranks
+		bool allowEveryone = false;
 };
 
 class Door final : public Item
 {
 	public:
-		explicit Door(uint16_t type);
+		explicit Door(uint16_t _type);
+		~Door();
 
 		// non-copyable
 		Door(const Door&) = delete;
 		Door& operator=(const Door&) = delete;
 
-		Door* getDoor() override {
+		Door* getDoor() final {
 			return this;
 		}
-		const Door* getDoor() const override {
+		const Door* getDoor() const final {
 			return this;
 		}
 
@@ -74,11 +70,11 @@ class Door final : public Item
 		}
 
 		//serialization
-		Attr_ReadValue readAttr(AttrTypes_t attr, PropStream& propStream) override;
-		void serializeAttr(PropWriteStream&) const override {}
+		Attr_ReadValue readAttr(AttrTypes_t attr, PropStream& propStream) final;
+		void serializeAttr(PropWriteStream&) const final {}
 
-		void setDoorId(uint32_t doorId) {
-			setIntAttr(ITEM_ATTRIBUTE_DOORID, doorId);
+		void setDoorId(uint32_t _doorId) {
+			setIntAttr(ITEM_ATTRIBUTE_DOORID, _doorId);
 		}
 		uint32_t getDoorId() const {
 			return getIntAttr(ITEM_ATTRIBUTE_DOORID);
@@ -89,13 +85,14 @@ class Door final : public Item
 		void setAccessList(const std::string& textlist);
 		bool getAccessList(std::string& list) const;
 
-		void onRemoved() override;
+		void onRemoved() final;
+
+	protected:
+		void setHouse(House* _house);
 
 	private:
-		void setHouse(House* house);
-
-		House* house = nullptr;
-		std::unique_ptr<AccessList> accessList;
+		House* house;
+		AccessList* accessList;
 		friend class House;
 };
 
@@ -111,29 +108,31 @@ enum AccessHouseLevel_t {
 	HOUSE_OWNER = 3,
 };
 
-using HouseTileList = std::list<HouseTile*>;
-using HouseBedItemList = std::list<BedItem*>;
+typedef std::list<HouseTile*> HouseTileList;
+typedef std::list<BedItem*> HouseBedItemList;
 
 class HouseTransferItem final : public Item
 {
 	public:
 		static HouseTransferItem* createHouseTransferItem(House* house);
 
-		explicit HouseTransferItem(House* house) : Item(0), house(house) {}
+		explicit HouseTransferItem(House* _house) : Item(0) {
+			house = _house;
+		}
 
-		void onTradeEvent(TradeEvents_t event, Player* owner) override;
-		bool canTransform() const override {
+		void onTradeEvent(TradeEvents_t event, Player* owner) final;
+		bool canTransform() const final {
 			return false;
 		}
 
-	private:
+	protected:
 		House* house;
 };
 
 class House
 {
 	public:
-		explicit House(uint32_t houseId);
+		explicit House(uint32_t _houseid);
 
 		void addTile(HouseTile* tile);
 		void updateDoorDescription() const;
@@ -176,8 +175,8 @@ class House
 			return paidUntil;
 		}
 
-		void setRent(uint32_t rent) {
-			this->rent = rent;
+		void setRent(uint32_t _rent) {
+			rent = _rent;
 		}
 		uint32_t getRent() const {
 			return rent;
@@ -190,11 +189,11 @@ class House
 			return rentWarnings;
 		}
 
-		void setTownId(uint32_t townId) {
-			this->townId = townId;
+		void setTownId(uint32_t _town) {
+			townid = _town;
 		}
 		uint32_t getTownId() const {
-			return townId;
+			return townid;
 		}
 
 		uint32_t getId() const {
@@ -208,7 +207,7 @@ class House
 
 		HouseTransferItem* getTransferItem();
 		void resetTransferItem();
-		bool executeTransfer(HouseTransferItem* item, Player* newOwner);
+		bool executeTransfer(HouseTransferItem* item, Player* player);
 
 		const HouseTileList& getTiles() const {
 			return houseTiles;
@@ -233,7 +232,7 @@ class House
 		AccessList guestList;
 		AccessList subOwnerList;
 
-		Container transfer_container{ITEM_LOCKER};
+		Container transfer_container;
 
 		HouseTileList houseTiles;
 		std::set<Door*> doorSet;
@@ -242,22 +241,22 @@ class House
 		std::string houseName;
 		std::string ownerName;
 
-		HouseTransferItem* transferItem = nullptr;
+		HouseTransferItem* transferItem;
 
-		time_t paidUntil = 0;
+		time_t paidUntil;
 
 		uint32_t id;
-		uint32_t owner = 0;
-		uint32_t rentWarnings = 0;
-		uint32_t rent = 0;
-		uint32_t townId = 0;
+		uint32_t owner;
+		uint32_t rentWarnings;
+		uint32_t rent;
+		uint32_t townid;
 
-		Position posEntry = {};
+		Position posEntry;
 
-		bool isLoaded = false;
+		bool isLoaded;
 };
 
-using HouseMap = std::map<uint32_t, House*>;
+typedef std::map<uint32_t, House*> HouseMap;
 
 enum RentPeriod_t {
 	RENTPERIOD_DAILY,
@@ -292,8 +291,8 @@ class Houses
 			return house;
 		}
 
-		House* getHouse(uint32_t houseId) {
-			auto it = houseMap.find(houseId);
+		House* getHouse(uint32_t houseid) {
+			auto it = houseMap.find(houseid);
 			if (it == houseMap.end()) {
 				return nullptr;
 			}

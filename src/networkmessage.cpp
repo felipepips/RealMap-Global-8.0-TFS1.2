@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,6 +24,14 @@
 #include "container.h"
 #include "creature.h"
 
+int32_t NetworkMessage::decodeHeader()
+{
+	int32_t newSize = static_cast<int32_t>(buffer[0] | buffer[1] << 8);
+	length = newSize;
+	return length;
+}
+
+/******************************************************************************/
 std::string NetworkMessage::getString(uint16_t stringLen/* = 0*/)
 {
 	if (stringLen == 0) {
@@ -34,8 +42,8 @@ std::string NetworkMessage::getString(uint16_t stringLen/* = 0*/)
 		return std::string();
 	}
 
-	char* v = reinterpret_cast<char*>(buffer) + info.position; //does not break strict aliasing
-	info.position += stringLen;
+	char* v = reinterpret_cast<char*>(buffer) + position; //does not break strict aliasing
+	position += stringLen;
 	return std::string(v, stringLen);
 }
 
@@ -47,6 +55,7 @@ Position NetworkMessage::getPosition()
 	pos.z = getByte();
 	return pos;
 }
+/******************************************************************************/
 
 void NetworkMessage::addString(const std::string& value)
 {
@@ -56,15 +65,15 @@ void NetworkMessage::addString(const std::string& value)
 	}
 
 	add<uint16_t>(stringLen);
-	memcpy(buffer + info.position, value.c_str(), stringLen);
-	info.position += stringLen;
-	info.length += stringLen;
+	memcpy(buffer + position, value.c_str(), stringLen);
+	position += stringLen;
+	length += stringLen;
 }
 
 void NetworkMessage::addDouble(double value, uint8_t precision/* = 2*/)
 {
 	addByte(precision);
-	add<uint32_t>(static_cast<uint32_t>((value * std::pow(static_cast<float>(10), precision)) + std::numeric_limits<int32_t>::max()));
+	add<uint32_t>((value * std::pow(static_cast<float>(10), precision)) + std::numeric_limits<int32_t>::max());
 }
 
 void NetworkMessage::addBytes(const char* bytes, size_t size)
@@ -73,9 +82,9 @@ void NetworkMessage::addBytes(const char* bytes, size_t size)
 		return;
 	}
 
-	memcpy(buffer + info.position, bytes, size);
-	info.position += size;
-	info.length += size;
+	memcpy(buffer + position, bytes, size);
+	position += size;
+	length += size;
 }
 
 void NetworkMessage::addPaddingBytes(size_t n)
@@ -84,8 +93,8 @@ void NetworkMessage::addPaddingBytes(size_t n)
 		return;
 	}
 
-	memset(buffer + info.position, 0x33, n);
-	info.length += n;
+	memset(buffer + position, 0x33, n);
+	length += n;
 }
 
 void NetworkMessage::addPosition(const Position& pos)

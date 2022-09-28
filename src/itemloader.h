@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -55,17 +55,6 @@ enum clientVersion_t {
 	CLIENT_VERSION_800 = 7,
 	CLIENT_VERSION_810 = 8,
 	CLIENT_VERSION_811 = 9,
-	CLIENT_VERSION_820 = 10,
-	CLIENT_VERSION_830 = 11,
-	CLIENT_VERSION_840 = 12,
-	CLIENT_VERSION_841 = 13,
-	CLIENT_VERSION_842 = 14,
-	CLIENT_VERSION_850 = 15,
-	CLIENT_VERSION_854_BAD = 16,
-	CLIENT_VERSION_854 = 17,
-	CLIENT_VERSION_855 = 18,
-	CLIENT_VERSION_860_OLD = 19,
-	CLIENT_VERSION_860 = 20,
 };
 
 enum rootattrib_ {

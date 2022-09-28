@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,8 +33,7 @@ enum GlobalEvent_t {
 };
 
 class GlobalEvent;
-using GlobalEvent_ptr = std::unique_ptr<GlobalEvent>;
-using GlobalEventMap = std::map<std::string, GlobalEvent>;
+typedef std::map<std::string, GlobalEvent*> GlobalEventMap;
 
 class GlobalEvents final : public BaseEvents
 {
@@ -53,57 +52,45 @@ class GlobalEvents final : public BaseEvents
 		void execute(GlobalEvent_t type) const;
 
 		GlobalEventMap getEventMap(GlobalEvent_t type);
-		static void clearMap(GlobalEventMap& map, bool fromLua);
+		static void clearMap(GlobalEventMap& map);
 
-		bool registerLuaEvent(GlobalEvent* event);
-		void clear(bool fromLua) override final;
-
-	private:
-		std::string getScriptBaseName() const override {
+	protected:
+		std::string getScriptBaseName() const final {
 			return "globalevents";
 		}
+		void clear() final;
 
-		Event_ptr getEvent(const std::string& nodeName) override;
-		bool registerEvent(Event_ptr event, const pugi::xml_node& node) override;
+		Event* getEvent(const std::string& nodeName) final;
+		bool registerEvent(Event* event, const pugi::xml_node& node) final;
 
-		LuaScriptInterface& getScriptInterface() override {
+		LuaScriptInterface& getScriptInterface() final {
 			return scriptInterface;
 		}
 		LuaScriptInterface scriptInterface;
 
 		GlobalEventMap thinkMap, serverMap, timerMap;
-		int32_t thinkEventId = 0, timerEventId = 0;
+		int32_t thinkEventId, timerEventId;
 };
 
 class GlobalEvent final : public Event
 {
 	public:
-		explicit GlobalEvent(LuaScriptInterface* interface);
+		explicit GlobalEvent(LuaScriptInterface* _interface);
 
-		bool configureEvent(const pugi::xml_node& node) override;
+		bool configureEvent(const pugi::xml_node& node) final;
 
 		bool executeRecord(uint32_t current, uint32_t old);
-		bool executeEvent() const;
+		bool executeEvent();
 
 		GlobalEvent_t getEventType() const {
 			return eventType;
 		}
-		void setEventType(GlobalEvent_t type) {
-			eventType = type;
-		}
-
-		const std::string& getName() const {
+		std::string getName() const {
 			return name;
-		}
-		void setName(std::string eventName) {
-			name = eventName;
 		}
 
 		uint32_t getInterval() const {
 			return interval;
-		}
-		void setInterval(uint32_t eventInterval) {
-			interval |= eventInterval;
 		}
 
 		int64_t getNextExecution() const {
@@ -113,14 +100,14 @@ class GlobalEvent final : public Event
 			nextExecution = time;
 		}
 
-	private:
-		GlobalEvent_t eventType = GLOBALEVENT_NONE;
+	protected:
+		GlobalEvent_t eventType;
 
-		std::string getScriptEventName() const override;
+		std::string getScriptEventName() const final;
 
 		std::string name;
-		int64_t nextExecution = 0;
-		uint32_t interval = 0;
+		int64_t nextExecution;
+		uint32_t interval;
 };
 
 #endif

@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,23 +34,29 @@ class Tile;
 class Connection;
 class Quest;
 class ProtocolGame;
-using ProtocolGame_ptr = std::shared_ptr<ProtocolGame>;
+typedef std::shared_ptr<ProtocolGame> ProtocolGame_ptr;
 
 extern Game g_game;
 
 struct TextMessage
 {
-	MessageClasses type = MESSAGE_STATUS_DEFAULT;
+	MessageClasses type;
 	std::string text;
 	Position position;
-	uint16_t channelId;
 	struct {
-		int32_t value = 0;
+		int32_t value;
 		TextColor_t color;
 	} primary, secondary;
 
-	TextMessage() = default;
-	TextMessage(MessageClasses type, std::string text) : type(type), text(std::move(text)) {}
+	TextMessage() {
+		type = MESSAGE_STATUS_DEFAULT;
+		primary.value = 0;
+		secondary.value = 0;
+	}
+	TextMessage(MessageClasses type, std::string text) : type(type), text(text) {
+		primary.value = 0;
+		secondary.value = 0;
+	}
 };
 
 class ProtocolGame final : public Protocol
@@ -59,14 +65,13 @@ class ProtocolGame final : public Protocol
 		// static protocol information
 		enum {server_sends_first = true};
 		enum {protocol_identifier = 0}; // Not required as we send first
-		enum {use_checksum = true};
 		static const char* protocol_name() {
 			return "gameworld protocol";
 		}
 
-		explicit ProtocolGame(Connection_ptr connection) : Protocol(connection) {}
+		explicit ProtocolGame(Connection_ptr connection);
 
-		void login(const std::string& name, uint32_t accountId, OperatingSystem_t operatingSystem);
+		void login(const std::string& name, uint32_t accnumber, OperatingSystem_t operatingSystem);
 		void logout(bool displayEffect, bool forced);
 
 		uint16_t getVersion() const {
@@ -81,7 +86,7 @@ class ProtocolGame final : public Protocol
 		void disconnectClient(const std::string& message) const;
 		void writeToOutputBuffer(const NetworkMessage& msg);
 
-		void release() override;
+		void release() final;
 
 		void checkCreatureAsKnown(uint32_t id, bool& known, uint32_t& removedKnown);
 
@@ -90,9 +95,9 @@ class ProtocolGame final : public Protocol
 		bool canSee(const Position& pos) const;
 
 		// we have all the parse methods
-		void parsePacket(NetworkMessage& msg) override;
-		void onRecvFirstMessage(NetworkMessage& msg) override;
-		void onConnect() override;
+		void parsePacket(NetworkMessage& msg) final;
+		void onRecvFirstMessage(NetworkMessage& msg) final;
+		void onConnect() final;
 
 		//Parse methods
 		void parseAutoWalk(NetworkMessage& msg);
@@ -106,7 +111,6 @@ class ProtocolGame final : public Protocol
 
 		void parseBugReport(NetworkMessage& msg);
 		void parseDebugAssert(NetworkMessage& msg);
-		void parseRuleViolationReport(NetworkMessage& msg);
 
 		void parseThrow(NetworkMessage& msg);
 		void parseUseItemEx(NetworkMessage& msg);
@@ -118,17 +122,12 @@ class ProtocolGame final : public Protocol
 		void parseTextWindow(NetworkMessage& msg);
 		void parseHouseWindow(NetworkMessage& msg);
 
-		void parseLookInShop(NetworkMessage& msg);
-		void parsePlayerPurchase(NetworkMessage& msg);
-		void parsePlayerSale(NetworkMessage& msg);
-
 		void parseQuestLine(NetworkMessage& msg);
 
 		void parseInviteToParty(NetworkMessage& msg);
 		void parseJoinParty(NetworkMessage& msg);
 		void parseRevokePartyInvite(NetworkMessage& msg);
 		void parsePassPartyLeadership(NetworkMessage& msg);
-		void parseEnableSharedPartyExperience(NetworkMessage& msg);
 
 		//trade methods
 		void parseRequestTrade(NetworkMessage& msg);
@@ -152,7 +151,7 @@ class ProtocolGame final : public Protocol
 		void sendClosePrivate(uint16_t channelId);
 		void sendCreatePrivateChannel(uint16_t channelId, const std::string& channelName);
 		void sendChannelsDialog();
-		void sendChannel(uint16_t channelId, const std::string& channelName);
+		void sendChannel(uint16_t channelId, const std::string& channelName, const UsersMap* channelUsers, const InvitedMap* invitedUsers);
 		void sendOpenPrivateChannel(const std::string& receiver);
 		void sendToChannel(const Creature* creature, SpeakClasses type, const std::string& text, uint16_t channelId);
 		void sendPrivateMessage(const Player* speaker, SpeakClasses type, const std::string& text);
@@ -164,7 +163,7 @@ class ProtocolGame final : public Protocol
 		void sendCreatureHealth(const Creature* creature);
 		void sendSkills();
 		void sendPing();
-		void sendCreatureTurn(const Creature* creature, uint32_t stackPos);
+		void sendCreatureTurn(const Creature* creature, uint32_t stackpos);
 		void sendCreatureSay(const Creature* creature, SpeakClasses type, const std::string& text, const Position* pos = nullptr);
 
 		void sendQuestLog();
@@ -173,21 +172,18 @@ class ProtocolGame final : public Protocol
 		void sendCancelWalk();
 		void sendChangeSpeed(const Creature* creature, uint32_t speed);
 		void sendCancelTarget();
+		void sendCreatureVisible(const Creature* creature, bool visible);
 		void sendCreatureOutfit(const Creature* creature, const Outfit_t& outfit);
 		void sendStats();
+		void sendTextMessage(MessageClasses mclass, const std::string& message);
 		void sendTextMessage(const TextMessage& message);
 		void sendReLoginWindow();
 
-		void sendTutorial(uint8_t tutorialId);
 		void sendAddMarker(const Position& pos, uint8_t markType, const std::string& desc);
 
-		void sendCreatureWalkthrough(const Creature* creature, bool walkthrough);
 		void sendCreatureShield(const Creature* creature);
 		void sendCreatureSkull(const Creature* creature);
 
-		void sendShop(const ShopInfoList& itemList);
-		void sendCloseShop();
-		void sendSaleItemList(const std::list<ShopInfo>& shop);
 		void sendTradeItemRequest(const std::string& traderName, const Item* item, bool ack);
 		void sendCloseTrade();
 
@@ -201,10 +197,8 @@ class ProtocolGame final : public Protocol
 
 		void sendFightModes();
 
-		void sendAnimatedText(const std::string& message, const Position& pos, TextColor_t color);;
-
 		void sendCreatureLight(const Creature* creature);
-		void sendWorldLight(LightInfo lightInfo);
+		void sendWorldLight(const LightInfo& lightInfo);
 
 		void sendCreatureSquare(const Creature* creature, SquareColor_t color);
 
@@ -231,6 +225,9 @@ class ProtocolGame final : public Protocol
 		//inventory
 		void sendInventoryItem(slots_t slot, const Item* item);
 
+		//messages
+		void sendAnimatedText(const std::string& message, const Position& pos, TextColor_t color);
+
 		//Help functions
 
 		// translate a tile to clientreadable format
@@ -248,7 +245,7 @@ class ProtocolGame final : public Protocol
 		void AddPlayerStats(NetworkMessage& msg);
 		void AddOutfit(NetworkMessage& msg, const Outfit_t& outfit);
 		void AddPlayerSkills(NetworkMessage& msg);
-		void AddWorldLight(NetworkMessage& msg, LightInfo lightInfo);
+		void AddWorldLight(NetworkMessage& msg, const LightInfo& lightInfo);
 		void AddCreatureLight(NetworkMessage& msg, const Creature* creature);
 
 		//tiles
@@ -256,9 +253,6 @@ class ProtocolGame final : public Protocol
 
 		void MoveUpCreature(NetworkMessage& msg, const Creature* creature, const Position& newPos, const Position& oldPos);
 		void MoveDownCreature(NetworkMessage& msg, const Creature* creature, const Position& newPos, const Position& oldPos);
-
-		//shop
-		void AddShopItem(NetworkMessage& msg, const ShopInfo& item);
 
 		//otclient
 		void parseExtendedOpcode(NetworkMessage& msg);
@@ -277,16 +271,13 @@ class ProtocolGame final : public Protocol
 		}
 
 		std::unordered_set<uint32_t> knownCreatureSet;
-		Player* player = nullptr;
+		Player* player;
 
-		uint32_t eventConnect = 0;
-		uint32_t challengeTimestamp = 0;
-		uint16_t version = CLIENT_VERSION_MIN;
+		uint32_t eventConnect;
+		uint16_t version;
 
-		uint8_t challengeRandom = 0;
-
-		bool debugAssertSent = false;
-		bool acceptPackets = false;
+		bool debugAssertSent;
+		bool acceptPackets;
 };
 
 #endif

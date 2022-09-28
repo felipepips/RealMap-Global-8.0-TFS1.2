@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -50,6 +50,13 @@ enum RuleViolationReasons_t : uint8_t {
 	REPORT_REASON_SERVICEAGREEMENT = 20
 };
 
+enum BugReportType_t : uint8_t {
+	BUG_CATEGORY_MAP = 0,
+	BUG_CATEGORY_TYPO = 1,
+	BUG_CATEGORY_TECHNICAL = 2,
+	BUG_CATEGORY_OTHER = 3
+};
+
 enum ThreadState {
 	THREAD_STATE_RUNNING,
 	THREAD_STATE_CLOSING,
@@ -82,21 +89,12 @@ enum itemAttrTypes : uint32_t {
 	ITEM_ATTRIBUTE_CHARGES = 1 << 20,
 	ITEM_ATTRIBUTE_FLUIDTYPE = 1 << 21,
 	ITEM_ATTRIBUTE_DOORID = 1 << 22,
-	ITEM_ATTRIBUTE_DECAYTO = 1 << 23,
-
-	ITEM_ATTRIBUTE_CUSTOM = 1U << 31
 };
 
 enum VipStatus_t : uint8_t {
 	VIPSTATUS_OFFLINE = 0,
-	VIPSTATUS_ONLINE = 1
-};
-
-enum ChannelEvent_t : uint8_t {
-	CHANNELEVENT_JOIN = 0,
-	CHANNELEVENT_LEAVE = 1,
-	CHANNELEVENT_INVITE = 2,
-	CHANNELEVENT_EXCLUDE = 3,
+	VIPSTATUS_ONLINE = 1,
+	VIPSTATUS_PENDING = 2
 };
 
 enum CreatureType_t : uint8_t {
@@ -118,18 +116,13 @@ enum OperatingSystem_t : uint8_t {
 	CLIENTOS_OTCLIENT_WINDOWS = 11,
 	CLIENTOS_OTCLIENT_MAC = 12,
 };
+
 enum AccountType_t : uint8_t {
 	ACCOUNT_TYPE_NORMAL = 1,
 	ACCOUNT_TYPE_TUTOR = 2,
 	ACCOUNT_TYPE_SENIORTUTOR = 3,
 	ACCOUNT_TYPE_GAMEMASTER = 4,
 	ACCOUNT_TYPE_GOD = 5
-};
-
-enum SpellType_t : uint8_t {
-	SPELL_UNDEFINED = 0,
-	SPELL_INSTANT = 1,
-	SPELL_RUNE = 2,
 };
 
 enum RaceType_t : uint8_t {
@@ -141,7 +134,7 @@ enum RaceType_t : uint8_t {
 	RACE_ENERGY,
 };
 
-enum CombatType_t : uint16_t {
+enum CombatType_t {
 	COMBAT_NONE = 0,
 
 	COMBAT_PHYSICALDAMAGE = 1 << 0,
@@ -262,6 +255,7 @@ enum stats_t {
 	STAT_FIRST = STAT_MAXHITPOINTS,
 	STAT_LAST = STAT_MAGICPOINTS
 };
+
 enum formulaType_t {
 	COMBAT_FORMULA_UNDEFINED,
 	COMBAT_FORMULA_LEVELMAGIC,
@@ -297,7 +291,7 @@ enum ConditionType_t {
 	CONDITION_CURSED = 1 << 22,
 	CONDITION_EXHAUST_COMBAT = 1 << 23, // unused
 	CONDITION_EXHAUST_HEAL = 1 << 24, // unused
-	CONDITION_PACIFIED = 1 << 25
+	CONDITION_PACIFIED = 1 << 25,
 };
 
 enum ConditionId_t : int8_t {
@@ -365,7 +359,6 @@ enum ReturnValue {
 	RETURNVALUE_NOTENOUGHMANA,
 	RETURNVALUE_NOTENOUGHSOUL,
 	RETURNVALUE_YOUAREEXHAUSTED,
-	RETURNVALUE_YOUCANNOTUSEOBJECTSTHATFAST,
 	RETURNVALUE_PLAYERISNOTREACHABLE,
 	RETURNVALUE_CANONLYUSETHISRUNEONCREATURES,
 	RETURNVALUE_ACTIONNOTPERMITTEDINPROTECTIONZONE,
@@ -391,14 +384,6 @@ enum ReturnValue {
 	RETURNVALUE_CANONLYUSEONESHIELD,
 	RETURNVALUE_NOPARTYMEMBERSINRANGE,
 	RETURNVALUE_YOUARENOTTHEOWNER,
-	RETURNVALUE_NOSUCHRAIDEXISTS,
-	RETURNVALUE_ANOTHERRAIDISALREADYEXECUTING,
-	RETURNVALUE_TRADEPLAYERFARAWAY,
-	RETURNVALUE_YOUDONTOWNTHISHOUSE,
-	RETURNVALUE_TRADEPLAYERALREADYOWNSAHOUSE,
-	RETURNVALUE_TRADEPLAYERHIGHESTBIDDER,
-	RETURNVALUE_YOUCANNOTTRADETHISHOUSE,
-	RETURNVALUE_YOUDONTHAVEREQUIREDPROFESSION,
 };
 
 enum MapMark_t
@@ -426,38 +411,40 @@ enum MapMark_t
 };
 
 struct Outfit_t {
-	uint16_t lookType = 0;
-	uint16_t lookTypeEx = 0;
-	uint8_t lookHead = 0;
-	uint8_t lookBody = 0;
-	uint8_t lookLegs = 0;
-	uint8_t lookFeet = 0;
-	uint8_t lookAddons = 0;
+	Outfit_t() {
+		reset();
+	}
+
+	void reset() {
+		lookType = 0;
+		lookTypeEx = 0;
+		lookHead = 0;
+		lookBody = 0;
+		lookLegs = 0;
+		lookFeet = 0;
+		lookAddons = 0;
+	}
+
+	uint16_t lookType;
+	uint16_t lookTypeEx;
+	uint8_t lookHead;
+	uint8_t lookBody;
+	uint8_t lookLegs;
+	uint8_t lookFeet;
+	uint8_t lookAddons;
 };
 
 struct LightInfo {
-	uint8_t level = 0;
-	uint8_t color = 0;
-	constexpr LightInfo() = default;
-	constexpr LightInfo(uint8_t level, uint8_t color) : level(level), color(color) {}
-};
-
-struct ShopInfo {
-	uint16_t itemId;
-	int32_t subType;
-	uint32_t buyPrice;
-	uint32_t sellPrice;
-	std::string realName;
-
-	ShopInfo() {
-		itemId = 0;
-		subType = 1;
-		buyPrice = 0;
-		sellPrice = 0;
+	uint8_t level;
+	uint8_t color;
+	LightInfo() {
+		level = 0;
+		color = 0;
 	}
-
-	ShopInfo(uint16_t itemId, int32_t subType = 0, uint32_t buyPrice = 0, uint32_t sellPrice = 0, std::string realName = "")
-		: itemId(itemId), subType(subType), buyPrice(buyPrice), sellPrice(sellPrice), realName(std::move(realName)) {}
+	LightInfo(uint8_t _level, uint8_t _color) {
+		level = _level;
+		color = _color;
+	}
 };
 
 enum CombatOrigin
@@ -483,17 +470,6 @@ struct CombatDamage
 		primary.type = secondary.type = COMBAT_NONE;
 		primary.value = secondary.value = 0;
 	}
-};
-
-using ShopInfoList = std::list<ShopInfo>;
-
-enum MonstersEvent_t : uint8_t {
-	MONSTERS_EVENT_NONE = 0,
-	MONSTERS_EVENT_THINK = 1,
-	MONSTERS_EVENT_APPEAR = 2,
-	MONSTERS_EVENT_DISAPPEAR = 3,
-	MONSTERS_EVENT_MOVE = 4,
-	MONSTERS_EVENT_SAY = 5,
 };
 
 #endif

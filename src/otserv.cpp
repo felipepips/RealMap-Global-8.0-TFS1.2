@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,27 +23,29 @@
 
 #include "game.h"
 
+#ifndef _WIN32
+#include <csignal> // for sigemptyset()
+#endif
+
 #include "configmanager.h"
 #include "scriptmanager.h"
 #include "rsa.h"
-#include "protocolold.h"
 #include "protocollogin.h"
 #include "protocolstatus.h"
 #include "databasemanager.h"
 #include "scheduler.h"
 #include "databasetasks.h"
-#include "script.h"
-#include <fstream>
 
 DatabaseTasks g_databaseTasks;
 Dispatcher g_dispatcher;
 Scheduler g_scheduler;
 
+IPList serverIPs;
+
 Game g_game;
 ConfigManager g_config;
 Monsters g_monsters;
 Vocations g_vocations;
-extern Scripts* g_scripts;
 RSA g_RSA;
 
 std::mutex g_loaderLock;
@@ -56,9 +58,9 @@ void startupErrorMessage(const std::string& errorStr)
 	g_loaderSignal.notify_all();
 }
 
-void mainLoader(int argc, char* argv[], ServiceManager* services);
+void mainLoader(int argc, char* argv[], ServiceManager* servicer);
 
-[[noreturn]] void badAllocationHandler()
+void badAllocationHandler()
 {
 	// Use functions that only use stack allocation
 	puts("Allocation failed, server out of memory.\nDecrease the size of your map or compile in 64 bits mode.\n");
@@ -70,7 +72,6 @@ int main(int argc, char* argv[])
 {
 	// Setup bad allocation handler
 	std::set_new_handler(badAllocationHandler);
-
 	ServiceManager serviceManager;
 
 	g_dispatcher.start();
@@ -121,25 +122,8 @@ void mainLoader(int, char*[], ServiceManager* services)
 	std::cout << std::endl;
 
 	std::cout << "A server developed by " << STATUS_SERVER_DEVELOPERS << std::endl;
-	std::cout << "Downgraded and further developed by Nekiro" << std::endl;
 	std::cout << "Visit our forum for updates, support, and resources: http://otland.net/." << std::endl;
-	std::cout << "Server protocol: " << CLIENT_VERSION_STR << std::endl;
 	std::cout << std::endl;
-
-	// check if config.lua or config.lua.dist exist
-	std::ifstream c_test("./config.lua");
-	if (!c_test.is_open()) {
-		std::ifstream config_lua_dist("./config.lua.dist");
-		if (config_lua_dist.is_open()) {
-			std::cout << ">> copying config.lua.dist to config.lua" << std::endl;
-			std::ofstream config_lua("config.lua");
-			config_lua << config_lua_dist.rdbuf();
-			config_lua.close();
-			config_lua_dist.close();
-		}
-	} else {
-		c_test.close();
-	}
 
 	// read global config
 	std::cout << ">> Loading config" << std::endl;
@@ -158,16 +142,14 @@ void mainLoader(int, char*[], ServiceManager* services)
 #endif
 
 	//set RSA key
-	try {
-		g_RSA.loadPEM("key.pem");
-	} catch(const std::exception& e) {
-		startupErrorMessage(e.what());
-		return;
-	}
+	const char* p("14299623962416399520070177382898895550795403345466153217470516082934737582776038882967213386204600674145392845853859217990626450972452084065728686565928113");
+	const char* q("7630979195970404721891201847792002125535401292779123937207447574596692788513647179235335529307251350570728407373705564708871762033017096809910315212884101");
+	g_RSA.setKey(p, q);
 
 	std::cout << ">> Establishing database connection..." << std::flush;
 
-	if (!Database::getInstance().connect()) {
+	Database* db = Database::getInstance();
+	if (!db->connect()) {
 		startupErrorMessage("Failed to connect to database.");
 		return;
 	}
@@ -188,6 +170,13 @@ void mainLoader(int, char*[], ServiceManager* services)
 	if (g_config.getBoolean(ConfigManager::OPTIMIZE_DATABASE) && !DatabaseManager::optimizeTables()) {
 		std::cout << "> No tables were optimized." << std::endl;
 	}
+	
+	//load groups
+	std::cout << ">> Loading groups" << std::endl;
+	if (!g_game.groups.load()) {
+		startupErrorMessage("Unable to load groups!");
+		return;
+	}
 
 	//load vocations
 	std::cout << ">> Loading vocations" << std::endl;
@@ -198,7 +187,7 @@ void mainLoader(int, char*[], ServiceManager* services)
 
 	// load item data
 	std::cout << ">> Loading items" << std::endl;
-	if (!Item::items.loadFromOtb("data/items/items.otb")) {
+	if (Item::items.loadFromOtb("data/items/items.otb") != ERROR_NONE) {
 		startupErrorMessage("Unable to load items (OTB)!");
 		return;
 	}
@@ -209,14 +198,8 @@ void mainLoader(int, char*[], ServiceManager* services)
 	}
 
 	std::cout << ">> Loading script systems" << std::endl;
-	if (!ScriptingManager::getInstance().loadScriptSystems()) {
+	if (!ScriptingManager::getInstance()->loadScriptSystems()) {
 		startupErrorMessage("Failed to load script systems");
-		return;
-	}
-
-	std::cout << ">> Loading lua scripts" << std::endl;
-	if (!g_scripts->loadScripts("scripts", false, false)) {
-		startupErrorMessage("Failed to load lua scripts");
 		return;
 	}
 
@@ -226,14 +209,9 @@ void mainLoader(int, char*[], ServiceManager* services)
 		return;
 	}
 
-	std::cout << ">> Loading lua monsters" << std::endl;
-	if (!g_scripts->loadScripts("monster", false, false)) {
-		startupErrorMessage("Failed to load lua monsters");
-		return;
-	}
-
 	std::cout << ">> Loading outfits" << std::endl;
-	if (!Outfits::getInstance().loadFromXml()) {
+	Outfits* outfits = Outfits::getInstance();
+	if (!outfits->loadFromXml()) {
 		startupErrorMessage("Unable to load outfits!");
 		return;
 	}
@@ -266,14 +244,11 @@ void mainLoader(int, char*[], ServiceManager* services)
 	g_game.setGameState(GAME_STATE_INIT);
 
 	// Game client protocols
-	services->add<ProtocolGame>(static_cast<uint16_t>(g_config.getNumber(ConfigManager::GAME_PORT)));
-	services->add<ProtocolLogin>(static_cast<uint16_t>(g_config.getNumber(ConfigManager::LOGIN_PORT)));
+	services->add<ProtocolGame>(g_config.getNumber(ConfigManager::GAME_PORT));
+	services->add<ProtocolLogin>(g_config.getNumber(ConfigManager::LOGIN_PORT));
 
 	// OT protocols
-	services->add<ProtocolStatus>(static_cast<uint16_t>(g_config.getNumber(ConfigManager::STATUS_PORT)));
-
-	// Legacy login protocol
-	services->add<ProtocolOld>(static_cast<uint16_t>(g_config.getNumber(ConfigManager::LOGIN_PORT)));
+	services->add<ProtocolStatus>(g_config.getNumber(ConfigManager::STATUS_PORT));
 
 	RentPeriod_t rentPeriod;
 	std::string strRentPeriod = asLowerCaseString(g_config.getString(ConfigManager::HOUSE_RENT_PERIOD));
@@ -293,6 +268,43 @@ void mainLoader(int, char*[], ServiceManager* services)
 	g_game.map.houses.payHouses(rentPeriod);
 
 	std::cout << ">> Loaded all modules, server starting up..." << std::endl;
+
+	std::pair<uint32_t, uint32_t> IpNetMask;
+	IpNetMask.first = inet_addr("127.0.0.1");
+	IpNetMask.second = 0xFFFFFFFF;
+	serverIPs.push_back(IpNetMask);
+
+	char szHostName[128];
+	if (gethostname(szHostName, 128) == 0) {
+		hostent* he = gethostbyname(szHostName);
+		if (he) {
+			unsigned char** addr = (unsigned char**)he->h_addr_list;
+			while (addr[0] != nullptr) {
+				IpNetMask.first = *(uint32_t*)(*addr);
+				IpNetMask.second = 0xFFFFFFFF;
+				serverIPs.push_back(IpNetMask);
+				addr++;
+			}
+		}
+	}
+
+	std::string ip = g_config.getString(ConfigManager::IP);
+
+	uint32_t resolvedIp = inet_addr(ip.c_str());
+	if (resolvedIp == INADDR_NONE) {
+		struct hostent* he = gethostbyname(ip.c_str());
+		if (!he) {
+			std::ostringstream ss;
+			ss << "ERROR: Cannot resolve " << ip << "!" << std::endl;
+			startupErrorMessage(ss.str());
+			return;
+		}
+		resolvedIp = *(uint32_t*)he->h_addr;
+	}
+
+	IpNetMask.first = resolvedIp;
+	IpNetMask.second = 0;
+	serverIPs.push_back(IpNetMask);
 
 #ifndef _WIN32
 	if (getuid() == 0 || geteuid() == 0) {

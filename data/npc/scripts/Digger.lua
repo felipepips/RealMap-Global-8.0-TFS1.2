@@ -10,8 +10,8 @@ function onThink() npcHandler:onThink() end
 local shopModule = ShopModule:new()
 npcHandler:addModule(shopModule)
 
-shopModule:addBuyableItem({'life'}, 					2006, 60, 10, 'life fluid')
-shopModule:addBuyableItem({'mana'}, 					2006, 100, 7, 'mana fluid')
+shopModule:addBuyableItem({'life'}, 					2006, 50, 2, 'life fluid')
+shopModule:addBuyableItem({'mana'}, 					2006, 50, 7, 'mana fluid')
 shopModule:addBuyableItem({'spellbook'}, 					Cfspellbook, 150)
 
 shopModule:addBuyableItem({'blank rune'}, 					Cfblankrune, 10)

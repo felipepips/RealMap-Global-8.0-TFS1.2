@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -73,7 +73,7 @@ void printXMLError(const std::string& where, const std::string& fileName, const 
 	std::cout << '^' << std::endl;
 }
 
-static uint32_t circularShift(int bits, uint32_t value)
+inline static uint32_t circularShift(int bits, uint32_t value)
 {
 	return (value << bits) | (value >> (32 - bits));
 }
@@ -186,51 +186,6 @@ std::string transformToSHA1(const std::string& input)
 	return std::string(hexstring, 40);
 }
 
-std::string generateToken(const std::string& key, uint32_t ticks)
-{
-	// generate message from ticks
-	std::string message(8, 0);
-	for (uint8_t i = 8; --i; ticks >>= 8) {
-		message[i] = static_cast<char>(ticks & 0xFF);
-	}
-
-	// hmac key pad generation
-	std::string iKeyPad(64, 0x36), oKeyPad(64, 0x5C);
-	for (uint8_t i = 0; i < key.length(); ++i) {
-		iKeyPad[i] ^= key[i];
-		oKeyPad[i] ^= key[i];
-	}
-
-	oKeyPad.reserve(84);
-
-	// hmac concat inner pad with message
-	iKeyPad.append(message);
-
-	// hmac first pass
-	message.assign(transformToSHA1(iKeyPad));
-
-	// hmac concat outer pad with message, conversion from hex to int needed
-	for (uint8_t i = 0; i < message.length(); i += 2) {
-		oKeyPad.push_back(static_cast<char>(std::strtoul(message.substr(i, 2).c_str(), nullptr, 16)));
-	}
-
-	// hmac second pass
-	message.assign(transformToSHA1(oKeyPad));
-
-	// calculate hmac offset
-	uint32_t offset = static_cast<uint32_t>(std::strtoul(message.substr(39, 1).c_str(), nullptr, 16) & 0xF);
-
-	// get truncated hash
-	uint32_t truncHash = static_cast<uint32_t>(std::strtoul(message.substr(2 * offset, 8).c_str(), nullptr, 16)) & 0x7FFFFFFF;
-	message.assign(std::to_string(truncHash));
-
-	// return only last AUTHENTICATOR_DIGITS (default 6) digits, also asserts exactly 6 digits
-	uint32_t hashLen = message.length();
-	message.assign(message.substr(hashLen - std::min(hashLen, AUTHENTICATOR_DIGITS)));
-	message.insert(0, AUTHENTICATOR_DIGITS - std::min(hashLen, AUTHENTICATOR_DIGITS), '0');
-	return message;
-}
-
 void replaceString(std::string& str, const std::string& sought, const std::string& replacement)
 {
 	size_t pos = 0;
@@ -259,21 +214,23 @@ void toLowerCaseString(std::string& source)
 	std::transform(source.begin(), source.end(), source.begin(), tolower);
 }
 
-std::string asLowerCaseString(std::string source)
+std::string asLowerCaseString(const std::string& source)
 {
-	toLowerCaseString(source);
-	return source;
+	std::string s = source;
+	toLowerCaseString(s);
+	return s;
 }
 
-std::string asUpperCaseString(std::string source)
+std::string asUpperCaseString(const std::string& source)
 {
-	std::transform(source.begin(), source.end(), source.begin(), toupper);
-	return source;
+	std::string s = source;
+	std::transform(s.begin(), s.end(), s.begin(), toupper);
+	return s;
 }
 
-StringVector explodeString(const std::string& inString, const std::string& separator, int32_t limit/* = -1*/)
+StringVec explodeString(const std::string& inString, const std::string& separator, int32_t limit/* = -1*/)
 {
-	StringVector returnVector;
+	StringVec returnVector;
 	std::string::size_type start = 0, end = 0;
 
 	while (--limit != -1 && (end = inString.find(separator, start)) != std::string::npos) {
@@ -285,9 +242,9 @@ StringVector explodeString(const std::string& inString, const std::string& separ
 	return returnVector;
 }
 
-IntegerVector vectorAtoi(const StringVector& stringVector)
+IntegerVec vectorAtoi(const StringVec& stringVector)
 {
-	IntegerVector returnVector;
+	IntegerVec returnVector;
 	for (const auto& string : stringVector) {
 		returnVector.push_back(std::stoi(string));
 	}
@@ -352,7 +309,7 @@ std::string convertIPToString(uint32_t ip)
 
 	int res = sprintf(buffer, "%u.%u.%u.%u", ip & 0xFF, (ip >> 8) & 0xFF, (ip >> 16) & 0xFF, (ip >> 24));
 	if (res < 0) {
-		return {};
+		return std::string();
 	}
 
 	return buffer;
@@ -362,30 +319,30 @@ std::string formatDate(time_t time)
 {
 	const tm* tms = localtime(&time);
 	if (!tms) {
-		return {};
+		return std::string();
 	}
 
 	char buffer[20];
 	int res = sprintf(buffer, "%02d/%02d/%04d %02d:%02d:%02d", tms->tm_mday, tms->tm_mon + 1, tms->tm_year + 1900, tms->tm_hour, tms->tm_min, tms->tm_sec);
 	if (res < 0) {
-		return {};
+		return std::string();
 	}
-	return {buffer, 19};
+	return std::string(buffer, 19);
 }
 
 std::string formatDateShort(time_t time)
 {
 	const tm* tms = localtime(&time);
 	if (!tms) {
-		return {};
+		return std::string();
 	}
 
 	char buffer[12];
 	size_t res = strftime(buffer, 12, "%d %b %Y", tms);
 	if (res == 0) {
-		return {};
+		return std::string();
 	}
-	return {buffer, 11};
+	return std::string(buffer, 11);
 }
 
 Direction getDirection(const std::string& string)
@@ -497,14 +454,37 @@ Direction getDirectionTo(const Position& from, const Position& to)
 	return dir;
 }
 
-using MagicEffectNames = std::unordered_map<std::string, MagicEffectClasses>;
-using ShootTypeNames = std::unordered_map<std::string, ShootType_t>;
-using CombatTypeNames = std::unordered_map<CombatType_t, std::string, std::hash<int32_t>>;
-using AmmoTypeNames = std::unordered_map<std::string, Ammo_t>;
-using WeaponActionNames = std::unordered_map<std::string, WeaponAction_t>;
-using SkullNames = std::unordered_map<std::string, Skulls_t>;
+struct MagicEffectNames {
+	const char* name;
+	MagicEffectClasses effect;
+};
 
-MagicEffectNames magicEffectNames = {
+struct ShootTypeNames {
+	const char* name;
+	ShootType_t shoot;
+};
+
+struct CombatTypeNames {
+	const char* name;
+	CombatType_t combat;
+};
+
+struct AmmoTypeNames {
+	const char* name;
+	Ammo_t ammoType;
+};
+
+struct WeaponActionNames {
+	const char* name;
+	WeaponAction_t weaponAction;
+};
+
+struct SkullNames {
+	const char* name;
+	Skulls_t skull;
+};
+
+MagicEffectNames magicEffectNames[] = {
 	{"redspark",		CONST_ME_DRAWBLOOD},
 	{"bluebubble",		CONST_ME_LOSEENERGY},
 	{"poff",		CONST_ME_POFF},
@@ -575,9 +555,20 @@ MagicEffectNames magicEffectNames = {
 	{"smoke",		CONST_ME_SMOKE},
 	{"insects",		CONST_ME_INSECTS},
 	{"dragonhead",		CONST_ME_DRAGONHEAD},
+	{"orcshaman",		CONST_ME_ORCSHAMAN},
+	{"orcshamanfire",	CONST_ME_ORCSHAMAN_FIRE},
+	{"thunder",		CONST_ME_THUNDER},
+	{"ferumbras",		CONST_ME_FERUMBRAS},
+	{"confettihorizontal",	CONST_ME_CONFETTI_HORIZONTAL},
+	{"confettivertical",	CONST_ME_CONFETTI_VERTICAL},
+	{"blacksmoke",		CONST_ME_BLACKSMOKE},
+	{"redsmoke",		CONST_ME_REDSMOKE},
+	{"yellowsmoke",		CONST_ME_YELLOWSMOKE},
+	{"greensmoke",		CONST_ME_GREENSMOKE},
+	{"purplesmoke",		CONST_ME_PURPLESMOKE},
 };
 
-ShootTypeNames shootTypeNames = {
+ShootTypeNames shootTypeNames[] = {
 	{"spear",		CONST_ANI_SPEAR},
 	{"bolt",		CONST_ANI_BOLT},
 	{"arrow",		CONST_ANI_ARROW},
@@ -619,24 +610,33 @@ ShootTypeNames shootTypeNames = {
 	{"smallearth",		CONST_ANI_SMALLEARTH},
 	{"eartharrow",		CONST_ANI_EARTHARROW},
 	{"explosion",		CONST_ANI_EXPLOSION},
+	{"cake",		CONST_ANI_CAKE},
+	{"tarsalarrow",		CONST_ANI_TARSALARROW},
+	{"vortexbolt",		CONST_ANI_VORTEXBOLT},
+	{"prismaticbolt",	CONST_ANI_PRISMATICBOLT},
+	{"crystallinearrow",	CONST_ANI_CRYSTALLINEARROW},
+	{"drillbolt",		CONST_ANI_DRILLBOLT},
+	{"envenomedarrow",	CONST_ANI_ENVENOMEDARROW},
+	{"gloothspear",		CONST_ANI_GLOOTHSPEAR},
+	{"simplearrow",		CONST_ANI_SIMPLEARROW},
 };
 
-CombatTypeNames combatTypeNames = {
-	{COMBAT_PHYSICALDAMAGE, 	"physical"},
-	{COMBAT_ENERGYDAMAGE, 		"energy"},
-	{COMBAT_EARTHDAMAGE, 		"earth"},
-	{COMBAT_FIREDAMAGE, 		"fire"},
-	{COMBAT_UNDEFINEDDAMAGE, 	"undefined"},
-	{COMBAT_LIFEDRAIN, 		"lifedrain"},
-	{COMBAT_MANADRAIN, 		"manadrain"},
-	{COMBAT_HEALING, 		"healing"},
-	{COMBAT_DROWNDAMAGE, 		"drown"},
-	{COMBAT_ICEDAMAGE, 		"ice"},
-	{COMBAT_HOLYDAMAGE, 		"holy"},
-	{COMBAT_DEATHDAMAGE, 		"death"},
+CombatTypeNames combatTypeNames[] = {
+	{"physical",		COMBAT_PHYSICALDAMAGE},
+	{"energy",		COMBAT_ENERGYDAMAGE},
+	{"earth",		COMBAT_EARTHDAMAGE},
+	{"fire",		COMBAT_FIREDAMAGE},
+	{"undefined",		COMBAT_UNDEFINEDDAMAGE},
+	{"lifedrain",		COMBAT_LIFEDRAIN},
+	{"manadrain",		COMBAT_MANADRAIN},
+	{"healing",		COMBAT_HEALING},
+	{"drown",		COMBAT_DROWNDAMAGE},
+	{"ice", 		COMBAT_ICEDAMAGE},
+	{"holy", 		COMBAT_HOLYDAMAGE},
+	{"death", 		COMBAT_DEATHDAMAGE},
 };
 
-AmmoTypeNames ammoTypeNames = {
+AmmoTypeNames ammoTypeNames[] = {
 	{"spear",		AMMO_SPEAR},
 	{"bolt",		AMMO_BOLT},
 	{"arrow",		AMMO_ARROW},
@@ -662,74 +662,90 @@ AmmoTypeNames ammoTypeNames = {
 	{"eartharrow",		AMMO_ARROW},
 };
 
-WeaponActionNames weaponActionNames = {
+WeaponActionNames weaponActionNames[] = {
 	{"move",		WEAPONACTION_MOVE},
 	{"removecharge",	WEAPONACTION_REMOVECHARGE},
 	{"removecount",		WEAPONACTION_REMOVECOUNT},
 };
 
-SkullNames skullNames = {
+SkullNames skullNames[] = {
 	{"none",	SKULL_NONE},
 	{"yellow",	SKULL_YELLOW},
 	{"green",	SKULL_GREEN},
 	{"white",	SKULL_WHITE},
 	{"red",		SKULL_RED},
-	{"black",	SKULL_BLACK},
 };
 
 MagicEffectClasses getMagicEffect(const std::string& strValue)
 {
-	auto magicEffect = magicEffectNames.find(strValue);
-	if (magicEffect != magicEffectNames.end()) {
-		return magicEffect->second;
+	for (size_t i = 0; i < sizeof(magicEffectNames) / sizeof(MagicEffectNames); ++i) {
+		if (strcasecmp(strValue.c_str(), magicEffectNames[i].name) == 0) {
+			return magicEffectNames[i].effect;
+		}
 	}
 	return CONST_ME_NONE;
 }
 
 ShootType_t getShootType(const std::string& strValue)
 {
-	auto shootType = shootTypeNames.find(strValue);
-	if (shootType != shootTypeNames.end()) {
-		return shootType->second;
+	for (size_t i = 0, size = sizeof(shootTypeNames) / sizeof(ShootTypeNames); i < size; ++i) {
+		if (strcasecmp(strValue.c_str(), shootTypeNames[i].name) == 0) {
+			return shootTypeNames[i].shoot;
+		}
 	}
 	return CONST_ANI_NONE;
 }
 
+CombatType_t getCombatType(const std::string& strValue)
+{
+	for (size_t i = 0, size = sizeof(combatTypeNames) / sizeof(CombatTypeNames); i < size; ++i) {
+		if (strcasecmp(strValue.c_str(), combatTypeNames[i].name) == 0) {
+			return combatTypeNames[i].combat;
+		}
+	}
+	return COMBAT_NONE;
+}
+
 std::string getCombatName(CombatType_t combatType)
 {
-	auto combatName = combatTypeNames.find(combatType);
-	if (combatName != combatTypeNames.end()) {
-		return combatName->second;
+	for (size_t i = 0, size = sizeof(combatTypeNames) / sizeof(CombatTypeNames); i < size; ++i) {
+		if (combatTypeNames[i].combat == combatType) {
+			return combatTypeNames[i].name;
+		}
 	}
 	return "unknown";
 }
 
 Ammo_t getAmmoType(const std::string& strValue)
 {
-	auto ammoType = ammoTypeNames.find(strValue);
-	if (ammoType != ammoTypeNames.end()) {
-		return ammoType->second;
+	for (size_t i = 0, size = sizeof(ammoTypeNames) / sizeof(AmmoTypeNames); i < size; ++i) {
+		if (strcasecmp(strValue.c_str(), ammoTypeNames[i].name) == 0) {
+			return ammoTypeNames[i].ammoType;
+		}
 	}
 	return AMMO_NONE;
 }
 
 WeaponAction_t getWeaponAction(const std::string& strValue)
 {
-	auto weaponAction = weaponActionNames.find(strValue);
-	if (weaponAction != weaponActionNames.end()) {
-		return weaponAction->second;
+	for (size_t i = 0, size = sizeof(weaponActionNames) / sizeof(WeaponActionNames); i < size; ++i) {
+		if (strcasecmp(strValue.c_str(), weaponActionNames[i].name) == 0) {
+			return weaponActionNames[i].weaponAction;
+		}
 	}
 	return WEAPONACTION_NONE;
 }
 
 Skulls_t getSkullType(const std::string& strValue)
 {
-	auto skullType = skullNames.find(strValue);
-	if (skullType != skullNames.end()) {
-		return skullType->second;
+	for (size_t i = 0, size = sizeof(skullNames) / sizeof(SkullNames); i < size; ++i) {
+		if (strcasecmp(strValue.c_str(), skullNames[i].name) == 0) {
+			return skullNames[i].skull;
+		}
 	}
 	return SKULL_NONE;
 }
+
 std::string getSkillName(uint8_t skillid)
 {
 	switch (skillid) {
@@ -765,37 +781,11 @@ std::string getSkillName(uint8_t skillid)
 	}
 }
 
-uint32_t adlerChecksum(const uint8_t* data, size_t length)
-{
-	if (length > NETWORKMESSAGE_MAXSIZE) {
-		return 0;
-	}
-
-	const uint16_t adler = 65521;
-
-	uint32_t a = 1, b = 0;
-
-	while (length > 0) {
-		size_t tmp = length > 5552 ? 5552 : length;
-		length -= tmp;
-
-		do {
-			a += *data++;
-			b += a;
-		} while (--tmp);
-
-		a %= adler;
-		b %= adler;
-	}
-
-	return (b << 16) | a;
-}
-
 std::string ucfirst(std::string str)
 {
-	for (char& i : str) {
-		if (i != ' ') {
-			i = toupper(i);
+	for (size_t i = 0; i < str.length(); ++i) {
+		if (str[i] != ' ') {
+			str[i] = toupper(str[i]);
 			break;
 		}
 	}
@@ -968,7 +958,7 @@ const char* getReturnMessage(ReturnValue value)
 {
 	switch (value) {
 		case RETURNVALUE_DESTINATIONOUTOFREACH:
-			return "Destination is out of range.";
+			return "Destination is out of reach.";
 
 		case RETURNVALUE_NOTMOVEABLE:
 			return "You cannot move this object.";
@@ -992,7 +982,7 @@ const char* getReturnMessage(ReturnValue value)
 			return "You may only use one weapon.";
 
 		case RETURNVALUE_TOOFARAWAY:
-			return "You are too far away.";
+			return "Too far away.";
 
 		case RETURNVALUE_FIRSTGODOWNSTAIRS:
 			return "First go downstairs.";
@@ -1056,7 +1046,7 @@ const char* getReturnMessage(ReturnValue value)
 			return "You are not allowed to shoot directly on players.";
 
 		case RETURNVALUE_NOTENOUGHLEVEL:
-			return "Your level is too low.";
+			return "You do not have enough level.";
 
 		case RETURNVALUE_NOTENOUGHMAGICLEVEL:
 			return "You do not have enough magic level.";
@@ -1070,11 +1060,8 @@ const char* getReturnMessage(ReturnValue value)
 		case RETURNVALUE_YOUAREEXHAUSTED:
 			return "You are exhausted.";
 
-		case RETURNVALUE_YOUCANNOTUSEOBJECTSTHATFAST:
-			return "You cannot use objects that fast.";
-
 		case RETURNVALUE_CANONLYUSETHISRUNEONCREATURES:
-			return "You can only use it on creatures.";
+			return "You can only use this rune on creatures.";
 
 		case RETURNVALUE_PLAYERISNOTREACHABLE:
 			return "Player is not reachable.";
@@ -1086,7 +1073,7 @@ const char* getReturnMessage(ReturnValue value)
 			return "This action is not permitted in a protection zone.";
 
 		case RETURNVALUE_YOUMAYNOTATTACKTHISPLAYER:
-			return "You may not attack this person.";
+			return "You may not attack this player.";
 
 		case RETURNVALUE_YOUMAYNOTATTACKTHISCREATURE:
 			return "You may not attack this creature.";
@@ -1107,10 +1094,10 @@ const char* getReturnMessage(ReturnValue value)
 			return "You need a premium account.";
 
 		case RETURNVALUE_YOUNEEDTOLEARNTHISSPELL:
-			return "You must learn this spell first.";
+			return "You need to learn this spell first.";
 
 		case RETURNVALUE_YOURVOCATIONCANNOTUSETHISSPELL:
-			return "You have the wrong vocation to cast this spell.";
+			return "Your vocation cannot use this spell.";
 
 		case RETURNVALUE_YOUNEEDAWEAPONTOUSETHISSPELL:
 			return "You need to equip a weapon to use this spell.";
@@ -1137,7 +1124,7 @@ const char* getReturnMessage(ReturnValue value)
 			return "You need to split your spears first.";
 
 		case RETURNVALUE_NAMEISTOOAMBIGUOUS:
-			return "Player name is ambiguous.";
+			return "Name is too ambiguous.";
 
 		case RETURNVALUE_CANONLYUSEONESHIELD:
 			return "You may use only one shield.";
@@ -1148,37 +1135,7 @@ const char* getReturnMessage(ReturnValue value)
 		case RETURNVALUE_YOUARENOTTHEOWNER:
 			return "You are not the owner.";
 
-		case RETURNVALUE_NOSUCHRAIDEXISTS:
-			return "No such raid exists.";
-
-		case RETURNVALUE_ANOTHERRAIDISALREADYEXECUTING:
-			return "Another raid is already executing.";
-
-		case RETURNVALUE_TRADEPLAYERFARAWAY:
-			return "Trade player is too far away.";
-
-		case RETURNVALUE_YOUDONTOWNTHISHOUSE:
-			return "You don't own this house.";
-
-		case RETURNVALUE_TRADEPLAYERALREADYOWNSAHOUSE:
-			return "Trade player already owns a house.";
-
-		case RETURNVALUE_TRADEPLAYERHIGHESTBIDDER:
-			return "Trade player is currently the highest bidder of an auctioned house.";
-
-		case RETURNVALUE_YOUCANNOTTRADETHISHOUSE:
-			return "You can not trade this house.";
-
-		case RETURNVALUE_YOUDONTHAVEREQUIREDPROFESSION:
-			return "You don't have the required profession.";
-
 		default: // RETURNVALUE_NOTPOSSIBLE, etc
 			return "Sorry, not possible.";
 	}
 }
-
-int64_t OTSYS_TIME()
-{
-	return std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
-}
-

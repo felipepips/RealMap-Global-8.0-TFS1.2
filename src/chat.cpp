@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -111,10 +111,6 @@ bool ChatChannel::removeUser(const Player& player)
 
 	executeOnLeaveEvent(player);
 	return true;
-}
-
-bool ChatChannel::hasUser(const Player& player) {
-	return users.find(player.getID()) != users.end();
 }
 
 void ChatChannel::sendToAll(const std::string& message, SpeakClasses type) const
@@ -478,8 +474,7 @@ bool Chat::talkToChannel(const Player& player, SpeakClasses type, const std::str
 	}
 
 	if (channelId == CHANNEL_GUILD) {
-		const GuildRank* rank = player.getGuildRank();
-		if (rank && rank->level > 1) {
+		if (player.getGuildLevel() > 1) {
 			type = TALKTYPE_CHANNEL_O;
 		} else if (type != TALKTYPE_CHANNEL_Y) {
 			type = TALKTYPE_CHANNEL_Y;

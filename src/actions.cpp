@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -40,27 +40,30 @@ Actions::Actions() :
 
 Actions::~Actions()
 {
-	clear(false);
+	clear();
 }
 
-void Actions::clearMap(ActionUseMap& map, bool fromLua)
+inline void Actions::clearMap(ActionUseMap& map)
 {
-	for (auto it = map.begin(); it != map.end(); ) {
-		if (fromLua == it->second.fromLua) {
-			it = map.erase(it);
-		} else {
-			++it;
-		}
+	// Filter out duplicates to avoid double-free
+	std::unordered_set<Action*> set;
+	for (const auto& it : map) {
+		set.insert(it.second);
+	}
+	map.clear();
+
+	for (Action* action : set) {
+		delete action;
 	}
 }
 
-void Actions::clear(bool fromLua)
+void Actions::clear()
 {
-	clearMap(useItemMap, fromLua);
-	clearMap(uniqueItemMap, fromLua);
-	clearMap(actionItemMap, fromLua);
+	clearMap(useItemMap);
+	clearMap(uniqueItemMap);
+	clearMap(actionItemMap);
 
-	reInitState(fromLua);
+	scriptInterface.reInitState();
 }
 
 LuaScriptInterface& Actions::getScriptInterface()
@@ -73,23 +76,23 @@ std::string Actions::getScriptBaseName() const
 	return "actions";
 }
 
-Event_ptr Actions::getEvent(const std::string& nodeName)
+Event* Actions::getEvent(const std::string& nodeName)
 {
 	if (strcasecmp(nodeName.c_str(), "action") != 0) {
 		return nullptr;
 	}
-	return Event_ptr(new Action(&scriptInterface));
+	return new Action(&scriptInterface);
 }
 
-bool Actions::registerEvent(Event_ptr event, const pugi::xml_node& node)
+bool Actions::registerEvent(Event* event, const pugi::xml_node& node)
 {
-	Action_ptr action{static_cast<Action*>(event.release())}; //event is guaranteed to be an Action
+	Action* action = static_cast<Action*>(event); //event is guaranteed to be an Action
 
 	pugi::xml_attribute attr;
 	if ((attr = node.attribute("itemid"))) {
 		uint16_t id = pugi::cast<uint16_t>(attr.value());
 
-		auto result = useItemMap.emplace(id, std::move(*action));
+		auto result = useItemMap.emplace(id, action);
 		if (!result.second) {
 			std::cout << "[Warning - Actions::registerEvent] Duplicate registered item with id: " << id << std::endl;
 		}
@@ -105,14 +108,14 @@ bool Actions::registerEvent(Event_ptr event, const pugi::xml_node& node)
 		uint16_t iterId = fromId;
 		uint16_t toId = pugi::cast<uint16_t>(toIdAttribute.value());
 
-		auto result = useItemMap.emplace(iterId, *action);
+		auto result = useItemMap.emplace(iterId, action);
 		if (!result.second) {
 			std::cout << "[Warning - Actions::registerEvent] Duplicate registered item with id: " << iterId << " in fromid: " << fromId << ", toid: " << toId << std::endl;
 		}
 
 		bool success = result.second;
 		while (++iterId <= toId) {
-			result = useItemMap.emplace(iterId, *action);
+			result = useItemMap.emplace(iterId, action);
 			if (!result.second) {
 				std::cout << "[Warning - Actions::registerEvent] Duplicate registered item with id: " << iterId << " in fromid: " << fromId << ", toid: " << toId << std::endl;
 				continue;
@@ -123,7 +126,7 @@ bool Actions::registerEvent(Event_ptr event, const pugi::xml_node& node)
 	} else if ((attr = node.attribute("uniqueid"))) {
 		uint16_t uid = pugi::cast<uint16_t>(attr.value());
 
-		auto result = uniqueItemMap.emplace(uid, std::move(*action));
+		auto result = uniqueItemMap.emplace(uid, action);
 		if (!result.second) {
 			std::cout << "[Warning - Actions::registerEvent] Duplicate registered item with uniqueid: " << uid << std::endl;
 		}
@@ -139,14 +142,14 @@ bool Actions::registerEvent(Event_ptr event, const pugi::xml_node& node)
 		uint16_t iterUid = fromUid;
 		uint16_t toUid = pugi::cast<uint16_t>(toUidAttribute.value());
 
-		auto result = uniqueItemMap.emplace(iterUid, *action);
+		auto result = uniqueItemMap.emplace(iterUid, action);
 		if (!result.second) {
 			std::cout << "[Warning - Actions::registerEvent] Duplicate registered item with unique id: " << iterUid << " in fromuid: " << fromUid << ", touid: " << toUid << std::endl;
 		}
 
 		bool success = result.second;
 		while (++iterUid <= toUid) {
-			result = uniqueItemMap.emplace(iterUid, *action);
+			result = uniqueItemMap.emplace(iterUid, action);
 			if (!result.second) {
 				std::cout << "[Warning - Actions::registerEvent] Duplicate registered item with unique id: " << iterUid << " in fromuid: " << fromUid << ", touid: " << toUid << std::endl;
 				continue;
@@ -157,7 +160,7 @@ bool Actions::registerEvent(Event_ptr event, const pugi::xml_node& node)
 	} else if ((attr = node.attribute("actionid"))) {
 		uint16_t aid = pugi::cast<uint16_t>(attr.value());
 
-		auto result = actionItemMap.emplace(aid, std::move(*action));
+		auto result = actionItemMap.emplace(aid, action);
 		if (!result.second) {
 			std::cout << "[Warning - Actions::registerEvent] Duplicate registered item with actionid: " << aid << std::endl;
 		}
@@ -173,14 +176,14 @@ bool Actions::registerEvent(Event_ptr event, const pugi::xml_node& node)
 		uint16_t iterAid = fromAid;
 		uint16_t toAid = pugi::cast<uint16_t>(toAidAttribute.value());
 
-		auto result = actionItemMap.emplace(iterAid, *action);
+		auto result = actionItemMap.emplace(iterAid, action);
 		if (!result.second) {
 			std::cout << "[Warning - Actions::registerEvent] Duplicate registered item with action id: " << iterAid << " in fromaid: " << fromAid << ", toaid: " << toAid << std::endl;
 		}
 
 		bool success = result.second;
 		while (++iterAid <= toAid) {
-			result = actionItemMap.emplace(iterAid, *action);
+			result = actionItemMap.emplace(iterAid, action);
 			if (!result.second) {
 				std::cout << "[Warning - Actions::registerEvent] Duplicate registered item with action id: " << iterAid << " in fromaid: " << fromAid << ", toaid: " << toAid << std::endl;
 				continue;
@@ -190,69 +193,6 @@ bool Actions::registerEvent(Event_ptr event, const pugi::xml_node& node)
 		return success;
 	}
 	return false;
-}
-
-bool Actions::registerLuaEvent(Action* event)
-{
-	Action_ptr action{ event };
-	if (action->getItemIdRange().size() > 0) {
-		if (action->getItemIdRange().size() == 1) {
-			auto result = useItemMap.emplace(action->getItemIdRange().at(0), std::move(*action));
-			if (!result.second) {
-				std::cout << "[Warning - Actions::registerLuaEvent] Duplicate registered item with id: " << action->getItemIdRange().at(0) << std::endl;
-			}
-			return result.second;
-		} else {
-			auto v = action->getItemIdRange();
-			for (auto i = v.begin(); i != v.end(); i++) {
-				auto result = useItemMap.emplace(*i, std::move(*action));
-				if (!result.second) {
-					std::cout << "[Warning - Actions::registerLuaEvent] Duplicate registered item with id: " << *i << " in range from id: " << v.at(0) << ", to id: " << v.at(v.size() - 1) << std::endl;
-					continue;
-				}
-			}
-			return true;
-		}
-	} else if (action->getUniqueIdRange().size() > 0) {
-		if (action->getUniqueIdRange().size() == 1) {
-			auto result = uniqueItemMap.emplace(action->getUniqueIdRange().at(0), std::move(*action));
-			if (!result.second) {
-				std::cout << "[Warning - Actions::registerLuaEvent] Duplicate registered item with uid: " << action->getUniqueIdRange().at(0) << std::endl;
-			}
-			return result.second;
-		} else {
-			auto v = action->getUniqueIdRange();
-			for (auto i = v.begin(); i != v.end(); i++) {
-				auto result = uniqueItemMap.emplace(*i, std::move(*action));
-				if (!result.second) {
-					std::cout << "[Warning - Actions::registerLuaEvent] Duplicate registered item with uid: " << *i << " in range from uid: " << v.at(0) << ", to uid: " << v.at(v.size() - 1) << std::endl;
-					continue;
-				}
-			}
-			return true;
-		}
-	} else if (action->getActionIdRange().size() > 0) {
-		if (action->getActionIdRange().size() == 1) {
-			auto result = actionItemMap.emplace(action->getActionIdRange().at(0), std::move(*action));
-			if (!result.second) {
-				std::cout << "[Warning - Actions::registerLuaEvent] Duplicate registered item with aid: " << action->getActionIdRange().at(0) << std::endl;
-			}
-			return result.second;
-		} else {
-			auto v = action->getActionIdRange();
-			for (auto i = v.begin(); i != v.end(); i++) {
-				auto result = actionItemMap.emplace(*i, std::move(*action));
-				if (!result.second) {
-					std::cout << "[Warning - Actions::registerLuaEvent] Duplicate registered item with aid: " << *i << " in range from aid: " << v.at(0) << ", to aid: " << v.at(v.size() - 1) << std::endl;
-					continue;
-				}
-			}
-			return true;
-		}
-	} else {
-		std::cout << "[Warning - Actions::registerLuaEvent] There is no id / aid / uid set for this event" << std::endl;
-		return false;
-	}
 }
 
 ReturnValue Actions::canUse(const Player* player, const Position& pos)
@@ -306,20 +246,20 @@ Action* Actions::getAction(const Item* item)
 	if (item->hasAttribute(ITEM_ATTRIBUTE_UNIQUEID)) {
 		auto it = uniqueItemMap.find(item->getUniqueId());
 		if (it != uniqueItemMap.end()) {
-			return &it->second;
+			return it->second;
 		}
 	}
 
 	if (item->hasAttribute(ITEM_ATTRIBUTE_ACTIONID)) {
 		auto it = actionItemMap.find(item->getActionId());
 		if (it != actionItemMap.end()) {
-			return &it->second;
+			return it->second;
 		}
 	}
 
 	auto it = useItemMap.find(item->getID());
 	if (it != useItemMap.end()) {
-		return &it->second;
+		return it->second;
 	}
 
 	//rune items
@@ -356,11 +296,7 @@ ReturnValue Actions::internalUseItem(Player* player, const Position& pos, uint8_
 			return RETURNVALUE_CANNOTUSETHISOBJECT;
 		}
 
-		if (bed->trySleep(player)) {
-			player->setBedItem(bed);
-			bed->sleep(player);
-		}
-
+		bed->sleep(player);
 		return RETURNVALUE_NOERROR;
 	}
 
@@ -414,11 +350,20 @@ ReturnValue Actions::internalUseItem(Player* player, const Position& pos, uint8_
 bool Actions::useItem(Player* player, const Position& pos, uint8_t index, Item* item, bool isHotkey)
 {
 	player->setNextAction(OTSYS_TIME() + g_config.getNumber(ConfigManager::ACTIONS_DELAY_INTERVAL));
-	player->stopWalk();
+	//player->stopWalk();
 
 	if (isHotkey) {
-		uint16_t subType = item->getSubType();
-		showUseHotkeyMessage(player, item, player->getItemTypeCount(item->getID(), subType != item->getItemCount() ? subType : -1));
+		showUseHotkeyMessage(player, item, player->getItemTypeCount(item->getID(), (!item->getFluidType() ? -1 : item->getSubType())));
+	}
+	
+	if (g_config.getBoolean(ConfigManager::ONLY_INVITED_CAN_MOVE_HOUSE_ITEMS)) {
+		if (HouseTile* houseTile = dynamic_cast<HouseTile*>(item->getTile())) {
+			House* house = houseTile->getHouse();
+			if (house && !house->isInvited(player)) {
+				player->sendCancelMessage(RETURNVALUE_PLAYERISNOTINVITED);
+				return false;
+			}
+		}
 	}
 
 	ReturnValue ret = internalUseItem(player, pos, index, item, isHotkey);
@@ -433,7 +378,7 @@ bool Actions::useItemEx(Player* player, const Position& fromPos, const Position&
                         uint8_t toStackPos, Item* item, bool isHotkey, Creature* creature/* = nullptr*/)
 {
 	player->setNextAction(OTSYS_TIME() + g_config.getNumber(ConfigManager::EX_ACTIONS_DELAY_INTERVAL));
-	player->stopWalk();
+	//player->stopWalk();
 
 	Action* action = getAction(item);
 	if (!action) {
@@ -448,8 +393,7 @@ bool Actions::useItemEx(Player* player, const Position& fromPos, const Position&
 	}
 
 	if (isHotkey) {
-		uint16_t subType = item->getSubType();
-		showUseHotkeyMessage(player, item, player->getItemTypeCount(item->getID(), subType != item->getItemCount() ? subType : -1));
+		showUseHotkeyMessage(player, item, player->getItemTypeCount(item->getID(), (!item->getFluidType() ? -1 : item->getSubType())));
 	}
 
 	if (!action->executeUse(player, item, fromPos, action->getTarget(player, creature, toPos, toStackPos), toPos, isHotkey)) {
@@ -476,34 +420,70 @@ void Actions::showUseHotkeyMessage(Player* player, const Item* item, uint32_t co
 	player->sendTextMessage(MESSAGE_INFO_DESCR, ss.str());
 }
 
-Action::Action(LuaScriptInterface* interface) :
-	Event(interface), function(nullptr), allowFarUse(false), checkFloor(true), checkLineOfSight(true) {}
+Action::Action(LuaScriptInterface* _interface) :
+	Event(_interface)
+{
+	allowFarUse = false;
+	checkFloor = true;
+	checkLineOfSight = true;
+	function = nullptr;
+}
+
+Action::Action(const Action* copy) :
+	Event(copy)
+{
+	allowFarUse = copy->allowFarUse;
+	checkFloor = copy->checkFloor;
+	checkLineOfSight = copy->checkLineOfSight;
+	function = copy->function;
+}
 
 bool Action::configureEvent(const pugi::xml_node& node)
 {
 	pugi::xml_attribute allowFarUseAttr = node.attribute("allowfaruse");
 	if (allowFarUseAttr) {
-		allowFarUse = allowFarUseAttr.as_bool();
+		setAllowFarUse(allowFarUseAttr.as_bool());
 	}
 
 	pugi::xml_attribute blockWallsAttr = node.attribute("blockwalls");
 	if (blockWallsAttr) {
-		checkLineOfSight = blockWallsAttr.as_bool();
+		setCheckLineOfSight(blockWallsAttr.as_bool());
 	}
 
 	pugi::xml_attribute checkFloorAttr = node.attribute("checkfloor");
 	if (checkFloorAttr) {
-		checkFloor = checkFloorAttr.as_bool();
+		setCheckFloor(checkFloorAttr.as_bool());
 	}
 
 	return true;
 }
 
-bool Action::loadFunction(const pugi::xml_attribute& attr, bool)
+bool Action::loadFunction(const pugi::xml_attribute& attr)
 {
 	const char* functionName = attr.as_string();
-	std::cout << "[Warning - Action::loadFunction] Function \"" << functionName << "\" does not exist." << std::endl;
-	return false;
+	if (strcasecmp(functionName, "increaseitemid") == 0) {
+		function = increaseItemId;
+	} else if (strcasecmp(functionName, "decreaseitemid") == 0) {
+		function = decreaseItemId;
+	} else {
+		std::cout << "[Warning - Action::loadFunction] Function \"" << functionName << "\" does not exist." << std::endl;
+		return false;
+	}
+
+	scripted = false;
+	return true;
+}
+
+bool Action::increaseItemId(Player*, Item* item, const Position&, Thing*, const Position&, bool)
+{
+	g_game.startDecay(g_game.transformItem(item, item->getID() + 1));
+	return true;
+}
+
+bool Action::decreaseItemId(Player*, Item* item, const Position&, Thing*, const Position&, bool)
+{
+	g_game.startDecay(g_game.transformItem(item, item->getID() - 1));
+	return true;
 }
 
 std::string Action::getScriptEventName() const
@@ -513,10 +493,10 @@ std::string Action::getScriptEventName() const
 
 ReturnValue Action::canExecuteAction(const Player* player, const Position& toPos)
 {
-	if (!allowFarUse) {
+	if (!getAllowFarUse()) {
 		return g_actions->canUse(player, toPos);
 	} else {
-		return g_actions->canUseFar(player, toPos, checkLineOfSight, checkFloor);
+		return g_actions->canUseFar(player, toPos, getCheckLineOfSight(), getCheckFloor());
 	}
 }
 
@@ -528,7 +508,7 @@ Thing* Action::getTarget(Player* player, Creature* targetCreature, const Positio
 	return g_game.internalGetThing(player, toPosition, toStackPos, 0, STACKPOS_USETARGET);
 }
 
-bool Action::executeUse(Player* player, Item* item, const Position& fromPosition, Thing* target, const Position& toPosition, bool isHotkey)
+bool Action::executeUse(Player* player, Item* item, const Position& fromPos, Thing* target, const Position& toPos, bool isHotkey)
 {
 	//onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if (!scriptInterface->reserveScriptEnv()) {
@@ -547,10 +527,10 @@ bool Action::executeUse(Player* player, Item* item, const Position& fromPosition
 	LuaScriptInterface::setMetatable(L, -1, "Player");
 
 	LuaScriptInterface::pushThing(L, item);
-	LuaScriptInterface::pushPosition(L, fromPosition);
+	LuaScriptInterface::pushPosition(L, fromPos);
 
 	LuaScriptInterface::pushThing(L, target);
-	LuaScriptInterface::pushPosition(L, toPosition);
+	LuaScriptInterface::pushPosition(L, toPos);
 
 	LuaScriptInterface::pushBoolean(L, isHotkey);
 	return scriptInterface->callFunction(6);

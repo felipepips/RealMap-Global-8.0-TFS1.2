@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,9 +24,11 @@
 #include <unordered_set>
 #include <queue>
 
+
 #include "thread_holder_base.h"
 
-static constexpr int32_t SCHEDULER_MINTICKS = 50;
+
+#define SCHEDULER_MINTICKS 50
 
 class SchedulerTask : public Task
 {
@@ -42,15 +44,20 @@ class SchedulerTask : public Task
 			return expiration;
 		}
 
-	private:
-		SchedulerTask(uint32_t delay, std::function<void (void)>&& f) : Task(delay, std::move(f)) {}
+	protected:
+		SchedulerTask(uint32_t delay, const std::function<void (void)>& f) : Task(delay, f) {
+			eventId = 0;
+		}
 
-		uint32_t eventId = 0;
+		uint32_t eventId;
 
-		friend SchedulerTask* createSchedulerTask(uint32_t, std::function<void (void)>);
+		friend SchedulerTask* createSchedulerTask(uint32_t, const std::function<void (void)>&);
 };
 
-SchedulerTask* createSchedulerTask(uint32_t delay, std::function<void (void)> f);
+inline SchedulerTask* createSchedulerTask(uint32_t delay, const std::function<void (void)>& f)
+{
+	return new SchedulerTask(delay, f);
+}
 
 struct TaskComparator {
 	bool operator()(const SchedulerTask* lhs, const SchedulerTask* rhs) const {
@@ -67,8 +74,7 @@ class Scheduler : public ThreadHolder<Scheduler>
 		void shutdown();
 
 		void threadMain();
-
-	private:
+	protected:
 		std::thread thread;
 		std::mutex eventLock;
 		std::condition_variable eventSignal;

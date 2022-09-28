@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -30,7 +30,6 @@ class ServiceBase
 {
 	public:
 		virtual bool is_single_socket() const = 0;
-		virtual bool is_checksummed() const = 0;
 		virtual uint8_t get_protocol_identifier() const = 0;
 		virtual const char* get_protocol_name() const = 0;
 
@@ -41,20 +40,17 @@ template <typename ProtocolType>
 class Service final : public ServiceBase
 {
 	public:
-		bool is_single_socket() const override {
+		bool is_single_socket() const final {
 			return ProtocolType::server_sends_first;
 		}
-		bool is_checksummed() const override {
-			return ProtocolType::use_checksum;
-		}
-		uint8_t get_protocol_identifier() const override {
+		uint8_t get_protocol_identifier() const final {
 			return ProtocolType::protocol_identifier;
 		}
-		const char* get_protocol_name() const override {
+		const char* get_protocol_name() const final {
 			return ProtocolType::protocol_name();
 		}
 
-		Protocol_ptr make_protocol(const Connection_ptr& c) const override {
+		Protocol_ptr make_protocol(const Connection_ptr& c) const final {
 			return std::make_shared<ProtocolType>(c);
 		}
 };
@@ -62,7 +58,7 @@ class Service final : public ServiceBase
 class ServicePort : public std::enable_shared_from_this<ServicePort>
 {
 	public:
-		explicit ServicePort(boost::asio::io_service& io_service) : io_service(io_service) {}
+		explicit ServicePort(boost::asio::io_service& io_service);
 		~ServicePort();
 
 		// non-copyable
@@ -76,26 +72,26 @@ class ServicePort : public std::enable_shared_from_this<ServicePort>
 		std::string get_protocol_names() const;
 
 		bool add_service(const Service_ptr& new_svc);
-		Protocol_ptr make_protocol(bool checksummed, NetworkMessage& msg, const Connection_ptr& connection) const;
+		Protocol_ptr make_protocol(NetworkMessage& msg, const Connection_ptr& connection) const;
 
 		void onStopServer();
 		void onAccept(Connection_ptr connection, const boost::system::error_code& error);
 
-	private:
+	protected:
 		void accept();
 
 		boost::asio::io_service& io_service;
 		std::unique_ptr<boost::asio::ip::tcp::acceptor> acceptor;
 		std::vector<Service_ptr> services;
 
-		uint16_t serverPort = 0;
-		bool pendingStart = false;
+		uint16_t serverPort;
+		bool pendingStart;
 };
 
 class ServiceManager
 {
 	public:
-		ServiceManager() = default;
+		ServiceManager();
 		~ServiceManager();
 
 		// non-copyable
@@ -112,15 +108,15 @@ class ServiceManager
 			return acceptors.empty() == false;
 		}
 
-	private:
+	protected:
 		void die();
 
 		std::unordered_map<uint16_t, ServicePort_ptr> acceptors;
 
 		boost::asio::io_service io_service;
-		Signals signals{io_service};
-		boost::asio::deadline_timer death_timer { io_service };
-		bool running = false;
+		Signals signals{ io_service };
+		boost::asio::deadline_timer death_timer;
+		bool running;
 };
 
 template <typename ProtocolType>
