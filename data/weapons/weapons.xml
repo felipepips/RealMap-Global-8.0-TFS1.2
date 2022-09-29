@@ -46,12 +46,12 @@
 	<melee id="2396" action="removecharge" />
 	<melee id="2413" unproperly="1">
 		<vocation name="Knight" />
-		<vocation name="Elite Knight" showInDescription="0" />
+		<vocation name="Elite Knight" showInDescription="1" />
 	</melee>
 	<melee id="7385" level="20" unproperly="1" />
 	<melee id="2377" level="20" unproperly="1">
 		<vocation name="Knight" />
-		<vocation name="Elite Knight" showInDescription="0" />
+		<vocation name="Elite Knight" showInDescription="1" />
 	</melee>
 	<melee id="7408" level="25" unproperly="1" />
 	<melee id="7449" level="25" unproperly="1">
@@ -265,7 +265,7 @@
 	<!-- Ammunition -->
 	<distance id="1294" swing="true" breakchance="3" /> <!-- small stone -->
 	<distance id="2111" swing="true" action="removecount" /> <!-- snowball -->
-	<distance id="2389" swing="true" breakchance="0" /> <!-- spear -->
+	<distance id="2389" swing="true" breakchance="3" /> <!-- spear -->
 	<distance id="2399" swing="true" breakchance="2" /> <!-- throwing star -->
 	<distance id="2410" swing="true" breakchance="3" /> <!-- throwing knife -->
 	<distance id="2543" swing="true" action="removecount" /> <!-- bolt -->

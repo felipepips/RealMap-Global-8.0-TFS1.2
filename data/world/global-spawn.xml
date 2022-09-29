@@ -23900,6 +23900,7 @@
 		<monster name="cyclops" x="-2" y="-1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32449" centery="32069" centerz="8" radius="3">
+		<monster name="cyclops" x="-3" y="-2" z="8" spawntime="60" />
 		<monster name="cyclops" x="3" y="0" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32472" centery="32072" centerz="8" radius="2">

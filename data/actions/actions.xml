@@ -257,6 +257,7 @@
 	<!-- teleports -->	
 	<action itemid="430" script="Other/teleports/teleport.lua" />
 	<action itemid="1386" script="Other/teleports/teleport.lua" />
+	<action actionid="1000" script="Other/teleports/teleport.lua" />
 	<action itemid="3678" script="Other/teleports/teleport.lua" />
 	<action itemid="5543" script="Other/teleports/teleport.lua" />	
 	<action itemid="2360" script="Other/teleports/teleportCarpet.lua"/>

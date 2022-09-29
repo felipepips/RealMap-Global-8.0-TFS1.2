@@ -46,7 +46,7 @@ local function creatureSayCallback(cid, type, msg)
 			player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1) --this for default start of Outfit and Addon Quests
 			npcHandler.topic[cid] = 0
 		elseif npcHandler.topic[cid] == 3 then
-			if player:getStorageValue(38412) >= 100 or player:removeItem(7634, 100) or player:removeItem(7635, 100) or player:removeItem(7636, 100) then
+			if player:getStorageValue(38412) >= 100 or player:removeItem(2006, 100, 0) or player:removeItem(2006, 100, 0) or player:removeItem(2006, 100, 0) then
 				npcHandler:say("Alright, thank you very much! Here is your lottery ticket, good luck. Would you like to deposit more vials that way?", cid)
 				player:setStorageValue(38412, player:getStorageValue(38412)-100);
 				player:addItem(5957, 1)

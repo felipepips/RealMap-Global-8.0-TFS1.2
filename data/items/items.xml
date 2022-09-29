@@ -2092,7 +2092,7 @@
 		<attribute key="slotType" value="necklace" />
 	</item>
 	<item id="2139" article="an" name="ancient tiara">
-		<attribute key="weight" value="0" />
+		<attribute key="weight" value="820" />
 		<attribute key="armor" value="0" />
 		<attribute key="slotType" value="head" />
 	</item>
@@ -2241,7 +2241,7 @@
 		<attribute key="slotType" value="necklace" />
 	</item>
 	<item id="2172" article="a" name="bronze amulet">
-		<attribute key="weight" value="0" />
+		<attribute key="weight" value="500" />
 		<attribute key="slotType" value="necklace" />
 		<attribute key="charges" value="200" />
 		<attribute key="showcharges" value="1" />
@@ -2249,25 +2249,25 @@
 		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2173" article="an" name="amulet of loss">
-		<attribute key="weight" value="0" />
+		<attribute key="weight" value="420" />
 		<attribute key="slotType" value="necklace" />
 		<attribute key="charges" value="1" />
 	</item>
 	<item id="2174" article="a" name="strange symbol">
 		<attribute key="slotType" value="ammo" />
-		<attribute key="weight" value="0" />
+		<attribute key="weight" value="200" />
 	</item>
 	<item id="2175" article="a" name="spellbook">
 		<attribute key="description" value="It shows your spells and can also shield against attacks when worn." />
-		<attribute key="weight" value="0" />
+		<attribute key="weight" value="1800" />
 		<attribute key="defense" value="14" />
 		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="2176" article="an" name="orb">
-		<attribute key="weight" value="0" />
+		<attribute key="weight" value="800" />
 	</item>
 	<item id="2177" article="a" name="life crystal">
-		<attribute key="weight" value="0" />
+		<attribute key="weight" value="263" />
 	</item>
 	<item id="2178" article="a" name="mind stone">
 		<attribute key="weight" value="250" />
