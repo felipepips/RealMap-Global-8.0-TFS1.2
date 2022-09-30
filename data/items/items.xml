@@ -12522,8 +12522,9 @@
 		<attribute key="description" value="Its blade is very notchy." />
 		<attribute key="weight" value="3600" />
 		<attribute key="defense" value="20" />
-		<attribute key="attack" value="18" />
+		<attribute key="attack" value="28" />
 		<attribute key="weaponType" value="sword" />
+		<attribute key="extradef" value="1" />
 	</item>
 	<item id="7386" article="a" name="mercenary sword">
 		<attribute key="weight" value="6800" />
