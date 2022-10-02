@@ -257,14 +257,6 @@
 	</rune>
 
 <!-- Conjure Spells -->
-    <conjure name="Blank Rune" words="adori blank" mana="25" conjureId="2260" conjureCount="1" exhaustion="1000" needlearn="0"  function="conjureRune">
-		<vocation name="Sorcerer"/>
-		<vocation name="Druid"/>
-		<vocation name="Master Sorcerer"/>
-		<vocation name="Elder Druid"/>
-		<vocation name="Paladin"/>
-		<vocation name="Royal Paladin"/>
-	</conjure>
 	<conjure group="support" name="Conjure Arrow" words="exevo con" lvl="13" mana="100" conjureId="2544" conjureCount="20" exhaustion="2000" needlearn="0" function="conjureItem">
 		<vocation name="Paladin"/>
 		<vocation name="Royal Paladin"/>

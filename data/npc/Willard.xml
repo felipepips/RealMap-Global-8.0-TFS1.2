@@ -3,7 +3,7 @@
 	<look type="131" head="58" body="104" legs="19" feet="116"/>
 	<parameters>
 		<parameter key="module_shop" value="1" />
-		<parameter key="shop_buyable" value="royal spear,7378,15;crimson sword,7385,610" />
+		<parameter key="shop_buyable" value="royal spear,7378,15;crimson sword,7385,610;sniper arrow,7364,5;onyx arrow,7365,7;piercing bolt,7363,5" />
 <parameter key="idletime" value="30"/>
 <parameter key="message_greet" value="Greetings and Banor be with you, |PLAYERNAME|!"/>
 <parameter key="message_placedinqueue" value="I'm ready soon, |PLAYERNAME|. Please wait."/>
