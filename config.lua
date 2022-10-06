@@ -58,6 +58,7 @@ housePriceEachSQM = 1000
 houseRentPeriod = "never"
 houseAntiTrash = false
 onlyInvitedCanMoveHouseItems = true
+maxItemsPerPZTile = 5
 
 -- Item Usage
 timeBetweenActions = 150
@@ -69,7 +70,6 @@ mapName = "global"
 mapAuthor = "Bruno"
 
 -- MySQL
-sqlType = "mysql"
 mysqlHost = "localhost"
 mysqlUser = "root"
 mysqlPass = ""
@@ -77,7 +77,6 @@ mysqlDatabase = "global"
 mysqlPort = 3306
 mysqlSock = ""
 passwordType = "sha1"
-encryptionType = "md5"
 
 -- Misc.
 -- NOTE: classicAttackSpeed set to true makes players constantly attack at regular

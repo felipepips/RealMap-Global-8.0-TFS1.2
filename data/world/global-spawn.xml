@@ -2243,7 +2243,7 @@
 		<monster name="pirate Buccaneer" x="-9" y="11" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-6" y="11" z="4" spawntime="5" />
 		<monster name="pirate cutthroat" x="-24" y="12" z="4" spawntime="5" />
-		<monster name="pirate Corsair" x="-3" y="12" z="4" spawntime="5" />
+		<monster name="pirate Corsair" x="-3" y="12" z="4" spawntime="60" />
 		<monster name="pirate cutthroat" x="-22" y="13" z="4" spawntime="5" />
 		<monster name="pirate marauder" x="-10" y="13" z="4" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-5" y="13" z="4" spawntime="5" />
@@ -5348,9 +5348,6 @@
 		<monster name="swamp troll" x="-2" y="2" z="6" spawntime="60" />
 		<monster name="swamp troll" x="1" y="3" z="6" spawntime="60" />
 	</spawn>
-	<spawn centerx="32360" centery="32223" centerz="6" radius="2">
-		<npc name="Nah'Bob" x="-1" y="-1" z="6" spawntime="5" />
-	</spawn>
 	<spawn centerx="31996" centery="32225" centerz="6" radius="5">
 		<monster name="wolf" x="1" y="-4" z="6" spawntime="150" />
 		<monster name="wolf" x="0" y="-3" z="6" spawntime="150" />
@@ -5365,10 +5362,6 @@
 		<monster name="rabbit" x="1" y="0" z="6" spawntime="150" />
 	</spawn>
 	<spawn centerx="32095" centery="32228" centerz="6" radius="5" />
-	<spawn centerx="32360" centery="32232" centerz="6" radius="3">
-		<npc name="Alesar" x="-2" y="-3" z="6" spawntime="5" />
-		<npc name="Rashid" x="0" y="3" z="6" spawntime="5" />
-	</spawn>
 	<spawn centerx="32089" centery="32234" centerz="6" radius="1">
 		<monster name="rabbit" x="0" y="0" z="6" spawntime="150" />
 	</spawn>
@@ -6070,13 +6063,13 @@
 		<monster name="pirate marauder" x="1" y="-21" z="6" spawntime="32768" />
 		<monster name="pirate marauder" x="-1" y="-19" z="6" spawntime="32768" />
 		<monster name="pirate cutthroat" x="-24" y="-17" z="6" spawntime="32768" />
-		<monster name="pirate cutthroat" x="-20" y="-17" z="6" spawntime="32768" />
+		<monster name="pirate cutthroat" x="-20" y="-17" z="6" spawntime="60" />
 		<monster name="pirate marauder" x="-4" y="-17" z="6" spawntime="32768" />
-		<monster name="pirate cutthroat" x="-19" y="-16" z="6" spawntime="32768" />
+		<monster name="pirate cutthroat" x="-19" y="-16" z="6" spawntime="60" />
 		<monster name="pirate cutthroat" x="-17" y="-16" z="6" spawntime="32768" />
-		<monster name="pirate cutthroat" x="-16" y="-16" z="6" spawntime="32768" />
+		<monster name="pirate cutthroat" x="-16" y="-16" z="6" spawntime="3600" />
 		<monster name="pirate cutthroat" x="-15" y="-16" z="6" spawntime="32768" />
-		<monster name="pirate cutthroat" x="-22" y="-14" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-22" y="-14" z="6" spawntime="10" />
 		<monster name="pirate cutthroat" x="-9" y="-13" z="6" spawntime="32768" />
 		<monster name="pirate cutthroat" x="-5" y="-12" z="6" spawntime="32768" />
 		<monster name="pirate cutthroat" x="-4" y="-10" z="6" spawntime="5" />
@@ -6103,7 +6096,7 @@
 		<monster name="pirate marauder" x="-13" y="14" z="6" spawntime="5" />
 		<monster name="pirate Buccaneer" x="-11" y="14" z="6" spawntime="5" />
 		<monster name="pirate cutthroat" x="11" y="14" z="6" spawntime="5" />
-		<monster name="pirate cutthroat" x="-14" y="16" z="6" spawntime="5" />
+		<monster name="pirate cutthroat" x="-14" y="16" z="6" spawntime="10" />
 		<monster name="pirate marauder" x="12" y="16" z="6" spawntime="5" />
 		<monster name="pirate marauder" x="9" y="17" z="6" spawntime="5" />
 		<monster name="pirate Buccaneer" x="14" y="18" z="6" spawntime="5" />
@@ -6253,8 +6246,8 @@
 	<spawn centerx="32038" centery="32856" centerz="6" radius="4" />
 	<spawn centerx="32054" centery="32859" centerz="6" radius="2" />
 	<spawn centerx="32026" centery="32867" centerz="6" radius="5">
-		<monster name="pirate Buccaneer" x="-4" y="-3" z="6" spawntime="5" />
-		<monster name="pirate marauder" x="-3" y="-1" z="6" spawntime="5" />
+		<monster name="pirate Buccaneer" x="-4" y="-3" z="6" spawntime="10" />
+		<monster name="pirate marauder" x="-3" y="-1" z="6" spawntime="10" />
 		<monster name="pirate cutthroat" x="-3" y="2" z="6" spawntime="5" />
 	</spawn>
 	<spawn centerx="33148" centery="32867" centerz="6" radius="2">
@@ -13370,9 +13363,6 @@
 	<spawn centerx="32701" centery="32223" centerz="7" radius="2">
 		<monster name="tarantula" x="1" y="-1" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="32359" centery="32224" centerz="7" radius="2">
-		<npc name="Haroun" x="-1" y="-2" z="7" spawntime="5" />
-	</spawn>
 	<spawn centerx="32708" centery="32224" centerz="7" radius="2">
 		<monster name="tarantula" x="0" y="2" z="7" spawntime="60" />
 	</spawn>
@@ -13438,9 +13428,6 @@
 	</spawn>
 	<spawn centerx="32880" centery="32232" centerz="7" radius="2">
 		<monster name="rabbit" x="0" y="-1" z="7" spawntime="60" />
-	</spawn>
-	<spawn centerx="32358" centery="32233" centerz="7" radius="2">
-		<npc name="Yaman" x="1" y="-1" z="7" spawntime="5" />
 	</spawn>
 	<spawn centerx="32713" centery="32233" centerz="7" radius="2">
 		<monster name="tarantula" x="0" y="1" z="7" spawntime="60" />
@@ -13802,26 +13789,6 @@
 	<spawn centerx="33299" centery="32282" centerz="7" radius="1">
 		<monster name="minotaur" x="1" y="0" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="31740" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31745" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31746" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31758" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31770" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31775" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31778" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31782" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31783" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31794" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31806" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31818" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31830" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31842" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31844" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31854" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31855" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31866" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31878" centery="32283" centerz="7" radius="5" />
-	<spawn centerx="31890" centery="32283" centerz="7" radius="5" />
 	<spawn centerx="32267" centery="32283" centerz="7" radius="6">
 		<monster name="wolf" x="-2" y="-3" z="7" spawntime="60" />
 		<monster name="wolf" x="3" y="-1" z="7" spawntime="60" />
@@ -13832,153 +13799,6 @@
 	</spawn>
 	<spawn centerx="33319" centery="32283" centerz="7" radius="1">
 		<monster name="minotaur" x="1" y="0" z="7" spawntime="60" />
-	</spawn>
-	<spawn centerx="31740" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31750" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="4" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31758" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31770" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="5" />
-	</spawn>
-	<spawn centerx="31778" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="0" y="5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="3" y="5" z="7" spawntime="5" />
-	</spawn>
-	<spawn centerx="31784" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="0" y="5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="3" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31791" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31796" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="3" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31802" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="0" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="3" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31812" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31814" centery="32284" centerz="7" radius="5" />
-	<spawn centerx="31822" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="4" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31827" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31831" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="4" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31840" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="4" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31846" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="4" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31854" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31866" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="5" />
-	</spawn>
-	<spawn centerx="31878" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31890" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31902" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31914" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31926" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31938" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31950" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31962" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31974" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="5" />
-	</spawn>
-	<spawn centerx="31986" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="5" />
-	</spawn>
-	<spawn centerx="31998" centery="32284" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="-1" y="5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="2" y="5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="5" y="5" z="7" spawntime="5" />
 	</spawn>
 	<spawn centerx="32801" centery="32284" centerz="7" radius="2">
 		<monster name="wolf" x="-1" y="-1" z="7" spawntime="60" />
@@ -14181,172 +14001,10 @@
 		<monster name="tarantula" x="2" y="-2" z="7" spawntime="60" />
 		<monster name="tarantula" x="-2" y="2" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="31740" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="-5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="-1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31745" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="3" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31746" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31758" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31770" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31777" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="4" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31782" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31784" centery="32305" centerz="7" radius="5" />
-	<spawn centerx="31793" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-3" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="0" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="3" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31794" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31806" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31818" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="-5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="-1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31823" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="3" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31830" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31834" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="4" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31842" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31843" centery="32305" centerz="7" radius="5" />
-	<spawn centerx="31854" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31866" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31878" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31890" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31902" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-4" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="5" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31915" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-5" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="4" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31927" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-5" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="4" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31939" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-5" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="4" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31951" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-5" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="4" y="-5" z="7" spawntime="32256" />
-	</spawn>
-	<spawn centerx="31963" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-5" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="4" y="-5" z="7" spawntime="5" />
-	</spawn>
-	<spawn centerx="31975" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-5" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="-2" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="1" y="-5" z="7" spawntime="32256" />
-		<monster name="Training Dummy" x="4" y="-5" z="7" spawntime="5" />
-	</spawn>
-	<spawn centerx="31987" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-5" y="-5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="-2" y="-5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="1" y="-5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="4" y="-5" z="7" spawntime="5" />
-	</spawn>
-	<spawn centerx="31999" centery="32305" centerz="7" radius="5">
-		<monster name="Training Dummy" x="-5" y="-5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="-2" y="-5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="1" y="-5" z="7" spawntime="5" />
-		<monster name="Training Dummy" x="4" y="-5" z="7" spawntime="5" />
-	</spawn>
-	<spawn centerx="31740" centery="32306" centerz="7" radius="5" />
-	<spawn centerx="31795" centery="32306" centerz="7" radius="5" />
-	<spawn centerx="31801" centery="32306" centerz="7" radius="5" />
-	<spawn centerx="31802" centery="32306" centerz="7" radius="5" />
-	<spawn centerx="31810" centery="32306" centerz="7" radius="5" />
-	<spawn centerx="31817" centery="32306" centerz="7" radius="5" />
-	<spawn centerx="31826" centery="32306" centerz="7" radius="5" />
-	<spawn centerx="31835" centery="32306" centerz="7" radius="5" />
-	<spawn centerx="31855" centery="32306" centerz="7" radius="5" />
-	<spawn centerx="31866" centery="32306" centerz="7" radius="5" />
-	<spawn centerx="31878" centery="32306" centerz="7" radius="5" />
-	<spawn centerx="31890" centery="32306" centerz="7" radius="5" />
 	<spawn centerx="32396" centery="32306" centerz="7" radius="2">
 		<monster name="wolf" x="-1" y="-1" z="7" spawntime="60" />
 		<monster name="wolf" x="2" y="1" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="31758" centery="32307" centerz="7" radius="5" />
-	<spawn centerx="31770" centery="32307" centerz="7" radius="5" />
 	<spawn centerx="32356" centery="32307" centerz="7" radius="1">
 		<monster name="wolf" x="-1" y="-1" z="7" spawntime="60" />
 	</spawn>
@@ -22906,6 +22564,9 @@
 	<spawn centerx="33062" centery="31846" centerz="8" radius="2">
 		<monster name="goblin" x="1" y="-1" z="8" spawntime="60" />
 	</spawn>
+	<spawn centerx="33069" centery="31846" centerz="8" radius="1">
+		<monster name="goblin" x="0" y="0" z="8" spawntime="60" />
+	</spawn>
 	<spawn centerx="33092" centery="31847" centerz="8" radius="2">
 		<monster name="goblin" x="-2" y="-2" z="8" spawntime="60" />
 		<monster name="goblin" x="2" y="-2" z="8" spawntime="60" />
@@ -22933,6 +22594,9 @@
 	<spawn centerx="33079" centery="31850" centerz="8" radius="2">
 		<monster name="goblin" x="2" y="0" z="8" spawntime="60" />
 	</spawn>
+	<spawn centerx="33073" centery="31853" centerz="8" radius="1">
+		<monster name="goblin" x="0" y="0" z="8" spawntime="60" />
+	</spawn>
 	<spawn centerx="33052" centery="31854" centerz="8" radius="2">
 		<monster name="goblin" x="1" y="0" z="8" spawntime="60" />
 	</spawn>
@@ -22956,6 +22620,9 @@
 	</spawn>
 	<spawn centerx="33067" centery="31864" centerz="8" radius="2">
 		<monster name="goblin" x="0" y="1" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="33091" centery="31864" centerz="8" radius="1">
+		<monster name="goblin" x="0" y="0" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32231" centery="31865" centerz="8" radius="3">
 		<monster name="skeleton" x="-3" y="0" z="8" spawntime="60" />
@@ -24800,14 +24467,14 @@
 	<spawn centerx="32376" centery="32209" centerz="8" radius="1">
 		<monster name="spider" x="1" y="0" z="8" spawntime="60" />
 	</spawn>
+	<spawn centerx="32911" centery="32209" centerz="8" radius="2">
+		<monster name="swamp troll" x="1" y="2" z="8" spawntime="60" />
+	</spawn>
 	<spawn centerx="32928" centery="32209" centerz="8" radius="2">
 		<monster name="swamp troll" x="0" y="-1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="33057" centery="32209" centerz="8" radius="2">
 		<monster name="Elf" x="1" y="0" z="8" spawntime="60" />
-	</spawn>
-	<spawn centerx="32911" centery="32210" centerz="8" radius="2">
-		<monster name="swamp troll" x="1" y="1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="31949" centery="32211" centerz="8" radius="5">
 		<monster name="troll" x="0" y="3" z="8" spawntime="150" />
@@ -24912,8 +24579,8 @@
 		<monster name="rat" x="17" y="25" z="8" spawntime="150" />
 		<monster name="rat" x="24" y="30" z="8" spawntime="150" />
 	</spawn>
-	<spawn centerx="32901" centery="32221" centerz="8" radius="2">
-		<monster name="swamp troll" x="1" y="-1" z="8" spawntime="60" />
+	<spawn centerx="32902" centery="32221" centerz="8" radius="2">
+		<monster name="swamp troll" x="0" y="-1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32388" centery="32226" centerz="8" radius="1">
 		<monster name="cave rat" x="1" y="0" z="8" spawntime="60" />
@@ -26491,6 +26158,13 @@
 		<monster name="fire devil" x="30" y="10" z="8" spawntime="60" />
 		<monster name="fire elemental" x="30" y="18" z="8" spawntime="60" />
 	</spawn>
+	<spawn centerx="32692" centery="32589" centerz="8" radius="5">
+		<monster name="swamp troll" x="1" y="-4" z="8" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="-1" z="8" spawntime="60" />
+		<monster name="swamp troll" x="4" y="-1" z="8" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="4" z="8" spawntime="60" />
+		<monster name="swamp troll" x="1" y="4" z="8" spawntime="60" />
+	</spawn>
 	<spawn centerx="31751" centery="32591" centerz="8" radius="10">
 		<monster name="crypt shambler" x="0" y="-7" z="8" spawntime="60" />
 		<monster name="crypt shambler" x="1" y="-3" z="8" spawntime="60" />
@@ -26509,6 +26183,11 @@
 	<spawn centerx="33188" centery="32595" centerz="8" radius="2">
 		<monster name="larva" x="-1" y="-1" z="8" spawntime="60" />
 		<monster name="larva" x="1" y="1" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="32679" centery="32597" centerz="8" radius="5">
+		<monster name="swamp troll" x="-2" y="-2" z="8" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="1" z="8" spawntime="60" />
+		<monster name="swamp troll" x="2" y="2" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="33132" centery="32597" centerz="8" radius="2">
 		<monster name="larva" x="1" y="-1" z="8" spawntime="60" />
@@ -26553,6 +26232,11 @@
 	<spawn centerx="32191" centery="32606" centerz="8" radius="2">
 		<monster name="fire devil" x="0" y="0" z="8" spawntime="60" />
 	</spawn>
+	<spawn centerx="32690" centery="32606" centerz="8" radius="5">
+		<monster name="swamp troll" x="-3" y="-4" z="8" spawntime="60" />
+		<monster name="swamp troll" x="0" y="-1" z="8" spawntime="60" />
+		<monster name="swamp troll" x="3" y="0" z="8" spawntime="60" />
+	</spawn>
 	<spawn centerx="33062" centery="32607" centerz="8" radius="5">
 		<monster name="green djinn" x="-1" y="-3" z="8" spawntime="60" />
 		<monster name="gargoyle" x="3" y="-2" z="8" spawntime="60" />
@@ -26577,6 +26261,12 @@
 	</spawn>
 	<spawn centerx="32198" centery="32609" centerz="8" radius="3">
 		<monster name="fire devil" x="0" y="0" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="32678" centery="32610" centerz="8" radius="5">
+		<monster name="swamp troll" x="2" y="-3" z="8" spawntime="60" />
+		<monster name="swamp troll" x="-1" y="-2" z="8" spawntime="60" />
+		<monster name="swamp troll" x="2" y="1" z="8" spawntime="60" />
+		<monster name="swamp troll" x="0" y="2" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="33180" centery="32611" centerz="8" radius="2">
 		<monster name="larva" x="1" y="1" z="8" spawntime="60" />
@@ -26962,6 +26652,14 @@
 		<monster name="quara pincher" x="-4" y="-1" z="8" spawntime="33554432" />
 		<monster name="quara pincher" x="-2" y="1" z="8" spawntime="60" />
 	</spawn>
+	<spawn centerx="32656" centery="32705" centerz="8" radius="5">
+		<monster name="spider" x="-3" y="-4" z="8" spawntime="60" />
+		<monster name="bug" x="-4" y="-2" z="8" spawntime="60" />
+		<monster name="spider" x="0" y="-1" z="8" spawntime="60" />
+		<monster name="spider" x="2" y="2" z="8" spawntime="60" />
+		<monster name="spider" x="-4" y="4" z="8" spawntime="60" />
+		<monster name="bug" x="-2" y="4" z="8" spawntime="60" />
+	</spawn>
 	<spawn centerx="32243" centery="32706" centerz="8" radius="2">
 		<monster name="bug" x="-1" y="-1" z="8" spawntime="60" />
 		<monster name="bug" x="2" y="2" z="8" spawntime="60" />
@@ -26969,6 +26667,14 @@
 	<spawn centerx="32278" centery="32706" centerz="8" radius="2">
 		<monster name="rotworm" x="-1" y="-1" z="8" spawntime="60" />
 		<monster name="rotworm" x="2" y="2" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="32665" centery="32706" centerz="8" radius="5">
+		<monster name="spider" x="3" y="-3" z="8" spawntime="60" />
+		<monster name="spider" x="-2" y="1" z="8" spawntime="60" />
+		<monster name="spider" x="2" y="1" z="8" spawntime="60" />
+		<monster name="bug" x="-3" y="2" z="8" spawntime="60" />
+		<monster name="bug" x="1" y="3" z="8" spawntime="60" />
+		<monster name="spider" x="-3" y="4" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="33154" centery="32706" centerz="8" radius="2">
 		<monster name="larva" x="2" y="-1" z="8" spawntime="60" />
@@ -27044,6 +26750,11 @@
 	</spawn>
 	<spawn centerx="32240" centery="32713" centerz="8" radius="2">
 		<monster name="bug" x="1" y="1" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="32660" centery="32714" centerz="8" radius="5">
+		<monster name="spider" x="-4" y="-1" z="8" spawntime="60" />
+		<monster name="spider" x="-2" y="-1" z="8" spawntime="60" />
+		<monster name="spider" x="2" y="0" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32200" centery="32715" centerz="8" radius="2">
 		<monster name="poison spider" x="-1" y="-2" z="8" spawntime="60" />
@@ -27151,6 +26862,12 @@
 	<spawn centerx="33081" centery="32723" centerz="8" radius="2">
 		<monster name="larva" x="-1" y="0" z="8" spawntime="60" />
 	</spawn>
+	<spawn centerx="32658" centery="32724" centerz="8" radius="1">
+		<monster name="rat" x="0" y="0" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="32661" centery="32725" centerz="8" radius="1">
+		<monster name="rat" x="0" y="0" z="8" spawntime="60" />
+	</spawn>
 	<spawn centerx="33047" centery="32725" centerz="8" radius="2">
 		<monster name="larva" x="-1" y="1" z="8" spawntime="60" />
 		<monster name="larva" x="1" y="2" z="8" spawntime="60" />
@@ -27196,6 +26913,10 @@
 	<spawn centerx="33282" centery="32728" centerz="8" radius="2">
 		<monster name="larva" x="-1" y="-1" z="8" spawntime="60" />
 	</spawn>
+	<spawn centerx="32648" centery="32729" centerz="8" radius="5">
+		<monster name="rat" x="2" y="-4" z="8" spawntime="60" />
+		<monster name="rat" x="-1" y="0" z="8" spawntime="60" />
+	</spawn>
 	<spawn centerx="33260" centery="32730" centerz="8" radius="2">
 		<monster name="larva" x="1" y="-1" z="8" spawntime="60" />
 	</spawn>
@@ -27240,6 +26961,13 @@
 		<monster name="quara predator" x="13" y="-9" z="8" spawntime="60" />
 		<monster name="quara predator" x="6" y="-5" z="8" spawntime="60" />
 	</spawn>
+	<spawn centerx="32674" centery="32735" centerz="8" radius="5">
+		<monster name="rat" x="1" y="-3" z="8" spawntime="60" />
+		<monster name="rat" x="0" y="-2" z="8" spawntime="60" />
+		<monster name="rat" x="2" y="-1" z="8" spawntime="60" />
+		<monster name="rat" x="4" y="-1" z="8" spawntime="60" />
+		<monster name="rat" x="-3" y="2" z="8" spawntime="60" />
+	</spawn>
 	<spawn centerx="33099" centery="32736" centerz="8" radius="2">
 		<monster name="larva" x="0" y="1" z="8" spawntime="60" />
 	</spawn>
@@ -27258,6 +26986,23 @@
 	<spawn centerx="32233" centery="32738" centerz="8" radius="2">
 		<monster name="rotworm" x="-1" y="0" z="8" spawntime="60" />
 		<monster name="rotworm" x="1" y="2" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="32650" centery="32738" centerz="8" radius="5">
+		<monster name="rat" x="-4" y="0" z="8" spawntime="60" />
+		<monster name="rat" x="-3" y="0" z="8" spawntime="83834880" />
+		<monster name="rat" x="2" y="1" z="8" spawntime="60" />
+		<monster name="rat" x="5" y="1" z="8" spawntime="60" />
+		<monster name="rat" x="-4" y="4" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="32666" centery="32738" centerz="8" radius="5">
+		<monster name="rat" x="-4" y="-4" z="8" spawntime="60" />
+		<monster name="rat" x="0" y="-3" z="8" spawntime="60" />
+		<monster name="rat" x="1" y="-2" z="8" spawntime="60" />
+		<monster name="rat" x="-3" y="-1" z="8" spawntime="60" />
+		<monster name="rat" x="-2" y="-1" z="8" spawntime="60" />
+		<monster name="rat" x="-4" y="1" z="8" spawntime="60" />
+		<monster name="rat" x="1" y="2" z="8" spawntime="60" />
+		<monster name="rat" x="-1" y="4" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="33307" centery="32738" centerz="8" radius="2">
 		<monster name="larva" x="0" y="-1" z="8" spawntime="60" />
@@ -27323,6 +27068,11 @@
 	<spawn centerx="32196" centery="32748" centerz="8" radius="2">
 		<monster name="rotworm" x="-2" y="1" z="8" spawntime="60" />
 		<monster name="rotworm" x="1" y="2" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="32665" centery="32748" centerz="8" radius="5">
+		<monster name="rat" x="-3" y="-3" z="8" spawntime="60" />
+		<monster name="rat" x="2" y="-2" z="8" spawntime="60" />
+		<monster name="rat" x="-1" y="2" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="33064" centery="32748" centerz="8" radius="2">
 		<monster name="larva" x="0" y="-1" z="8" spawntime="60" />
@@ -31202,6 +30952,9 @@
 		<monster name="ghoul" x="3" y="0" z="9" spawntime="60" />
 		<monster name="ghoul" x="0" y="2" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="33100" centery="31844" centerz="9" radius="1">
+		<monster name="goblin" x="0" y="0" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="32169" centery="31846" centerz="9" radius="3">
 		<monster name="ghoul" x="-2" y="-1" z="9" spawntime="60" />
 		<monster name="ghoul" x="3" y="1" z="9" spawntime="60" />
@@ -31620,7 +31373,7 @@
 		<monster name="poison spider" x="-1" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33231" centery="31915" centerz="9" radius="1">
-		<monster name="rotworm" x="1" y="-1" z="9" spawntime="60" />
+		<monster name="rotworm" x="0" y="-1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33254" centery="31915" centerz="9" radius="1">
 		<monster name="rotworm" x="-1" y="1" z="9" spawntime="60" />
@@ -32717,7 +32470,7 @@
 	</spawn>
 	<spawn centerx="32091" centery="32114" centerz="9" radius="1" />
 	<spawn centerx="32406" centery="32114" centerz="9" radius="2">
-		<monster name="rotworm" x="1" y="1" z="9" spawntime="60" />
+		<monster name="rotworm" x="-1" y="1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33029" centery="32114" centerz="9" radius="2">
 		<monster name="rotworm" x="-2" y="0" z="9" spawntime="60" />
@@ -33005,15 +32758,15 @@
 		<monster name="Elf Scout" x="1" y="-1" z="9" spawntime="60" />
 		<monster name="Elf Arcanist" x="0" y="2" z="9" spawntime="60" />
 	</spawn>
-	<spawn centerx="32393" centery="32176" centerz="9" radius="2">
-		<monster name="rotworm" x="-1" y="-1" z="9" spawntime="60" />
-	</spawn>
 	<spawn centerx="32840" centery="32176" centerz="9" radius="1">
 		<monster name="dragon lord" x="0" y="-1" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32383" centery="32177" centerz="9" radius="2">
 		<monster name="rotworm" x="1" y="-1" z="9" spawntime="60" />
 		<monster name="rotworm" x="1" y="2" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32393" centery="32177" centerz="9" radius="2">
+		<monster name="rotworm" x="-1" y="-2" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32913" centery="32177" centerz="9" radius="2">
 		<monster name="swamp troll" x="1" y="0" z="9" spawntime="60" />
@@ -35467,6 +35220,12 @@
 		<monster name="larva" x="-2" y="2" z="9" spawntime="60" />
 		<monster name="larva" x="1" y="2" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32691" centery="32592" centerz="9" radius="5">
+		<monster name="swamp troll" x="0" y="-5" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="-4" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="2" z="9" spawntime="60" />
+		<monster name="swamp troll" x="2" y="3" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="33119" centery="32593" centerz="9" radius="3">
 		<monster name="scarab" x="-2" y="0" z="9" spawntime="60" />
 		<monster name="larva" x="-1" y="2" z="9" spawntime="60" />
@@ -35539,6 +35298,13 @@
 		<monster name="demon skeleton" x="7" y="3" z="9" spawntime="60" />
 		<monster name="crypt shambler" x="2" y="9" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32705" centery="32602" centerz="9" radius="5">
+		<monster name="swamp troll" x="0" y="-5" z="9" spawntime="60" />
+		<monster name="swamp troll" x="1" y="-2" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="0" z="9" spawntime="60" />
+		<monster name="swamp troll" x="3" y="2" z="9" spawntime="60" />
+		<monster name="swamp troll" x="4" y="4" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="33238" centery="32602" centerz="9" radius="2">
 		<monster name="scarab" x="0" y="0" z="9" spawntime="60" />
 	</spawn>
@@ -35578,6 +35344,13 @@
 		<monster name="fire elemental" x="6" y="26" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32087" centery="32605" centerz="9" radius="3" />
+	<spawn centerx="32682" centery="32605" centerz="9" radius="5">
+		<monster name="swamp troll" x="-1" y="-4" z="9" spawntime="60" />
+		<monster name="swamp troll" x="3" y="-4" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="-2" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-1" y="3" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="4" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="32213" centery="32607" centerz="9" radius="3">
 		<monster name="dragon" x="0" y="0" z="9" spawntime="60" />
 	</spawn>
@@ -35660,6 +35433,17 @@
 		<monster name="scarab" x="-3" y="-2" z="9" spawntime="60" />
 		<monster name="scarab" x="3" y="1" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32668" centery="32615" centerz="9" radius="1">
+		<monster name="swamp troll" x="0" y="0" z="9" spawntime="60" />
+		<monster name="swamp troll" x="1" y="1" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32706" centery="32615" centerz="9" radius="5">
+		<monster name="swamp troll" x="-1" y="-5" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="-4" z="9" spawntime="60" />
+		<monster name="swamp troll" x="3" y="-3" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-2" y="2" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="5" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="33073" centery="32615" centerz="9" radius="5">
 		<monster name="gargoyle" x="1" y="-3" z="9" spawntime="60" />
 		<monster name="gargoyle" x="-4" y="4" z="9" spawntime="60" />
@@ -35688,6 +35472,12 @@
 		<monster name="larva" x="1" y="2" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32081" centery="32617" centerz="9" radius="2" />
+	<spawn centerx="32680" centery="32617" centerz="9" radius="5">
+		<monster name="swamp troll" x="4" y="-4" z="9" spawntime="60" />
+		<monster name="swamp troll" x="4" y="-1" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="0" z="9" spawntime="60" />
+		<monster name="swamp troll" x="1" y="4" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="33121" centery="32617" centerz="9" radius="2">
 		<monster name="scarab" x="2" y="-2" z="9" spawntime="60" />
 		<monster name="scarab" x="-1" y="1" z="9" spawntime="60" />
@@ -35698,6 +35488,10 @@
 	</spawn>
 	<spawn centerx="33287" centery="32617" centerz="9" radius="2">
 		<monster name="scarab" x="0" y="1" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32667" centery="32618" centerz="9" radius="1">
+		<monster name="swamp troll" x="1" y="-1" z="9" spawntime="60" />
+		<monster name="swamp troll" x="0" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33057" centery="32618" centerz="9" radius="5">
 		<monster name="gargoyle" x="-3" y="0" z="9" spawntime="60" />
@@ -35804,6 +35598,13 @@
 		<monster name="larva" x="3" y="0" z="9" spawntime="60" />
 		<monster name="larva" x="-2" y="2" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32684" centery="32630" centerz="9" radius="5">
+		<monster name="swamp troll" x="4" y="-4" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="-1" z="9" spawntime="60" />
+		<monster name="swamp troll" x="3" y="-1" z="9" spawntime="60" />
+		<monster name="swamp troll" x="4" y="2" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="4" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="33103" centery="32630" centerz="9" radius="2">
 		<monster name="scarab" x="0" y="-1" z="9" spawntime="60" />
 		<monster name="larva" x="1" y="0" z="9" spawntime="60" />
@@ -35811,6 +35612,9 @@
 	<spawn centerx="33171" centery="32630" centerz="9" radius="3">
 		<monster name="scarab" x="1" y="-2" z="9" spawntime="60" />
 		<monster name="scarab" x="-2" y="2" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32692" centery="32631" centerz="9" radius="1">
+		<monster name="swamp troll" x="0" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33194" centery="32631" centerz="9" radius="3">
 		<monster name="larva" x="-3" y="-1" z="9" spawntime="60" />
@@ -35858,6 +35662,9 @@
 		<monster name="larva" x="-2" y="1" z="9" spawntime="60" />
 		<monster name="larva" x="1" y="1" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32676" centery="32636" centerz="9" radius="1">
+		<monster name="swamp troll" x="0" y="0" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="33104" centery="32638" centerz="9" radius="2">
 		<monster name="scarab" x="0" y="-2" z="9" spawntime="60" />
 		<monster name="larva" x="1" y="-1" z="9" spawntime="60" />
@@ -35885,6 +35692,9 @@
 		<monster name="Quara Predator Scout" x="1" y="0" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32072" centery="32641" centerz="9" radius="3" />
+	<spawn centerx="32685" centery="32641" centerz="9" radius="1">
+		<monster name="swamp troll" x="0" y="0" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="33113" centery="32642" centerz="9" radius="3">
 		<monster name="scarab" x="2" y="-3" z="9" spawntime="60" />
 		<monster name="scarab" x="-2" y="-1" z="9" spawntime="60" />
@@ -36163,6 +35973,14 @@
 		<monster name="larva" x="-2" y="1" z="9" spawntime="60" />
 		<monster name="larva" x="3" y="2" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32668" centery="32677" centerz="9" radius="5">
+		<monster name="swamp troll" x="0" y="-2" z="9" spawntime="60" />
+		<monster name="swamp troll" x="3" y="-2" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="0" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-2" y="3" z="9" spawntime="60" />
+		<monster name="swamp troll" x="1" y="3" z="9" spawntime="60" />
+		<monster name="swamp troll" x="5" y="5" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="33178" centery="32677" centerz="9" radius="3">
 		<monster name="scarab" x="-2" y="0" z="9" spawntime="60" />
 		<monster name="scarab" x="2" y="2" z="9" spawntime="60" />
@@ -36205,6 +36023,10 @@
 	<spawn centerx="33215" centery="32683" centerz="9" radius="2">
 		<monster name="larva" x="0" y="-1" z="9" spawntime="60" />
 	</spawn>
+	<spawn centerx="32676" centery="32685" centerz="9" radius="5">
+		<monster name="swamp troll" x="2" y="-3" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="1" z="9" spawntime="60" />
+	</spawn>
 	<spawn centerx="33228" centery="32685" centerz="9" radius="2">
 		<monster name="scarab" x="-2" y="-1" z="9" spawntime="60" />
 	</spawn>
@@ -36225,6 +36047,12 @@
 		<monster name="larva" x="-1" y="-3" z="9" spawntime="60" />
 		<monster name="larva" x="1" y="0" z="9" spawntime="60" />
 		<monster name="larva" x="2" y="2" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32664" centery="32689" centerz="9" radius="5">
+		<monster name="swamp troll" x="1" y="-3" z="9" spawntime="60" />
+		<monster name="swamp troll" x="4" y="-2" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-1" y="3" z="9" spawntime="60" />
+		<monster name="swamp troll" x="4" y="3" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33137" centery="32689" centerz="9" radius="2">
 		<monster name="scarab" x="0" y="-1" z="9" spawntime="60" />
@@ -36261,6 +36089,14 @@
 	</spawn>
 	<spawn centerx="33080" centery="32700" centerz="9" radius="2">
 		<monster name="scarab" x="1" y="0" z="9" spawntime="60" />
+	</spawn>
+	<spawn centerx="32656" centery="32701" centerz="9" radius="5">
+		<monster name="swamp troll" x="-2" y="-5" z="9" spawntime="60" />
+		<monster name="swamp troll" x="4" y="-5" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="-1" z="9" spawntime="60" />
+		<monster name="swamp troll" x="4" y="0" z="9" spawntime="60" />
+		<monster name="swamp troll" x="-2" y="3" z="9" spawntime="60" />
+		<monster name="swamp troll" x="2" y="3" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="33201" centery="32702" centerz="9" radius="3">
 		<monster name="scarab" x="1" y="0" z="9" spawntime="60" />
@@ -40925,9 +40761,9 @@
 	</spawn>
 	<spawn centerx="32377" centery="32001" centerz="10" radius="5">
 		<monster name="ghoul" x="1" y="-3" z="10" spawntime="60" />
+		<monster name="ghoul" x="4" y="-3" z="10" spawntime="60" />
 		<monster name="ghoul" x="-4" y="-1" z="10" spawntime="60" />
-		<monster name="ghoul" x="4" y="-1" z="10" spawntime="60" />
-		<monster name="ghoul" x="-1" y="3" z="10" spawntime="60" />
+		<monster name="ghoul" x="-2" y="0" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32394" centery="32001" centerz="10" radius="2">
 		<monster name="ghoul" x="1" y="0" z="10" spawntime="60" />
@@ -41325,7 +41161,7 @@
 		<monster name="orc spearman" x="1" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32361" centery="32136" centerz="10" radius="1">
-		<monster name="rotworm" x="1" y="0" z="10" spawntime="60" />
+		<monster name="rotworm" x="1" y="-1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32373" centery="32136" centerz="10" radius="1">
 		<monster name="rotworm" x="-1" y="-1" z="10" spawntime="60" />
@@ -43350,6 +43186,12 @@
 		<monster name="enlightened of the cult" x="5" y="25" z="10" spawntime="60" />
 		<monster name="necromancer" x="-17" y="26" z="10" spawntime="60" />
 	</spawn>
+	<spawn centerx="32657" centery="32603" centerz="10" radius="5">
+		<monster name="swamp troll" x="-1" y="-3" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="-2" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-1" y="1" z="10" spawntime="60" />
+		<monster name="swamp troll" x="3" y="5" z="10" spawntime="60" />
+	</spawn>
 	<spawn centerx="33087" centery="32605" centerz="10" radius="3">
 		<monster name="larva" x="1" y="-2" z="10" spawntime="60" />
 		<monster name="larva" x="-2" y="0" z="10" spawntime="60" />
@@ -43406,9 +43248,22 @@
 		<monster name="scarab" x="-2" y="0" z="10" spawntime="60" />
 		<monster name="scarab" x="1" y="1" z="10" spawntime="60" />
 	</spawn>
+	<spawn centerx="32711" centery="32611" centerz="10" radius="5">
+		<monster name="swamp troll" x="-2" y="-5" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="-4" z="10" spawntime="60" />
+		<monster name="swamp troll" x="4" y="-3" z="10" spawntime="60" />
+		<monster name="swamp troll" x="1" y="-2" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="1" z="10" spawntime="60" />
+		<monster name="swamp troll" x="0" y="3" z="10" spawntime="60" />
+	</spawn>
 	<spawn centerx="33284" centery="32611" centerz="10" radius="3">
 		<monster name="scarab" x="-2" y="-1" z="10" spawntime="60" />
 		<monster name="scarab" x="2" y="2" z="10" spawntime="60" />
+	</spawn>
+	<spawn centerx="32666" centery="32613" centerz="10" radius="5">
+		<monster name="swamp troll" x="-2" y="-3" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="-1" z="10" spawntime="60" />
+		<monster name="swamp troll" x="1" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33105" centery="32613" centerz="10" radius="3">
 		<monster name="larva" x="-1" y="-2" z="10" spawntime="60" />
@@ -43425,6 +43280,10 @@
 		<monster name="scarab" x="2" y="-1" z="10" spawntime="60" />
 		<monster name="scarab" x="-2" y="0" z="10" spawntime="60" />
 		<monster name="scarab" x="3" y="2" z="10" spawntime="60" />
+	</spawn>
+	<spawn centerx="32699" centery="32616" centerz="10" radius="5">
+		<monster name="swamp troll" x="4" y="-4" z="10" spawntime="60" />
+		<monster name="swamp troll" x="4" y="4" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33261" centery="32616" centerz="10" radius="3">
 		<monster name="larva" x="-3" y="-2" z="10" spawntime="60" />
@@ -43482,6 +43341,13 @@
 		<monster name="larva" x="-2" y="-2" z="10" spawntime="60" />
 		<monster name="larva" x="-1" y="0" z="10" spawntime="60" />
 		<monster name="larva" x="2" y="3" z="10" spawntime="60" />
+	</spawn>
+	<spawn centerx="32713" centery="32623" centerz="10" radius="5">
+		<monster name="swamp troll" x="2" y="-4" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="0" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-2" y="0" z="10" spawntime="60" />
+		<monster name="swamp troll" x="3" y="0" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="4" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33162" centery="32629" centerz="10" radius="3">
 		<monster name="scarab" x="1" y="-3" z="10" spawntime="60" />
@@ -43563,6 +43429,14 @@
 		<monster name="scarab" x="3" y="1" z="10" spawntime="60" />
 		<monster name="scarab" x="-2" y="3" z="10" spawntime="60" />
 	</spawn>
+	<spawn centerx="32679" centery="32639" centerz="10" radius="5">
+		<monster name="swamp troll" x="-2" y="-3" z="10" spawntime="60" />
+		<monster name="swamp troll" x="2" y="-3" z="10" spawntime="60" />
+		<monster name="swamp troll" x="4" y="-2" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="-1" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="4" z="10" spawntime="60" />
+		<monster name="swamp troll" x="0" y="4" z="10" spawntime="60" />
+	</spawn>
 	<spawn centerx="33070" centery="32639" centerz="10" radius="3">
 		<monster name="scarab" x="1" y="-1" z="10" spawntime="60" />
 		<monster name="scarab" x="-1" y="2" z="10" spawntime="60" />
@@ -43623,6 +43497,14 @@
 	<spawn centerx="33165" centery="32652" centerz="10" radius="2">
 		<monster name="larva" x="-2" y="0" z="10" spawntime="60" />
 		<monster name="larva" x="2" y="1" z="10" spawntime="60" />
+	</spawn>
+	<spawn centerx="32679" centery="32653" centerz="10" radius="5">
+		<monster name="swamp troll" x="-4" y="-4" z="10" spawntime="60" />
+		<monster name="swamp troll" x="0" y="-4" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-1" y="-2" z="10" spawntime="60" />
+		<monster name="swamp troll" x="4" y="-2" z="10" spawntime="60" />
+		<monster name="swamp troll" x="2" y="3" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="5" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33156" centery="32653" centerz="10" radius="3">
 		<monster name="larva" x="0" y="-2" z="10" spawntime="60" />
@@ -43762,6 +43644,14 @@
 		<monster name="scarab" x="-4" y="1" z="10" spawntime="60" />
 		<monster name="scarab" x="1" y="3" z="10" spawntime="60" />
 	</spawn>
+	<spawn centerx="32676" centery="32667" centerz="10" radius="5">
+		<monster name="swamp troll" x="-4" y="-4" z="10" spawntime="60" />
+		<monster name="swamp troll" x="2" y="-4" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-1" y="-2" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-4" y="-1" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="3" z="10" spawntime="60" />
+		<monster name="swamp troll" x="1" y="4" z="10" spawntime="60" />
+	</spawn>
 	<spawn centerx="33117" centery="32670" centerz="10" radius="3">
 		<monster name="larva" x="-2" y="-3" z="10" spawntime="60" />
 		<monster name="larva" x="2" y="2" z="10" spawntime="60" />
@@ -43792,6 +43682,13 @@
 		<monster name="larva" x="-2" y="-1" z="10" spawntime="60" />
 		<monster name="larva" x="2" y="-1" z="10" spawntime="60" />
 		<monster name="larva" x="0" y="2" z="10" spawntime="60" />
+	</spawn>
+	<spawn centerx="32671" centery="32679" centerz="10" radius="5">
+		<monster name="swamp troll" x="3" y="-5" z="10" spawntime="60" />
+		<monster name="swamp troll" x="1" y="-4" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-3" y="-3" z="10" spawntime="60" />
+		<monster name="swamp troll" x="-2" y="0" z="10" spawntime="60" />
+		<monster name="swamp troll" x="3" y="0" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="33137" centery="32679" centerz="10" radius="3">
 		<monster name="scarab" x="1" y="-2" z="10" spawntime="60" />
@@ -45020,7 +44917,6 @@
 		<monster name="dworc fleshhunter" x="1" y="0" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32119" centery="32906" centerz="10" radius="3">
-		<monster name="hydra" x="-1" y="1" z="10" spawntime="60" />
 		<monster name="Zombie" x="1" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32348" centery="32906" centerz="10" radius="7">
@@ -45045,7 +44941,6 @@
 		<monster name="dworc venomsniper" x="1" y="0" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32124" centery="32910" centerz="10" radius="3">
-		<monster name="hydra" x="2" y="-1" z="10" spawntime="60" />
 		<monster name="ghost" x="-2" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32412" centery="32910" centerz="10" radius="5">
@@ -45061,34 +44956,26 @@
 	</spawn>
 	<spawn centerx="32097" centery="32912" centerz="10" radius="3">
 		<monster name="Zombie" x="-1" y="1" z="10" spawntime="60" />
-		<monster name="hydra" x="-2" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32132" centery="32912" centerz="10" radius="3">
 		<monster name="Zombie" x="-3" y="0" z="10" spawntime="60" />
-		<monster name="hydra" x="2" y="2" z="10" spawntime="60" />
+		<monster name="pirate skeleton" x="3" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32146" centery="32912" centerz="10" radius="3">
-		<monster name="Zombie" x="-3" y="2" z="10" spawntime="60" />
+		<monster name="Zombie" x="-3" y="1" z="10" spawntime="60" />
 		<monster name="Zombie" x="0" y="2" z="10" spawntime="60" />
-		<monster name="hydra" x="3" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32153" centery="32912" centerz="10" radius="3">
-		<monster name="hydra" x="2" y="0" z="10" spawntime="60" />
 		<monster name="pirate skeleton" x="1" y="2" z="10" spawntime="60" />
 		<monster name="Zombie" x="-3" y="3" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="32165" centery="32912" centerz="10" radius="3">
-		<monster name="hydra" x="2" y="1" z="10" spawntime="60" />
-	</spawn>
+	<spawn centerx="32165" centery="32912" centerz="10" radius="3" />
 	<spawn centerx="32670" centery="32912" centerz="10" radius="1">
 		<monster name="dworc venomsniper" x="1" y="0" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="32105" centery="32913" centerz="10" radius="3">
-		<monster name="hydra" x="0" y="2" z="10" spawntime="60" />
-	</spawn>
+	<spawn centerx="32105" centery="32913" centerz="10" radius="3" />
 	<spawn centerx="32176" centery="32913" centerz="10" radius="3">
 		<monster name="Zombie" x="-2" y="1" z="10" spawntime="60" />
-		<monster name="hydra" x="3" y="1" z="10" spawntime="60" />
 		<monster name="Zombie" x="1" y="2" z="10" spawntime="60" />
 		<monster name="Zombie" x="2" y="3" z="10" spawntime="60" />
 	</spawn>
@@ -45109,7 +44996,6 @@
 	</spawn>
 	<spawn centerx="32097" centery="32918" centerz="10" radius="3">
 		<monster name="Zombie" x="0" y="-1" z="10" spawntime="60" />
-		<monster name="hydra" x="2" y="0" z="10" spawntime="60" />
 		<monster name="Zombie" x="2" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32132" centery="32919" centerz="10" radius="3">
@@ -45117,8 +45003,7 @@
 		<monster name="Zombie" x="2" y="1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32181" centery="32919" centerz="10" radius="3">
-		<monster name="Zombie" x="-3" y="-1" z="10" spawntime="60" />
-		<monster name="hydra" x="-1" y="2" z="10" spawntime="60" />
+		<monster name="Zombie" x="-2" y="-1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32786" centery="32919" centerz="10" radius="1">
 		<monster name="dworc voodoomaster" x="1" y="0" z="10" spawntime="60" />
@@ -45135,9 +45020,7 @@
 		<monster name="thornback tortoise" x="2" y="5" z="10" spawntime="60" />
 		<monster name="thornback tortoise" x="-5" y="7" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="32082" centery="32922" centerz="10" radius="3">
-		<monster name="hydra" x="-1" y="2" z="10" spawntime="60" />
-	</spawn>
+	<spawn centerx="32082" centery="32922" centerz="10" radius="3" />
 	<spawn centerx="32667" centery="32922" centerz="10" radius="1">
 		<monster name="centipede" x="1" y="0" z="10" spawntime="60" />
 	</spawn>
@@ -45179,26 +45062,20 @@
 	</spawn>
 	<spawn centerx="32076" centery="32926" centerz="10" radius="3">
 		<monster name="Zombie" x="0" y="3" z="10" spawntime="60" />
-		<monster name="hydra" x="3" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32097" centery="32926" centerz="10" radius="3">
 		<monster name="Zombie" x="1" y="0" z="10" spawntime="60" />
-		<monster name="hydra" x="2" y="0" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32132" centery="32926" centerz="10" radius="3">
 		<monster name="Zombie" x="-2" y="1" z="10" spawntime="60" />
-		<monster name="hydra" x="-1" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32181" centery="32926" centerz="10" radius="3">
-		<monster name="hydra" x="-1" y="2" z="10" spawntime="60" />
 		<monster name="Zombie" x="-1" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32786" centery="32926" centerz="10" radius="1">
 		<monster name="dworc venomsniper" x="1" y="0" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="32149" centery="32928" centerz="10" radius="3">
-		<monster name="hydra" x="1" y="-2" z="10" spawntime="60" />
-	</spawn>
+	<spawn centerx="32149" centery="32928" centerz="10" radius="3" />
 	<spawn centerx="32672" centery="32928" centerz="10" radius="1">
 		<monster name="centipede" x="1" y="0" z="10" spawntime="60" />
 	</spawn>
@@ -45215,7 +45092,7 @@
 		<monster name="thornback tortoise" x="1" y="7" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32083" centery="32931" centerz="10" radius="3">
-		<monster name="hydra" x="1" y="2" z="10" spawntime="60" />
+		<monster name="pirate skeleton" x="0" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32414" centery="32931" centerz="10" radius="3">
 		<monster name="thornback tortoise" x="1" y="1" z="10" spawntime="60" />
@@ -45230,39 +45107,30 @@
 		<monster name="thornback tortoise" x="2" y="5" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32090" centery="32933" centerz="10" radius="3">
+		<monster name="pirate skeleton" x="0" y="2" z="10" spawntime="60" />
 		<monster name="Zombie" x="-3" y="3" z="10" spawntime="60" />
-		<monster name="hydra" x="1" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32118" centery="32933" centerz="10" radius="3">
 		<monster name="Zombie" x="-3" y="-1" z="10" spawntime="60" />
-		<monster name="hydra" x="3" y="1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32160" centery="32933" centerz="10" radius="3">
-		<monster name="hydra" x="2" y="-1" z="10" spawntime="60" />
-		<monster name="Zombie" x="-2" y="1" z="10" spawntime="60" />
-	</spawn>
-	<spawn centerx="32174" centery="32933" centerz="10" radius="3">
-		<monster name="hydra" x="3" y="-1" z="10" spawntime="60" />
 		<monster name="Zombie" x="1" y="1" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="32170" centery="32939" centerz="10" radius="3">
-		<monster name="hydra" x="-2" y="1" z="10" spawntime="60" />
+	<spawn centerx="32174" centery="32933" centerz="10" radius="3">
+		<monster name="Zombie" x="1" y="1" z="10" spawntime="60" />
 	</spawn>
+	<spawn centerx="32170" centery="32939" centerz="10" radius="3" />
 	<spawn centerx="32139" centery="32940" centerz="10" radius="3">
 		<monster name="Zombie" x="2" y="0" z="10" spawntime="60" />
 		<monster name="Zombie" x="2" y="1" z="10" spawntime="60" />
-		<monster name="hydra" x="1" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32160" centery="32940" centerz="10" radius="3">
 		<monster name="Zombie" x="1" y="-2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32125" centery="32941" centerz="10" radius="3">
-		<monster name="Zombie" x="-3" y="-1" z="10" spawntime="60" />
-		<monster name="hydra" x="1" y="2" z="10" spawntime="60" />
+		<monster name="Zombie" x="-2" y="-1" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="32187" centery="32942" centerz="10" radius="3">
-		<monster name="hydra" x="0" y="2" z="10" spawntime="60" />
-	</spawn>
+	<spawn centerx="32187" centery="32942" centerz="10" radius="3" />
 	<spawn centerx="32441" centery="32944" centerz="10" radius="3">
 		<monster name="Tortoise" x="1" y="-2" z="10" spawntime="60" />
 		<monster name="Tortoise" x="-1" y="3" z="10" spawntime="60" />
@@ -45284,54 +45152,46 @@
 		<monster name="thornback tortoise" x="2" y="5" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32097" centery="32947" centerz="10" radius="3">
-		<monster name="hydra" x="-2" y="0" z="10" spawntime="60" />
-		<monster name="Zombie" x="-1" y="3" z="10" spawntime="60" />
-		<monster name="Zombie" x="0" y="3" z="10" spawntime="60" />
+		<monster name="Zombie" x="0" y="1" z="10" spawntime="60" />
+		<monster name="Zombie" x="3" y="1" z="10" spawntime="60" />
+		<monster name="Zombie" x="-2" y="3" z="10" spawntime="60" />
+		<monster name="Zombie" x="3" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32139" centery="32947" centerz="10" radius="3">
-		<monster name="Zombie" x="-2" y="-3" z="10" spawntime="60" />
-		<monster name="Zombie" x="2" y="1" z="10" spawntime="60" />
+		<monster name="Zombie" x="0" y="-3" z="10" spawntime="60" />
+		<monster name="Zombie" x="2" y="0" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32153" centery="32947" centerz="10" radius="3">
-		<monster name="hydra" x="2" y="2" z="10" spawntime="60" />
 		<monster name="Zombie" x="3" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32160" centery="32947" centerz="10" radius="3">
-		<monster name="hydra" x="3" y="1" z="10" spawntime="60" />
-		<monster name="Zombie" x="-1" y="2" z="10" spawntime="60" />
+		<monster name="Zombie" x="-1" y="1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32167" centery="32947" centerz="10" radius="3">
 		<monster name="Zombie" x="-2" y="-3" z="10" spawntime="60" />
-		<monster name="Zombie" x="-2" y="-1" z="10" spawntime="60" />
+		<monster name="Zombie" x="-3" y="-1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32358" centery="32948" centerz="10" radius="3">
 		<monster name="thornback tortoise" x="-1" y="-2" z="10" spawntime="60" />
 		<monster name="Tortoise" x="-1" y="1" z="10" spawntime="60" />
 		<monster name="thornback tortoise" x="1" y="3" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="32184" centery="32949" centerz="10" radius="3">
-		<monster name="hydra" x="0" y="1" z="10" spawntime="60" />
-	</spawn>
-	<spawn centerx="32097" centery="32954" centerz="10" radius="3">
-		<monster name="Zombie" x="3" y="-3" z="10" spawntime="60" />
-		<monster name="Zombie" x="3" y="-2" z="10" spawntime="60" />
-	</spawn>
+	<spawn centerx="32184" centery="32949" centerz="10" radius="3" />
+	<spawn centerx="32097" centery="32954" centerz="10" radius="3" />
 	<spawn centerx="32132" centery="32954" centerz="10" radius="3">
 		<monster name="pirate skeleton" x="-3" y="-2" z="10" spawntime="60" />
-		<monster name="hydra" x="-1" y="1" z="10" spawntime="60" />
 		<monster name="Zombie" x="-2" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32153" centery="32954" centerz="10" radius="3">
-		<monster name="hydra" x="2" y="-1" z="10" spawntime="60" />
 		<monster name="Zombie" x="0" y="2" z="10" spawntime="60" />
-		<monster name="hydra" x="0" y="3" z="10" spawntime="60" />
+		<monster name="Zombie" x="1" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32090" centery="32957" centerz="10" radius="3">
-		<monster name="hydra" x="0" y="1" z="10" spawntime="60" />
+		<monster name="pirate skeleton" x="0" y="-2" z="10" spawntime="60" />
+		<monster name="pirate skeleton" x="-1" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32188" centery="32958" centerz="10" radius="3">
 		<monster name="Zombie" x="-2" y="-3" z="10" spawntime="60" />
-		<monster name="hydra" x="-1" y="1" z="10" spawntime="60" />
 		<monster name="Zombie" x="1" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32439" centery="32959" centerz="10" radius="8">
@@ -45356,18 +45216,13 @@
 	</spawn>
 	<spawn centerx="32111" centery="32961" centerz="10" radius="3">
 		<monster name="Zombie" x="-2" y="-3" z="10" spawntime="60" />
-		<monster name="hydra" x="3" y="-1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32118" centery="32961" centerz="10" radius="3">
-		<monster name="hydra" x="2" y="-1" z="10" spawntime="60" />
 		<monster name="Zombie" x="2" y="2" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="32132" centery="32961" centerz="10" radius="3">
-		<monster name="hydra" x="-1" y="-1" z="10" spawntime="60" />
-	</spawn>
+	<spawn centerx="32132" centery="32961" centerz="10" radius="3" />
 	<spawn centerx="32153" centery="32961" centerz="10" radius="3">
 		<monster name="Zombie" x="-3" y="-3" z="10" spawntime="60" />
-		<monster name="Zombie" x="0" y="-2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32378" centery="32961" centerz="10" radius="7">
 		<monster name="thornback tortoise" x="-1" y="-4" z="10" spawntime="60" />
@@ -45383,29 +45238,25 @@
 		<monster name="Tortoise" x="-1" y="0" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32142" centery="32964" centerz="10" radius="3">
-		<monster name="hydra" x="3" y="0" z="10" spawntime="60" />
+		<monster name="ghoul" x="-2" y="-1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32091" centery="32966" centerz="10" radius="3">
 		<monster name="Zombie" x="-1" y="0" z="10" spawntime="60" />
-		<monster name="hydra" x="1" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32183" centery="32966" centerz="10" radius="3">
-		<monster name="hydra" x="1" y="0" z="10" spawntime="60" />
 		<monster name="Zombie" x="0" y="1" z="10" spawntime="60" />
 		<monster name="Zombie" x="-1" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32079" centery="32970" centerz="10" radius="3">
 		<monster name="Zombie" x="0" y="0" z="10" spawntime="60" />
-		<monster name="hydra" x="3" y="0" z="10" spawntime="60" />
 		<monster name="Zombie" x="2" y="1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32189" centery="32971" centerz="10" radius="3">
 		<monster name="Zombie" x="-3" y="0" z="10" spawntime="60" />
-		<monster name="hydra" x="0" y="0" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32139" centery="32972" centerz="10" radius="3">
+		<monster name="ghoul" x="2" y="-3" z="10" spawntime="60" />
 		<monster name="Zombie" x="-3" y="3" z="10" spawntime="60" />
-		<monster name="hydra" x="0" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32460" centery="32972" centerz="10" radius="3">
 		<monster name="blood crab" x="-2" y="-2" z="10" spawntime="60" />
@@ -45423,22 +45274,19 @@
 		<monster name="blood crab" x="7" y="5" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32095" centery="32976" centerz="10" radius="3">
-		<monster name="Zombie" x="-2" y="-2" z="10" spawntime="60" />
-		<monster name="hydra" x="2" y="2" z="10" spawntime="60" />
+		<monster name="Zombie" x="-1" y="-2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32133" centery="32977" centerz="10" radius="3">
 		<monster name="Zombie" x="2" y="1" z="10" spawntime="60" />
-		<monster name="hydra" x="2" y="2" z="10" spawntime="60" />
+		<monster name="ghoul" x="1" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32143" centery="32979" centerz="10" radius="3">
-		<monster name="hydra" x="-1" y="0" z="10" spawntime="60" />
+		<monster name="ghoul" x="-1" y="-1" z="10" spawntime="60" />
+		<monster name="ghoul" x="2" y="0" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="32103" centery="32982" centerz="10" radius="3">
-		<monster name="hydra" x="-2" y="-1" z="10" spawntime="60" />
-	</spawn>
+	<spawn centerx="32103" centery="32982" centerz="10" radius="3" />
 	<spawn centerx="32111" centery="32982" centerz="10" radius="3">
 		<monster name="Zombie" x="1" y="-3" z="10" spawntime="60" />
-		<monster name="hydra" x="0" y="-2" z="10" spawntime="60" />
 		<monster name="ghoul" x="0" y="2" z="10" spawntime="60" />
 		<monster name="Zombie" x="2" y="3" z="10" spawntime="60" />
 	</spawn>
@@ -46999,7 +46847,7 @@
 		<monster name="orc leader" x="2" y="2" z="11" spawntime="60" />
 	</spawn>
 	<spawn centerx="32535" centery="31936" centerz="11" radius="1">
-		<monster name="poison spider" x="1" y="-1" z="11" spawntime="60" />
+		<monster name="poison spider" x="-1" y="-1" z="11" spawntime="60" />
 		<monster name="poison spider" x="-1" y="1" z="11" spawntime="60" />
 	</spawn>
 	<spawn centerx="32422" centery="31938" centerz="11" radius="2">
@@ -47331,7 +47179,7 @@
 	</spawn>
 	<spawn centerx="32410" centery="32050" centerz="11" radius="2">
 		<monster name="beholder" x="-2" y="-1" z="11" spawntime="60" />
-		<monster name="crypt shambler" x="2" y="1" z="11" spawntime="60" />
+		<monster name="crypt shambler" x="2" y="0" z="11" spawntime="60" />
 	</spawn>
 	<spawn centerx="32074" centery="32052" centerz="11" radius="1">
 		<monster name="skeleton" x="1" y="0" z="11" spawntime="150" />
@@ -51215,9 +51063,9 @@
 		<monster name="crypt shambler" x="2" y="0" z="12" spawntime="60" />
 		<monster name="beholder" x="1" y="2" z="12" spawntime="60" />
 	</spawn>
-	<spawn centerx="32434" centery="32004" centerz="12" radius="2">
-		<monster name="ghost" x="1" y="-1" z="12" spawntime="60" />
-		<monster name="crypt shambler" x="2" y="1" z="12" spawntime="60" />
+	<spawn centerx="32441" centery="32006" centerz="12" radius="2">
+		<monster name="crypt shambler" x="-1" y="1" z="12" spawntime="60" />
+		<monster name="ghost" x="1" y="1" z="12" spawntime="60" />
 		<monster name="crypt shambler" x="-2" y="2" z="12" spawntime="60" />
 	</spawn>
 	<spawn centerx="32415" centery="32008" centerz="12" radius="2">
@@ -51374,8 +51222,8 @@
 	<spawn centerx="31958" centery="32173" centerz="12" radius="1">
 		<monster name="poison spider" x="1" y="0" z="12" spawntime="150" />
 	</spawn>
-	<spawn centerx="32410" centery="32176" centerz="12" radius="2">
-		<monster name="skeleton" x="0" y="1" z="12" spawntime="60" />
+	<spawn centerx="32409" centery="32176" centerz="12" radius="2">
+		<monster name="skeleton" x="1" y="1" z="12" spawntime="60" />
 	</spawn>
 	<spawn centerx="31963" centery="32179" centerz="12" radius="1">
 		<monster name="poison spider" x="1" y="0" z="12" spawntime="150" />
@@ -53509,7 +53357,7 @@
 	</spawn>
 	<spawn centerx="32431" centery="31902" centerz="13" radius="3">
 		<monster name="slime" x="2" y="-3" z="13" spawntime="60" />
-		<monster name="slime" x="-1" y="0" z="13" spawntime="60" />
+		<monster name="slime" x="0" y="1" z="13" spawntime="60" />
 	</spawn>
 	<spawn centerx="32667" centery="31902" centerz="13" radius="1">
 		<monster name="rotworm" x="1" y="-1" z="13" spawntime="60" />
@@ -54875,9 +54723,7 @@
 		<monster name="gargoyle" x="4" y="2" z="13" spawntime="60" />
 		<monster name="gargoyle" x="1" y="4" z="13" spawntime="60" />
 	</spawn>
-	<spawn centerx="33316" centery="32688" centerz="13" radius="1">
-		<monster name="crypt shambler" x="0" y="-1" z="13" spawntime="60" />
-	</spawn>
+	<spawn centerx="33316" centery="32688" centerz="13" radius="1" />
 	<spawn centerx="33258" centery="32689" centerz="13" radius="20">
 		<monster name="Deathslicer" x="-3" y="-18" z="13" spawntime="60" />
 		<monster name="Deathslicer" x="-3" y="-10" z="13" spawntime="60" />
@@ -55543,8 +55389,8 @@
 	</spawn>
 	<spawn centerx="33252" centery="32811" centerz="13" radius="5">
 		<monster name="ghoul" x="-2" y="-2" z="13" spawntime="60" />
+		<monster name="ghoul" x="4" y="-2" z="13" spawntime="60" />
 		<monster name="scarab" x="2" y="-1" z="13" spawntime="60" />
-		<monster name="ghoul" x="4" y="-1" z="13" spawntime="60" />
 		<monster name="scarab" x="-3" y="3" z="13" spawntime="60" />
 		<monster name="ghoul" x="1" y="3" z="13" spawntime="60" />
 	</spawn>
@@ -59784,7 +59630,7 @@
 		<monster name="dwarf soldier" x="1" y="0" z="15" spawntime="60" />
 	</spawn>
 	<spawn centerx="32651" centery="31882" centerz="15" radius="1">
-		<monster name="dwarf soldier" x="-1" y="-1" z="15" spawntime="60" />
+		<monster name="dwarf soldier" x="-1" y="0" z="15" spawntime="60" />
 		<monster name="dwarf guard" x="0" y="1" z="15" spawntime="60" />
 	</spawn>
 	<spawn centerx="32585" centery="31883" centerz="15" radius="1">

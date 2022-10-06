@@ -19,10 +19,10 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="-0" max="-250" poison="160"/>
-		<attack name="speed" interval="2000" chance="15" range="7" radius="6" target="0" speedchange="-800" duration="15000">
+		<attack name="speed" interval="2000" chance="20" range="7" radius="6" target="0" speedchange="-800" duration="15000">
 			<attribute key="areaEffect" value="poff"/>
 		</attack>
-		<attack name="speed" interval="2000" chance="20" range="7" target="1" speedchange="-600" duration="10000">
+		<attack name="speed" interval="2000" chance="25" range="7" target="1" speedchange="-600" duration="10000">
 			<attribute key="shootEffect" value="snowball"/>
 		</attack>
 	</attacks>

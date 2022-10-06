@@ -209,6 +209,8 @@ if Modules == nil then
 		if player:isPremium() or not parameters.premium then
 			if parameters.level and player:getLevel() < parameters.level then
 				npcHandler:say("You must reach level " .. parameters.level .. " before I can let you go there.", cid)
+			elseif player:isPzLocked() then
+				npcHandler:say("First get rid of those blood stains! You are not going to ruin my vehicle!", cid)
 			elseif not player:removeMoney(cost) then
 				npcHandler:say("You don't have enough money.", cid)
 			else
@@ -554,6 +556,8 @@ if Modules == nil then
 		if player:isPremium() or not shop_premium[cid] then
 			if not player:removeMoney(cost) then
 				npcHandler:say("You do not have enough money!", cid)
+			elseif player:isPzLocked(cid) then
+				npcHandler:say("Get out of there with this blood.", cid)
 			else
 				npcHandler:say("It was a pleasure doing business with you.", cid)
 				npcHandler:releaseFocus(cid)

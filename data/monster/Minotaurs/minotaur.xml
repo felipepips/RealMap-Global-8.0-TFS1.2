@@ -4,11 +4,11 @@
 	<look type="25" corpse="5969"/>
 	<targetchange interval="4000" chance="0"/>
 	<flags>
-		<flag summonable="1"/>
 		<flag attackable="1"/>
 		<flag hostile="1"/>
-		<flag illusionable="1"/>
+		<flag summonable="1"/>
 		<flag convinceable="1"/>
+		<flag illusionable="1"/>
 		<flag pushable="1"/>
 		<flag canpushitems="0"/>
 		<flag canpushcreatures="0"/>
@@ -17,26 +17,34 @@
 		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-45"/>
+		<attack name="melee" interval="2000" skill="25" attack="15"/>
 	</attacks>
-	<defenses armor="15" defense="15"/>
-	
-	<voices interval="5000" chance="10">
+	<defenses armor="11" defense="11">
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+	</immunities>
+	<voices interval="2000" chance="5">
 		<voice sentence="Kaplar!"/>
-		<voice sentence="Hurr"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="25" chance="65700"/>	<!-- gold coin -->
-		<item id="2510" chance="20000"/>				<!-- plate shield -->
-		<item id="2398" chance="12900"/>				<!-- mace -->
-		<item id="2464" chance="10000"/>				<!-- chain armor -->
-		<item id="2460" chance="7800"/>					<!-- brass helmet -->
-		<item id="2376" chance="5000"/>					<!-- sword -->
-		<item id="2666" chance="5000"/>					<!-- meat -->
-		<item id="2386" chance="4000"/>					<!-- axe -->
-		<item id="12428" countmax="2" chance="2000"/>	<!-- minotaur horn -->
-		<item id="5878" chance="980"/>					<!-- minotaur leather -->
-		<item id="2554" chance="310"/>					<!-- shovel -->
-		<item id="2172" chance="120"/>					<!-- bronze amulet -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2510" chance="40000"/><!-- 40% plate shield -->
+				<item id="2386" chance="8000"/><!-- 8% axe -->
+				<item id="2376" chance="20000"/><!-- 20% sword -->
+				<item id="2398" chance="26000"/><!-- 26% mace -->
+				<item id="2172" chance="300"/><!-- 0.1% bronze amulet -->
+			</inside>
+		</item>
+		<item id="2554" chance="6000"/><!-- 6% shovel -->
+		<item id="2460" chance="16000"/><!-- 16% brass helmet -->
+		<item id="2458" chance="10000"/><!-- 10% chain helmet -->
+		<item id="2649" chance="30000"/><!-- 30% leather legs -->
+		<item id="2464" chance="20000"/><!-- 20% chain armor -->
+		<item id="2148" chance="55000" countmax="10"/><!-- 10 55% gold coin -->
+		<item id="2148" chance="50000" countmax="15"/><!-- 15 50% gold coin -->
+		<item id="2666" chance="20000"/><!-- 20% meat -->
 	</loot>
 </monster>

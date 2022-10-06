@@ -1826,7 +1826,7 @@
 	</movevent>
 	<movevent event="DeEquip" itemid="24839" slot="hand" function="onDeEquipItem" />
 
-	<movevent event="Equip" itemid="2183" slot="hand" level="37" function="onEquipItem"> <!-- Hailstorm Rod -->
+	<movevent event="Equip" itemid="2183" slot="hand" level="33" function="onEquipItem"> <!-- Tempest Rod -->
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
 	</movevent>

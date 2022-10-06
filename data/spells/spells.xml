@@ -124,6 +124,8 @@
 		<vocation name="Druid"/>
 		<vocation name="Master Sorcerer"/>
 		<vocation name="Elder Druid"/>
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin"/>
 	</instant>
 	<instant group="support" name="Levitate" words="exani hur" lvl="12" mana="50" prem="1" aggressive="0" exhaustion="1000" params="1" needlearn="0" function="Levitate">
 		<vocation name="Sorcerer"/>
@@ -170,6 +172,8 @@
 		<vocation name="Druid"/>
 		<vocation name="Master Sorcerer"/>
 		<vocation name="Elder Druid"/>
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin"/>
 	</instant>
 	<instant group="healing" name="Mass Healing" words="exura gran mas res" lvl="36" mana="150" prem="1" aggressive="0" exhaustion="2000" needlearn="0" script="healing/mass healing.lua">
 		<vocation name="Druid"/>
@@ -297,7 +301,7 @@
 		<vocation name="Master Sorcerer"/>
 		<vocation name="Elder Druid"/>
 	</conjure>
-	<conjure name="Light Magic Missile" words="adori" lvl="15" mana="120" soul="1" reagentId="2260" conjureId="2287" conjureCount="5" exhaustion="2000" needlearn="0" function="conjureRune">
+	<conjure name="Light Magic Missile" words="adori" lvl="15" mana="120" soul="1" reagentId="2260" conjureId="2287" conjureCount="10" exhaustion="2000" needlearn="0" function="conjureRune">
 		<vocation name="Sorcerer"/>
 		<vocation name="Druid"/>
 		<vocation name="Master Sorcerer"/>
@@ -331,7 +335,7 @@
 		<vocation name="Sorcerer"/>
 		<vocation name="Master Sorcerer"/>
 	</conjure>
-	<conjure name="Heavy Magic Missile" words="adori gran" lvl="25" mana="350" soul="2" reagentId="2260" conjureId="2311" conjureCount="5" exhaustion="2000" needlearn="0" function="conjureRune">
+	<conjure name="Heavy Magic Missile" words="adori gran" lvl="25" mana="350" soul="2" reagentId="2260" conjureId="2311" conjureCount="10" exhaustion="2000" needlearn="0" function="conjureRune">
 		<vocation name="Sorcerer"/>
 		<vocation name="Master Sorcerer"/>
 		<vocation name="Druid"/>

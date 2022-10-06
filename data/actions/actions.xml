@@ -24,6 +24,7 @@
 	<action fromid="7759" toid="7762" script="Other/enchanting/enchanting.lua" />
 		
 	<!-- Fluids -->
+	<action itemid="7490" script="Other/fluids/fluids.lua" />
 	<action itemid="6558" script="Other/fluids/concentratedDemonicBlood.lua" />
 	<action fromid="2005" toid="2009" script="Other/fluids/fluids.lua" />
 	<action fromid="2011" toid="2015" script="Other/fluids/fluids.lua" />

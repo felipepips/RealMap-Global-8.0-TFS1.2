@@ -17,6 +17,7 @@
 		<vocation name="Druid" />
 	</wand>
 
+
 	<!-- Wands -->
 	<wand id="2190" level="7" mana="2" min="8" max="18" type="energy"> <!-- Wand of Vortex -->
 		<vocation name="Sorcerer" />

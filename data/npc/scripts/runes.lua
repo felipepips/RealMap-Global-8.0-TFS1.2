@@ -40,6 +40,8 @@ shopModule:addBuyableItem({'poison bomb'}, 2286, 85, 1, 'poison bomb rune')
 shopModule:addBuyableItem({'soulfire'}, 2308, 46, 1, 'soulfire rune')
 shopModule:addBuyableItem({'wild growth'}, 2269, 160, 1, 'wild growth rune')
 
+shopModule:addSellableItem({'vial', 'flask'}, 2006, 5, 'empty vial', 0)
+
 shopModule:addBuyableItem({'antidote'}, 2266, 65, 1, 'antidote rune')
 shopModule:addBuyableItem({'chameleon'}, 2291, 210, 1, 'chameleon rune')
 shopModule:addBuyableItem({'convince creature'}, 2290, 80, 1, 'convince creature rune')
