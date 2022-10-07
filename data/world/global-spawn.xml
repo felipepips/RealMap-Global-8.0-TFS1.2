@@ -3414,9 +3414,6 @@
 	<spawn centerx="32386" centery="32637" centerz="5" radius="1">
 		<monster name="spider" x="0" y="-1" z="5" spawntime="60" />
 	</spawn>
-	<spawn centerx="32995" centery="32637" centerz="5" radius="3">
-		<monster name="stone golem" x="-2" y="0" z="5" spawntime="60" />
-	</spawn>
 	<spawn centerx="32368" centery="32639" centerz="5" radius="1">
 		<monster name="tarantula" x="0" y="-1" z="5" spawntime="60" />
 	</spawn>
@@ -5854,11 +5851,8 @@
 	<spawn centerx="32378" centery="32645" centerz="6" radius="1">
 		<monster name="spider" x="0" y="-1" z="6" spawntime="60" />
 	</spawn>
-	<spawn centerx="33011" centery="32667" centerz="6" radius="3">
-		<monster name="hydra" x="0" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="33026" centery="32677" centerz="6" radius="3">
-		<monster name="hydra" x="1" y="0" z="6" spawntime="60" />
+	<spawn centerx="33019" centery="32675" centerz="6" radius="3">
+		<monster name="hydra" x="-1" y="0" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="33072" centery="32679" centerz="6" radius="2">
 		<monster name="dragon" x="0" y="-1" z="6" spawntime="60" />
@@ -5869,11 +5863,14 @@
 	<spawn centerx="33064" centery="32680" centerz="6" radius="1">
 		<monster name="dragon" x="1" y="1" z="6" spawntime="60" />
 	</spawn>
+	<spawn centerx="33033" centery="32684" centerz="6" radius="3">
+		<monster name="hydra" x="-1" y="0" z="6" spawntime="60" />
+	</spawn>
 	<spawn centerx="33071" centery="32687" centerz="6" radius="2">
 		<monster name="dragon" x="-1" y="0" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="33015" centery="32689" centerz="6" radius="3">
-		<monster name="hydra" x="1" y="-1" z="6" spawntime="60" />
+		<monster name="hydra" x="-1" y="2" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="31955" centery="32695" centerz="6" radius="30">
 		<monster name="warlock" x="0" y="-12" z="6" spawntime="60" />

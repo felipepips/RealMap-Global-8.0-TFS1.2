@@ -13037,6 +13037,10 @@
 	<item id="7489" name="gold converter">
 		<attribute key="weight" value="100" />
 	</item>
+	<item id="7490" article="a" name="vial">
+		<attribute key="weight" value="180" />
+		<attribute key="pickupable" value="1" />
+	</item>
 	<item id="30001" name="water" />
 	<item id="30002" name="lifefluid" />
 	<item id="30003" name="beer" />

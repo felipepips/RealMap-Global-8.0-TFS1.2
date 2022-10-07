@@ -71,7 +71,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			end
 
 			player:say(fluidMessage[item.type] or 'Gulp.', TALKTYPE_MONSTER_SAY)
-			item:transform(item.itemid, 0)
+			item:transform(7490, 0)
 		else
 			local pool = Game.createItem(2016, item.type, toPosition)
 			if pool then
