@@ -37762,7 +37762,7 @@
 	</spawn>
 	<spawn centerx="32190" centery="32915" centerz="9" radius="3">
 		<monster name="ghost" x="-1" y="-1" z="9" spawntime="60" />
-		<monster name="crypt shambler" x="0" y="2" z="9" spawntime="60" />
+		<monster name="crypt shambler" x="-1" y="3" z="9" spawntime="60" />
 	</spawn>
 	<spawn centerx="32196" centery="32915" centerz="9" radius="3">
 		<monster name="crypt shambler" x="-1" y="1" z="9" spawntime="60" />
@@ -44955,12 +44955,12 @@
 		<monster name="Zombie" x="-1" y="1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32132" centery="32912" centerz="10" radius="3">
-		<monster name="Zombie" x="-3" y="0" z="10" spawntime="60" />
+		<monster name="Zombie" x="-2" y="0" z="10" spawntime="60" />
 		<monster name="pirate skeleton" x="3" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32146" centery="32912" centerz="10" radius="3">
 		<monster name="Zombie" x="-3" y="1" z="10" spawntime="60" />
-		<monster name="Zombie" x="0" y="2" z="10" spawntime="60" />
+		<monster name="Zombie" x="1" y="2" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32153" centery="32912" centerz="10" radius="3">
 		<monster name="pirate skeleton" x="1" y="2" z="10" spawntime="60" />
@@ -45108,13 +45108,13 @@
 		<monster name="Zombie" x="-3" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32118" centery="32933" centerz="10" radius="3">
-		<monster name="Zombie" x="-3" y="-1" z="10" spawntime="60" />
+		<monster name="Zombie" x="-2" y="-1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32160" centery="32933" centerz="10" radius="3">
 		<monster name="Zombie" x="1" y="1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32174" centery="32933" centerz="10" radius="3">
-		<monster name="Zombie" x="1" y="1" z="10" spawntime="60" />
+		<monster name="Zombie" x="1" y="-1" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32170" centery="32939" centerz="10" radius="3" />
 	<spawn centerx="32139" centery="32940" centerz="10" radius="3">
@@ -45177,7 +45177,6 @@
 	<spawn centerx="32097" centery="32954" centerz="10" radius="3" />
 	<spawn centerx="32132" centery="32954" centerz="10" radius="3">
 		<monster name="pirate skeleton" x="-3" y="-2" z="10" spawntime="60" />
-		<monster name="Zombie" x="-2" y="3" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32153" centery="32954" centerz="10" radius="3">
 		<monster name="Zombie" x="0" y="2" z="10" spawntime="60" />
@@ -45211,13 +45210,13 @@
 		<monster name="Tortoise" x="0" y="1" z="10" spawntime="60" />
 		<monster name="Tortoise" x="3" y="1" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="32111" centery="32961" centerz="10" radius="3">
-		<monster name="Zombie" x="-2" y="-3" z="10" spawntime="60" />
-	</spawn>
+	<spawn centerx="32111" centery="32961" centerz="10" radius="3" />
 	<spawn centerx="32118" centery="32961" centerz="10" radius="3">
 		<monster name="Zombie" x="2" y="2" z="10" spawntime="60" />
 	</spawn>
-	<spawn centerx="32132" centery="32961" centerz="10" radius="3" />
+	<spawn centerx="32132" centery="32961" centerz="10" radius="3">
+		<monster name="Zombie" x="-2" y="-3" z="10" spawntime="60" />
+	</spawn>
 	<spawn centerx="32153" centery="32961" centerz="10" radius="3">
 		<monster name="Zombie" x="-3" y="-3" z="10" spawntime="60" />
 	</spawn>

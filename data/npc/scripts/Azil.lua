@@ -11,7 +11,7 @@ local shopModule = ShopModule:new()
 npcHandler:addModule(shopModule)
 
 shopModule:addSellableItem({'leather armor'}, 					Cfleatherarmor, 5)
-shopModule:addSellableItem({'chain armor'}, 					Cfchainarmor, 40)
+shopModule:addSellableItem({'chain armor'}, 					Cfchainarmor, 70)
 shopModule:addSellableItem({'brass armor'}, 					Cfbrassarmor, 112)
 shopModule:addSellableItem({'plate armor'}, 					Cfplatearmor, 240)
 shopModule:addSellableItem({'steel helmet'}, 					Cfsteelhelmet, 293)
