@@ -35,13 +35,6 @@
 		<vocation name="Sorcerer" />
 	</wand>
 
-	<!-- Special Wands -->
-
-	<wand id="2433" level="40" mana="25" type="energy" script="magic staff.lua"> <!-- magic staff-->
-		<vocation name="Sorcerer" />
-		<vocation name="Druid" />
-	</wand>
-
 
 	<!-- Swords -->
 	<melee id="2396" action="removecharge" />

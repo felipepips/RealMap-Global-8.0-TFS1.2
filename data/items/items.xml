@@ -3526,16 +3526,15 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="extradef" value="1" />
 	</item>
-	<item id="2433" article="an" name="magic staff">
+	<item id="2433" article="an" name="enchanted staff">
 		<attribute key="description" value="Temporary magic powers enchant this staff." />
 		<attribute key="weight" value="3800" />
 		<attribute key="defense" value="45" />
-		<attribute key="attack" value="40" />
-		<attribute key="weight" value="2300" />
-		<attribute key="weaponType" value="wand" />
+		<attribute key="attack" value="39" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
-           <attribute key="shootType" value="energy" />
-		<attribute key="range" value="10" />
+		<attribute key="decayTo" value="2401" />
+		<attribute key="duration" value="60" />
 	</item>
 	<item id="2434" article="a" name="dragon hammer">
 		<attribute key="weight" value="9700" />

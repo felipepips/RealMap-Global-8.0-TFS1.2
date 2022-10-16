@@ -12,7 +12,7 @@ whiteSkullTime = 15 * 60 * 1000
 stairJumpExhaustion = 800
 experienceByKillingPlayers = true
 expFromPlayersLevelRange = 75
-allowFightBack = "false"
+allowFightBack = true
 stopAttackingAtExit = "false"
 
 accountManager = true

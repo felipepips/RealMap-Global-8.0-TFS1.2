@@ -1,0 +1,17 @@
+----- 10/10/2022 11:55:33 - GOD (127.0.0.1) -----
+Debug Assertion 8.0 Objects.cpp 277
+Mon Oct 10 11:52:56 2022
+Windows Version: 6.1 build 7601 on 2 with Service Pack 1
+Graphic Engine: DirectX9 (2)
+Last Packet Types: 110 109 160 172 172 180 180 162 141 130
+Last Packet: 042 000 110 000 038 011 008 000 098 097 099 107 112 097 099 107
+Player Position: [32369,32215,7]
+Player Name: GOD
+Player.cpp 358: exception occurred, reason:
+Network.cpp 980: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1309: exception occurred (Type = 110), reason:
+Communication.cpp 2020: exception occurred (Container = 0), reason:
+Objects.cpp 280: exception occurred (Type = 7479) (Flag = 11), reason:
+Objects.cpp 277: assertion failed (Type = 7479) (ObjectProperties->high() = 7475), reason:
+In(Type,ObjectProperties->low(),ObjectProperties->high())
+Comment: 
