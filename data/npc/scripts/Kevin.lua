@@ -45,6 +45,9 @@ local function creatureSayCallback(cid, type, msg)
 		elseif player:getStorageValue(Storage.postman.Mission07) ==  7 then
 			npcHandler:say("Once more you have impressed me! Are you willing to do another job?", cid)
 			npcHandler.topic[cid] = 21
+		elseif player:getStorageValue(Storage.postman.Mission07) >= 2	and	player:getStorageValue(Storage.postman.Mission07) < 7 then
+			npcHandler:say("First you need to complete your current mission.", cid)
+			npcHandler.topic[cid] = 0
 		elseif player:getStorageValue(Storage.postman.Mission06) >= 1	and	player:getStorageValue(Storage.postman.Mission06) < 10 then
 			npcHandler:say("First you need to complete your current mission.", cid)
 			npcHandler.topic[cid] = 0
@@ -202,7 +205,22 @@ local function creatureSayCallback(cid, type, msg)
 			npcHandler.topic[cid] = 0
 		elseif npcHandler.topic[cid] == 18 then
 			npcHandler:say("Good. Go there and find out what taste he dislikes most: mouldy cheese, a piece of fur or abananaskin. Tell him to SNIFF, then the object. Show him the object and ask 'Do you like that?'.DONT let the guards know what you are doing.", cid)
-			player:setStorageValue(Storage.postman.Mission06, 8)
+			player:setStorageValue(Storage.postman.Mission06, 7)
+			npcHandler.topic[cid] = 0
+		elseif npcHandler.topic[cid] == 19 then
+			npcHandler:say("Good, so listen. Hugo Chief informed me that he needs the measurements of our postofficers. Go and bring me the measurements of Benjamin, Lokur, Dove, Liane, Chrystal and Olrik.", cid)
+			player:setStorageValue(Storage.postman.Mission07, 1)
+			npcHandler.topic[cid] = 0
+		elseif npcHandler.topic[cid] == 20 then
+			npcHandler:say("From now on it shall be known that you are a grand postman. You are now a privilegedmember until the end of days. Most captains around the world have an agreement with our guild to transport our privileged members, like you, for less gold.", cid)
+			player:setStorageValue(Storage.postman.Rank, 3)
+			npcHandler.topic[cid] = 19
+		elseif npcHandler.topic[cid] == 21 then
+			npcHandler:say("Ok but your next assignment might be dangerous. Our Courier Waldo has been missing for a while. I must assume he is dead. Can you follow me so far?", cid)
+			npcHandler.topic[cid] = 22
+		elseif npcHandler.topic[cid] == 22 then
+			npcHandler:say("Find out about his whereabouts and retrieve him or at least his posthorn. He was looking for a new underground passage that is rumoured to be found underneath the troll-infested Mountain east of Thais.", cid)
+			player:setStorageValue(Storage.postman.Mission07, 8)
 			player:setStorageValue(Storage.postman.Mission08, 1)
 			npcHandler.topic[cid] = 0
 		elseif npcHandler.topic[cid] == 23 then
@@ -231,6 +249,7 @@ local function creatureSayCallback(cid, type, msg)
 			npcHandler:say("I grant you the title of Archpostman. You are a legend in our guild. As privilege of your newly aquired status you are allowed to make use of certain mailboxes in dangerous areas. Just look out for them and you'll see.", cid)
 			player:setStorageValue(Storage.postman.Rank, 5)
 			player:setStorageValue(Storage.postman.Door, 1)
+			player:addAchievement('Archpostman')
 			npcHandler.topic[cid] = 0
 		elseif npcHandler.topic[cid] == 28 then
 			npcHandler:say("Your eagerness is a virtue, young one, but first let's talk about advancement", cid)

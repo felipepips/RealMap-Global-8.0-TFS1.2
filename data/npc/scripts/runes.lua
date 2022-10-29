@@ -25,8 +25,8 @@ shopModule:addBuyableItem({'magic lightwand'}, 2163, 400, 'magic lightwand')
 shopModule:addBuyableItem({'mana fluid', 'manafluid'}, 2006, 50, 7, 'mana fluid')
 shopModule:addBuyableItem({'life fluid', 'lifefluid'}, 2006, 50, 2, 'life fluid')
 
-shopModule:addBuyableItemContainer({'bp mf'}, 2001, 2006, 1000, 7, 'backpack of life fluids')
-shopModule:addBuyableItemContainer({'bp lf'}, 2000, 2006, 1000, 2, 'backpack of mana fluids')
+shopModule:addBuyableItemContainer({'bp mf'}, 2001, 2006, 1000, 7, 'backpack of mana fluids')
+shopModule:addBuyableItemContainer({'bp lf'}, 2000, 2006, 1000, 2, 'backpack of life fluids')
 
 shopModule:addBuyableItem({'animate dead'}, 2316, 375, 1, 'animate dead rune')
 shopModule:addBuyableItem({'blank rune'}, 2260, 10, 1, 'blank rune')

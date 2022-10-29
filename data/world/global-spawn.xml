@@ -41447,8 +41447,8 @@
 		<monster name="spider" x="-2" y="-3" z="10" spawntime="60" />
 		<monster name="spider" x="-2" y="-1" z="10" spawntime="60" />
 		<monster name="carrion worm" x="-2" y="2" z="10" spawntime="60" />
-		<monster name="spider" x="2" y="2" z="10" spawntime="60" />
 		<monster name="spider" x="-3" y="3" z="10" spawntime="60" />
+		<monster name="spider" x="2" y="3" z="10" spawntime="60" />
 		<monster name="spider" x="2" y="5" z="10" spawntime="60" />
 	</spawn>
 	<spawn centerx="32055" centery="32086" centerz="10" radius="1">
