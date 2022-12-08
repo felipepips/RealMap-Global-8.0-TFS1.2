@@ -46,12 +46,12 @@
 		<item id="7441" chance="10000"/>				<!-- ice cube -->
 		<item id="2796" chance="1310"/>					<!-- green mushroom -->
 		<item id="2423" chance="950"/>					<!-- clerical mace -->
-		<item id="7589" chance="820"/>					<!-- strong mana potion -->
+		<!--<item id="7589" chance="820"/>					 strong mana potion -->
 		<item id="7290" chance="550"/>					<!-- shard -->
 		<item id="2663" chance="430"/>					<!-- mystic turban -->
 		<item id="7449" chance="380"/>					<!-- crystal sword -->
 		<item id="7387" chance="340"/>					<!-- diamond sceptre -->
-		<item id="7892" chance="280"/>					<!-- glacier shoes -->
+		<!--<item id="7892" chance="280"/>					 glacier shoes -->
 		<item id="7459" chance="90"/>					<!-- pair of earmuffs -->
 	</loot>
 </monster>

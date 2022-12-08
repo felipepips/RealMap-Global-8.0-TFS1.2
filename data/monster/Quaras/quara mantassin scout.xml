@@ -33,7 +33,7 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="30" chance="94000"/>	<!-- gold coin -->
-		<item id="12445" chance="7750"/>				<!-- mantassin tail -->
+		<!--<item id="12445" chance="7750"/>				 mantassin tail -->
 		<item id="2464" chance="4550"/>					<!-- chain armor -->
 		<item id="2229" chance="810"/>					<!-- skull -->
 		<item id="2146" chance="810"/>					<!-- small sapphire -->

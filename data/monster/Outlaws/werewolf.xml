@@ -2,7 +2,8 @@
 <monster name="Werewolf" nameDescription="a werewolf" experience="1900" speed="200" race="blood" manacost="0">
 	<health now="1955" max="1955"/>
 	<targetchange interval="4000" chance="10"/>
-	<look type="308" corpse="20379"/>	<flags>
+	<look type="308" corpse="20379"/>
+	<flags>
 		<flag summonable="0"/>
 		<flag attackable="1"/>
 		<flag hostile="1"/>
@@ -50,15 +51,15 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="225" chance="99000"/>	<!-- gold coin -->
-		<item id="11234" chance="10500"/>				<!-- werewolf fur -->
+		<!--<item id="11234" chance="10500"/>				 werewolf fur -->
 		<item id="2510" chance="10000"/>				<!-- plate shield -->
-		<item id="9809" chance="7770"/>					<!-- rusty armor (semi-rare) -->
+		<!--<item id="9809" chance="7770"/>					 rusty armor (semi-rare) -->
 		<item id="2789" chance="7000"/>					<!-- brown mushroom -->
-		<item id="7588" chance="5000"/>					<!-- strong health potion -->
+		<!--<item id="7588" chance="5000"/>					 strong health potion -->
 		<item id="2805" chance="5000"/>					<!-- troll green -->
 		<item id="5897" chance="4500"/>					<!-- wolf paw -->
 		<item id="2381" chance="3000"/>					<!-- halberd -->
-		<item id="8473" chance="2000"/>					<!-- ultimate health potion -->
+		<!--<item id="8473" chance="2000"/>					 ultimate health potion -->
 		<item id="7439" chance="1200"/>					<!-- berserk potion -->
 		<item id="2197" chance="1000"/>					<!-- stone skin amulet -->
 		<item id="2171" chance="850"/>					<!-- platinum amulet -->

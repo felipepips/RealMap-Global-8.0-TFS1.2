@@ -47,18 +47,18 @@
 	<loot>
 		<item id="2802" chance="13200"/>				<!-- sling herb -->
 		<item id="2760" chance="11720"/>				<!-- goat grass -->
-		<item id="11220" chance="10000"/>				<!-- dark rosary -->
+		<!--<item id="11220" chance="10000"/>				 dark rosary -->
 		<item id="2674" countmax="2" chance="7500"/>	<!-- red apple -->
 		<item id="2803" chance="6500"/>					<!-- powder herb -->
-		<item id="10562" chance="5000"/>				<!-- black hood -->
+		<!--<item id="10562" chance="5000"/>				 black hood -->
 		<item id="2791" chance="3200"/>					<!-- wood mushroom -->
-		<item id="10556" chance="1800"/>				<!-- cultish robe -->
+		<!--<item id="10556" chance="1800"/>				 cultish robe -->
 		<item id="2423" chance="1500"/>					<!-- clerical mace -->
 		<item id="2374" chance="1450"/>					<!-- wooden flute -->
 		<item id="2192" chance="1100"/>					<!-- crystal ball -->
 		<item id="2183" chance="1000"/>					<!-- hailstorm rod -->
 		<item id="1962" chance="940"/>					<!-- book -->
-		<item id="7620" chance="900"/>					<!-- mana potion -->
+		<!--<item id="7620" chance="900"/>					 mana potion -->
 		<item id="2151" chance="730"/>					<!-- talon -->
 		<item id="2125" chance="660"/>					<!-- crystal necklace -->
 		<item id="2529" chance="200"/>					<!-- black shield -->

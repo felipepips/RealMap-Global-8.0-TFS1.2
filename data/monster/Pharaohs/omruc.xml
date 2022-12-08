@@ -58,16 +58,17 @@
 	</voices>
 	<loot>
 		<item id="2352" chance="100000"/>				<!-- crystal arrow -->
-		<item id="2148" countmax="160" chance="85000"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="85000"/>	<!-- gold coin -->
+		<item id="2148" countmax="60" chance="85000"/>	<!-- gold coin -->
 		<item id="2674" countmax="2" chance="74000"/>	<!-- red apple -->
 		<item id="2545" countmax="19" chance="49000"/>	<!-- poison arrow -->
 		<item id="2546" countmax="15" chance="44000"/>	<!-- burst arrow -->
 		<item id="7365" countmax="6" chance="36000"/>	<!-- onyx arrow -->
 		<item id="2544" countmax="25" chance="25000"/>	<!-- arrow -->
 		<item id="2547" countmax="4" chance="17000"/>	<!-- power bolt -->
-		<item id="7591" chance="12000"/>				<!-- great health potion -->
+		<!--<item id="7591" chance="12000"/>				 great health potion -->
 		<item id="2145" countmax="3" chance="12000"/>	<!-- small diamond -->
-		<item id="11207" chance="4000"/>				<!-- mini mummy -->
+		<!--<item id="11207" chance="4000"/>				 mini mummy -->
 		<item id="2165" chance="4000"/>					<!-- stealth ring -->
 		<item id="2154" chance="150"/>					<!-- yellow gem -->
 		<item id="2195" chance="150"/>					<!-- boots of haste -->

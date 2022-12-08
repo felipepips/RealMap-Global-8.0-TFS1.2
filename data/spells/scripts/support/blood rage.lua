@@ -7,7 +7,7 @@ setConditionParam(condition, CONDITION_PARAM_TICKS, 10000)
 setConditionParam(condition, CONDITION_PARAM_SKILL_MELEEPERCENT, 135)
 setConditionParam(condition, CONDITION_PARAM_SKILL_SHIELDPERCENT, -100)
 setConditionParam(condition, CONDITION_PARAM_BUFF, true)
-setCombatCondition(combat, condition)
+addCombatCondition(combat, condition)
 
 function onCastSpell(cid, var)
 	return doCombat(cid, combat, var)

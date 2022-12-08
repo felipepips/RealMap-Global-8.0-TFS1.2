@@ -29,7 +29,7 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="30" chance="40000"/><!-- gold coin -->
-		<item id="7618" chance="380"/><!-- health potion -->
+		<!--<item id="7618" chance="380"/> health potion -->
 		<item id="5880" chance="510"/><!-- iron ore -->
 		<item id="2643" chance="40000"/><!-- leather boots -->
 		<item id="2150" chance="140"/><!-- small amethyst -->
@@ -41,6 +41,6 @@
 		<item id="2387" chance="600"/><!-- double axe -->
 		<item id="2459" chance="250"/><!-- iron helmet -->
 		<item id="2208" chance="190"/><!-- axe ring -->
-		<item id="13757" chance="280"/><!-- coal -->
+		<!--<item id="13757" chance="280"/> coal -->
 	</loot>
 </monster>

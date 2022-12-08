@@ -37,13 +37,13 @@
 		<item id="2050" chance="10190"/>				<!-- torch -->
 		<item id="2385" chance="10100"/>				<!-- sabre -->
 		<item id="2238" chance="9900"/>					<!-- worn leather boots -->
-		<item id="11219" chance="9780"/>				<!-- compass -->
+		<!--<item id="11219" chance="9780"/>				 compass -->
 		<item id="2410" countmax="5" chance="9000"/>	<!-- throwing knife -->
 		<item id="2513" chance="3850"/>					<!-- battle shield -->
 		<item id="6095" chance="1200"/>					<!-- pirate shirt -->
 		<item id="2463" chance="1130"/>					<!-- plate armor -->
 		<item id="5091" chance="1050"/>					<!-- treasure map -->
-		<item id="7588" chance="680"/>					<!-- strong health potion -->
+		<!--<item id="7588" chance="680"/>					 strong health potion -->
 		<item id="6126" chance="520"/>					<!-- peg leg -->
 		<item id="6097" chance="450"/>					<!-- hook -->
 		<item id="5926" chance="430"/>					<!-- pirate backpack -->

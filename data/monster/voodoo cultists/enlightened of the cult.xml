@@ -53,7 +53,7 @@
 		<item id="2148" countmax="70" chance="64550"/>	<!-- gold coin -->
 		<item id="1962" chance="910"/>					<!-- orange book -->
 		<item id="2200" chance="790"/>					<!-- protection amulet -->
-		<item id="7589" chance="740"/>					<!-- strong mana potion -->
+		<!--<item id="7589" chance="740"/>					 strong mana potion -->
 		<item id="2146" chance="550"/>					<!-- small sapphire -->
 		<item id="6090" chance="490"/>					<!-- music sheet 4th verse -->
 		<item id="2167" chance="450"/>					<!-- energy ring -->

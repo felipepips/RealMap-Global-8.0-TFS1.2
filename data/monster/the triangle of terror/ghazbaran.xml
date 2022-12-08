@@ -58,26 +58,26 @@
 		<item id="5954" countmax="2" chance="33333"/>	<!-- demon horn -->
 		<item id="2145" countmax="5" chance="30000"/>	<!-- small diamond -->
 		<item id="6300" chance="28000"/>				<!-- death ring -->
-		<item id="7591" chance="26000"/>				<!-- great health potion -->
-		<item id="8472" chance="26000"/>				<!-- great spirit potion -->
-		<item id="8904" chance="26000"/>				<!-- spellscroll of prophecies -->
-		<item id="8473" chance="26000"/>				<!-- ultimate health potion -->
+		<!--<item id="7591" chance="26000"/>				 great health potion -->
+		<!--<item id="8472" chance="26000"/>				 great spirit potion -->
+		<!--<item id="8904" chance="26000"/>				 spellscroll of prophecies -->
+		<!--<item id="8473" chance="26000"/>				 ultimate health potion -->
 		<item id="2143" countmax="15" chance="26000"/>	<!-- white pearl -->
 		<item id="2178" chance="23000"/>				<!-- mind stone -->
 		<item id="2214" chance="23000"/>				<!-- ring of healing -->
 		<item id="2150" countmax="17" chance="23000"/>	<!-- small amethyst -->
 		<item id="2149" countmax="10" chance="23000"/>	<!-- small emerald -->
 		<item id="1984" chance="21000"/>				<!-- blue tome -->
-		<item id="7590" chance="21000"/>				<!-- great mana potion -->
+		<!--<item id="7590" chance="21000"/>				 great mana potion -->
 		<item id="2155" chance="21000"/>				<!-- green gem -->
 		<item id="2176" chance="21000"/>				<!-- orb -->
 		<item id="2146" countmax="10" chance="21000"/>	<!-- small sapphire -->
-		<item id="8918" chance="21000"/>				<!-- spellbook of dark mysteries -->
-		<item id="8901" chance="21000"/>				<!-- spellbook of warding -->
+		<!--<item id="8918" chance="21000"/>				 spellbook of dark mysteries -->
+		<!--<item id="8901" chance="21000"/>				 spellbook of warding -->
 		<item id="2179" chance="20000"/>				<!-- gold ring -->
 		<item id="7405" chance="17000"/>				<!-- havoc blade -->
-		<item id="8884" chance="17000"/>				<!-- oceanborn leviathan armor -->
-		<item id="8903" chance="17000"/>				<!-- spellbook of lost souls -->
+		<!--<item id="8884" chance="17000"/>				 oceanborn leviathan armor -->
+		<!--<item id="8903" chance="17000"/>				 spellbook of lost souls -->
 		<item id="7368" countmax="44" chance="15000"/>	<!-- assassin star -->
 		<item id="2158" chance="15000"/>				<!-- blue gem -->
 		<item id="7433" chance="15000"/>				<!-- ravenwing -->
@@ -90,11 +90,11 @@
 		<item id="2151" countmax="7" chance="13000"/>	<!-- talon -->
 		<item id="2144" countmax="14" chance="10000"/>	<!-- black pearl -->
 		<item id="2124" chance="10000"/>				<!-- crystal ring -->
-		<item id="7896" chance="10000"/>				<!-- glacier kilt -->
-		<item id="8902" chance="10000"/>				<!-- spellbook of mind control -->
+		<!--<item id="7896" chance="10000"/>				 glacier kilt -->
+		<!--<item id="8902" chance="10000"/>				 spellbook of mind control -->
 		<item id="2174" chance="10000"/>				<!-- strange symbol -->
 		<item id="2447" chance="10000"/>				<!-- twin axe -->
-		<item id="8887" chance="8700"/>					<!-- frozen plate -->
+		<!--<item id="8887" chance="8700"/>					 frozen plate -->
 		<item id="2466" chance="8700"/>					<!-- golden armor -->
 		<item id="2646" chance="8700"/>					<!-- golden boots -->
 		<item id="2472" chance="8700"/>					<!-- magic plate armor -->

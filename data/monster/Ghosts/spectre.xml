@@ -67,9 +67,9 @@
 		<item id="2134" chance="850"/><!-- silver brooch -->
 		<item id="5909" chance="3800"/><!-- white piece of cloth -->
 		<item id="6300" chance="280"/><!-- death ring -->
-		<item id="7590" chance="920"/><!-- great mana potion -->
+		<!--<item id="7590" chance="920"/> great mana potion -->
 		<item id="2134" chance="110"/><!-- shadow sceptre -->
 		<item id="2136" chance="110"/><!--demonbone amulet -->
-		<item id="11227" chance="1000"/><!-- shiny stone -->
+		<!--<item id="11227" chance="1000"/> shiny stone -->
 	</loot>
 </monster>

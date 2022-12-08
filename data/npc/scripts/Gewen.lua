@@ -17,7 +17,7 @@ local function creatureSayCallback(cid, type, msg)
 
 	local player = Player(cid)
 	if msgcontains(msg, 'fly') then
-			npcHandler:say('The different places we travel to are: {darashia}, {svargrond}, {femor hills}, {edron}, {Kazordoon}', cid)
+			npcHandler:say('The different places we travel to are: {Darashia}, {Svargrond}, {Femor Hills} and {Edron}', cid)
 			return true
 	end	
 	if msgcontains(msg, 'ticket') then
@@ -56,12 +56,15 @@ local function addTravelKeyword(keyword, text, cost, destination)
 		travelKeyword:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, text = 'You shouldn\'t miss the experience.', reset = true})
 end
 
-addTravelKeyword('farmine', 'Farmine', 60, Position(32983, 31539, 1))
-addTravelKeyword('darashia', 'Darashia on Darama', 40, Position(33270, 32441, 6))
-addTravelKeyword('svargrond', 'Svargrond', 60, Position(32253, 31097, 4))
-addTravelKeyword('femor hills', 'the Femor Hills', 60, Position(32536, 31837, 4))
-addTravelKeyword('edron', 'Edron', 40, Position(33193, 31784, 3))
-addTravelKeyword('hills', 'the Femor Hills', 60, Position(32536, 31837, 4))
+-- addTravelKeyword('farmine', 'Farmine', 50, Position(32983, 31539, 1))
+addTravelKeyword('darashia', 'Darashia on Darama', 50, Position(33270, 32441, 6))
+addTravelKeyword('darama', 'Darashia on Darama', 50, Position(33270, 32441, 6))
+addTravelKeyword('svargrond', 'Svargrond', 50, Position(32253, 31097, 4))
+addTravelKeyword('femor', 'Femor Hills', 50, Position(32536, 31837, 4))
+addTravelKeyword('hills', 'Femor Hills', 50, Position(32536, 31837, 4))
+addTravelKeyword('edron', 'Edron', 50, Position(33193, 31784, 3))
+-- addTravelKeyword('kazordoon', 'Kazordoon', 50, Position(32588, 31941, 0))
+-- addTravelKeyword('kaz', 'Kazordoon', 50, Position(32588, 31941, 0))
 
 npcHandler:setMessage(MESSAGE_GREET, "Greetings, traveller |PLAYERNAME|. Where do you want me to {fly} you? Or do you need a weekly ticket for the Kazordoon public lorry transport?")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye!")

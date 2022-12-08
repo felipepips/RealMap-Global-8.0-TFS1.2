@@ -25,10 +25,12 @@
 		mango,5097,10;
 		melon,2682,10;
 		orange,2675,10;
-		potato,8838,4;
 		pumpkin,2683,10;
-		sample of venorean spice,9675,200;
 		strawberry,2680,2;
 		white mushroom,2787,10;" />
 	</parameters>
 </npc>
+<!-- removed:
+potato,8838,4;
+sample of venorean spice,9675,200;
+-->

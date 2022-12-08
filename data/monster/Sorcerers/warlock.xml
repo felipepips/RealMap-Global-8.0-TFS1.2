@@ -64,8 +64,8 @@
 		<item id="2689" chance="9000"/>					<!-- bread -->
 		<item id="2411" chance="7600"/>					<!-- poison dagger -->
 		<item id="2436" chance="6330"/>					<!-- skull staff -->
-		<item id="7591" chance="5190"/>					<!-- great health potion -->
-		<item id="7590" chance="4760"/>					<!-- great mana potion -->
+		<!--<item id="7591" chance="5190"/>					 great health potion -->
+		<!--<item id="7590" chance="4760"/>					 great mana potion -->
 		<item id="7368" countmax="4" chance="3500"/>	<!-- assassin star -->
 		<item id="2792" chance="3000"/>					<!-- dark mushroom -->
 		<item id="2167" chance="2200"/>					<!-- energy ring -->
@@ -74,10 +74,10 @@
 		<item id="2656" chance="1390"/>					<!-- blue robe -->
 		<item id="2146" chance="1190"/>					<!-- small sapphire -->
 		<item id="2151" chance="1160"/>					<!-- talon -->
-		<item id="7898" chance="1040"/>					<!-- lightning robe -->
+		<!--<item id="7898" chance="1040"/>					 lightning robe -->
 		<item id="2600" chance="1000"/>					<!-- inkwell -->
 		<item id="2124" chance="670"/>					<!-- crystal ring -->
-		<item id="12410" chance="500"/>					<!-- luminous orb -->
+		<!--<item id="12410" chance="500"/>					 luminous orb -->
 		<item id="2123" chance="420"/>					<!-- ring of the sky -->
 		<item id="2197" chance="320"/>					<!-- stone skin amulet -->
 		<item id="1986" chance="310"/>					<!-- red tome -->

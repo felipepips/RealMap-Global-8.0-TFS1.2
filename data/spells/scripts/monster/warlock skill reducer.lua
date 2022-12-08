@@ -7,7 +7,7 @@ local combat = Combat()
 combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_ENERGYHIT)
 combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_ENERGY)
 combat:setArea(createCombatArea(AREA_BEAM1))
-combat:setCondition(condition)
+combat:addCondition(condition)
 
 function onCastSpell(creature, variant)
 	return combat:execute(creature, variant)

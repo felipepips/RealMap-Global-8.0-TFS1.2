@@ -35,18 +35,20 @@
 		<immunity invisible="1"/>
 	</immunities>
 	<loot>
-		<item id="2148" countmax="246" chance="100000"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="100000"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="100000"/>	<!-- gold coin -->
+		<item id="2148" countmax="50" chance="100000"/>	<!-- gold coin -->
 		<item id="2239" chance="50000"/>					<!-- burnt scroll -->
 		<item id="2260" countmax="2" chance="30000"/>		<!-- blank rune -->
 		<item id="6500" chance="15000"/>					<!-- demonic essence -->
 		<item id="5944" chance="12000"/>					<!-- soul orb -->
 		<item id="2187" chance="9500"/>						<!-- wand of inferno -->
-		<item id="10581" chance="5000"/>					<!-- piece of hellfire armor -->
+		<!--<item id="10581" chance="5000"/>					 piece of hellfire armor -->
 		<item id="2392" chance="4300"/>						<!-- fire sword -->
 		<item id="2127" chance="2200"/>						<!-- emerald bangle -->
 		<item id="2145" chance="1400"/>						<!-- small diamond -->
 		<item id="2152" chance="1000"/>						<!-- platinum coin -->
-		<item id="7894" chance="780"/>						<!-- magma legs -->
+		<!--<item id="7894" chance="780"/>						 magma legs -->
 		<item id="2432" chance="460"/>						<!-- fire axe -->
 		<item id="2136" chance="230"/>						<!-- demonbone amulet -->
 	</loot>

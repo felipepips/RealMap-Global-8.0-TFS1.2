@@ -18,7 +18,7 @@ local function creatureSayCallback(cid, type, msg)
 
 	local player = Player(cid)
 	if msgcontains(msg, 'fly') then
-			npcHandler:say('The different places we travel to are: {darashia}, {svargrond}, {femor hills}, {edron}, {Kazordoon}', cid)
+			npcHandler:say('The different places we travel to are: {Darashia}, {Svargrond}, {Edron} and {Kazordoon}', cid)
 			return true
 	end
 	return true
@@ -31,17 +31,20 @@ local function addTravelKeyword(keyword, text, cost, destination, condition, act
 		keywordHandler:addKeyword({keyword}, StdModule.say, {npcHandler = npcHandler, text = 'Never heard about a place like this.'}, condition)
 	end
 
-	local travelKeyword = keywordHandler:addKeyword({keyword}, StdModule.say, {npcHandler = npcHandler, text = text, cost = cost, discount = 'postman'})
+	local travelKeyword = keywordHandler:addKeyword({keyword}, StdModule.say, {npcHandler = npcHandler, text = 'Do you seek a ride to ' .. text .. ' for |TRAVELCOST|?', cost = cost, discount = 'postman'})
 		travelKeyword:addChildKeyword({'yes'}, StdModule.travel, {npcHandler = npcHandler, premium = true, text = 'Hold on!', cost = cost, discount = 'postman', destination = destination}, nil, action)
 		travelKeyword:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, text = 'You shouldn\'t miss the experience.', reset = true})
 end
 
-addTravelKeyword('eclipse', 'Oh no, so the time has come? Do you really want me to fly you to this unholy place?', 110, Position(32659, 31915, 0), function(player) return player:getStorageValue(Storage.TheInquisition.Questline) ~= 4 and player:getStorageValue(Storage.TheInquisition.Questline) ~= 5 end)
-addTravelKeyword('farmine', 'Do you seek a ride to Farmine for |TRAVELCOST|?', 60, Position(32983, 31539, 1), function(player) return player:getStorageValue(Storage.TheNewFrontier.Mission10) ~= 1 end)
-addTravelKeyword('edron', 'Do you seek a ride to Edron for |TRAVELCOST|?', 60, Position(33193, 31783, 3), nil, function(player) if player:getStorageValue(Storage.postman.Mission01) == 2 then player:setStorageValue(Storage.postman.Mission01, 3) end end)
-addTravelKeyword('darashia', 'Do you seek a ride to Darashia on Darama for |TRAVELCOST|?', 60, Position(33270, 32441, 6))
-addTravelKeyword('svargrond', 'Do you seek a ride to Svargrond for |TRAVELCOST|?', 60, Position(32253, 31097, 4))
-addTravelKeyword('kazordoon', 'Do you seek a ride to Kazordoon for |TRAVELCOST|?', 60, Position(32588, 31942, 0))
+-- addTravelKeyword('farmine', 'Farmine', 50, Position(32983, 31539, 1))
+addTravelKeyword('darashia', 'Darashia on Darama', 50, Position(33270, 32441, 6))
+addTravelKeyword('darama', 'Darashia on Darama', 50, Position(33270, 32441, 6))
+addTravelKeyword('svargrond', 'Svargrond', 50, Position(32253, 31097, 4))
+-- addTravelKeyword('femor', 'Femor Hills', 50, Position(32536, 31837, 4))
+-- addTravelKeyword('hills', 'Femor Hills', 50, Position(32536, 31837, 4))
+addTravelKeyword('edron', 'Edron', 50, Position(33193, 31784, 3))
+addTravelKeyword('kazordoon', 'Kazordoon', 50, Position(32588, 31941, 0))
+addTravelKeyword('kaz', 'Kazordoon', 50, Position(32588, 31941, 0))
 
 -- Basic
 keywordHandler:addKeyword({'name'}, StdModule.say, {npcHandler = npcHandler, text = "I am known as Uzon Ibn Kalith."})

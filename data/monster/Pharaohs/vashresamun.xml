@@ -50,15 +50,16 @@
 	</voices>
 	<loot>
 		<item id="2349" chance="100000"/>				<!-- blue note -->
-		<item id="2148" countmax="213" chance="91000"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="91000"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="91000"/>	<!-- gold coin -->
 		<item id="2143" chance="12000"/>				<!-- white pearl -->
 		<item id="2072" chance="10000"/>				<!-- lute -->
-		<item id="7691" chance="9700"/>					<!-- great mana potion -->
+		<!--<item id="7691" chance="9700"/>					 great mana potion -->
 		<item id="2445" chance="1300"/>					<!-- crystal mace -->
 		<item id="2656" chance="650"/>					<!-- blue robe -->
 		<item id="2139" chance="330"/>					<!-- ancient tiara -->
 		<item id="2074" chance="330"/>					<!-- panpipes -->
 		<item id="2124" chance="300"/>					<!-- crystal ring -->
-		<item id="11207" chance="100"/>					<!-- mini mummy -->
+		<!--<item id="11207" chance="100"/>					 mini mummy -->
 	</loot>
 </monster>

@@ -44,6 +44,6 @@
 		<item id="5909" chance="1940"/><!-- white piece of cloth -->
 		<item id="2532" chance="860"/><!-- ancient shield -->
 		<item id="2165" chance="180"/><!-- stealth ring -->
-		<item id="10607" chance="1870"/><!-- ghostly tissue -->
+		<!--<item id="10607" chance="1870"/> ghostly tissue -->
 	</loot>
 </monster>

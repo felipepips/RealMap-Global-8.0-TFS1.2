@@ -43,19 +43,20 @@
 		<voice sentence="HISSSS"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="246" chance="88000"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="88000"/>	<!-- gold coin -->
+		<item id="2148" countmax="50" chance="88000"/>	<!-- gold coin -->
 		<item id="2671" countmax="4" chance="60000"/>	<!-- ham -->
 		<item id="2152" countmax="3" chance="48000"/>	<!-- platinum coin -->
-		<item id="11199" chance="10120"/>				<!-- hydra head -->
+		<!--<item id="11199" chance="10120"/>				 hydra head -->
 		<item id="2146" chance="5000"/>					<!-- small sapphire -->
-		<item id="8842" chance="4780"/>					<!-- cucumber -->
+		<!--<item id="8842" chance="4780"/>					 cucumber -->
 		<item id="2214" chance="1190"/>					<!-- ring of healing -->
 		<item id="2476" chance="1000"/>					<!-- knight armor -->
 		<item id="4850" chance="940"/>					<!-- hydra egg -->
 		<item id="2197" chance="900"/>					<!-- stone skin amulet -->
 		<item id="2475" chance="890"/>					<!-- warrior helmet -->
 		<item id="2177" chance="540"/>					<!-- life crystal -->
-		<item id="7589" chance="390"/>					<!-- strong mana potion -->
+		<!--<item id="7589" chance="390"/>					 strong mana potion -->
 		<item id="2536" chance="250"/>					<!-- medusa shield -->
 		<item id="2498" chance="200"/>					<!-- royal helmet -->
 		<item id="2195" chance="120"/>					<!-- boots of haste -->

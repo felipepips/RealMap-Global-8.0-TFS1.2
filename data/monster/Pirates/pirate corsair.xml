@@ -35,14 +35,14 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="83" chance="55000"/>	<!-- gold coin -->
-		<item id="11219" chance="11020"/>				<!-- compass -->
+		<!--<item id="11219" chance="11020"/>				 compass -->
 		<item id="2385" chance="10000"/>				<!-- sabre -->
 		<item id="2399" countmax="12" chance="8500"/>	<!-- throwing star -->
 		<item id="2489" chance="1550"/>					<!-- dark armor -->
 		<item id="6096" chance="1080"/>					<!-- pirate hat -->
 		<item id="2521" chance="1050"/>					<!-- dark shield -->
 		<item id="5926" chance="950"/>					<!-- pirate backpack -->
-		<item id="7588" chance="820"/>					<!-- strong health potion -->
+		<!--<item id="7588" chance="820"/>					 strong health potion -->
 		<item id="6126" chance="590"/>					<!-- peg leg -->
 		<item id="6097" chance="570"/>					<!-- hook -->
 		<item id="6098" chance="500"/>					<!-- eye patch -->

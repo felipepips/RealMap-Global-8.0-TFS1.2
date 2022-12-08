@@ -9,8 +9,7 @@
 		butterfly conservation kit,4865,250;
 		ectoplasm container,4863,750;
 		botanist s container,4869,500;
-		orichalcum pearl,5022,80;
-		crown backpack,10522,800" />
+		orichalcum pearl,5022,80;" />
 		<parameter key="shop_sellable" value="
 		explorer brooch,4873,50;
 		hydra egg,4850,500;
@@ -20,3 +19,5 @@
 		<parameter key="message_walkaway" value="Come back soon, noble." />
 	</parameters>
 </npc>
+<!-- removed 
+		crown backpack,10522,800 -->

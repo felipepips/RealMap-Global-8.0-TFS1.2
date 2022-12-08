@@ -103,7 +103,7 @@
 	<monster name="The Horned Fox" file="bosses/the horned fox.xml" />
 	<monster name="Necropharus" file="bosses/necropharus.xml" />
 	<monster name="The Old Widow" file="bosses/the old widow.xml" />
-	<monster name="tiquandas Revenge" file="bosses/tiquandas Revenge.xml" />
+	<monster name="tiquandas Revenge" file="bosses/tiquandas revenge.xml" />
 	<monster name="apprentice sheng" file="bosses/apprentice sheng.xml" />
 	<monster name="bones" file="bosses/bones.xml" />
 	<monster name="countess sorrow" file="bosses/countess sorrow.xml" />

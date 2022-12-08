@@ -34,7 +34,7 @@
 		<item id="2461" chance="10000"/>				<!-- leather helmet -->
 		<item id="2403" chance="10000"/>				<!-- knife -->
 		<item id="2376" chance="5000"/>					<!-- sword -->
-		<item id="8840" countmax="5" chance="5000"/>	<!-- raspberries -->
+		<!--<item id="8840" countmax="5" chance="5000"/>	 raspberries -->
 		<item id="2404" chance="4000"/>					<!-- combat knife -->
 		<item id="7397" chance="110"/>					<!-- deer trophy -->
 	</loot>

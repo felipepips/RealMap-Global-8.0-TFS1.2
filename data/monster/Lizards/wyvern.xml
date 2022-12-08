@@ -50,6 +50,6 @@
 		<item id="2187" chance="810"/><!-- wand of inferno -->
 		<item id="7408" chance="410"/><!-- wydern fang -->
 		<item id="2127" chance="540"/><!-- emerald bangle -->
-		<item id="10561" chance="12300"/><!-- wyvern talisman -->
+		<!--<item id="10561" chance="12300"/> wyvern talisman -->
 	</loot>
 </monster>

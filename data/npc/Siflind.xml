@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<npc name="Siflind" script="Silfind.lua" walkinterval="2000">
+<npc name="Siflind" script="runes.lua" walkinterval="2000">
 	<health now="100" max="100" />
 	<look type="158" head="76" body="81" legs="95" feet="114" addons="1" />
-	<parameters>
+	<!-- <parameters>
 		<parameter key="module_shop" value="1" />
 		<parameter key="shop_buyable" value="
 			great spirit potion,8472,190;
@@ -36,5 +36,5 @@
 			empty potion flask,7635,5;
 			empty potion flask,7636,5;
 			vial,2006,5;" />
-	</parameters>
+	</parameters> -->
 </npc>

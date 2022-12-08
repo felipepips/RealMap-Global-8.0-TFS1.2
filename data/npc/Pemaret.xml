@@ -7,8 +7,8 @@
 		<parameter key="shop_buyable" value="fish,2667,5;" />
 		<parameter key="shop_sellable" value="
 		green perch,7159,100;
-		marlin,7963,800;
 		northern pike,2669,100;
 		rainbow trout,7158,100" />
 	</parameters>
 </npc>
+<!-- removed 		marlin,7963,800; -->

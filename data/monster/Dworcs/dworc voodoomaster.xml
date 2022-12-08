@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<monster name="Dworc Voodoomaster" namedescription="a dworc voodoomaster" race="blood" experience="55" speed="190" manacost="0">
+<monster name="Dworc Voodoomaster" namedescription="a dworc voodoomaster" race="blood" experience="55" speed="190" manacost="300">
 	<health now="80" max="80"/>
 	<look type="214" corpse="6055"/>
 	<targetchange interval="4000" chance="10"/>
@@ -67,7 +67,7 @@
 		<item id="2411" chance="1000"/><!-- poison dagger -->
 		<item id="3967" chance="1000"/><!-- tribal mask -->
 		<item id="2174" chance="500"/><!-- strange symbol-->
-		<item id="7618" chance="600"/><!-- health potion -->
+		<!--<item id="7618" chance="600"/> health potion -->
 		<item id="3955" chance="1000"/><!-- voodoo doll-->
 		<item id="2231" chance="3000"/><!-- big bone-->
 	</loot>

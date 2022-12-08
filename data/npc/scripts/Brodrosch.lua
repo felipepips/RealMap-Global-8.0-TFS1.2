@@ -45,23 +45,23 @@ local function creatureSayCallback(cid, type, msg)
 end
 
 local function addTravelKeyword(keyword, cost, discount, destination, action)
-	local travelKeyword = keywordHandler:addKeyword({keyword}, StdModule.say, {npcHandler = npcHandler, text = 'Do you seek a ride to ' .. titleCase(keyword) .. ' for |TRAVELCOST|?', cost = cost, discount = discount})
+	local travelKeyword = keywordHandler:addKeyword({keyword}, StdModule.say, {npcHandler = npcHandler, text = 'Do you seek a ride to ' .. string.titleCase(keyword) .. ' for |TRAVELCOST|?', cost = cost, discount = discount})
 		travelKeyword:addChildKeyword({'yes'}, StdModule.travel, {npcHandler = npcHandler, premium = true, text = 'Full steam ahead!', cost = cost, discount = discount, destination = destination}, nil, action)
 		travelKeyword:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, text = 'We would like to serve you some time.', reset = true})
 end
 
-addTravelKeyword('kuhn7hg5gb�#2w2', 210, {'postman', 'new frontier'},
-	function(player)
-		local destination = Position(33025, 31553, 14)
-		if player:getStorageValue(Storage.TheNewFrontier.Mission05) == 7 then --if The New Frontier Quest 'Mission 05: Getting Things Busy' complete then Stage 3
-			destination.z = 10
-		elseif player:getStorageValue(Storage.TheNewFrontier.Mission03) >= 2 then --if The New Frontier Quest 'Mission 03: Strangers in the Night' complete then Stage 2
-			destination.z = 12
-		end
+-- addTravelKeyword('kuhn7hg5gb�#2w2', 210, {'postman', 'new frontier'},
+-- 	function(player)
+-- 		local destination = Position(33025, 31553, 14)
+-- 		if player:getStorageValue(Storage.TheNewFrontier.Mission05) == 7 then --if The New Frontier Quest 'Mission 05: Getting Things Busy' complete then Stage 3
+-- 			destination.z = 10
+-- 		elseif player:getStorageValue(Storage.TheNewFrontier.Mission03) >= 2 then --if The New Frontier Quest 'Mission 03: Strangers in the Night' complete then Stage 2
+-- 			destination.z = 12
+-- 		end
 
-		return destination
-	end
-)
+-- 		return destination
+-- 	end
+-- )
 addTravelKeyword('cormaya', 160, 'postman', Position(33311, 31989, 15),
 	function(player)
 		if player:getStorageValue(Storage.postman.Mission01) == 4 then

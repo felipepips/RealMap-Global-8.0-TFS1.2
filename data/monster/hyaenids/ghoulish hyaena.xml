@@ -39,6 +39,6 @@
 		<item id="2147" countmax="2" chance="2700"/><!-- small ruby -->
 		<item id="3976" countmax="7" chance="65000"/><!-- worm -->
 		<item id="2666" countmax="3" chance="51060"/><!-- meat -->
-		<item id="7618" chance="19840"/><!-- hp -->
+		<!--<item id="7618" chance="19840"/> hp -->
 	</loot>
 </monster>

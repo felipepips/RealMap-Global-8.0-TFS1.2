@@ -48,16 +48,16 @@
 		<item id="7364" countmax="4" chance="11400"/>	<!-- sniper arrow -->
 		<item id="2666" chance="8200"/>					<!-- meat -->
 		<item id="2652" chance="8000"/>					<!-- green tunic -->
-		<item id="12466" chance="5000"/>				<!-- scroll of heroic deeds -->
+		<!--<item id="12466" chance="5000"/>				 scroll of heroic deeds -->
 		<item id="2121" chance="5000"/>					<!-- wedding ring -->
 		<item id="2120" chance="2000"/>					<!-- rope -->
 		<item id="5911" chance="2000"/>					<!-- red piece of cloth -->
 		<item id="2071" chance="1600"/>					<!-- lyre -->
 		<item id="2377" chance="1500"/>					<!-- two handed sword -->
 		<item id="2661" chance="1000"/>					<!-- scarf -->
-		<item id="12406" chance="1000"/>				<!-- small notebook -->
+		<!--<item id="12406" chance="1000"/>				 small notebook -->
 		<item id="2391" chance="840"/>					<!-- war hammer -->
-		<item id="7591" chance="780"/>					<!-- great health potion -->
+		<!--<item id="7591" chance="780"/>					 great health potion -->
 		<item id="2488" chance="670"/>					<!-- crown legs -->
 		<item id="2487" chance="570"/>					<!-- crown armor -->
 		<item id="2164" chance="500"/>					<!-- might ring -->

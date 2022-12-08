@@ -60,10 +60,10 @@
 		<item id="2225" chance="20000"/><!-- piece of iron -->
 		<item id="2417" chance="20000"/><!-- battle hammer -->
 		<item id="5944" chance="11111"/><!-- soul orb -->
-		<item id="7591" chance="10000"/><!-- great health potion -->
+		<!--<item id="7591" chance="10000"/> great health potion -->
 		<item id="6500" chance="9033"/><!-- demonic essence -->
 		<item id="7365" countmax="4" chance="7692"/><!-- onyx arrow -->
-		<item id="9810" chance="540"/><!-- rusty armor-->
+		<!--<item id="9810" chance="540"/> rusty armor-->
 		<item id="2152" countmax="2" chance="7142"/><!-- platinum coin -->
 		<item id="2477" chance="6250"/><!-- knight legs -->
 		<item id="2150" countmax="3" chance="5000"/><!-- small amethyst -->

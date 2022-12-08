@@ -48,9 +48,9 @@
 		<item id="2381" chance="560"/><!-- halberd -->
 		<item id="7460" chance="250"/><!-- norse shield -->
 		<item id="2490" chance="180"/><!-- dark helmet -->
-		<item id="7618" chance="819"/><!-- health potion -->
+		<!--<item id="7618" chance="819"/> health potion -->
 		<item id="7290" chance="60"/><!-- shard -->
 		<item id="2209" chance="130"/><!-- club ring -->
-		<item id="10575" chance="5000"/><!-- Frost Giant Pelt -->
+		<!--<item id="10575" chance="5000"/> Frost Giant Pelt -->
 	</loot>
 </monster>

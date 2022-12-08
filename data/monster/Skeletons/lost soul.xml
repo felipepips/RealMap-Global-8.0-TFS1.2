@@ -41,19 +41,20 @@
 		<voice sentence="Help meeee!"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="198" chance="99950"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="99950"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="99950"/>	<!-- gold coin -->
 		<item id="2152" countmax="7" chance="99950"/>	<!-- platinum coin -->
 		<item id="2260" countmax="3" chance="35250"/>	<!-- blank rune -->
-		<item id="11233" chance="33010"/>				<!-- unholy bone -->
+		<!--<item id="11233" chance="33010"/>				 unholy bone -->
 		<item id="5944" chance="15000"/>				<!-- soul orb -->
-		<item id="7590" countmax="2" chance="14000"/>	<!-- great mana potion -->
+		<!--<item id="7590" countmax="2" chance="14000"/>	 great mana potion -->
 		<item id="2144" countmax="3" chance="12000"/>	<!-- black pearl -->
 		<item id="2143" countmax="3" chance="11000"/>	<!-- white pearl -->
-		<item id="7591" countmax="2" chance="9300"/>	<!-- great health potion -->
+		<!--<item id="7591" countmax="2" chance="9300"/>	 great health potion -->
 		<item id="6500" chance="7070"/>					<!-- demonic essence -->
 		<item id="5806" chance="5240"/>					<!-- silver goblet -->
-		<item id="9809" chance="3880"/>					<!-- rusty armor (semi-rare) -->
-		<item id="9810" chance="3880"/>					<!-- rusty armor (rare) -->
+		<!--<item id="9809" chance="3880"/>					 rusty armor (semi-rare) -->
+		<!--<item id="9810" chance="3880"/>					 rusty armor (rare) -->
 		<item id="2197" chance="2980"/>					<!-- stone skin amulet -->
 		<item id="6300" chance="2510"/>					<!-- death ring -->
 		<item id="2156" chance="1920"/>					<!-- red gem -->

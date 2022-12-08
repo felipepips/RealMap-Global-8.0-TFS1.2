@@ -52,8 +52,8 @@
 		<item id="5944" chance="31111"/><!-- soul orb -->
 		<item id="6500" chance="12000"/><!-- demonic essence -->
 		<item id="2146" countmax="4" chance="11000"/><!-- small sapphire -->
-		<item id="8473" chance="18000"/><!-- ultimate health potion -->
-		<item id="7590" countmax="2" chance="19990"/><!-- great mana potion -->
+		<!--<item id="8473" chance="18000"/> ultimate health potion -->
+		<!--<item id="7590" countmax="2" chance="19990"/> great mana potion -->
 		<item id="2178" chance="9090"/><!-- mind stone -->
 		<item id="7365" countmax="3" chance="8333"/><!-- onyx arrow -->
 		<item id="7368" countmax="5" chance="7692"/><!-- assassin star -->
@@ -66,7 +66,7 @@
 		<item id="2167" chance="3150"/><!-- energy ring -->
 		<item id="2171" chance="1005"/><!-- platinum amulet-->
 		<item id="7414" chance="495"/><!-- abyss hammer -->
-		<item id="9971" chance="700"/><!-- gold ingot -->
+		<!--<item id="9971" chance="700"/> gold ingot -->
 		<item id="2436" chance="700"/><!-- skull staff -->
 		<item id="2153" chance="700"/><!-- violet gem -->
 		<item id="2154" chance="5940"/><!-- yellow gem -->

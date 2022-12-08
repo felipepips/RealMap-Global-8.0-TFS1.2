@@ -38,7 +38,7 @@
 		<item id="2120" chance="7950"/>					<!-- rope -->
 		<item id="2448" chance="5000"/>					<!-- studded club -->
 		<item id="2512" chance="4730"/>					<!-- wooden shield -->
-		<item id="10606" chance="1000"/>				<!-- bunch of troll hair -->
+		<!--<item id="10606" chance="1000"/>				 bunch of troll hair -->
 		<item id="2170" chance="80"/>					<!-- silver amulet -->
 	</loot>
 </monster>

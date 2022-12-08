@@ -10,7 +10,7 @@ condition:addDamage(4, 10000, -4)
 condition:addDamage(6, 10000, -3)
 condition:addDamage(9, 10000, -2)
 condition:addDamage(12, 10000, -1)
-combat:setCondition(condition)
+combat:addCondition(condition)
 
 function onCastSpell(creature, var)
 	return combat:execute(creature, var)

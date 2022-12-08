@@ -55,17 +55,19 @@
 		<voice sentence="I bring your deathhh, mortalssss"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="242" chance="97000"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="97000"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="97000"/>	<!-- gold coin -->
+		<item id="2148" countmax="42" chance="97000"/>	<!-- gold coin -->
 		<item id="2796" chance="18200"/>				<!-- green mushroom -->
-		<item id="10611" chance="14800"/>				<!-- snake skin -->
+		<!--<item id="10611" chance="14800"/>				 snake skin -->
 		<item id="2146" chance="11000"/>				<!-- small sapphire -->
 		<item id="2168" chance="6210"/>					<!-- life ring -->
 		<item id="2547" chance="6200"/>					<!-- power bolt -->
 		<item id="2167" chance="5900"/>					<!-- energy ring -->
 		<item id="2033" chance="2950"/>					<!-- golden mug -->
 		<item id="7386" chance="2080"/>					<!-- mercenary sword -->
-		<item id="7590" chance="2000"/>					<!-- great mana potion -->
-		<item id="11230" chance="960"/>					<!-- winged tail -->
+		<!--<item id="7590" chance="2000"/>					 great mana potion -->
+		<!--<item id="11230" chance="960"/>					 winged tail -->
 		<item id="2182" chance="930"/>					<!-- snakebite rod -->
 		<item id="2528" chance="920"/>					<!-- tower shield -->
 		<item id="2177" chance="800"/>					<!-- life crystal -->
@@ -76,7 +78,7 @@
 		<item id="2487" chance="500"/>					<!-- crown armor -->
 		<item id="3971" chance="170"/>					<!-- charmer's tiara -->
 		<item id="2498" chance="150"/>					<!-- royal helmet -->
-		<item id="8880" chance="100"/>					<!-- swamplair armor -->
-		<item id="8902" chance="90"/>					<!-- spellbook of mind control -->
+		<!--<item id="8880" chance="100"/>					 swamplair armor -->
+		<!--<item id="8902" chance="90"/>					 spellbook of mind control -->
 	</loot>
 </monster>

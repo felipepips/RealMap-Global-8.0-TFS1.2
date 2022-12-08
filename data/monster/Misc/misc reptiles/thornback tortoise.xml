@@ -23,9 +23,9 @@
 	
 	<loot>
 		<item id="2148" countmax="50" chance="89500"/>	<!-- gold coin -->
-		<item id="10560" chance="16000"/>				<!-- thorn -->
+		<!--<item id="10560" chance="16000"/>				 thorn -->
 		<item id="2667" countmax="2" chance="10800"/>	<!-- fish -->
-		<item id="7618" chance="1500"/>					<!-- health potion -->
+		<!--<item id="7618" chance="1500"/>					 health potion -->
 		<item id="2143" chance="1500"/>					<!-- white pearl -->
 		<item id="2787" chance="1300"/>					<!-- white mushroom -->
 		<item id="5678" countmax="3" chance="860"/>		<!-- tortoise egg -->

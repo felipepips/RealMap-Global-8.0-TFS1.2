@@ -124,6 +124,10 @@ string.trim = function(str)
 	return str:match'^()%s*$' and '' or str:match'^%s*(.*%S)'
 end
 
+string.titleCase = function(str)
+	return str:gsub("(%a)([%w_']*)", function(first, rest) return first:upper() .. rest:lower() end)
+end
+
 if nextUseStaminaTime == nil then
 	nextUseStaminaTime = {}
 end

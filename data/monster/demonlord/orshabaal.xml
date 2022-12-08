@@ -71,7 +71,7 @@
 		<item id="5954" chance="50000"/><!-- demon horn -->
 		<item id="2143" countmax="15" chance="33333"/><!-- white pearl -->
 		<item id="2462" chance="33333"/><!-- devil helmet -->
-		<item id="7590" chance="33333"/><!-- great mana potion -->
+		<!--<item id="7590" chance="33333"/> great mana potion -->
 		<item id="2214" chance="33333"/><!-- ring of healing -->
 		<item id="2146" countmax="8" chance="33333"/><!-- small sapphire -->
 		<item id="2144" countmax="8" chance="25000"/><!-- black pearl -->
@@ -80,7 +80,7 @@
 		<item id="2149" countmax="7" chance="25000"/><!-- small emerald -->
 		<item id="2158" chance="20000"/><!-- blue gem -->
 		<item id="2125" chance="20000"/><!-- crystal necklace -->
-		<item id="7591" chance="20000"/><!-- great health potion -->
+		<!--<item id="7591" chance="20000"/> great health potion -->
 		<item id="2178" chance="20000"/><!-- mind stone -->
 		<item id="2200" chance="20000"/><!-- protection amulet -->
 		<item id="1982" chance="20000"/><!-- purple tome -->

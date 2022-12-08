@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Lizard Sentinel" nameDescription="a lizard sentinel" race="blood" experience="110" speed="180" manacost="0">
+<monster name="Lizard Sentinel" nameDescription="a lizard sentinel" race="blood" experience="110" speed="180" manacost="560">
 	<health now="265" max="265"/>
 	<look type="114" corpse="6040"/>
 	<targetchange interval="4000" chance="10"/>
@@ -41,7 +41,7 @@
 		<item id="2425" chance="1120"/><!-- obsidian lance -->
 		<item id="3974" chance="320"/><!-- sentinel shield -->
 		<item id="5876" chance="990"/><!-- lizard leather -->
-		<item id="7618" chance="590"/><!-- health potion -->
+		<!--<item id="7618" chance="590"/> health potion -->
 		<item id="2381" chance="510"/><!-- halberd -->
 		<item id="2145" chance="190"/><!-- small diamond -->
 	</loot>

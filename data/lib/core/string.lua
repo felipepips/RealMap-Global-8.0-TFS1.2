@@ -15,7 +15,11 @@ string.starts = function(str, substr)
 end
 
 string.titleCase = function(str)
-	return str:gsub("(%a)([%w_']*)", function(first, rest) return first:upper() .. rest:lower() end)
+    local result = string.gsub(str, '(%a)([%w_\']*)', function(first, rest)
+        return first:upper() .. rest:lower()
+    end)
+
+    return result
 end
 
 string.diff = function(diff)
