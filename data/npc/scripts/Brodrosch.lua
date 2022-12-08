@@ -45,12 +45,12 @@ local function creatureSayCallback(cid, type, msg)
 end
 
 local function addTravelKeyword(keyword, cost, discount, destination, action)
-	local travelKeyword = keywordHandler:addKeyword({keyword}, StdModule.say, {npcHandler = npcHandler, text = 'Do you seek a ride to ' .. keyword:titleCase() .. ' for |TRAVELCOST|?', cost = cost, discount = discount})
+	local travelKeyword = keywordHandler:addKeyword({keyword}, StdModule.say, {npcHandler = npcHandler, text = 'Do you seek a ride to ' .. titleCase(keyword) .. ' for |TRAVELCOST|?', cost = cost, discount = discount})
 		travelKeyword:addChildKeyword({'yes'}, StdModule.travel, {npcHandler = npcHandler, premium = true, text = 'Full steam ahead!', cost = cost, discount = discount, destination = destination}, nil, action)
 		travelKeyword:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, text = 'We would like to serve you some time.', reset = true})
 end
 
-addTravelKeyword('kuhn7hg5gb¨#2w2', 210, {'postman', 'new frontier'},
+addTravelKeyword('kuhn7hg5gbï¿½#2w2', 210, {'postman', 'new frontier'},
 	function(player)
 		local destination = Position(33025, 31553, 14)
 		if player:getStorageValue(Storage.TheNewFrontier.Mission05) == 7 then --if The New Frontier Quest 'Mission 05: Getting Things Busy' complete then Stage 3
