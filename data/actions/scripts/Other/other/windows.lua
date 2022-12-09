@@ -22,27 +22,27 @@ local windows = {
 }
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	local window = windows[item.itemid]
-	if window == nil then
+	local window = windows[item:getId()]
+	if not window then
 		return false
 	end
-	local tile = fromPosition:getTile()
+
+	local tile = Tile(fromPosition)
 	local house = tile and tile:getHouse()
 	if not house then
 		fromPosition.y = fromPosition.y - 1
-		tile = fromPosition:getTile()
+		tile = Tile(fromPosition)
 		house = tile and tile:getHouse()
 		if not house then
 			fromPosition.y = fromPosition.y + 1
 			fromPosition.x = fromPosition.x - 1
-			tile = fromPosition:getTile()
+			tile = Tile(fromPosition)
 			house = tile and tile:getHouse()
 		end
 	end
-	if house then
-		if player:getPosition():getTile():getHouse() ~= house and player:getAccountType() < ACCOUNT_TYPE_GAMEMASTER then
-			return false
-		end
+
+	if house and player:getTile():getHouse() ~= house and player:getAccountType() < ACCOUNT_TYPE_GAMEMASTER then
+		return false
 	end
 
 	item:transform(window)
